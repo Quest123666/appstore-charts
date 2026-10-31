@@ -21,10 +21,22 @@ const SECURITY_HEADERS = {
   "permissions-policy": "camera=(), microphone=(), geolocation=(), payment=()",
 };
 
-function withSecurityHeaders(response) {
+function withSecurityHeaders(response, path = "") {
   const headers = new Headers(response.headers);
   for (const [name, value] of Object.entries(SECURITY_HEADERS)) {
     headers.set(name, value);
+  }
+
+  // 页面代码始终走 revalidate，保证 GitHub 更新部署后浏览器能拿到新版本。
+  const isApi = path === "/api" || path.startsWith("/api/");
+  if (
+    !isApi &&
+    (path === "/" ||
+      /\.(?:html|css|js)$/i.test(path) ||
+      response.status === 404 ||
+      response.status >= 500)
+  ) {
+    headers.set("cache-control", "public, max-age=0, must-revalidate");
   }
 
   if (response.status === 204 || response.status === 304) {
@@ -72,6 +84,7 @@ export default {
             405,
             { allow: "GET" },
           ),
+          path,
         );
       }
 
@@ -88,7 +101,7 @@ export default {
             }
           },
         });
-        return withSecurityHeaders(response);
+        return withSecurityHeaders(response, path);
       } catch {
         return withSecurityHeaders(
           json(
@@ -101,6 +114,7 @@ export default {
             },
             500,
           ),
+          path,
         );
       }
     }
@@ -114,12 +128,13 @@ export default {
           },
           404,
         ),
+        path,
       );
     }
 
     try {
       const assetResponse = await env.ASSETS.fetch(request);
-      return withSecurityHeaders(assetResponse);
+      return withSecurityHeaders(assetResponse, path);
     } catch {
       return withSecurityHeaders(
         json(
@@ -129,6 +144,7 @@ export default {
           },
           500,
         ),
+        path,
       );
     }
   },

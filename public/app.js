@@ -124,6 +124,8 @@
     detailSeq: 0,
     detailAbort: null,
     lastLoadedAt: 0,
+    retryTimer: 0,
+    autoRetries: 0,
   };
 
   let els = null;
@@ -655,6 +657,9 @@
     }
 
     window.clearTimeout(searchTimer);
+    window.clearTimeout(state.retryTimer);
+    state.retryTimer = 0;
+    state.autoRetries = 0;
     state.country = next.country;
     state.platform = next.platform;
     state.chart = next.chart;
@@ -758,6 +763,10 @@
     const fresh = Boolean(options.fresh);
     const seq = ++state.seq;
     if (state.abort) state.abort.abort();
+    if (state.retryTimer) {
+      window.clearTimeout(state.retryTimer);
+      state.retryTimer = 0;
+    }
 
     const controller = new AbortController();
     state.abort = controller;
@@ -808,6 +817,7 @@
 
       state.data = nextData;
       state.lastLoadedAt = Date.now();
+      state.autoRetries = 0;
       saveCache(nextData);
 
       if (changed) {
@@ -818,7 +828,11 @@
       }
 
       if (fresh) {
-        showToast(changed ? "榜单已刷新" : "已是最新榜单");
+        if (nextData.stale) {
+          showToast("刷新失败，正在显示缓存数据", "error");
+        } else {
+          showToast(changed ? "榜单已刷新" : "已是最新榜单");
+        }
       }
     } catch (error) {
       if (error.name === "AbortError") return;
@@ -831,6 +845,13 @@
         updateLoadingUI();
       } else {
         renderAll();
+        if (!fresh && state.autoRetries < 1) {
+          state.autoRetries += 1;
+          state.retryTimer = window.setTimeout(() => {
+            state.retryTimer = 0;
+            if (!state.data && !state.loading) load();
+          }, 6000);
+        }
       }
       if (fresh) showToast("刷新失败，请稍后再试", "error");
     } finally {
@@ -1159,7 +1180,7 @@
           els.errorState,
           STATIC_ICONS.alert,
           "榜单加载失败",
-          `${state.error}。请检查网络后重试，或稍后再来。`,
+          `${state.error}。页面会自动再试一次，也可以手动重新加载。`,
           "重新加载",
           () => load({ fresh: true }),
         );
@@ -1231,6 +1252,9 @@
       return;
     }
 
+    window.clearTimeout(state.retryTimer);
+    state.retryTimer = 0;
+    state.autoRetries = 0;
     assignState(next);
     state.query = "";
     els.searchInput.value = "";

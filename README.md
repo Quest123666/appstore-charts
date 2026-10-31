@@ -16,7 +16,7 @@ A lightweight, keyless App Store charts viewer for the US and China storefronts,
 - **应用详情**：点击榜单卡片查看评分、价格、版本、截图和描述
 - **深色模式**：跟随系统，也可手动切换并记住选择
 - **可分享链接**：商店、设备、榜单、分类状态会写入 URL
-- **自动刷新**：前台每 5 分钟检查一次，服务端边缘缓存 5 分钟
+- **自动刷新与兜底**：前台每 5 分钟检查；服务端 5 分钟后后台刷新，并保留最近 24 小时的成功数据，Apple 抖动时继续显示旧数据
 - **零依赖前端**：原生 HTML / CSS / JavaScript，无构建步骤、无追踪、无 API Key
 - **隐私友好**：不接入分析服务，不收集个人信息
 
@@ -35,6 +35,7 @@ A lightweight, keyless App Store charts viewer for the US and China storefronts,
 补充说明：
 
 - Apple RSS 的更新频率不固定，通常一天数次；所谓“实时”指页面会持续检查最新可用数据，而不是逐秒变化。
+- Apple 的公开 RSS 本身会偶发 502 或超时（测试时新版 marketing RSS 也出现过 502）。Worker 会重试，并优先返回最近成功的数据；只有在缓存完全为空且 Apple 失败时才会显示错误。
 - 每个榜单最多返回 100 条（部分分类会少于 100 条）。
 - 应用详情（评分、描述、截图）来自 iTunes Lookup，按需加载并缓存 1 小时。
 - 榜单分类使用 Apple 的 iTunes genre ID（如 `6014` = 游戏）。
@@ -50,7 +51,7 @@ A lightweight, keyless App Store charts viewer for the US and China storefronts,
 - **前端**：原生 JavaScript、CSS、HTML，无框架、无构建步骤
 - **后端**：一个 Cloudflare Worker，负责 `/api/charts`、`/api/app` 与静态资源路由
 - **静态资源**：`public/` 目录，通过 Workers Static Assets 上传并缓存
-- **缓存**：Cloudflare Cache API + 浏览器 `localStorage` 兜底
+- **缓存**：Cloudflare Cache API（5 分钟新鲜度 / 24 小时保留）+ 浏览器 `localStorage` 兜底
 - **安全头**：Worker 为所有响应注入 CSP、X-Frame-Options 等
 - **部署**：Cloudflare Workers Builds 或 `wrangler deploy`
 - **协议**：MIT
@@ -59,9 +60,11 @@ A lightweight, keyless App Store charts viewer for the US and China storefronts,
 
 ```text
 浏览器
-  → Cloudflare Worker（/api 代理 + 安全头 + 静态资源）
+  → Cloudflare Worker（页面、JS/CSS、/api 代理、安全头）
     → Apple iTunes RSS / Lookup
 ```
+
+应用图标和截图由 Apple 的 `mzstatic.com` CDN 直接提供，不经过 Worker，因此不会额外消耗 Worker 流量。榜单数据和详情 API 才走 Cloudflare。
 
 代理层负责参数白名单校验、字段裁剪、安全 URL 校验和边缘缓存，避免把接口变成任意 URL 代理。
 
@@ -131,8 +134,11 @@ npx wrangler deploy
 
 代码中不包含任何域名、账号 ID 或个人信息；域名只需在 Cloudflare 控制台绑定。
 
-### 常见报错
+### 常见问题
 
+- **偶发显示“Apple 榜单接口暂时不可用”**：这是 Apple 公开 RSS 自身的 502/超时，不是域名被 Cloudflare 禁用。当前版本会重试、保留 24 小时缓存并后台刷新；如果是全新边缘节点且缓存为空，首次请求仍可能短暂失败，页面会在 6 秒后自动再试一次。
+- **手机上详情弹窗显得过大**：已修正 iOS 搜索框自动缩放触发条件（输入字号 16px）、限制弹窗宽度为视口宽度、使用 `dvh` 高度并缩小截图预览。若仍出现，请提供手机型号和截图以便复现。
+- **GitHub 更新后手机还是旧样式**：页面代码已改为 `must-revalidate` 并带版本参数；正常情况下刷新即可。必要时清理浏览器缓存或强制刷新。
 - **`Missing entry-point to Worker script or to assets directory`**：说明 Wrangler 配置既没有 `main` 也没有 `[assets]`，或项目仍是旧的 Pages 配置。当前版本已提供两者，请确认 `wrangler.toml` 与本文一致。
 - **`It seems that you have run wrangler deploy on a Pages project`**：旧配置里有 `pages_build_output_dir`。当前版本已移除，请不要再执行 `wrangler pages deploy`。
 - **`Worker name requirement`**：把 `wrangler.toml` 的 `name` 与 Cloudflare Worker 名称改成一致。
@@ -144,7 +150,7 @@ npx wrangler deploy
 - **默认视图**：编辑 `public/app.js` 的 `DEFAULT_STATE`（默认中国区、iPhone、免费榜）。
 - **配色与字体**：编辑 `public/styles.css` 顶部的 CSS 变量。
 - **客户端刷新间隔**：编辑 `public/app.js` 中的 `AUTO_REFRESH_MS`。
-- **服务端缓存时长**：编辑 `src/api/charts.js` 中的 `CACHE_SECONDS`。
+- **服务端缓存时长**：编辑 `src/api/charts.js` 中的 `FRESH_MS`（后台刷新间隔）和 `SERVE_STALE_MS`（旧数据最长保留时间）。
 
 ## API
 
@@ -156,7 +162,9 @@ npx wrangler deploy
 | `platform` | `iphone`、`ipad`、`mac` | `iphone` |
 | `chart` | `top-free`、`top-paid`、`top-grossing` | `top-free` |
 | `genre` | Apple genre ID，如 `6014`、`6015`、`7001` | 全部 |
-| `fresh` | `1` 时跳过边缘缓存 | — |
+| `fresh` | `1` 时同步刷新；失败则回退到旧缓存（响应 `stale: true`） | — |
+
+响应头里的 `x-cache`（`MISS` / `HIT` / `STALE`）、`x-data-age` 和 `x-upstream-status` 可用于排查上游状态。
 
 示例：
 
