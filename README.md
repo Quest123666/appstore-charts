@@ -12,11 +12,14 @@ A lightweight, keyless App Store charts viewer for the US and China storefronts,
 - **三种设备**：iPhone、iPad、Mac
 - **三类榜单**：免费榜、付费榜、畅销榜
 - **完整分类**：全部应用分类 + 18 个游戏子类
+- **特色排序**：在当前榜单内按评分、最近更新、价格重新排序，并保留原 Apple 榜名次
+- **快捷操作**：滚动后右下角悬浮“手动刷新 / 一键回顶”；手机端滚动时顶部出现跟随筛选栏
 - **榜单搜索**：在当前榜单中按应用名、开发者、分类即时搜索
 - **应用详情**：点击榜单卡片查看评分、价格、版本、截图和描述
 - **深色模式**：跟随系统，也可手动切换并记住选择
 - **可分享链接**：商店、设备、榜单、分类状态会写入 URL
 - **自动刷新与兜底**：前台每 5 分钟检查；服务端 5 分钟后后台刷新，并保留最近 24 小时的成功数据，Apple 抖动时继续显示旧数据
+- **手动刷新**：悬浮按钮与列表按钮共用 30 秒冷却，服务端也会限制同一榜单的强制刷新频率，避免频繁请求 Apple
 - **零依赖前端**：原生 HTML / CSS / JavaScript，无构建步骤、无追踪、无 API Key
 - **隐私友好**：不接入分析服务，不收集个人信息
 
@@ -39,6 +42,8 @@ A lightweight, keyless App Store charts viewer for the US and China storefronts,
 - 每个榜单最多返回 100 条（部分分类会少于 100 条）。
 - 应用详情（评分、描述、截图）来自 iTunes Lookup，按需加载并缓存 1 小时。
 - 榜单分类使用 Apple 的 iTunes genre ID（如 `6014` = 游戏）。
+- 特色排序的评分和“最近更新”日期来自批量 iTunes Lookup，缓存 6 小时；价格直接来自 RSS。排序范围仅限当前 100 款，不是全商店排名。
+- 免费榜所有 App 价格相同，因此价格排序只在付费榜/畅销榜可用；点击价格按钮会提示原因。
 
 数据来源参考：
 
@@ -49,9 +54,9 @@ A lightweight, keyless App Store charts viewer for the US and China storefronts,
 ## 技术栈
 
 - **前端**：原生 JavaScript、CSS、HTML，无框架、无构建步骤
-- **后端**：一个 Cloudflare Worker，负责 `/api/charts`、`/api/app` 与静态资源路由
+- **后端**：一个 Cloudflare Worker，负责 `/api/charts`、`/api/app`、`/api/apps` 与静态资源路由
 - **静态资源**：`public/` 目录，通过 Workers Static Assets 上传并缓存
-- **缓存**：Cloudflare Cache API（5 分钟新鲜度 / 24 小时保留）+ 浏览器 `localStorage` 兜底
+- **缓存**：榜单 Cache API（5 分钟新鲜度 / 24 小时保留）、评分数据 6 小时缓存，外加浏览器 `localStorage` 兜底
 - **安全头**：Worker 为所有响应注入 CSP、X-Frame-Options 等
 - **部署**：Cloudflare Workers Builds 或 `wrangler deploy`
 - **协议**：MIT
@@ -137,6 +142,9 @@ npx wrangler deploy
 ### 常见问题
 
 - **偶发显示“Apple 榜单接口暂时不可用”**：这是 Apple 公开 RSS 自身的 502/超时，不是域名被 Cloudflare 禁用。当前版本会重试、保留 24 小时缓存并后台刷新；如果是全新边缘节点且缓存为空，首次请求仍可能短暂失败，页面会在 6 秒后自动再试一次。
+- **手动刷新后排名没变**：Apple 榜单通常一天只更新数次，刷新只是检查最新数据。成功但无变化时页面会提示“Apple 暂未更新排名”；手动刷新有 30 秒冷却。
+- **价格排序不可点/无变化**：免费榜所有 App 都是 0 元，价格排序只在付费榜和畅销榜生效。
+- **特色榜为什么只有 100 款**：评分/更新/价格排序是在当前 Apple 前 100 名内重新排序，不是全商店总榜；做全商店榜需要额外抓取或长期快照。
 - **手机上详情弹窗显得过大**：已修正 iOS 搜索框自动缩放触发条件（输入字号 16px）、限制弹窗宽度为视口宽度、使用 `dvh` 高度并缩小截图预览。若仍出现，请提供手机型号和截图以便复现。
 - **GitHub 更新后手机还是旧样式**：页面代码已改为 `must-revalidate` 并带版本参数；正常情况下刷新即可。必要时清理浏览器缓存或强制刷新。
 - **`Missing entry-point to Worker script or to assets directory`**：说明 Wrangler 配置既没有 `main` 也没有 `[assets]`，或项目仍是旧的 Pages 配置。当前版本已提供两者，请确认 `wrangler.toml` 与本文一致。
@@ -150,7 +158,9 @@ npx wrangler deploy
 - **默认视图**：编辑 `public/app.js` 的 `DEFAULT_STATE`（默认中国区、iPhone、免费榜）。
 - **配色与字体**：编辑 `public/styles.css` 顶部的 CSS 变量。
 - **客户端刷新间隔**：编辑 `public/app.js` 中的 `AUTO_REFRESH_MS`。
+- **手动刷新冷却**：编辑 `public/app.js` 的 `MANUAL_REFRESH_COOLDOWN_MS` 和 `src/api/charts.js` 的 `FRESH_COOLDOWN_MS`。
 - **服务端缓存时长**：编辑 `src/api/charts.js` 中的 `FRESH_MS`（后台刷新间隔）和 `SERVE_STALE_MS`（旧数据最长保留时间）。
+- **评分/更新数据缓存**：编辑 `src/api/apps.js` 中的 `CACHE_SECONDS`。
 
 ## API
 
@@ -188,6 +198,23 @@ Mac 的 `top-paid` / `top-grossing` 会返回 `400 CHART_UNAVAILABLE`。
 /api/app?id=1485191072&country=cn&platform=iphone
 ```
 
+### `GET /api/apps`
+
+批量获取评分与最近更新日期，供特色排序使用。
+
+| 参数 | 说明 |
+| --- | --- |
+| `ids` | 逗号分隔的最多 100 个数字 App ID |
+| `country` | `us`、`cn` |
+
+返回 `apps` 对象，按 App ID 提供 `rating`、`ratingCount`、`updatedDate`、`releaseDate`、`version`、`price`。结果缓存 6 小时。
+
+示例：
+
+```text
+/api/apps?country=cn&ids=1485191072,1605585211
+```
+
 ## 隐私
 
 - 站点代码不接入 Google Analytics、统计 SDK 或广告。
@@ -211,7 +238,8 @@ Mac 的 `top-paid` / `top-grossing` 会返回 `400 CHART_UNAVAILABLE`。
 ├── src/
 │   ├── worker.js            # Worker 入口、静态资源路由、安全头
 │   └── api/
-│       ├── charts.js        # 榜单代理 + 边缘缓存
+│       ├── charts.js        # 榜单代理 + 边缘缓存 + 刷新限流
+│       ├── apps.js          # 批量评分/更新日期
 │       └── app.js           # 应用详情代理
 ├── wrangler.toml
 ├── package.json

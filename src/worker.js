@@ -1,5 +1,6 @@
 import { onRequestGet as handleCharts } from "./api/charts.js";
 import { onRequestGet as handleApp } from "./api/app.js";
+import { onRequestGet as handleApps } from "./api/apps.js";
 
 const SECURITY_HEADERS = {
   "content-security-policy": [
@@ -70,7 +71,7 @@ export default {
     const url = new URL(request.url);
     const path = url.pathname.replace(/\/+$/, "") || "/";
 
-    if (path === "/api/charts" || path === "/api/app") {
+    if (path === "/api/charts" || path === "/api/app" || path === "/api/apps") {
       if (request.method !== "GET") {
         return withSecurityHeaders(
           json(
@@ -88,7 +89,12 @@ export default {
         );
       }
 
-      const handler = path === "/api/charts" ? handleCharts : handleApp;
+      const handler =
+        path === "/api/charts"
+          ? handleCharts
+          : path === "/api/app"
+            ? handleApp
+            : handleApps;
       try {
         const response = await handler({
           request,

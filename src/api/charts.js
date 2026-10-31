@@ -42,6 +42,9 @@ const USER_AGENTS = [
 const lastGoodPayloads = new Map();
 const LAST_GOOD_LIMIT = 12;
 const refreshInFlight = new Map();
+const lastUpstreamAttempts = new Map();
+const UPSTREAM_ATTEMPT_LIMIT = 100;
+const FRESH_COOLDOWN_MS = 30 * 1000;
 
 function jsonResponse(body, status = 200, extraHeaders = {}) {
   return new Response(JSON.stringify(body), {
@@ -312,9 +315,25 @@ async function fetchWithRetry(feedUrl) {
   return last;
 }
 
+function markUpstreamAttempt(cacheKey) {
+  lastUpstreamAttempts.delete(cacheKey);
+  lastUpstreamAttempts.set(cacheKey, Date.now());
+  if (lastUpstreamAttempts.size > UPSTREAM_ATTEMPT_LIMIT) {
+    const oldest = lastUpstreamAttempts.keys().next().value;
+    lastUpstreamAttempts.delete(oldest);
+  }
+}
+
+function upstreamAttemptedRecently(cacheKey) {
+  const last = lastUpstreamAttempts.get(cacheKey) || 0;
+  return Date.now() - last < FRESH_COOLDOWN_MS;
+}
+
 function scheduleRefresh(context, cacheKey, feedUrl, params) {
   if (refreshInFlight.has(cacheKey)) return;
+  if (upstreamAttemptedRecently(cacheKey)) return;
 
+  markUpstreamAttempt(cacheKey);
   const promise = (async () => {
     const result = await fetchWithRetry(feedUrl);
     if (!result.ok) return;
@@ -336,17 +355,27 @@ function scheduleRefresh(context, cacheKey, feedUrl, params) {
 }
 
 function respond(payload, options) {
-  const { cacheStatus, ageMs, stale = false, upstream = null } = options;
+  const {
+    cacheStatus,
+    ageMs,
+    stale = false,
+    limited = false,
+    upstream = null,
+  } = options;
   const body = { ...payload };
   delete body.stale;
+  delete body.refreshLimited;
   if (stale) body.stale = true;
+  if (limited) body.refreshLimited = true;
 
   return jsonResponse(body, 200, {
-    "cache-control": stale
-      ? "no-store"
-      : `public, max-age=${CLIENT_SECONDS}, s-maxage=300`,
+    "cache-control":
+      stale || limited
+        ? "no-store"
+        : `public, max-age=${CLIENT_SECONDS}, s-maxage=300`,
     "x-cache": cacheStatus,
     "x-data-age": String(Math.max(0, Math.round((ageMs || 0) / 1000))),
+    ...(limited ? { "x-refresh-limited": "1" } : {}),
     ...(upstream ? upstreamHeaders(upstream) : {}),
   });
 }
@@ -391,6 +420,18 @@ export async function onRequestGet(context) {
   const cacheAge = cached ? ageOf(cached) : Infinity;
   const usableCache = Boolean(cached && cacheAge < SERVE_STALE_MS);
 
+  if (
+    fresh &&
+    usableCache &&
+    upstreamAttemptedRecently(cacheKey)
+  ) {
+    return respond(cached, {
+      cacheStatus: "HIT",
+      ageMs: cacheAge,
+      limited: true,
+    });
+  }
+
   if (!fresh && usableCache) {
     if (cacheAge < FRESH_MS) {
       return respond(cached, {
@@ -416,6 +457,7 @@ export async function onRequestGet(context) {
     (genre ? `/genre=${genre}` : "") +
     "/json";
 
+  markUpstreamAttempt(cacheKey);
   const result = await fetchWithRetry(feedUrl);
 
   if (result.ok) {

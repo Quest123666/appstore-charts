@@ -18,8 +18,8 @@
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="zh_CN" />
     <link rel="icon" href="/icon.svg" type="image/svg+xml" />
-    <script src="/theme.js?v=20261031"></script>
-    <link rel="stylesheet" href="/styles.css?v=20261031" />
+    <script src="/theme.js?v=20261031b"></script>
+    <link rel="stylesheet" href="/styles.css?v=20261031b" />
   </head>
   <body>
     <a class="skip-link" href="#rankings">跳到榜单</a>
@@ -37,7 +37,7 @@
           </span>
         </a>
         <div class="header-actions">
-          <span class="live-pill" id="livePill" title="每 5 分钟自动更新">
+          <span class="live-pill" id="livePill" title="每 5 分钟检查一次，Apple 榜单约数小时更新">
             <i aria-hidden="true"></i>LIVE
           </span>
           <button class="icon-btn theme-btn" id="themeToggle" type="button" aria-label="切换为深色模式">
@@ -57,6 +57,30 @@
         </div>
       </div>
     </header>
+
+    <div class="mobile-follow" id="mobileFollow" aria-hidden="true">
+      <span class="follow-dot" aria-hidden="true"></span>
+      <span class="follow-context" id="followContext">中国 · iPhone · 免费榜</span>
+      <button class="follow-filter" id="followFilter" type="button">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M4 6h16l-6.2 7v4.6l-3.6 2V13L4 6Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" />
+        </svg>
+        <span>筛选</span>
+      </button>
+    </div>
+
+    <div class="fab-stack" id="fabStack" aria-hidden="true">
+      <button class="fab" id="fabRefresh" type="button" aria-label="刷新榜单" title="刷新榜单（30 秒内仅一次）">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M19.5 12a7.5 7.5 0 1 1-2.2-5.3M19.5 4.8v4.4h-4.4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </button>
+      <button class="fab fab-top" id="fabTop" type="button" aria-label="回到顶部" hidden>
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M12 19V5M6 11l6-6 6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </button>
+    </div>
 
     <main class="wrap">
       <section class="hero">
@@ -139,13 +163,27 @@
         </p>
       </section>
 
+      <section class="feature-bar" aria-label="特色榜排序">
+        <div class="feature-heading">
+          <span class="filter-label">特色榜</span>
+          <span class="feature-hint">在当前榜单内</span>
+        </div>
+        <div class="sort-chips" id="sortControl" role="group" aria-label="排序方式">
+          <button type="button" class="chip is-active" data-sort="chart" aria-pressed="true">榜单</button>
+          <button type="button" class="chip" data-sort="rating" aria-pressed="false">评分</button>
+          <button type="button" class="chip" data-sort="updated" aria-pressed="false">最近更新</button>
+          <button type="button" class="chip" data-sort="price" aria-pressed="false">价格</button>
+        </div>
+        <span class="sort-status" id="sortStatus" role="status"></span>
+      </section>
+
       <section class="rankings" id="rankings" aria-busy="true">
         <div id="banner" class="banner" hidden></div>
         <div id="spotlight" class="spotlight"></div>
         <div class="list-head">
           <div class="list-heading">
-            <p class="section-kicker">FULL CHART</p>
-            <h2>完整榜单 <span class="list-sub" id="listSub">TOP 100</span></h2>
+            <p class="section-kicker" id="listKicker">FULL CHART</p>
+            <h2><span id="listTitle">完整榜单</span> <span class="list-sub" id="listSub">TOP 100</span></h2>
           </div>
           <div class="list-tools">
             <label class="search-box">
@@ -187,7 +225,7 @@
               <svg viewBox="0 0 24 24" fill="none"><ellipse cx="12" cy="6" rx="7" ry="3" stroke="currentColor" stroke-width="1.6" /><path d="M5 6v6c0 1.7 3.1 3 7 3s7-1.3 7-3V6M5 12v6c0 1.7 3.1 3 7 3s7-1.3 7-3v-6" stroke="currentColor" stroke-width="1.6" /></svg>
             </span>
             <h3>数据来自 Apple</h3>
-            <p>榜单直接读取 Apple 官方 RSS，由边缘函数代理并缓存 5 分钟。排名由 Apple 生成，我们只做展示。</p>
+            <p>榜单直接读取 Apple 官方 RSS，由 Worker 代理、缓存并后台刷新。排名由 Apple 生成，我们只做展示。</p>
           </article>
           <article class="about-card">
             <span class="about-icon" aria-hidden="true">
@@ -238,6 +276,6 @@
     <noscript>
       <div class="noscript">这个榜单需要 JavaScript 才能加载。请在浏览器中启用 JavaScript。</div>
     </noscript>
-    <script src="/app.js?v=20261031" defer></script>
+    <script src="/app.js?v=20261031b" defer></script>
   </body>
 </html>

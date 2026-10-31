@@ -25,6 +25,42 @@
     { id: "top-grossing", label: "畅销榜" },
   ];
 
+  const SORT_MODES = [
+    {
+      id: "chart",
+      label: "榜单",
+      title: "完整榜单",
+      kicker: "FULL CHART",
+    },
+    {
+      id: "rating",
+      label: "评分",
+      title: "评分榜",
+      kicker: "TOP RATED",
+    },
+    {
+      id: "updated",
+      label: "最近更新",
+      title: "最近更新榜",
+      kicker: "RECENT UPDATES",
+    },
+    {
+      id: "price",
+      label: "价格",
+      title: "价格榜",
+      kicker: "LOWEST PRICE",
+    },
+  ];
+  const SORT_LABELS = Object.fromEntries(
+    SORT_MODES.map((mode) => [mode.id, mode.label]),
+  );
+  const SORT_META = Object.fromEntries(
+    SORT_MODES.map((mode) => [mode.id, mode]),
+  );
+  const MANUAL_REFRESH_COOLDOWN_MS = 30 * 1000;
+  const enrichCache = new Map();
+  const ENRICH_CACHE_MAX = 8;
+
   const CATEGORIES = [
     { id: null, label: "全部" },
     { id: "6014", label: "游戏" },
@@ -93,6 +129,7 @@
     platform: "iphone",
     chart: "top-free",
     genre: null,
+    sort: "chart",
   };
 
   const CACHE_PREFIX = "apppodium.v1.";
@@ -126,6 +163,13 @@
     lastLoadedAt: 0,
     retryTimer: 0,
     autoRetries: 0,
+    sort: DEFAULT_STATE.sort,
+    enrich: null,
+    enrichKey: "",
+    enrichSeq: 0,
+    enrichAbort: null,
+    sortLoading: false,
+    lastManualRefresh: 0,
   };
 
   let els = null;
@@ -259,13 +303,18 @@
       : DEFAULT_STATE.chart;
     let genre = params.get("genre");
     if (!genre || !CATEGORY_LABELS[genre]) genre = null;
+    const normalizedChart =
+      platform === "mac" && chart !== "top-free" ? "top-free" : chart;
+    let sort = params.get("sort");
+    if (!idOf(SORT_MODES, sort)) sort = "chart";
+    if (sort === "price" && normalizedChart === "top-free") sort = "chart";
 
     return {
       country,
       platform,
-      chart:
-        platform === "mac" && chart !== "top-free" ? "top-free" : chart,
+      chart: normalizedChart,
       genre,
+      sort,
     };
   }
 
@@ -274,6 +323,7 @@
     state.platform = next.platform;
     state.chart = next.chart;
     state.genre = next.genre;
+    state.sort = next.sort;
   }
 
   function updateURL() {
@@ -282,6 +332,7 @@
     params.set("platform", state.platform);
     params.set("chart", state.chart);
     if (state.genre) params.set("genre", state.genre);
+    if (state.sort !== "chart") params.set("sort", state.sort);
     const next = `?${params.toString()}`;
     if (window.location.search !== next) {
       window.history.replaceState(null, "", next);
@@ -427,6 +478,308 @@
     );
   }
 
+  function requiresEnrichment(sort) {
+    return sort === "rating" || sort === "updated";
+  }
+
+  function enrichmentKey() {
+    const ids = state.data?.results?.map((app) => app.id).join(",") || "";
+    return `${state.country}:${ids}`;
+  }
+
+  function getSortedResults() {
+    const results = state.data?.results || [];
+    if (state.sort === "chart") return results;
+
+    const enrichment = state.enrich || {};
+    const items = results.map((app) => ({
+      ...app,
+      enrich: enrichment[app.id] || null,
+    }));
+
+    if (state.sort === "rating") {
+      if (!state.enrich) return items;
+      return items.sort((a, b) => {
+        const aRating =
+          a.enrich && a.enrich.ratingCount > 0 ? a.enrich.rating : -1;
+        const bRating =
+          b.enrich && b.enrich.ratingCount > 0 ? b.enrich.rating : -1;
+        if (bRating !== aRating) return bRating - aRating;
+        const aCount = a.enrich?.ratingCount || 0;
+        const bCount = b.enrich?.ratingCount || 0;
+        if (bCount !== aCount) return bCount - aCount;
+        return a.rank - b.rank;
+      });
+    }
+
+    if (state.sort === "updated") {
+      if (!state.enrich) return items;
+      return items.sort((a, b) => {
+        const aTime =
+          Date.parse(
+            a.enrich?.updatedDate ||
+              a.enrich?.releaseDate ||
+              a.releaseDate ||
+              "",
+          ) || 0;
+        const bTime =
+          Date.parse(
+            b.enrich?.updatedDate ||
+              b.enrich?.releaseDate ||
+              b.releaseDate ||
+              "",
+          ) || 0;
+        if (bTime !== aTime) return bTime - aTime;
+        return a.rank - b.rank;
+      });
+    }
+
+    if (state.sort === "price") {
+      return items.sort((a, b) => {
+        const aPrice = Number(a.price) || 0;
+        const bPrice = Number(b.price) || 0;
+        if (aPrice !== bPrice) return aPrice - bPrice;
+        return a.rank - b.rank;
+      });
+    }
+
+    return items;
+  }
+
+  function positionMap(sorted) {
+    const map = new Map();
+    sorted.forEach((app, index) => map.set(app.id, index + 1));
+    return map;
+  }
+
+  function formatShortDate(value) {
+    const date = new Date(value);
+    if (Number.isNaN(date.getTime())) return "";
+    return `${date.getMonth() + 1}/${date.getDate()}`;
+  }
+
+  function metricText(app, sort) {
+    if (sort === "rating") {
+      if (!app.enrich || app.enrich.ratingCount <= 0) return "暂无评分";
+      return `★ ${Number(app.enrich.rating).toFixed(1)}`;
+    }
+    if (sort === "updated") {
+      const date =
+        app.enrich?.updatedDate ||
+        app.enrich?.releaseDate ||
+        app.releaseDate ||
+        "";
+      return date ? `${formatShortDate(date)} 更新` : "暂无日期";
+    }
+    return "";
+  }
+
+  function updateListHeading() {
+    const meta = SORT_META[state.sort] || SORT_META.chart;
+    els.listKicker.textContent = meta.kicker;
+    els.listTitle.textContent = meta.title;
+  }
+
+  function updateMobileContext() {
+    if (!els.followContext) return;
+    const country = labelOf(COUNTRIES, state.country);
+    const platform = labelOf(PLATFORMS, state.platform);
+    const chart = labelOf(CHARTS, state.chart);
+    const genre = state.genre ? CATEGORY_LABELS[state.genre] : "";
+    const sort =
+      state.sort !== "chart" ? ` · ${SORT_LABELS[state.sort]}` : "";
+    els.followContext.textContent =
+      `${country} · ${platform} · ${chart}` +
+      (genre ? ` · ${genre}` : "") +
+      sort;
+  }
+
+  function renderSortBar() {
+    if (!els.sortStatus) return;
+    const meta = SORT_META[state.sort] || SORT_META.chart;
+    let status = "在当前榜单内重新排序";
+    if (state.sortLoading) {
+      status =
+        state.sort === "updated"
+          ? "正在获取最近更新时间…"
+          : "正在获取评分数据…";
+    } else if (state.sort !== "chart") {
+      status = `已按${meta.label}排序`;
+    }
+    els.sortStatus.textContent = status;
+    els.sortStatus.classList.toggle("is-loading", state.sortLoading);
+  }
+
+  function syncSortControls() {
+    if (!els.sortControl) return;
+    for (const button of els.sortControl.querySelectorAll(
+      "button[data-sort]",
+    )) {
+      const value = button.dataset.sort;
+      const active = value === state.sort;
+      button.classList.toggle("is-active", active);
+      button.setAttribute("aria-pressed", String(active));
+      const priceUnavailable =
+        value === "price" && state.chart === "top-free";
+      button.classList.toggle("is-unavailable", priceUnavailable);
+      button.title = priceUnavailable
+        ? "免费榜所有 App 价格相同"
+        : value === "price"
+          ? "价格从低到高"
+          : "";
+    }
+    updateListHeading();
+    updateMobileContext();
+  }
+
+  function abortEnrichment() {
+    state.enrichSeq += 1;
+    if (state.enrichAbort) {
+      state.enrichAbort.abort();
+      state.enrichAbort = null;
+    }
+    state.sortLoading = false;
+  }
+
+  async function ensureEnrichment() {
+    if (!requiresEnrichment(state.sort) || !state.data) return;
+    const results = state.data.results || [];
+    if (results.length === 0) return;
+    const key = enrichmentKey();
+    if (state.enrich && state.enrichKey === key) return;
+
+    const cached = enrichCache.get(key);
+    if (cached) {
+      state.enrich = cached;
+      state.enrichKey = key;
+      state.sortLoading = false;
+      renderAll();
+      return;
+    }
+
+    if (state.enrichAbort) state.enrichAbort.abort();
+    const seq = ++state.enrichSeq;
+    const controller = new AbortController();
+    state.enrichAbort = controller;
+    state.sortLoading = true;
+    renderSortBar();
+
+    const ids = results.map((app) => app.id);
+    const params = new URLSearchParams({
+      ids: ids.join(","),
+      country: state.country,
+    });
+
+    try {
+      const response = await fetch(`/api/apps?${params.toString()}`, {
+        signal: controller.signal,
+        headers: { accept: "application/json" },
+      });
+      const payload = await response.json().catch(() => null);
+      if (seq !== state.enrichSeq) return;
+      if (!response.ok || !payload || !payload.apps) {
+        throw new Error(
+          payload?.error?.message || "评分数据暂时不可用",
+        );
+      }
+
+      state.enrich = payload.apps;
+      state.enrichKey = key;
+      enrichCache.set(key, payload.apps);
+      if (enrichCache.size > ENRICH_CACHE_MAX) {
+        enrichCache.delete(enrichCache.keys().next().value);
+      }
+      renderAll();
+    } catch (error) {
+      if (error.name === "AbortError") return;
+      if (seq !== state.enrichSeq) return;
+      state.enrich = null;
+      state.enrichKey = "";
+      state.sort = "chart";
+      state.sortLoading = false;
+      updateURL();
+      syncSortControls();
+      renderAll();
+      showToast("特色排序数据暂时不可用，已恢复榜单排序", "error");
+    } finally {
+      if (seq === state.enrichSeq) {
+        state.sortLoading = false;
+        renderSortBar();
+      }
+    }
+  }
+
+  function setSort(value) {
+    if (!SORT_META[value] || value === state.sort) return;
+    if (value === "price" && state.chart === "top-free") {
+      showToast("免费榜所有 App 价格相同，暂不支持价格排序");
+      return;
+    }
+
+    abortEnrichment();
+    state.sort = value;
+    state.sortLoading = false;
+    updateURL();
+    syncSortControls();
+    renderAll();
+    if (requiresEnrichment(value)) ensureEnrichment();
+  }
+
+  function manualRefresh() {
+    if (state.loading) return;
+    const now = Date.now();
+    if (now - state.lastManualRefresh < MANUAL_REFRESH_COOLDOWN_MS) {
+      showToast("刷新太频繁，请 30 秒后再试");
+      return;
+    }
+    state.lastManualRefresh = now;
+    load({ fresh: true });
+  }
+
+  function prefersReducedMotion() {
+    return (
+      window.matchMedia &&
+      window.matchMedia("(prefers-reduced-motion: reduce)").matches
+    );
+  }
+
+  function scrollToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: prefersReducedMotion() ? "auto" : "smooth",
+    });
+  }
+
+  let scrollTicking = false;
+
+  function onScroll() {
+    if (scrollTicking) return;
+    scrollTicking = true;
+    window.requestAnimationFrame(() => {
+      scrollTicking = false;
+      updateScrollChrome();
+    });
+  }
+
+  function updateScrollChrome() {
+    if (!els || !els.mobileFollow) return;
+    const y = window.scrollY || 0;
+    const controlsBottom = els.controls
+      ? els.controls.getBoundingClientRect().bottom
+      : 0;
+    const showFollow =
+      window.innerWidth <= 820 &&
+      controlsBottom < 8 &&
+      !els.dialog.open;
+    els.mobileFollow.classList.toggle("is-visible", showFollow);
+    els.mobileFollow.setAttribute("aria-hidden", String(!showFollow));
+
+    const showFab = y > 180 && !els.dialog.open;
+    els.fabStack.classList.toggle("is-visible", showFab);
+    els.fabStack.setAttribute("aria-hidden", String(!showFab));
+    els.fabTop.hidden = y < 560;
+  }
+
   function init() {
     els = {
       progressBar: document.getElementById("progressBar"),
@@ -446,6 +799,11 @@
       chipPrev: document.getElementById("chipPrev"),
       chipNext: document.getElementById("chipNext"),
       macNote: document.getElementById("macNote"),
+      controls: document.querySelector(".controls"),
+      sortControl: document.getElementById("sortControl"),
+      sortStatus: document.getElementById("sortStatus"),
+      listKicker: document.getElementById("listKicker"),
+      listTitle: document.getElementById("listTitle"),
       rankings: document.getElementById("rankings"),
       banner: document.getElementById("banner"),
       spotlight: document.getElementById("spotlight"),
@@ -456,6 +814,12 @@
       errorState: document.getElementById("errorState"),
       searchInput: document.getElementById("searchInput"),
       refreshBtn: document.getElementById("refreshBtn"),
+      mobileFollow: document.getElementById("mobileFollow"),
+      followContext: document.getElementById("followContext"),
+      followFilter: document.getElementById("followFilter"),
+      fabStack: document.getElementById("fabStack"),
+      fabRefresh: document.getElementById("fabRefresh"),
+      fabTop: document.getElementById("fabTop"),
       dialog: document.getElementById("appDialog"),
       dialogClose: document.getElementById("dialogClose"),
       dialogContent: document.getElementById("dialogContent"),
@@ -480,8 +844,10 @@
     }
 
     syncControls();
+    renderSortBar();
     if (state.data) renderAll();
     updateChipArrows();
+    updateScrollChrome();
     load();
 
     autoRefreshTimer = window.setInterval(() => {
@@ -576,8 +942,15 @@
       }, 120);
     });
 
-    els.refreshBtn.addEventListener("click", () => {
-      if (!state.loading) load({ fresh: true });
+    els.refreshBtn.addEventListener("click", manualRefresh);
+    els.fabRefresh.addEventListener("click", manualRefresh);
+    els.sortControl.addEventListener("click", (event) => {
+      const button =
+        event.target instanceof Element
+          ? event.target.closest("button[data-sort]")
+          : null;
+      if (!button || button.disabled) return;
+      setSort(button.dataset.sort);
     });
 
     els.chipPrev.addEventListener("click", () => {
@@ -587,14 +960,27 @@
       els.genreControl.scrollBy({ left: 320, behavior: "smooth" });
     });
 
+    els.fabTop.addEventListener("click", scrollToTop);
+    els.followFilter.addEventListener("click", () => {
+      if (!els.controls) return;
+      els.controls.scrollIntoView({
+        behavior: prefersReducedMotion() ? "auto" : "smooth",
+        block: "start",
+      });
+    });
+
     els.dialogClose.addEventListener("click", closeAppDialog);
     els.dialog.addEventListener("click", (event) => {
       if (event.target === els.dialog) closeAppDialog();
     });
     els.dialog.addEventListener("close", onDialogClosed);
 
-    window.addEventListener("resize", updateChipArrows);
+    window.addEventListener("resize", () => {
+      updateChipArrows();
+      updateScrollChrome();
+    });
     window.addEventListener("popstate", onPopState);
+    window.addEventListener("scroll", onScroll, { passive: true });
     document.addEventListener("visibilitychange", () => {
       if (
         document.visibilityState === "visible" &&
@@ -603,10 +989,16 @@
       ) {
         load();
       }
+      updateScrollChrome();
     });
 
     if (document.fonts && document.fonts.ready) {
-      document.fonts.ready.then(updateChipArrows).catch(() => {});
+      document.fonts.ready
+        .then(() => {
+          updateChipArrows();
+          updateScrollChrome();
+        })
+        .catch(() => {});
     }
   }
 
@@ -647,11 +1039,18 @@
       next.chart = "top-free";
     }
 
+    next.sort = state.sort;
+    if (next.chart === "top-free" && next.sort === "price") {
+      next.sort = "chart";
+      showToast("免费榜价格相同，已恢复榜单排序");
+    }
+
     if (
       next.country === state.country &&
       next.platform === state.platform &&
       next.chart === state.chart &&
-      next.genre === state.genre
+      next.genre === state.genre &&
+      next.sort === state.sort
     ) {
       return;
     }
@@ -660,10 +1059,15 @@
     window.clearTimeout(state.retryTimer);
     state.retryTimer = 0;
     state.autoRetries = 0;
+    abortEnrichment();
+    state.enrich = null;
+    state.enrichKey = "";
+    state.sortLoading = false;
     state.country = next.country;
     state.platform = next.platform;
     state.chart = next.chart;
     state.genre = next.genre;
+    state.sort = next.sort;
     state.query = "";
     state.error = null;
     els.searchInput.value = "";
@@ -703,7 +1107,10 @@
     const gameSelected = isGameGenre(state.genre);
     els.gameGenreRow.hidden = !gameSelected;
     updateChipStates();
+    syncSortControls();
+    renderSortBar();
     window.requestAnimationFrame(updateChipArrows);
+    window.requestAnimationFrame(updateScrollChrome);
   }
 
   function setSegmentActive(container, value) {
@@ -828,11 +1235,17 @@
       }
 
       if (fresh) {
-        if (nextData.stale) {
+        if (nextData.refreshLimited) {
+          showToast("刷新太频繁，已显示缓存");
+        } else if (nextData.stale) {
           showToast("刷新失败，正在显示缓存数据", "error");
         } else {
-          showToast(changed ? "榜单已刷新" : "已是最新榜单");
+          showToast(changed ? "榜单已刷新" : "Apple 暂未更新排名");
         }
+      }
+
+      if (requiresEnrichment(state.sort)) {
+        ensureEnrichment();
       }
     } catch (error) {
       if (error.name === "AbortError") return;
@@ -868,6 +1281,10 @@
     els.refreshBtn.classList.toggle("is-loading", state.loading);
     const label = els.refreshBtn.querySelector("span");
     if (label) label.textContent = state.loading ? "刷新中" : "刷新";
+    if (els.fabRefresh) {
+      els.fabRefresh.disabled = state.loading;
+      els.fabRefresh.classList.toggle("is-loading", state.loading);
+    }
     els.rankings.setAttribute(
       "aria-busy",
       state.loading ? "true" : "false",
@@ -879,13 +1296,20 @@
   }
 
   function renderAll() {
-    const all = state.data?.results || [];
-    const matches = state.query ? searchApps(all, state.query) : all;
+    const sorted = getSortedResults();
+    const positions = state.sort !== "chart" ? positionMap(sorted) : null;
+    const matches = state.query
+      ? searchApps(sorted, state.query)
+      : sorted;
     renderMeta();
     renderBanner();
+    renderSortBar();
     renderSpotlight();
-    renderList(all, matches);
-    renderStates(all, matches);
+    renderList(sorted, matches, positions);
+    renderStates(sorted, matches);
+    updateListHeading();
+    updateMobileContext();
+    updateScrollChrome();
   }
 
   function renderMeta() {
@@ -968,7 +1392,11 @@
       return;
     }
 
-    if (state.query || state.data.results.length === 0) {
+    if (
+      state.sort !== "chart" ||
+      state.query ||
+      state.data.results.length === 0
+    ) {
       box.hidden = true;
       return;
     }
@@ -1049,7 +1477,7 @@
     return card;
   }
 
-  function renderList(all, matches) {
+  function renderList(all, matches, positions) {
     els.list.replaceChildren();
     els.list.classList.remove("is-single");
 
@@ -1067,13 +1495,20 @@
       return;
     }
 
-    let display = state.query ? matches : all.slice(3);
-    if (!state.query && all.length < 4) display = all;
+    const customSort = state.sort !== "chart";
+    let display = state.query
+      ? matches
+      : customSort
+        ? all
+        : all.slice(3);
+    if (!state.query && !customSort && all.length < 4) display = all;
 
     if (state.query) {
       els.listSub.textContent = `${matches.length} 个结果`;
     } else if (all.length === 0) {
       els.listSub.textContent = "暂无数据";
+    } else if (customSort) {
+      els.listSub.textContent = `共 ${all.length} 款`;
     } else if (all.length >= 4) {
       els.listSub.textContent = "第 4 名起";
     } else {
@@ -1087,7 +1522,15 @@
     const right = el("div", "rank-col");
 
     display.forEach((app, index) => {
-      const card = buildRankCard(app, index);
+      const displayRank = customSort
+        ? positions?.get(app.id) || index + 1
+        : app.rank;
+      const card = buildRankCard(
+        app,
+        index,
+        displayRank,
+        customSort,
+      );
       if (index < half) left.appendChild(card);
       else right.appendChild(card);
     });
@@ -1100,23 +1543,28 @@
     }
   }
 
-  function buildRankCard(app, index) {
+  function buildRankCard(app, index, displayRank, customSort) {
     const card = el("button", "rank-card");
     card.type = "button";
-    card.dataset.rank = String(app.rank);
-    const medal = medalFor(app.rank);
+    card.dataset.rank = String(displayRank);
+    const medal = medalFor(displayRank);
     if (medal) card.dataset.medal = medal;
-    card.setAttribute(
-      "aria-label",
-      `第 ${app.rank} 名 ${app.name}，查看详情`,
-    );
+    let label = `第 ${displayRank} 名 ${app.name}`;
+    if (customSort) label += `，原榜第 ${app.rank} 名`;
+    label += "，查看详情";
+    card.setAttribute("aria-label", label);
     card.style.setProperty(
       "--delay",
       `${Math.min(index, 10) * 22}ms`,
     );
     card.addEventListener("click", () => openApp(app));
 
-    card.appendChild(el("span", "rank-num", padRank(app.rank)));
+    const rankWrap = el("span", "rank-wrap");
+    rankWrap.appendChild(el("span", "rank-num", padRank(displayRank)));
+    if (customSort) {
+      rankWrap.appendChild(el("span", "rank-origin", `原${app.rank}`));
+    }
+    card.appendChild(rankWrap);
     card.appendChild(buildIcon(app, "app-icon", index > 7));
 
     const copy = el("div", "rank-copy");
@@ -1125,6 +1573,12 @@
     meta.appendChild(
       el("span", "rank-artist", app.artist || "未知开发者"),
     );
+    if (customSort && state.sort !== "price") {
+      const metric = metricText(app, state.sort);
+      if (metric) {
+        meta.appendChild(el("span", "sort-metric", metric));
+      }
+    }
     const tag = el("span", "genre-tag", categoryLabel(app));
     tag.title = categoryLabel(app);
     meta.appendChild(tag);
@@ -1247,7 +1701,8 @@
       next.country === state.country &&
       next.platform === state.platform &&
       next.chart === state.chart &&
-      next.genre === state.genre
+      next.genre === state.genre &&
+      next.sort === state.sort
     ) {
       return;
     }
@@ -1255,6 +1710,10 @@
     window.clearTimeout(state.retryTimer);
     state.retryTimer = 0;
     state.autoRetries = 0;
+    abortEnrichment();
+    state.enrich = null;
+    state.enrichKey = "";
+    state.sortLoading = false;
     assignState(next);
     state.query = "";
     els.searchInput.value = "";
@@ -1519,6 +1978,7 @@
       state.detailAbort = null;
     }
     document.body.classList.remove("dialog-open");
+    updateScrollChrome();
   }
 
   function showToast(message, type) {
