@@ -1,0 +1,17 @@
+{
+  "name": "app-podium",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A lightweight, real-time App Store charts viewer for US and China storefronts.",
+  "license": "MIT",
+  "scripts": {
+    "dev": "wrangler pages dev public --port 8788",
+    "deploy": "wrangler pages deploy public --project-name app-podium"
+  },
+  "devDependencies": {
+    "wrangler": "^4.156.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

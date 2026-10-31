@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="zh-CN" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>AppPodium — App Store 实时榜单</title>
+    <meta
+      name="description"
+      content="美国与中国 App Store 实时排行榜。iPhone、iPad、Mac，免费榜、付费榜、畅销榜与全部分类，一屏看尽。"
+    />
+    <meta name="theme-color" content="#f4f1e8" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0e0e0f" media="(prefers-color-scheme: dark)" />
+    <meta property="og:title" content="AppPodium — App Store 实时榜单" />
+    <meta
+      property="og:description"
+      content="追踪美国与中国 App Store 的实时榜单，支持 iPhone、iPad 与 Mac，覆盖全部分类。"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="zh_CN" />
+    <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+    <script src="/theme.js"></script>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#rankings">跳到榜单</a>
+    <div id="progressBar" class="progress-bar" hidden aria-hidden="true"><span></span></div>
+
+    <header class="site-header">
+      <div class="wrap header-inner">
+        <a class="brand" href="/" aria-label="AppPodium 首页">
+          <span class="brand-mark" aria-hidden="true">
+            <i></i><i></i><i></i>
+          </span>
+          <span class="brand-copy">
+            <strong>AppPodium</strong>
+            <small>APP STORE CHARTS</small>
+          </span>
+        </a>
+        <div class="header-actions">
+          <span class="live-pill" id="livePill" title="每 5 分钟自动更新">
+            <i aria-hidden="true"></i>LIVE
+          </span>
+          <button class="icon-btn theme-btn" id="themeToggle" type="button" aria-label="切换为深色模式">
+            <svg class="icon-sun" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <circle cx="12" cy="12" r="4.2" stroke="currentColor" stroke-width="1.7" />
+              <path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.2 5.2l1.6 1.6M17.2 17.2l1.6 1.6M18.8 5.2l-1.6 1.6M6.8 17.2l-1.6 1.6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" />
+            </svg>
+            <svg class="icon-moon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M20.5 14.1A8.6 8.6 0 0 1 9.9 3.5 8.5 8.5 0 1 0 20.5 14.1Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" />
+            </svg>
+          </button>
+          <a class="icon-btn" id="repoLink" href="#" target="_blank" rel="noopener noreferrer" aria-label="查看开源仓库" hidden>
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="m8.5 8-4 4 4 4M15.5 8l4 4-4 4M13.4 5l-2.8 14" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main class="wrap">
+      <section class="hero">
+        <p class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span>LIVE APP STORE RANKINGS</p>
+        <h1>
+          <span class="hero-line">此刻，</span>
+          <span class="hero-line hero-accent">什么在榜上？</span>
+        </h1>
+        <p class="hero-sub">
+          <span>追踪美国与中国 App Store 的实时榜单。</span>
+          <span>免费、付费、畅销，iPhone、iPad 与 Mac。</span>
+        </p>
+        <div class="hero-meta">
+          <div class="meta-block">
+            <span class="meta-value" id="statCount">—</span>
+            <span class="meta-label">款 App</span>
+          </div>
+          <span class="meta-rule" aria-hidden="true"></span>
+          <div class="meta-block">
+            <span class="meta-value meta-value-time" id="statUpdated">—:—</span>
+            <span class="meta-label">榜单更新</span>
+          </div>
+          <span class="meta-rule" aria-hidden="true"></span>
+          <div class="meta-block">
+            <span class="meta-value meta-value-context" id="statPlatform">iPhone · 中国区</span>
+            <span class="meta-label">当前视图</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="controls" aria-label="榜单筛选">
+        <div class="filter-bar">
+          <div class="filter-group">
+            <span class="filter-label">商店</span>
+            <div class="segment" id="countryControl" role="group" aria-label="商店地区">
+              <button type="button" data-value="cn" class="is-active" aria-pressed="true">中国</button>
+              <button type="button" data-value="us" aria-pressed="false">美国</button>
+            </div>
+          </div>
+          <div class="filter-group">
+            <span class="filter-label">设备</span>
+            <div class="segment" id="platformControl" role="group" aria-label="设备类型">
+              <button type="button" data-value="iphone" class="is-active" aria-pressed="true">iPhone</button>
+              <button type="button" data-value="ipad" aria-pressed="false">iPad</button>
+              <button type="button" data-value="mac" aria-pressed="false">Mac</button>
+            </div>
+          </div>
+          <div class="filter-group">
+            <span class="filter-label">榜单</span>
+            <div class="segment" id="chartControl" role="group" aria-label="榜单类型">
+              <button type="button" data-value="top-free" class="is-active" aria-pressed="true">免费榜</button>
+              <button type="button" data-value="top-paid" aria-pressed="false">付费榜</button>
+              <button type="button" data-value="top-grossing" aria-pressed="false">畅销榜</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="category-bar">
+          <span class="filter-label">分类</span>
+          <div class="chip-shell">
+            <button class="scroll-btn scroll-prev" id="chipPrev" type="button" aria-label="向左滚动分类" tabindex="-1">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m14.5 6-6 6 6 6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" /></svg>
+            </button>
+            <div class="chips" id="genreControl" role="group" aria-label="应用分类"></div>
+            <button class="scroll-btn scroll-next" id="chipNext" type="button" aria-label="向右滚动分类" tabindex="-1">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m9.5 6 6 6-6 6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" /></svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="category-bar game-bar" id="gameGenreRow" hidden>
+          <span class="filter-label">子类</span>
+          <div class="chip-shell chip-shell-games">
+            <div class="chips" id="gameGenreControl" role="group" aria-label="游戏子分类"></div>
+          </div>
+        </div>
+
+        <p class="mac-note" id="macNote" hidden>
+          Apple 仅开放了 Mac 免费榜的 RSS 数据，付费榜与畅销榜暂不可用。
+        </p>
+      </section>
+
+      <section class="rankings" id="rankings" aria-busy="true">
+        <div id="banner" class="banner" hidden></div>
+        <div id="spotlight" class="spotlight"></div>
+        <div class="list-head">
+          <div class="list-heading">
+            <p class="section-kicker">FULL CHART</p>
+            <h2>完整榜单 <span class="list-sub" id="listSub">TOP 100</span></h2>
+          </div>
+          <div class="list-tools">
+            <label class="search-box">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <circle cx="10.8" cy="10.8" r="6.3" stroke="currentColor" stroke-width="1.7" />
+                <path d="m15.6 15.6 4.1 4.1" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" />
+              </svg>
+              <input
+                id="searchInput"
+                type="search"
+                placeholder="搜索应用或开发者"
+                autocomplete="off"
+                spellcheck="false"
+                aria-label="搜索当前榜单"
+              />
+            </label>
+            <button class="refresh-btn" id="refreshBtn" type="button" aria-label="刷新榜单">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M19.5 12a7.5 7.5 0 1 1-2.2-5.3M19.5 4.8v4.4h-4.4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+              <span>刷新</span>
+            </button>
+          </div>
+        </div>
+        <div id="list" class="rank-cols"></div>
+        <div id="emptyState" class="state-card empty-state" hidden></div>
+        <div id="errorState" class="state-card error-state" hidden></div>
+      </section>
+
+      <section class="about" id="about">
+        <div class="about-heading">
+          <p class="section-kicker">ABOUT</p>
+          <h2>一份轻量的榜单</h2>
+          <p>没有弹窗、没有追踪，只有此刻正在被下载的应用。</p>
+        </div>
+        <div class="about-grid">
+          <article class="about-card">
+            <span class="about-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"><ellipse cx="12" cy="6" rx="7" ry="3" stroke="currentColor" stroke-width="1.6" /><path d="M5 6v6c0 1.7 3.1 3 7 3s7-1.3 7-3V6M5 12v6c0 1.7 3.1 3 7 3s7-1.3 7-3v-6" stroke="currentColor" stroke-width="1.6" /></svg>
+            </span>
+            <h3>数据来自 Apple</h3>
+            <p>榜单直接读取 Apple 官方 RSS，由边缘函数代理并缓存 5 分钟。排名由 Apple 生成，我们只做展示。</p>
+          </article>
+          <article class="about-card">
+            <span class="about-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"><rect x="3" y="4" width="13" height="17" rx="2.5" stroke="currentColor" stroke-width="1.6" /><rect x="16" y="9" width="5" height="12" rx="1.5" stroke="currentColor" stroke-width="1.6" /><path d="M6.5 8h6M6.5 11.5h6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" /></svg>
+            </span>
+            <h3>两个商店 · 三种设备</h3>
+            <p>美国与中国区商店，iPhone、iPad 与 Mac。免费、付费、畅销榜，以及所有应用分类与游戏子类。</p>
+          </article>
+          <article class="about-card">
+            <span class="about-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M12 3.5 19 6v5.4c0 4.2-2.9 7.5-7 9.1-4.1-1.6-7-4.9-7-9.1V6l7-2.5Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" /><path d="m8.5 12 2.3 2.3 4.7-4.8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" /></svg>
+            </span>
+            <h3>开源且克制</h3>
+            <p>MIT 协议开源，不接入分析服务，不收集个人信息。主题与上次筛选只保存在你的浏览器里。</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap footer-inner">
+        <div class="footer-brand-block">
+          <span class="footer-brand">AppPodium</span>
+          <p>非官方项目。数据来自 Apple 官方 RSS，App Store 是 Apple Inc. 的商标。</p>
+        </div>
+        <div class="footer-links">
+          <a href="https://apps.apple.com/us/iphone/charts" target="_blank" rel="noopener noreferrer">美国榜单</a>
+          <a href="https://apps.apple.com/cn/iphone/charts" target="_blank" rel="noopener noreferrer">中国榜单</a>
+          <a id="footerRepo" href="#" target="_blank" rel="noopener noreferrer" hidden>GitHub</a>
+          <span>MIT License</span>
+        </div>
+      </div>
+      <div class="wrap footer-note">不收集个人数据 · 主题与筛选仅保存在本机</div>
+    </footer>
+
+    <dialog id="appDialog" class="app-dialog" aria-label="应用详情">
+      <span class="dialog-grab" aria-hidden="true"></span>
+      <button class="dialog-close" id="dialogClose" type="button" aria-label="关闭详情">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m6.5 6.5 11 11M17.5 6.5l-11 11" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" /></svg>
+      </button>
+      <div class="dialog-panel">
+        <div id="dialogContent" class="dialog-content"></div>
+      </div>
+    </dialog>
+
+    <div id="toast" class="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+
+    <noscript>
+      <div class="noscript">这个榜单需要 JavaScript 才能加载。请在浏览器中启用 JavaScript。</div>
+    </noscript>
+    <script src="/app.js" defer></script>
+  </body>
+</html>
