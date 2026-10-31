@@ -2,7 +2,7 @@
 
 一个轻量、好看的 App Store 实时榜单网页：美国 / 中国区商店，iPhone / iPad / Mac，免费榜 / 付费榜 / 畅销榜，全部应用分类与游戏子类。
 
-A lightweight, keyless App Store charts viewer for the US and China storefronts, built for Cloudflare Pages.
+A lightweight, keyless App Store charts viewer for the US and China storefronts, built for **Cloudflare Workers + Static Assets**.
 
 > 非官方项目，与 Apple Inc. 无关联。App Store 是 Apple Inc. 的商标。
 
@@ -48,18 +48,24 @@ A lightweight, keyless App Store charts viewer for the US and China storefronts,
 ## 技术栈
 
 - **前端**：原生 JavaScript、CSS、HTML，无框架、无构建步骤
-- **后端**：Cloudflare Pages Functions（`functions/` 目录）
+- **后端**：一个 Cloudflare Worker，负责 `/api/charts`、`/api/app` 与静态资源路由
+- **静态资源**：`public/` 目录，通过 Workers Static Assets 上传并缓存
 - **缓存**：Cloudflare Cache API + 浏览器 `localStorage` 兜底
-- **部署**：Cloudflare Pages + 自定义域名
+- **安全头**：Worker 为所有响应注入 CSP、X-Frame-Options 等
+- **部署**：Cloudflare Workers Builds 或 `wrangler deploy`
 - **协议**：MIT
 
 请求链路：
 
 ```text
-浏览器 → Cloudflare Pages（静态页面 + /api 函数代理）→ Apple iTunes RSS / Lookup
+浏览器
+  → Cloudflare Worker（/api 代理 + 安全头 + 静态资源）
+    → Apple iTunes RSS / Lookup
 ```
 
 代理层负责参数白名单校验、字段裁剪、安全 URL 校验和边缘缓存，避免把接口变成任意 URL 代理。
+
+> 本项目使用 Workers，不再依赖 Cloudflare Pages Functions。旧版日志里的 `npx wrangler deploy` 是 Workers Builds 的部署命令；之前的 `pages_build_output_dir` 配置会让 Wrangler 误判为 Pages 项目，现已改为 Worker + `[assets]`。
 
 ## 本地运行
 
@@ -72,9 +78,9 @@ npm run dev
 
 打开 <http://localhost:8788>。
 
-`wrangler pages dev` 会自动识别仓库根目录下的 `functions/`，因此本地即可测试真实的 `/api/charts` 与 `/api/app`。
+`wrangler dev` 会同时启动 Worker 和 `public/` 静态资源，因此本地即可测试真实的 `/api/charts`、`/api/app`、404 页面和安全响应头。
 
-## 部署到 Cloudflare Pages
+## 部署到 Cloudflare Workers
 
 ### 推送到 GitHub
 
@@ -91,39 +97,46 @@ git push -u origin main
 
 > 请勿把 Cloudflare API Token、账号 ID、个人域名、邮箱或任何密钥提交到仓库；本项目不需要这些配置。GitHub 仓库本身会展示你的账号，这是平台属性，代码中不包含个人信息。
 
-### 推荐：Git 集成（自动部署）
+### 在现有的 Worker 项目中部署
 
-1. 将本仓库推送到 GitHub（公开或私有均可）。
-2. 登录 Cloudflare Dashboard，进入 **Workers & Pages → Create → Pages → Connect to Git**。
-3. 选择你的仓库。
-4. 构建配置填写：
-   - **Framework preset**：`None`
-   - **Build command**：留空
-   - **Build output directory**：`public`
-5. 点击 **Save and Deploy**。
-6. `functions/` 会被自动编译为 Pages Functions；不需要配置任何环境变量或密钥。
+你的 Cloudflare 项目是 Worker（有 **Deploy command** 字段），不需要新建 Pages 项目。
 
-> 不要填写 `npm run build`，本项目不需要构建步骤。
+1. 确认 Worker 名称与 `wrangler.toml` 第一行 `name` 一致（当前为 `appstore-charts`）。
+   - 如果 Worker 叫别的名字，把 `wrangler.toml` 的 `name` 改成 Worker 的名字，或在 Cloudflare 里把 Worker 改名。
+2. 在 Worker 的 **Settings → Build** 中配置：
+   - **Build command**：留空，或填 `exit 0`（本项目没有构建步骤）
+   - **Deploy command**：`npx wrangler deploy`
+   - **Root directory**：`/`（仓库根目录）
+3. 推送一次新的 commit，Cloudflare 会自动安装依赖并执行 `npx wrangler deploy`。
+4. 成功后，`public/` 会作为静态资源上传，`src/worker.js` 作为入口，`/api/*` 由 Worker 处理。
 
-### 可选：Wrangler 命令行直传
+> Workers Builds 要求 Cloudflare 里的 Worker 名称与 Wrangler 配置中的 `name` 完全一致；若不一致，构建会报 `Worker name requirement` 错误。
+
+### 命令行部署（可选）
 
 ```bash
 npx wrangler login
-npx wrangler pages project create app-podium
-npx wrangler pages deploy public --project-name app-podium
+npx wrangler deploy
 ```
 
-请在**仓库根目录**执行，Wrangler 会自动把根目录下的 `functions/` 一并上传。Cloudflare 控制台的拖拽上传不支持 Functions，因此不要使用拖拽方式。
+`wrangler deploy` 会读取 `wrangler.toml`，同时上传 `src/worker.js`、`src/api/*` 和 `public/`。
 
 ### 绑定个人域名
 
-1. 进入 Cloudflare Dashboard 的 Pages 项目。
-2. 打开 **Custom domains**，点击 **Set up a custom domain**。
-3. 输入你的域名（例如 `charts.example.com`）。
-4. 如果域名已经托管在 Cloudflare，DNS 会自动配置；否则按提示在你的 DNS 服务商添加记录。
+1. 进入 Cloudflare Dashboard 的这个 Worker。
+2. 打开 **Settings → Domains & Routes**。
+3. 点击 **Add custom domain**，输入你的域名（例如 `charts.example.com`）。
+4. 如果域名已经托管在 Cloudflare，DNS 会自动配置；否则先把域名接入 Cloudflare。
 5. 等待证书签发完成即可访问。
 
 代码中不包含任何域名、账号 ID 或个人信息；域名只需在 Cloudflare 控制台绑定。
+
+### 常见报错
+
+- **`Missing entry-point to Worker script or to assets directory`**：说明 Wrangler 配置既没有 `main` 也没有 `[assets]`，或项目仍是旧的 Pages 配置。当前版本已提供两者，请确认 `wrangler.toml` 与本文一致。
+- **`It seems that you have run wrangler deploy on a Pages project`**：旧配置里有 `pages_build_output_dir`。当前版本已移除，请不要再执行 `wrangler pages deploy`。
+- **`Worker name requirement`**：把 `wrangler.toml` 的 `name` 与 Cloudflare Worker 名称改成一致。
+- **构建成功但页面 404**：确认 Deploy command 是 `npx wrangler deploy`，而不是 Pages 的部署命令；并确认 `[assets] directory = "./public"`。
 
 ## 配置
 
@@ -131,7 +144,7 @@ npx wrangler pages deploy public --project-name app-podium
 - **默认视图**：编辑 `public/app.js` 的 `DEFAULT_STATE`（默认中国区、iPhone、免费榜）。
 - **配色与字体**：编辑 `public/styles.css` 顶部的 CSS 变量。
 - **客户端刷新间隔**：编辑 `public/app.js` 中的 `AUTO_REFRESH_MS`。
-- **服务端缓存时长**：编辑 `functions/api/charts.js` 中的 `CACHE_SECONDS`。
+- **服务端缓存时长**：编辑 `src/api/charts.js` 中的 `CACHE_SECONDS`。
 
 ## API
 
@@ -179,16 +192,16 @@ Mac 的 `top-paid` / `top-grossing` 会返回 `400 CHART_UNAVAILABLE`。
 
 ```text
 .
-├── public/                 # 静态页面与前端资源
+├── public/                  # 静态页面与前端资源
 │   ├── index.html
 │   ├── styles.css
 │   ├── app.js
 │   ├── theme.js
 │   ├── icon.svg
-│   ├── _headers             # CSP 与安全响应头
 │   ├── robots.txt
 │   └── 404.html
-├── functions/
+├── src/
+│   ├── worker.js            # Worker 入口、静态资源路由、安全头
 │   └── api/
 │       ├── charts.js        # 榜单代理 + 边缘缓存
 │       └── app.js           # 应用详情代理

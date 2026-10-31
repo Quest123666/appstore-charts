@@ -120,7 +120,7 @@ export async function onRequestGet(context) {
       {
         headers: {
           accept: "application/json",
-          "user-agent": "AppPodium/1.0 (+Cloudflare Pages)",
+          "user-agent": "AppPodium/1.0 (+Cloudflare Workers)",
         },
       },
     );
