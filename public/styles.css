@@ -1387,6 +1387,27 @@ p {
   text-decoration: none;
 }
 
+.play-page .play-card {
+  align-items: flex-start;
+}
+
+.play-page .play-card .rank-name {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  white-space: normal;
+  overflow: hidden;
+}
+
+.play-page .play-card .rank-meta {
+  margin-top: 5px;
+}
+
+.play-page .play-card .rank-price,
+.play-page .play-card .rank-arrow {
+  align-self: center;
+}
+
 .play-note {
   margin: 14px 0 0;
   color: var(--muted);

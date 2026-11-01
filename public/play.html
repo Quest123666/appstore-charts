@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="zh-CN">
   <head>
     <meta charset="utf-8" />
@@ -20,8 +20,8 @@
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="zh_CN" />
     <link rel="icon" href="/icon.svg" type="image/svg+xml" />
-    <script src="/theme.js?v=20261031e"></script>
-    <link rel="stylesheet" href="/styles.css?v=20261031e" />
+    <script src="/theme.js?v=20261031f"></script>
+    <link rel="stylesheet" href="/styles.css?v=20261031f" />
   </head>
   <body class="play-page">
     <a class="skip-link" href="#playRankings">跳到榜单</a>
@@ -53,6 +53,19 @@
         </div>
       </div>
     </header>
+
+    <div class="fab-stack" id="playFabStack" aria-hidden="true">
+      <button class="fab" id="playFabRefresh" type="button" aria-label="刷新榜单" title="刷新榜单">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M19.5 12a7.5 7.5 0 1 1-2.2-5.3M19.5 4.8v4.4h-4.4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </button>
+      <button class="fab fab-top" id="playFabTop" type="button" aria-label="回到顶部" hidden>
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M12 19V5M6 11l6-6 6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </button>
+    </div>
 
     <main class="wrap">
       <section class="hero">
@@ -101,6 +114,14 @@
               <button type="button" data-value="free" class="is-active" aria-pressed="true">免费榜</button>
               <button type="button" data-value="paid" aria-pressed="false">付费榜</button>
               <button type="button" data-value="grossing" aria-pressed="false">畅销榜</button>
+            </div>
+          </div>
+          <div class="filter-group">
+            <span class="filter-label">排序</span>
+            <div class="segment" id="playSortControl" role="group" aria-label="排序方式">
+              <button type="button" data-value="chart" class="is-active" aria-pressed="true">榜内</button>
+              <button type="button" data-value="rating" aria-pressed="false">评分</button>
+              <button type="button" data-value="price" aria-pressed="false">价格</button>
             </div>
           </div>
         </div>
@@ -155,9 +176,11 @@
       <div class="wrap footer-note">数据快照每 6 小时更新 · 不收集个人数据</div>
     </footer>
 
+    <div id="playToast" class="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+
     <noscript>
       <div class="noscript">这个榜单需要 JavaScript 才能加载。请在浏览器中启用 JavaScript。</div>
     </noscript>
-    <script src="/play.js?v=20261031e" defer></script>
+    <script src="/play.js?v=20261031f" defer></script>
   </body>
 </html>

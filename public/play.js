@@ -10,10 +10,16 @@
     paid: "付费榜",
     grossing: "畅销榜",
   };
+  const SORTS = {
+    chart: "榜内顺序",
+    rating: "评分排序",
+    price: "价格排序",
+  };
 
   const state = {
     type: "apps",
     chart: "free",
+    sort: "chart",
     data: null,
     loading: false,
     error: "",
@@ -23,6 +29,8 @@
 
   let els = null;
   let searchTimer = 0;
+  let toastTimer = 0;
+  let scrollTicking = false;
 
   function el(tag, className, text) {
     const node = document.createElement(tag);
@@ -106,16 +114,21 @@
     const params = new URLSearchParams(window.location.search);
     const type = params.get("type");
     const chart = params.get("chart");
-    return {
-      type: TYPES[type] ? type : "apps",
-      chart: CHARTS[chart] ? chart : "free",
-    };
+    const sort = params.get("sort");
+    const nextType = TYPES[type] ? type : "apps";
+    const nextChart = CHARTS[chart] ? chart : "free";
+    let nextSort = SORTS[sort] ? sort : "chart";
+    if (nextSort === "price" && nextChart === "free") {
+      nextSort = "chart";
+    }
+    return { type: nextType, chart: nextChart, sort: nextSort };
   }
 
   function updateURL() {
     const params = new URLSearchParams();
     params.set("type", state.type);
     params.set("chart", state.chart);
+    if (state.sort !== "chart") params.set("sort", state.sort);
     const next = `?${params.toString()}`;
     if (window.location.search !== next) {
       window.history.replaceState(null, "", next);
@@ -130,6 +143,11 @@
     }
     for (const button of els.chartControl.querySelectorAll("button")) {
       const active = button.dataset.value === state.chart;
+      button.classList.toggle("is-active", active);
+      button.setAttribute("aria-pressed", String(active));
+    }
+    for (const button of els.sortControl.querySelectorAll("button")) {
+      const active = button.dataset.value === state.sort;
       button.classList.toggle("is-active", active);
       button.setAttribute("aria-pressed", String(active));
     }
@@ -149,7 +167,7 @@
     if (withRetry) {
       const button = el("button", "btn-primary", "重新加载");
       button.type = "button";
-      button.addEventListener("click", load);
+      button.addEventListener("click", () => load());
       els.state.appendChild(button);
     }
   }
@@ -193,32 +211,39 @@
     return image;
   }
 
-  function buildCard(app, index, typeLabel) {
+  function buildCard(app, index, typeLabel, displayRank) {
     const card = el("a", "rank-card play-card");
     const url = safePlayUrl(app.url, app.id);
     card.href = url || "https://play.google.com/store/apps";
     card.target = "_blank";
     card.rel = "noopener noreferrer";
-    card.dataset.rank = String(app.rank);
-    const medal = medalFor(app.rank);
+    card.dataset.rank = String(displayRank);
+    const medal = medalFor(displayRank);
     if (medal) card.dataset.medal = medal;
     card.setAttribute(
       "aria-label",
-      `第 ${app.rank} 名 ${app.name}，在 Google Play 打开`,
+      `第 ${displayRank} 名 ${app.name}，在 Google Play 打开`,
     );
     card.style.setProperty("--delay", `${Math.min(index, 10) * 22}ms`);
 
     const rankWrap = el("span", "rank-wrap");
-    rankWrap.appendChild(el("span", "rank-num", padRank(app.rank)));
+    rankWrap.appendChild(el("span", "rank-num", padRank(displayRank)));
+    if (displayRank !== app.rank) {
+      rankWrap.appendChild(
+        el("span", "rank-origin", `原榜 ${padRank(app.rank)}`),
+      );
+    }
     card.appendChild(rankWrap);
     card.appendChild(buildIcon(app, index));
 
     const copy = el("div", "rank-copy");
-    copy.appendChild(el("span", "rank-name", app.name));
+    const name = el("span", "rank-name", app.name);
+    name.title = app.name;
+    copy.appendChild(name);
     const meta = el("div", "rank-meta");
-    meta.appendChild(
-      el("span", "rank-artist", app.artist || "未知开发者"),
-    );
+    const artist = el("span", "rank-artist", app.artist || "未知开发者");
+    artist.title = app.artist || "未知开发者";
+    meta.appendChild(artist);
     const rating = el(
       "span",
       "sort-metric",
@@ -236,6 +261,27 @@
     return card;
   }
 
+  function sortResults(results) {
+    const sorted = results.slice();
+    if (state.sort === "rating") {
+      sorted.sort(
+        (a, b) =>
+          (Number(b.rating) || 0) - (Number(a.rating) || 0) ||
+          a.rank - b.rank,
+      );
+    } else if (state.sort === "price") {
+      sorted.sort(
+        (a, b) =>
+          (Number(a.price) || 0) - (Number(b.price) || 0) ||
+          (Number(b.rating) || 0) - (Number(a.rating) || 0) ||
+          a.rank - b.rank,
+      );
+    } else {
+      sorted.sort((a, b) => a.rank - b.rank);
+    }
+    return sorted;
+  }
+
   function render() {
     if (!state.data) {
       if (state.loading) renderSkeleton();
@@ -244,19 +290,25 @@
 
     const typeLabel = TYPES[state.type].label;
     const chartLabel = CHARTS[state.chart];
+    const sortLabel = SORTS[state.sort];
     const query = state.query.trim().toLowerCase();
-    const results = (state.data.results || []).filter((app) => {
+    const filtered = (state.data.results || []).filter((app) => {
       if (!query) return true;
       return `${app.name} ${app.artist}`
         .toLowerCase()
         .includes(query);
     });
+    const results = sortResults(filtered);
 
     els.listTitle.textContent = `${typeLabel}榜`;
-    els.listSub.textContent = `${chartLabel} · TOP ${state.data.count || 0}`;
+    els.listSub.textContent =
+      state.sort === "chart"
+        ? `${chartLabel} · TOP ${state.data.count || 0}`
+        : `${chartLabel} · ${sortLabel} · TOP ${state.data.count || 0}`;
     els.statCount.textContent = String(state.data.count || 0);
     els.statUpdated.textContent = formatUpdated(state.data.fetchedAt);
-    document.title = `${typeLabel}榜 · ${chartLabel} — Google Play 美国 | AppPodium`;
+    document.title =
+      `${typeLabel}榜 · ${chartLabel} · ${sortLabel} — Google Play 美国 | AppPodium`;
 
     if (results.length === 0) {
       els.list.replaceChildren();
@@ -277,7 +329,8 @@
     const left = el("div", "rank-col");
     const right = el("div", "rank-col");
     results.forEach((app, index) => {
-      const card = buildCard(app, index, typeLabel);
+      const displayRank = index + 1;
+      const card = buildCard(app, index, typeLabel, displayRank);
       if (index < half) left.appendChild(card);
       else right.appendChild(card);
     });
@@ -289,12 +342,32 @@
     }
   }
 
-  async function load() {
+  function showToast(message, type) {
+    if (!els.toast) return;
+    els.toast.textContent = message;
+    els.toast.className =
+      "toast is-visible" + (type === "error" ? " is-error" : "");
+    window.clearTimeout(toastTimer);
+    toastTimer = window.setTimeout(() => {
+      els.toast.classList.remove("is-visible");
+    }, 3200);
+  }
+
+  async function load(options = {}) {
     const seq = ++state.seq;
+    const manual = Boolean(options.manual);
+    const previousFetchedAt =
+      options.previous !== undefined
+        ? options.previous
+        : state.data?.fetchedAt || "";
     state.loading = true;
     state.error = "";
     els.rankings.setAttribute("aria-busy", "true");
     els.progressBar.hidden = false;
+    if (els.fabRefresh) {
+      els.fabRefresh.disabled = true;
+      els.fabRefresh.classList.add("is-loading");
+    }
     renderSkeleton();
     setState(null);
     syncControls();
@@ -318,6 +391,14 @@
       state.data = payload;
       state.loading = false;
       render();
+      if (manual) {
+        const unchanged =
+          previousFetchedAt &&
+          previousFetchedAt === payload.fetchedAt;
+        showToast(
+          unchanged ? "已刷新，数据快照未变化" : "榜单数据已刷新",
+        );
+      }
     } catch (error) {
       if (seq !== state.seq) return;
       state.loading = false;
@@ -330,13 +411,99 @@
         state.error,
         true,
       );
+      if (manual) {
+        showToast("刷新失败，请稍后再试", "error");
+      }
     } finally {
       if (seq === state.seq) {
         state.loading = false;
         els.progressBar.hidden = true;
         els.rankings.setAttribute("aria-busy", "false");
+        if (els.fabRefresh) {
+          els.fabRefresh.disabled = false;
+          els.fabRefresh.classList.remove("is-loading");
+        }
       }
     }
+  }
+
+  function setSort(value) {
+    if (!SORTS[value] || value === state.sort) return;
+    if (value === "price" && state.chart === "free") {
+      showToast("免费榜所有 App 价格相同，暂不支持价格排序");
+      return;
+    }
+    state.sort = value;
+    syncControls();
+    updateURL();
+    render();
+  }
+
+  function manualRefresh() {
+    if (state.loading) return;
+    load({
+      manual: true,
+      previous: state.data?.fetchedAt || "",
+    });
+  }
+
+  function prefersReducedMotion() {
+    return (
+      window.matchMedia &&
+      window.matchMedia("(prefers-reduced-motion: reduce)").matches
+    );
+  }
+
+  function scrollToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: prefersReducedMotion() ? "auto" : "smooth",
+    });
+  }
+
+  function updateScrollChrome() {
+    if (!els?.fabStack) return;
+    const y = window.scrollY || 0;
+    const showFab = y > 180;
+    els.fabStack.classList.toggle("is-visible", showFab);
+    els.fabStack.setAttribute("aria-hidden", String(!showFab));
+    els.fabTop.hidden = y < 560;
+  }
+
+  function onScroll() {
+    if (scrollTicking) return;
+    scrollTicking = true;
+    window.requestAnimationFrame(() => {
+      scrollTicking = false;
+      updateScrollChrome();
+    });
+  }
+
+  function initThemeToggle() {
+    const button = document.getElementById("themeToggle");
+    if (!button) return;
+    const apply = (theme) => {
+      document.documentElement.dataset.theme = theme;
+      try {
+        window.localStorage.setItem("apppodium-theme", theme);
+      } catch {}
+      button.setAttribute(
+        "aria-label",
+        theme === "dark" ? "切换为浅色模式" : "切换为深色模式",
+      );
+    };
+    const current =
+      document.documentElement.dataset.theme === "dark"
+        ? "dark"
+        : "light";
+    apply(current);
+    button.addEventListener("click", () => {
+      apply(
+        document.documentElement.dataset.theme === "dark"
+          ? "light"
+          : "dark",
+      );
+    });
   }
 
   function bindEvents() {
@@ -359,9 +526,21 @@
           : null;
       if (!button || button.dataset.value === state.chart) return;
       state.chart = button.dataset.value;
+      if (state.chart === "free" && state.sort === "price") {
+        state.sort = "chart";
+      }
       state.query = "";
       els.searchInput.value = "";
       load();
+    });
+
+    els.sortControl.addEventListener("click", (event) => {
+      const button =
+        event.target instanceof Element
+          ? event.target.closest("button[data-value]")
+          : null;
+      if (!button) return;
+      setSort(button.dataset.value);
     });
 
     els.searchInput.addEventListener("input", () => {
@@ -371,12 +550,17 @@
         render();
       }, 80);
     });
+
+    els.fabRefresh.addEventListener("click", manualRefresh);
+    els.fabTop.addEventListener("click", scrollToTop);
+    window.addEventListener("scroll", onScroll, { passive: true });
   }
 
   function init() {
     els = {
       typeControl: document.getElementById("playTypeControl"),
       chartControl: document.getElementById("playChartControl"),
+      sortControl: document.getElementById("playSortControl"),
       searchInput: document.getElementById("playSearchInput"),
       list: document.getElementById("playList"),
       listTitle: document.getElementById("playListTitle"),
@@ -386,13 +570,20 @@
       state: document.getElementById("playState"),
       rankings: document.getElementById("playRankings"),
       progressBar: document.getElementById("progressBar"),
+      fabStack: document.getElementById("playFabStack"),
+      fabRefresh: document.getElementById("playFabRefresh"),
+      fabTop: document.getElementById("playFabTop"),
+      toast: document.getElementById("playToast"),
     };
 
     const initial = readStateFromURL();
     state.type = initial.type;
     state.chart = initial.chart;
+    state.sort = initial.sort;
+    initThemeToggle();
     syncControls();
     bindEvents();
+    updateScrollChrome();
     load();
   }
 
