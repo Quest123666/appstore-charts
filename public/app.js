@@ -1516,9 +1516,15 @@
     body.appendChild(buildIcon(app, "mini-icon", true));
     const copy = el("div", "mini-copy");
     copy.appendChild(el("span", "mini-name", app.name));
-    copy.appendChild(
+    const meta = el("div", "mini-meta");
+    meta.appendChild(
       el("span", "mini-artist", app.artist || "未知开发者"),
     );
+    const category = categoryLabel(app);
+    const tag = el("span", "mini-tag", category);
+    tag.title = category;
+    meta.appendChild(tag);
+    copy.appendChild(meta);
     body.appendChild(copy);
 
     card.appendChild(top);
