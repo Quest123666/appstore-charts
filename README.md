@@ -42,7 +42,8 @@ A lightweight, keyless App Store charts viewer for the US and China storefronts,
 - 每个榜单最多返回 100 条（部分分类会少于 100 条）。
 - 应用详情（评分、描述、截图）来自 iTunes Lookup，按需加载并缓存 1 小时。
 - 榜单分类使用 Apple 的 iTunes genre ID（如 `6014` = 游戏）。
-- 特色排序的评分和“最近更新”日期来自批量 iTunes Lookup，缓存 6 小时；价格直接来自 RSS。排序范围仅限当前 100 款，不是全商店排名。
+- 特色排序的评分和“最近更新”日期来自批量 iTunes Lookup；价格直接来自 RSS。排序范围仅限当前 100 款，不是全商店排名。
+- 正常请求由浏览器直连 Apple（用户网络）；只有直连失败时才回退到 Worker 代理和缓存。Cloudflare 出口访问 Apple 会返回 403，这是直连优先的原因。
 - 免费榜所有 App 价格相同，因此价格排序只在付费榜/畅销榜可用；点击价格按钮会提示原因。
 
 数据来源参考：
@@ -54,9 +55,10 @@ A lightweight, keyless App Store charts viewer for the US and China storefronts,
 ## 技术栈
 
 - **前端**：原生 JavaScript、CSS、HTML，无框架、无构建步骤
-- **后端**：一个 Cloudflare Worker，负责 `/api/charts`、`/api/app`、`/api/apps` 与静态资源路由
+- **数据请求**：浏览器优先直连 Apple（`connect-src` 已放行 `https://itunes.apple.com`），避免 Cloudflare 出口 403
+- **后端兜底**：一个 Cloudflare Worker，负责 `/api/charts`、`/api/app`、`/api/apps` 与静态资源路由
 - **静态资源**：`public/` 目录，通过 Workers Static Assets 上传并缓存
-- **缓存**：榜单 Cache API（5 分钟新鲜度 / 24 小时保留）、评分数据 6 小时缓存，外加浏览器 `localStorage` 兜底
+- **缓存**：直连请求由浏览器缓存，兜底路径使用榜单 Cache API（5 分钟新鲜度 / 24 小时保留）和评分数据 6 小时缓存
 - **安全头**：Worker 为所有响应注入 CSP、X-Frame-Options 等
 - **部署**：Cloudflare Workers Builds 或 `wrangler deploy`
 - **协议**：MIT
@@ -65,13 +67,13 @@ A lightweight, keyless App Store charts viewer for the US and China storefronts,
 
 ```text
 浏览器
-  → Cloudflare Worker（页面、JS/CSS、/api 代理、安全头）
-    → Apple iTunes RSS / Lookup
+  → Apple iTunes RSS / Lookup（优先，直连用户自己的网络）
+  → Cloudflare Worker（仅在直连失败时兜底 /api + 静态资源）
 ```
 
-应用图标和截图由 Apple 的 `mzstatic.com` CDN 直接提供，不经过 Worker，因此不会额外消耗 Worker 流量。榜单数据和详情 API 才走 Cloudflare。
+Apple 对 `itunes.apple.com` 返回了 `Access-Control-Allow-Origin: *`，因此浏览器可以直接读取 RSS 和 Lookup JSON，不需要经过 Worker。应用图标和截图也一直由 `mzstatic.com` 直接提供。
 
-代理层负责参数白名单校验、字段裁剪、安全 URL 校验和边缘缓存，避免把接口变成任意 URL 代理。
+Worker 侧保留 `/api/charts`、`/api/apps`、`/api/app` 作为兜底和缓存层；正常情况下不代理 Apple 数据，避免 Cloudflare 出口 IP 被 Apple 403 限制。代理层仍负责参数白名单、字段裁剪、安全 URL 校验和缓存。
 
 > 本项目使用 Workers，不再依赖 Cloudflare Pages Functions。旧版日志里的 `npx wrangler deploy` 是 Workers Builds 的部署命令；之前的 `pages_build_output_dir` 配置会让 Wrangler 误判为 Pages 项目，现已改为 Worker + `[assets]`。
 
@@ -141,7 +143,8 @@ npx wrangler deploy
 
 ### 常见问题
 
-- **偶发显示“Apple 榜单接口暂时不可用”**：这是 Apple 公开 RSS 自身的 502/超时，不是域名被 Cloudflare 禁用。当前版本会重试、保留 24 小时缓存并后台刷新；如果是全新边缘节点且缓存为空，首次请求仍可能短暂失败，页面会在 6 秒后自动再试一次。
+- **偶发显示“Apple 榜单接口暂时不可用”**：优先检查是否浏览器直连 Apple 也被网络限制。Cloudflare Worker 的出口 IP 访问 Apple 会返回 `403`（线上可用 `x-upstream-status: 403` 确认），所以页面默认改为浏览器直连；只有直连和 Worker 兜底都失败时才会显示该错误。
+- **线上看得到 `x-upstream-status: 403`**：这是 Cloudflare 出口被 Apple 拒绝，不是你的域名被禁用；浏览器直连不受影响。
 - **手动刷新后排名没变**：Apple 榜单通常一天只更新数次，刷新只是检查最新数据。成功但无变化时页面会提示“Apple 暂未更新排名”；手动刷新有 30 秒冷却。
 - **价格排序不可点/无变化**：免费榜所有 App 都是 0 元，价格排序只在付费榜和畅销榜生效。
 - **特色榜为什么只有 100 款**：评分/更新/价格排序是在当前 Apple 前 100 名内重新排序，不是全商店总榜；做全商店榜需要额外抓取或长期快照。
@@ -230,6 +233,7 @@ Mac 的 `top-paid` / `top-grossing` 会返回 `400 CHART_UNAVAILABLE`。
 ├── public/                  # 静态页面与前端资源
 │   ├── index.html
 │   ├── styles.css
+│   ├── apple-direct.js
 │   ├── app.js
 │   ├── theme.js
 │   ├── icon.svg

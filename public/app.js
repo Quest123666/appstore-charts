@@ -166,6 +166,7 @@
     sort: DEFAULT_STATE.sort,
     enrich: null,
     enrichKey: "",
+    enrichPendingKey: "",
     enrichSeq: 0,
     enrichAbort: null,
     sortLoading: false,
@@ -638,7 +639,39 @@
       state.enrichAbort.abort();
       state.enrichAbort = null;
     }
+    state.enrichPendingKey = "";
     state.sortLoading = false;
+  }
+
+  async function fetchAppsPayload(ids, signal) {
+    if (window.AppleDirect && typeof window.AppleDirect.fetchApps === "function") {
+      try {
+        const apps = await window.AppleDirect.fetchApps(
+          ids,
+          state.country,
+          signal,
+        );
+        if (apps && Object.keys(apps).length > 0) return apps;
+      } catch (error) {
+        if (error.name === "AbortError") throw error;
+      }
+    }
+
+    const params = new URLSearchParams({
+      ids: ids.join(","),
+      country: state.country,
+    });
+    const response = await fetch(`/api/apps?${params.toString()}`, {
+      signal,
+      headers: { accept: "application/json" },
+    });
+    const payload = await response.json().catch(() => null);
+    if (!response.ok || !payload || !payload.apps) {
+      throw new Error(
+        payload?.error?.message || "评分数据暂时不可用",
+      );
+    }
+    return payload.apps;
   }
 
   async function ensureEnrichment() {
@@ -647,6 +680,7 @@
     if (results.length === 0) return;
     const key = enrichmentKey();
     if (state.enrich && state.enrichKey === key) return;
+    if (state.sortLoading && state.enrichPendingKey === key) return;
 
     const cached = enrichCache.get(key);
     if (cached) {
@@ -661,31 +695,22 @@
     const seq = ++state.enrichSeq;
     const controller = new AbortController();
     state.enrichAbort = controller;
+    state.enrichPendingKey = key;
     state.sortLoading = true;
     renderSortBar();
 
     const ids = results.map((app) => app.id);
-    const params = new URLSearchParams({
-      ids: ids.join(","),
-      country: state.country,
-    });
 
     try {
-      const response = await fetch(`/api/apps?${params.toString()}`, {
-        signal: controller.signal,
-        headers: { accept: "application/json" },
-      });
-      const payload = await response.json().catch(() => null);
+      const apps = await fetchAppsPayload(ids, controller.signal);
       if (seq !== state.enrichSeq) return;
-      if (!response.ok || !payload || !payload.apps) {
-        throw new Error(
-          payload?.error?.message || "评分数据暂时不可用",
-        );
+      if (!apps || Object.keys(apps).length === 0) {
+        throw new Error("评分数据暂时不可用");
       }
 
-      state.enrich = payload.apps;
+      state.enrich = apps;
       state.enrichKey = key;
-      enrichCache.set(key, payload.apps);
+      enrichCache.set(key, apps);
       if (enrichCache.size > ENRICH_CACHE_MAX) {
         enrichCache.delete(enrichCache.keys().next().value);
       }
@@ -703,6 +728,7 @@
       showToast("特色排序数据暂时不可用，已恢复榜单排序", "error");
     } finally {
       if (seq === state.enrichSeq) {
+        state.enrichPendingKey = "";
         state.sortLoading = false;
         renderSortBar();
       }
@@ -1062,6 +1088,7 @@
     abortEnrichment();
     state.enrich = null;
     state.enrichKey = "";
+    state.enrichPendingKey = "";
     state.sortLoading = false;
     state.country = next.country;
     state.platform = next.platform;
@@ -1166,6 +1193,56 @@
     els.chipNext.hidden = !canScroll;
   }
 
+  async function fetchChartPayload(signal, fresh) {
+    if (window.AppleDirect && typeof window.AppleDirect.fetchChart === "function") {
+      try {
+        const direct = await window.AppleDirect.fetchChart(
+          {
+            country: state.country,
+            platform: state.platform,
+            chart: state.chart,
+            genre: state.genre,
+          },
+          signal,
+        );
+        if (direct && Array.isArray(direct.results)) return direct;
+      } catch (error) {
+        if (error.name === "AbortError") throw error;
+      }
+    }
+
+    const params = new URLSearchParams({
+      country: state.country,
+      platform: state.platform,
+      chart: state.chart,
+    });
+    if (state.genre) params.set("genre", state.genre);
+    if (fresh) params.set("fresh", "1");
+
+    const response = await fetch(`/api/charts?${params.toString()}`, {
+      signal,
+      headers: { accept: "application/json" },
+      cache: fresh ? "no-store" : "default",
+    });
+    let payload;
+    try {
+      payload = await response.json();
+    } catch {
+      throw new Error("榜单返回格式异常");
+    }
+
+    if (
+      !response.ok ||
+      !payload ||
+      payload.ok === false ||
+      !Array.isArray(payload.results)
+    ) {
+      throw new Error(payload?.error?.message || "榜单加载失败");
+    }
+
+    return payload;
+  }
+
   async function load(options = {}) {
     const fresh = Boolean(options.fresh);
     const seq = ++state.seq;
@@ -1186,37 +1263,9 @@
     updateLoadingUI();
     if (!hadData) renderAll();
 
-    const params = new URLSearchParams({
-      country: state.country,
-      platform: state.platform,
-      chart: state.chart,
-    });
-    if (state.genre) params.set("genre", state.genre);
-    if (fresh) params.set("fresh", "1");
-
     try {
-      const response = await fetch(`/api/charts?${params.toString()}`, {
-        signal: controller.signal,
-        headers: { accept: "application/json" },
-        cache: fresh ? "no-store" : "default",
-      });
-      let payload;
-      try {
-        payload = await response.json();
-      } catch {
-        throw new Error("榜单返回格式异常");
-      }
-
+      const payload = await fetchChartPayload(controller.signal, fresh);
       if (seq !== state.seq) return;
-
-      if (
-        !response.ok ||
-        !payload ||
-        payload.ok === false ||
-        !Array.isArray(payload.results)
-      ) {
-        throw new Error(payload?.error?.message || "榜单加载失败");
-      }
 
       const nextData = sanitizeData(payload, state.country);
       const changed =
@@ -1713,6 +1762,7 @@
     abortEnrichment();
     state.enrich = null;
     state.enrichKey = "";
+    state.enrichPendingKey = "";
     state.sortLoading = false;
     assignState(next);
     state.query = "";
@@ -1727,6 +1777,37 @@
     syncControls();
     if (state.data) renderAll();
     load();
+  }
+
+  async function fetchAppPayload(id, signal) {
+    if (window.AppleDirect && typeof window.AppleDirect.fetchDetail === "function") {
+      try {
+        const detail = await window.AppleDirect.fetchDetail(
+          id,
+          state.country,
+          state.platform,
+          signal,
+        );
+        if (detail) return detail;
+      } catch (error) {
+        if (error.name === "AbortError") throw error;
+      }
+    }
+
+    const params = new URLSearchParams({
+      id,
+      country: state.country,
+      platform: state.platform,
+    });
+    const response = await fetch(`/api/app?${params.toString()}`, {
+      signal,
+      headers: { accept: "application/json" },
+    });
+    const payload = await response.json().catch(() => null);
+    if (!response.ok || !payload || !payload.app) {
+      throw new Error(payload?.error?.message || "应用详情加载失败");
+    }
+    return payload.app;
   }
 
   async function openApp(app) {
@@ -1750,23 +1831,10 @@
     state.detailAbort = controller;
 
     try {
-      const params = new URLSearchParams({
-        id: app.id,
-        country: state.country,
-        platform: state.platform,
-      });
-      const response = await fetch(`/api/app?${params.toString()}`, {
-        signal: controller.signal,
-        headers: { accept: "application/json" },
-      });
-      const payload = await response.json().catch(() => null);
+      const appDetail = await fetchAppPayload(app.id, controller.signal);
 
       if (seq !== state.detailSeq) return;
-      if (!response.ok || !payload || !payload.app) {
-        throw new Error(payload?.error?.message || "应用详情加载失败");
-      }
-
-      const detail = sanitizeDetail(payload.app, app);
+      const detail = sanitizeDetail(appDetail, app);
       detailCache.set(key, detail);
       if (detailCache.size > 20) {
         detailCache.delete(detailCache.keys().next().value);

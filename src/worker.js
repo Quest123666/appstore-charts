@@ -8,7 +8,7 @@ const SECURITY_HEADERS = {
     "img-src 'self' https://*.mzstatic.com data:",
     "style-src 'self' 'unsafe-inline'",
     "script-src 'self'",
-    "connect-src 'self'",
+    "connect-src 'self' https://itunes.apple.com",
     "font-src 'self'",
     "object-src 'none'",
     "base-uri 'self'",
