@@ -5,7 +5,7 @@ import { onRequestGet as handleApps } from "./api/apps.js";
 const SECURITY_HEADERS = {
   "content-security-policy": [
     "default-src 'self'",
-    "img-src 'self' https://*.mzstatic.com data:",
+    "img-src 'self' https://*.mzstatic.com https://*.googleusercontent.com data:",
     "style-src 'self' 'unsafe-inline'",
     "script-src 'self'",
     "connect-src 'self' https://itunes.apple.com",
@@ -33,6 +33,7 @@ function withSecurityHeaders(response, path = "") {
   if (
     !isApi &&
     (path === "/" ||
+      path === "/play" ||
       /\.(?:html|css|js)$/i.test(path) ||
       response.status === 404 ||
       response.status >= 500)

@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>美国 Google Play 榜 — AppPodium</title>
+    <meta
+      name="description"
+      content="美国 Google Play 应用与游戏排行榜，免费榜、付费榜和畅销榜。"
+    />
+    <meta name="theme-color" content="#f4f0e7" />
+    <meta property="og:title" content="美国 Google Play 榜 — AppPodium" />
+    <meta
+      property="og:description"
+      content="美国 Google Play 应用与游戏排行榜，免费榜、付费榜和畅销榜。"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="zh_CN" />
+    <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+    <script src="/theme.js?v=20261031e"></script>
+    <link rel="stylesheet" href="/styles.css?v=20261031e" />
+  </head>
+  <body class="play-page">
+    <a class="skip-link" href="#playRankings">跳到榜单</a>
+    <div id="progressBar" class="progress-bar" hidden aria-hidden="true"><span></span></div>
+
+    <header class="site-header">
+      <div class="wrap header-inner">
+        <a class="brand" href="/" aria-label="AppPodium 首页">
+          <span class="brand-mark" aria-hidden="true">
+            <i></i><i></i><i></i>
+          </span>
+          <span class="brand-copy">
+            <strong>AppPodium</strong>
+            <small>APP STORE &amp; PLAY</small>
+          </span>
+        </a>
+        <div class="header-actions">
+          <a class="header-link" href="/">App Store</a>
+          <a class="header-link is-active" href="/play.html" aria-current="page">Google Play</a>
+          <button class="icon-btn theme-btn" id="themeToggle" type="button" aria-label="切换为深色模式">
+            <svg class="icon-sun" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <circle cx="12" cy="12" r="4.2" stroke="currentColor" stroke-width="1.7" />
+              <path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.2 5.2l1.6 1.6M17.2 17.2l1.6 1.6M18.8 5.2l-1.6 1.6M6.8 17.2l-1.6 1.6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" />
+            </svg>
+            <svg class="icon-moon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M20.5 14.1A8.6 8.6 0 0 1 9.9 3.5 8.5 8.5 0 1 0 20.5 14.1Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main class="wrap">
+      <section class="hero">
+        <p class="eyebrow">
+          <span class="eyebrow-dot" aria-hidden="true"></span>
+          GOOGLE PLAY · UNITED STATES
+        </p>
+        <h1>
+          <span class="hero-line">美国</span>
+          <span class="hero-line hero-accent">Google Play 榜</span>
+        </h1>
+        <p class="hero-sub">
+          <span>应用与游戏的免费、付费和畅销排行。</span>
+          <span>每 6 小时更新一次数据快照，点击卡片前往 Google Play。</span>
+        </p>
+        <div class="hero-meta">
+          <div class="meta-block">
+            <span class="meta-value" id="statCount">—</span>
+            <span class="meta-label">款 App</span>
+          </div>
+          <span class="meta-rule" aria-hidden="true"></span>
+          <div class="meta-block">
+            <span class="meta-value meta-value-time" id="statUpdated">—</span>
+            <span class="meta-label">数据更新</span>
+          </div>
+          <span class="meta-rule" aria-hidden="true"></span>
+          <div class="meta-block">
+            <span class="meta-value meta-value-context">Google Play · 美国</span>
+            <span class="meta-label">当前视图</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="controls" aria-label="Google Play 榜单筛选">
+        <div class="filter-bar">
+          <div class="filter-group">
+            <span class="filter-label">类型</span>
+            <div class="segment" id="playTypeControl" role="group" aria-label="应用类型">
+              <button type="button" data-value="apps" class="is-active" aria-pressed="true">应用</button>
+              <button type="button" data-value="games" aria-pressed="false">游戏</button>
+            </div>
+          </div>
+          <div class="filter-group">
+            <span class="filter-label">榜单</span>
+            <div class="segment" id="playChartControl" role="group" aria-label="榜单类型">
+              <button type="button" data-value="free" class="is-active" aria-pressed="true">免费榜</button>
+              <button type="button" data-value="paid" aria-pressed="false">付费榜</button>
+              <button type="button" data-value="grossing" aria-pressed="false">畅销榜</button>
+            </div>
+          </div>
+        </div>
+        <p class="play-note">
+          Google Play 没有公开榜单 API；本页展示美国区数据快照，由 GitHub Action 定时更新。
+        </p>
+      </section>
+
+      <section class="rankings" id="playRankings" aria-busy="true">
+        <div class="list-head">
+          <div class="list-heading">
+            <p class="section-kicker">GOOGLE PLAY · US</p>
+            <h2>
+              <span id="playListTitle">应用榜</span>
+              <span class="list-sub" id="playListSub">免费榜 · TOP 100</span>
+            </h2>
+          </div>
+          <div class="list-tools">
+            <label class="search-box">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <circle cx="10.8" cy="10.8" r="6.3" stroke="currentColor" stroke-width="1.7" />
+                <path d="m15.6 15.6 4.1 4.1" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" />
+              </svg>
+              <input
+                id="playSearchInput"
+                type="search"
+                placeholder="搜索应用或开发者"
+                autocomplete="off"
+                spellcheck="false"
+                aria-label="搜索当前 Google Play 榜单"
+              />
+            </label>
+          </div>
+        </div>
+        <div id="playList" class="rank-cols"></div>
+        <div id="playState" class="state-card error-state" hidden></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap footer-inner">
+        <div class="footer-brand-block">
+          <span class="footer-brand">AppPodium</span>
+          <p>非官方项目。数据来自 Google Play 公开榜单，Google Play 是 Google LLC 的商标。</p>
+        </div>
+        <div class="footer-links">
+          <a href="https://play.google.com/store/apps" target="_blank" rel="noopener noreferrer">Google Play</a>
+          <a href="/">App Store 榜</a>
+          <span>MIT License</span>
+        </div>
+      </div>
+      <div class="wrap footer-note">数据快照每 6 小时更新 · 不收集个人数据</div>
+    </footer>
+
+    <noscript>
+      <div class="noscript">这个榜单需要 JavaScript 才能加载。请在浏览器中启用 JavaScript。</div>
+    </noscript>
+    <script src="/play.js?v=20261031e" defer></script>
+  </body>
+</html>

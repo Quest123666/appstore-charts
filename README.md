@@ -1,10 +1,10 @@
 # AppPodium
 
-一个轻量、好看的 App Store 实时榜单网页：美国 / 中国区商店，iPhone / iPad / Mac，免费榜 / 付费榜 / 畅销榜，全部应用分类与游戏子类。
+一个轻量、好看的 App Store / Google Play 榜单网页：美国 / 中国区 App Store，iPhone / iPad / Mac，免费榜 / 付费榜 / 畅销榜，全部应用分类与游戏子类；另有美国 Google Play 应用 / 游戏榜。
 
-A lightweight, keyless App Store charts viewer for the US and China storefronts, built for **Cloudflare Workers + Static Assets**.
+A lightweight, keyless App Store and Google Play charts viewer, built for **Cloudflare Workers + Static Assets**.
 
-> 非官方项目，与 Apple Inc. 无关联。App Store 是 Apple Inc. 的商标。
+> 非官方项目，与 Apple Inc.、Google LLC 无关联。App Store 与 Google Play 是其各自公司的商标。
 
 ## 功能
 
@@ -12,6 +12,7 @@ A lightweight, keyless App Store charts viewer for the US and China storefronts,
 - **三种设备**：iPhone、iPad、Mac
 - **三类榜单**：免费榜、付费榜、畅销榜
 - **完整分类**：全部应用分类 + 18 个游戏子类
+- **Google Play 美国榜**：应用 / 游戏 × 免费 / 付费 / 畅销，独立页面 `/play.html`
 - **特色排序**：在当前榜单内按评分、最近更新、价格重新排序，并保留原 Apple 榜名次
 - **快捷操作**：滚动后右下角悬浮“手动刷新 / 一键回顶”；手机端滚动时顶部出现跟随筛选栏
 - **榜单搜索**：在当前榜单中按应用名、开发者、分类即时搜索
@@ -46,16 +47,28 @@ A lightweight, keyless App Store charts viewer for the US and China storefronts,
 - 正常请求由浏览器直连 Apple（用户网络）；只有直连失败时才回退到 Worker 代理和缓存。Cloudflare 出口访问 Apple 会返回 403，这是直连优先的原因。
 - 免费榜所有 App 价格相同，因此价格排序只在付费榜/畅销榜可用；点击价格按钮会提示原因。
 
+### Google Play（美国）
+
+- Google Play 没有像 Apple RSS 那样的官方榜单接口。
+- `scripts/update-play-charts.mjs` 通过 `google-play-scraper` 生成 6 个静态快照：应用 / 游戏 × 免费 / 付费 / 畅销。
+- GitHub Action `.github/workflows/update-play-charts.yml` 每 6 小时更新 `public/data/play-us-*.json` 并提交，随后 Cloudflare 自动部署。
+- 页面运行时只读取自己的静态 JSON，不请求 Google Play，避免线上抓取被限流。
+- 卡片点击直接打开 Google Play；图标来自 `googleusercontent.com`，CSP 已放行该图片域名。
+- 数据快照不是逐秒实时；页面显示实际更新时间。
+
 数据来源参考：
 
 - [Apple RSS Feed Generator](https://rss.applemarketingtools.com/)
 - [美国区 App Store 榜单](https://apps.apple.com/us/iphone/charts)
 - [中国区 App Store 榜单](https://apps.apple.com/cn/iphone/charts)
+- [美国区 Google Play](https://play.google.com/store/apps?hl=en&gl=us)
+- [google-play-scraper](https://github.com/facundoolano/google-play-scraper)
 
 ## 技术栈
 
 - **前端**：原生 JavaScript、CSS、HTML，无框架、无构建步骤
-- **数据请求**：浏览器优先直连 Apple（`connect-src` 已放行 `https://itunes.apple.com`），避免 Cloudflare 出口 403
+- **Apple 数据**：浏览器优先直连 Apple（`connect-src` 已放行 `https://itunes.apple.com`），避免 Cloudflare 出口 403
+- **Google Play 数据**：GitHub Action 生成静态快照，页面运行时只读 `public/data`，不访问 Google
 - **后端兜底**：一个 Cloudflare Worker，负责 `/api/charts`、`/api/app`、`/api/apps` 与静态资源路由
 - **静态资源**：`public/` 目录，通过 Workers Static Assets 上传并缓存
 - **缓存**：直连请求由浏览器缓存，兜底路径使用榜单 Cache API（5 分钟新鲜度 / 24 小时保留）和评分数据 6 小时缓存
@@ -86,9 +99,17 @@ npm install
 npm run dev
 ```
 
-打开 <http://localhost:8788>。
+打开 <http://localhost:8788>（App Store 榜）和 <http://localhost:8788/play.html>（Google Play 美国榜）。
 
 `wrangler dev` 会同时启动 Worker 和 `public/` 静态资源，因此本地即可测试真实的 `/api/charts`、`/api/app`、404 页面和安全响应头。
+
+更新 Google Play 静态快照：
+
+```bash
+npm run update:play
+```
+
+该脚本会访问 Google Play 并写入 `public/data/play-us-*.json`；页面运行时不需要访问 Google。
 
 ## 部署到 Cloudflare Workers
 
@@ -121,6 +142,14 @@ git push -u origin main
 4. 成功后，`public/` 会作为静态资源上传，`src/worker.js` 作为入口，`/api/*` 由 Worker 处理。
 
 > Workers Builds 要求 Cloudflare 里的 Worker 名称与 Wrangler 配置中的 `name` 完全一致；若不一致，构建会报 `Worker name requirement` 错误。
+
+### Google Play 自动更新
+
+- 工作流：`.github/workflows/update-play-charts.yml`。
+- 默认每 6 小时运行一次，也可在 GitHub Actions 页面手动触发。
+- 工作流会生成 6 个 JSON 并自动 commit；Cloudflare Workers Builds 随后自动部署。
+- 仓库需要允许 Actions 写入内容（工作流已声明 `contents: write`）。如果默认分支有保护规则，需要为 GitHub Actions 放行，或改为手动运行 `npm run update:play` 后 push。
+- 如果 Google 对 GitHub 出口也临时限流，工作流会失败，现有快照保持可用。
 
 ### 命令行部署（可选）
 
@@ -231,20 +260,26 @@ Mac 的 `top-paid` / `top-grossing` 会返回 `400 CHART_UNAVAILABLE`。
 ```text
 .
 ├── public/                  # 静态页面与前端资源
-│   ├── index.html
+│   ├── index.html           # App Store 榜
+│   ├── play.html            # Google Play 美国榜
+│   ├── play.js              # Google Play 页面渲染
 │   ├── styles.css
 │   ├── apple-direct.js
 │   ├── app.js
 │   ├── theme.js
+│   ├── data/                # Google Play 静态快照（6 个 JSON）
 │   ├── icon.svg
 │   ├── robots.txt
 │   └── 404.html
+├── scripts/
+│   └── update-play-charts.mjs
 ├── src/
 │   ├── worker.js            # Worker 入口、静态资源路由、安全头
 │   └── api/
 │       ├── charts.js        # 榜单代理 + 边缘缓存 + 刷新限流
 │       ├── apps.js          # 批量评分/更新日期
 │       └── app.js           # 应用详情代理
+├── .github/workflows/update-play-charts.yml
 ├── wrangler.toml
 ├── package.json
 ├── LICENSE
