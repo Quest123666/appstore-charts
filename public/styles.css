@@ -191,7 +191,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 18px;
+  gap: 22px;
 }
 
 .brand {
@@ -266,7 +266,7 @@ p {
 .header-actions {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 12px;
 }
 
 .header-link {
@@ -455,6 +455,8 @@ p {
 
 .meta-value-time {
   font-size: 21px;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
 }
 
 .meta-value-context {
@@ -2565,7 +2567,10 @@ p {
   }
 
   .hero-meta {
-    gap: 14px;
+    display: grid;
+    grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.35fr);
+    align-items: start;
+    gap: 12px 14px;
     margin-top: 26px;
   }
 
@@ -2575,9 +2580,14 @@ p {
 
   .meta-value-time {
     font-size: 18px;
+    white-space: nowrap;
   }
 
   .meta-value-context {
+    overflow: visible;
+    text-overflow: clip;
+    white-space: normal;
+    padding-top: 0;
     font-size: 13px;
   }
 
@@ -2586,8 +2596,12 @@ p {
   }
 
   .meta-block {
-    flex: 1 1 30%;
-    min-width: 88px;
+    flex: none;
+    min-width: 0;
+  }
+
+  .meta-block:last-child {
+    grid-column: 1 / -1;
   }
 
   .controls {
@@ -2877,7 +2891,7 @@ p {
   }
 
   .header-actions {
-    gap: 6px;
+    gap: 10px;
   }
 
   .icon-btn {

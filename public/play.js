@@ -92,10 +92,12 @@
     const date = new Date(value);
     if (Number.isNaN(date.getTime())) return "—";
     return new Intl.DateTimeFormat("zh-CN", {
+      year: "numeric",
       month: "numeric",
       day: "numeric",
       hour: "2-digit",
       minute: "2-digit",
+      hour12: false,
     }).format(date);
   }
 
@@ -150,6 +152,14 @@
       const active = button.dataset.value === state.sort;
       button.classList.toggle("is-active", active);
       button.setAttribute("aria-pressed", String(active));
+    }
+    if (els.followContext) {
+      const parts = [
+        TYPES[state.type].label,
+        CHARTS[state.chart],
+      ];
+      if (state.sort !== "chart") parts.push(SORTS[state.sort]);
+      els.followContext.textContent = parts.join(" · ");
     }
   }
 
@@ -464,6 +474,19 @@
   function updateScrollChrome() {
     if (!els?.fabStack) return;
     const y = window.scrollY || 0;
+    const controlsBottom = els.controls
+      ? els.controls.getBoundingClientRect().bottom
+      : 0;
+    const showFollow =
+      window.innerWidth <= 820 && controlsBottom < 8;
+    if (els.mobileFollow) {
+      els.mobileFollow.classList.toggle("is-visible", showFollow);
+      els.mobileFollow.setAttribute(
+        "aria-hidden",
+        String(!showFollow),
+      );
+    }
+
     const showFab = y > 180;
     els.fabStack.classList.toggle("is-visible", showFab);
     els.fabStack.setAttribute("aria-hidden", String(!showFab));
@@ -553,6 +576,12 @@
 
     els.fabRefresh.addEventListener("click", manualRefresh);
     els.fabTop.addEventListener("click", scrollToTop);
+    els.followFilter.addEventListener("click", () => {
+      els.controls.scrollIntoView({
+        behavior: prefersReducedMotion() ? "auto" : "smooth",
+        block: "start",
+      });
+    });
     window.addEventListener("scroll", onScroll, { passive: true });
   }
 
@@ -574,6 +603,10 @@
       fabRefresh: document.getElementById("playFabRefresh"),
       fabTop: document.getElementById("playFabTop"),
       toast: document.getElementById("playToast"),
+      controls: document.getElementById("playControls"),
+      mobileFollow: document.getElementById("playMobileFollow"),
+      followContext: document.getElementById("playFollowContext"),
+      followFilter: document.getElementById("playFollowFilter"),
     };
 
     const initial = readStateFromURL();

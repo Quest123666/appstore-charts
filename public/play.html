@@ -20,8 +20,8 @@
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="zh_CN" />
     <link rel="icon" href="/icon.svg" type="image/svg+xml" />
-    <script src="/theme.js?v=20261031f"></script>
-    <link rel="stylesheet" href="/styles.css?v=20261031f" />
+    <script src="/theme.js?v=20261031g"></script>
+    <link rel="stylesheet" href="/styles.css?v=20261031g" />
   </head>
   <body class="play-page">
     <a class="skip-link" href="#playRankings">跳到榜单</a>
@@ -40,7 +40,6 @@
         </a>
         <div class="header-actions">
           <a class="header-link" href="/">App Store</a>
-          <a class="header-link is-active" href="/play.html" aria-current="page">Google Play</a>
           <button class="icon-btn theme-btn" id="themeToggle" type="button" aria-label="切换为深色模式">
             <svg class="icon-sun" viewBox="0 0 24 24" fill="none" aria-hidden="true">
               <circle cx="12" cy="12" r="4.2" stroke="currentColor" stroke-width="1.7" />
@@ -53,6 +52,17 @@
         </div>
       </div>
     </header>
+
+    <div class="mobile-follow" id="playMobileFollow" aria-hidden="true">
+      <span class="follow-dot" aria-hidden="true"></span>
+      <span class="follow-context" id="playFollowContext">应用 · 免费榜</span>
+      <button class="follow-filter" id="playFollowFilter" type="button">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M4 6h16l-6.2 7v4.6l-3.6 2V13L4 6Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" />
+        </svg>
+        <span>筛选</span>
+      </button>
+    </div>
 
     <div class="fab-stack" id="playFabStack" aria-hidden="true">
       <button class="fab" id="playFabRefresh" type="button" aria-label="刷新榜单" title="刷新榜单">
@@ -99,7 +109,7 @@
         </div>
       </section>
 
-      <section class="controls" aria-label="Google Play 榜单筛选">
+      <section class="controls" id="playControls" aria-label="Google Play 榜单筛选">
         <div class="filter-bar">
           <div class="filter-group">
             <span class="filter-label">类型</span>
@@ -173,7 +183,7 @@
           <span>MIT License</span>
         </div>
       </div>
-      <div class="wrap footer-note">数据快照每 6 小时更新 · 不收集个人数据</div>
+      <div class="wrap footer-note">© 2026 AppPodium · 数据快照每 6 小时更新 · 不收集个人数据</div>
     </footer>
 
     <div id="playToast" class="toast" role="status" aria-live="polite" aria-atomic="true"></div>
@@ -181,6 +191,6 @@
     <noscript>
       <div class="noscript">这个榜单需要 JavaScript 才能加载。请在浏览器中启用 JavaScript。</div>
     </noscript>
-    <script src="/play.js?v=20261031f" defer></script>
+    <script src="/play.js?v=20261031g" defer></script>
   </body>
 </html>

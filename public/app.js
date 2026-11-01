@@ -226,20 +226,15 @@
 
   function formatUpdated(value) {
     const date = new Date(value);
-    if (Number.isNaN(date.getTime())) return "—:—";
-    const now = new Date();
-    const time = new Intl.DateTimeFormat("zh-CN", {
+    if (Number.isNaN(date.getTime())) return "—";
+    return new Intl.DateTimeFormat("zh-CN", {
+      year: "numeric",
+      month: "numeric",
+      day: "numeric",
       hour: "2-digit",
       minute: "2-digit",
       hour12: false,
     }).format(date);
-    const sameDay =
-      date.getFullYear() === now.getFullYear() &&
-      date.getMonth() === now.getMonth() &&
-      date.getDate() === now.getDate();
-    return sameDay
-      ? time
-      : `${date.getMonth() + 1}/${date.getDate()} ${time}`;
   }
 
   function formatDate(value) {
@@ -1338,10 +1333,12 @@
       "aria-busy",
       state.loading ? "true" : "false",
     );
-    els.livePill.classList.toggle(
-      "is-offline",
-      Boolean(state.error) && !state.loading,
-    );
+    if (els.livePill) {
+      els.livePill.classList.toggle(
+        "is-offline",
+        Boolean(state.error) && !state.loading,
+      );
+    }
   }
 
   function renderAll() {
@@ -1370,12 +1367,12 @@
     if (state.data) {
       els.statCount.textContent = String(state.data.count ?? 0);
       els.statUpdated.textContent = formatUpdated(
-        state.data.updated || state.data.fetchedAt,
+        state.data.fetchedAt || state.data.updated,
       );
       document.title = `${platform} ${chart} · ${country} — AppPodium`;
     } else {
       els.statCount.textContent = "—";
-      els.statUpdated.textContent = "—:—";
+      els.statUpdated.textContent = "—";
       document.title = "AppPodium — App Store 实时榜单";
     }
   }
