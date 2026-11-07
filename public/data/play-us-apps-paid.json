@@ -7,7 +7,7 @@
   "chart": "paid",
   "chartLabel": "付费榜",
   "count": 100,
-  "fetchedAt": "2026-11-07T11:58:26.668Z",
+  "fetchedAt": "2026-11-07T17:20:55.884Z",
   "source": "google-play-scraper",
   "results": [
     {
@@ -79,7 +79,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.facer.pipboy_se",
       "price": 1.99,
       "priceLabel": "$1.99",
-      "rating": 4.6822915,
+      "rating": 4.6787567,
       "ratingText": "4.7"
     },
     {
@@ -115,7 +115,7 @@
       "url": "https://play.google.com/store/apps/details?id=psplay.grill.com",
       "price": 6.99,
       "priceLabel": "$6.99",
-      "rating": 4.7242646,
+      "rating": 4.724602,
       "ratingText": "4.7"
     },
     {
@@ -163,7 +163,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.watchfacestudio.md307digital",
       "price": 2.49,
       "priceLabel": "$2.49",
-      "rating": 4.4229937,
+      "rating": 4.4242425,
       "ratingText": "4.4"
     },
     {
@@ -307,7 +307,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.watchfacestudio.per27",
       "price": 2.99,
       "priceLabel": "$2.99",
-      "rating": 4.46,
+      "rating": 4.47,
       "ratingText": "4.5"
     },
     {
@@ -475,8 +475,8 @@
       "url": "https://play.google.com/store/apps/details?id=com.watchfacestudio.lbclassic06",
       "price": 0.29,
       "priceLabel": "$0.29",
-      "rating": 4.029412,
-      "ratingText": "4.0"
+      "rating": 4.0571427,
+      "ratingText": "4.1"
     },
     {
       "rank": 40,
@@ -487,7 +487,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.watchfacestudio.md326",
       "price": 2.49,
       "priceLabel": "$2.49",
-      "rating": 4.72,
+      "rating": 4.71,
       "ratingText": "4.7"
     },
     {
@@ -499,8 +499,8 @@
       "url": "https://play.google.com/store/apps/details?id=com.nerdykidapps21.carequalizermc",
       "price": 3.99,
       "priceLabel": "$3.99",
-      "rating": 3.92,
-      "ratingText": "3.9"
+      "rating": 3.9615386,
+      "ratingText": "4.0"
     },
     {
       "rank": 42,
@@ -523,7 +523,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.WagotabiLimited.Wagotabi",
       "price": 4.99,
       "priceLabel": "$4.99",
-      "rating": 4.883333,
+      "rating": 4.882353,
       "ratingText": "4.9"
     },
     {
@@ -571,8 +571,8 @@
       "url": "https://play.google.com/store/apps/details?id=com.jndapp.nothing.widgets.pack",
       "price": 0.99,
       "priceLabel": "$0.99",
-      "rating": 4.5588236,
-      "ratingText": "4.6"
+      "rating": 4.54,
+      "ratingText": "4.5"
     },
     {
       "rank": 48,
@@ -643,7 +643,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.spaceman.verticonspro",
       "price": 0.9,
       "priceLabel": "$0.90",
-      "rating": 4.78,
+      "rating": 4.77,
       "ratingText": "4.8"
     },
     {
@@ -847,7 +847,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.alexvas.dvr.pro",
       "price": 3.99,
       "priceLabel": "$3.99",
-      "rating": 3.8883414,
+      "rating": 3.8898027,
       "ratingText": "3.9"
     },
     {
@@ -1044,6 +1044,18 @@
     },
     {
       "rank": 87,
+      "id": "com.progdigy.cdisplay",
+      "name": "CDisplayEx Comic Reader",
+      "artist": "Progdigy Software",
+      "icon": "https://play-lh.googleusercontent.com/ILJof5HGPb9FYITJIbekgvyqz-YwUIgvMf_rg4_Rfd_pP1-FbXZIaz6R7ge2WVi-YtoBV9pmguO8_5zEV2_WyQ",
+      "url": "https://play.google.com/store/apps/details?id=com.progdigy.cdisplay",
+      "price": 5.99,
+      "priceLabel": "$5.99",
+      "rating": 4.8444443,
+      "ratingText": "4.8"
+    },
+    {
+      "rank": 88,
       "id": "com.g19mobile.gameboosterplus",
       "name": "Game Mode Pro: Launcher & HUD",
       "artist": "G19 Mobile",
@@ -1055,7 +1067,7 @@
       "ratingText": "4.4"
     },
     {
-      "rank": 88,
+      "rank": 89,
       "id": "com.panda.mouse",
       "name": "Panda Mouse Pro",
       "artist": "Panda Gaming Studio",
@@ -1067,7 +1079,7 @@
       "ratingText": "4.4"
     },
     {
-      "rank": 89,
+      "rank": 90,
       "id": "com.recreative.autumnleaves",
       "name": "Seasonal Nature - Wear OS",
       "artist": "RECREATIVE Watch Faces",
@@ -1079,7 +1091,7 @@
       "ratingText": "4.1"
     },
     {
-      "rank": 90,
+      "rank": 91,
       "id": "com.andrerinas.headunitrevived",
       "name": "Open Headunit",
       "artist": "André Rinas",
@@ -1091,7 +1103,7 @@
       "ratingText": "3.6"
     },
     {
-      "rank": 91,
+      "rank": 92,
       "id": "com.lcars.watchface.trek_24th_century_v2",
       "name": "TREK: 24th Century Watch v2",
       "artist": "NSTEnterprises",
@@ -1101,18 +1113,6 @@
       "priceLabel": "$1.99",
       "rating": 4.7105265,
       "ratingText": "4.7"
-    },
-    {
-      "rank": 92,
-      "id": "com.progdigy.cdisplay",
-      "name": "CDisplayEx Comic Reader",
-      "artist": "Progdigy Software",
-      "icon": "https://play-lh.googleusercontent.com/ILJof5HGPb9FYITJIbekgvyqz-YwUIgvMf_rg4_Rfd_pP1-FbXZIaz6R7ge2WVi-YtoBV9pmguO8_5zEV2_WyQ",
-      "url": "https://play.google.com/store/apps/details?id=com.progdigy.cdisplay",
-      "price": 5.99,
-      "priceLabel": "$5.99",
-      "rating": 4.8444443,
-      "ratingText": "4.8"
     },
     {
       "rank": 93,
