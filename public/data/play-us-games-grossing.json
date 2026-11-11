@@ -7,7 +7,7 @@
   "chart": "grossing",
   "chartLabel": "畅销榜",
   "count": 100,
-  "fetchedAt": "2026-11-10T22:36:19.345Z",
+  "fetchedAt": "2026-11-11T03:18:54.958Z",
   "source": "google-play-scraper",
   "results": [
     {
@@ -19,7 +19,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.scopely.monopolygo",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.5939612,
+      "rating": 4.5939665,
       "ratingText": "4.6"
     },
     {
@@ -31,7 +31,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.roblox.client",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.2368937,
+      "rating": 4.236968,
       "ratingText": "4.2"
     },
     {
@@ -43,7 +43,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.king.candycrushsaga",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.6307797,
+      "rating": 4.6307817,
       "ratingText": "4.6"
     },
     {
@@ -55,7 +55,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.mergegames.gossipharbor",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.3988094,
+      "rating": 4.397986,
       "ratingText": "4.4"
     },
     {
@@ -67,7 +67,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.dreamgames.royalmatch",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.6353645,
+      "rating": 4.6353655,
       "ratingText": "4.6"
     },
     {
@@ -79,7 +79,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.moonactive.coinmaster",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.7488647,
+      "rating": 4.748845,
       "ratingText": "4.7"
     },
     {
@@ -91,7 +91,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.nianticlabs.pokemongo",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 3.4637554,
+      "rating": 3.463716,
       "ratingText": "3.5"
     },
     {
@@ -103,23 +103,11 @@
       "url": "https://play.google.com/store/apps/details?id=com.run.tower.defense",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.354253,
+      "rating": 4.3535614,
       "ratingText": "4.4"
     },
     {
       "rank": 9,
-      "id": "com.gof.global",
-      "name": "Whiteout Survival",
-      "artist": "Century Games PTE. LTD.",
-      "icon": "https://play-lh.googleusercontent.com/tNMaMiJ4wTQy_TeZSWHdSlP5qH0PGig9g9sDJu2QFvCHdnrbo2u17pX55W4i6KITo56v_ZyICkqLgA2svH9ycQ",
-      "url": "https://play.google.com/store/apps/details?id=com.gof.global",
-      "price": 0,
-      "priceLabel": "免费",
-      "rating": 4.066409,
-      "ratingText": "4.1"
-    },
-    {
-      "rank": 10,
       "id": "com.playrix.township",
       "name": "Township",
       "artist": "Playrix",
@@ -127,8 +115,20 @@
       "url": "https://play.google.com/store/apps/details?id=com.playrix.township",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.68784,
+      "rating": 4.688141,
       "ratingText": "4.7"
+    },
+    {
+      "rank": 10,
+      "id": "com.gof.global",
+      "name": "Whiteout Survival",
+      "artist": "Century Games PTE. LTD.",
+      "icon": "https://play-lh.googleusercontent.com/tNMaMiJ4wTQy_TeZSWHdSlP5qH0PGig9g9sDJu2QFvCHdnrbo2u17pX55W4i6KITo56v_ZyICkqLgA2svH9ycQ",
+      "url": "https://play.google.com/store/apps/details?id=com.gof.global",
+      "price": 0,
+      "priceLabel": "免费",
+      "rating": 4.065966,
+      "ratingText": "4.1"
     },
     {
       "rank": 11,
@@ -139,7 +139,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.dreamgames.royalkingdom",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.776186,
+      "rating": 4.7762804,
       "ratingText": "4.8"
     },
     {
@@ -163,7 +163,7 @@
       "url": "https://play.google.com/store/apps/details?id=net.peakgames.toonblast",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.634828,
+      "rating": 4.6348414,
       "ratingText": "4.6"
     },
     {
@@ -175,23 +175,11 @@
       "url": "https://play.google.com/store/apps/details?id=com.proximabeta.nikke",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.684698,
+      "rating": 4.6850266,
       "ratingText": "4.7"
     },
     {
       "rank": 15,
-      "id": "com.readygo.barrel.gp",
-      "name": "Last Z: Survival Shooter",
-      "artist": "Omnilojo Pte Ltd",
-      "icon": "https://play-lh.googleusercontent.com/q6Mjymkm2z_8p3BVZq4jKpZbZIEVxVaCAZsaaBXSMjf9kexdpkYktJl46JBFfQp1RWh2n10BCbaP42CZWNwgmA",
-      "url": "https://play.google.com/store/apps/details?id=com.readygo.barrel.gp",
-      "price": 0,
-      "priceLabel": "免费",
-      "rating": 4.5308642,
-      "ratingText": "4.5"
-    },
-    {
-      "rank": 16,
       "id": "com.totalbattle",
       "name": "Total Battle: War Strategy",
       "artist": "Scorewarrior",
@@ -199,8 +187,20 @@
       "url": "https://play.google.com/store/apps/details?id=com.totalbattle",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.0888505,
+      "rating": 4.0879655,
       "ratingText": "4.1"
+    },
+    {
+      "rank": 16,
+      "id": "com.readygo.barrel.gp",
+      "name": "Last Z: Survival Shooter",
+      "artist": "Omnilojo Pte Ltd",
+      "icon": "https://play-lh.googleusercontent.com/q6Mjymkm2z_8p3BVZq4jKpZbZIEVxVaCAZsaaBXSMjf9kexdpkYktJl46JBFfQp1RWh2n10BCbaP42CZWNwgmA",
+      "url": "https://play.google.com/store/apps/details?id=com.readygo.barrel.gp",
+      "price": 0,
+      "priceLabel": "免费",
+      "rating": 4.5303903,
+      "ratingText": "4.5"
     },
     {
       "rank": 17,
@@ -211,7 +211,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.topgamesinc.evony",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.0492887,
+      "rating": 4.0494175,
       "ratingText": "4.0"
     },
     {
@@ -223,7 +223,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.superplaystudios.disneysolitairedreams",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.7755795,
+      "rating": 4.775288,
       "ratingText": "4.8"
     },
     {
@@ -235,7 +235,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.plarium.raidlegends",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.6441708,
+      "rating": 4.6441727,
       "ratingText": "4.6"
     },
     {
@@ -247,7 +247,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.playrix.gardenscapes",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.7555223,
+      "rating": 4.7554812,
       "ratingText": "4.8"
     },
     {
@@ -259,7 +259,7 @@
       "url": "https://play.google.com/store/apps/details?id=air.com.buffalo_studios.newflashbingo",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.625109,
+      "rating": 4.625141,
       "ratingText": "4.6"
     },
     {
@@ -271,7 +271,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.superplaystudios.dicedreams",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.695246,
+      "rating": 4.6951413,
       "ratingText": "4.7"
     },
     {
@@ -283,23 +283,11 @@
       "url": "https://play.google.com/store/apps/details?id=com.williamsinteractive.jackpotparty",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.6474686,
+      "rating": 4.6475077,
       "ratingText": "4.6"
     },
     {
       "rank": 24,
-      "id": "com.fatmerge.global",
-      "name": "Tasty Travels: Merge Game",
-      "artist": "Century Games PTE. LTD.",
-      "icon": "https://play-lh.googleusercontent.com/_L5SoFZJC3Pe1J_2ONXjZlVkl7_flPQwFCIW297Y6j0EIDDprMRVq9_JV_zfT0ZYyWeHQEeP2exXFgoCFxanIVU",
-      "url": "https://play.google.com/store/apps/details?id=com.fatmerge.global",
-      "price": 0,
-      "priceLabel": "免费",
-      "rating": 4.483101,
-      "ratingText": "4.5"
-    },
-    {
-      "rank": 25,
       "id": "com.playrix.fishdomdd.gplay",
       "name": "Fishdom",
       "artist": "Playrix",
@@ -307,20 +295,32 @@
       "url": "https://play.google.com/store/apps/details?id=com.playrix.fishdomdd.gplay",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.6215835,
+      "rating": 4.6216083,
       "ratingText": "4.6"
     },
     {
-      "rank": 26,
-      "id": "com.phs.global",
-      "name": "Last Asylum: Plague",
-      "artist": "37GAMES GLOBAL",
-      "icon": "https://play-lh.googleusercontent.com/HOFXbIOJIZGru5_UM5hdGDmP7HIgxGJEx4dQAbPClmAtrNw3tVL9fY5NNHfa7VgIMFU-Sr3-s5FQGfaYJYhP",
-      "url": "https://play.google.com/store/apps/details?id=com.phs.global",
+      "rank": 25,
+      "id": "com.fatmerge.global",
+      "name": "Tasty Travels: Merge Game",
+      "artist": "Century Games PTE. LTD.",
+      "icon": "https://play-lh.googleusercontent.com/_L5SoFZJC3Pe1J_2ONXjZlVkl7_flPQwFCIW297Y6j0EIDDprMRVq9_JV_zfT0ZYyWeHQEeP2exXFgoCFxanIVU",
+      "url": "https://play.google.com/store/apps/details?id=com.fatmerge.global",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.233049,
-      "ratingText": "4.2"
+      "rating": 4.4835286,
+      "ratingText": "4.5"
+    },
+    {
+      "rank": 26,
+      "id": "com.dts.freefireth",
+      "name": "Free Fire: Storm Arena",
+      "artist": "GARENA INTERNATIONAL I",
+      "icon": "https://play-lh.googleusercontent.com/hnnIRd5AAf7T2gWzwki00aA9aWMX9JUbr8N42WjGqSVEq36Ey5_T0GCvyekeBkn_rSknR3vXvF4zTkZh4j-KRw",
+      "url": "https://play.google.com/store/apps/details?id=com.dts.freefireth",
+      "price": 0,
+      "priceLabel": "免费",
+      "rating": 4.3547955,
+      "ratingText": "4.4"
     },
     {
       "rank": 27,
@@ -331,11 +331,23 @@
       "url": "https://play.google.com/store/apps/details?id=com.productmadness.cashmancasino",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.528855,
+      "rating": 4.528852,
       "ratingText": "4.5"
     },
     {
       "rank": 28,
+      "id": "com.phs.global",
+      "name": "Last Asylum: Plague",
+      "artist": "37GAMES GLOBAL",
+      "icon": "https://play-lh.googleusercontent.com/HOFXbIOJIZGru5_UM5hdGDmP7HIgxGJEx4dQAbPClmAtrNw3tVL9fY5NNHfa7VgIMFU-Sr3-s5FQGfaYJYhP",
+      "url": "https://play.google.com/store/apps/details?id=com.phs.global",
+      "price": 0,
+      "priceLabel": "免费",
+      "rating": 4.2335253,
+      "ratingText": "4.2"
+    },
+    {
+      "rank": 29,
       "id": "com.productmadness.lightninglink",
       "name": "Lightning Link Casino Slots",
       "artist": "Product Madness",
@@ -343,35 +355,11 @@
       "url": "https://play.google.com/store/apps/details?id=com.productmadness.lightninglink",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.7042255,
+      "rating": 4.704343,
       "ratingText": "4.7"
-    },
-    {
-      "rank": 29,
-      "id": "com.dts.freefireth",
-      "name": "Free Fire: Storm Arena",
-      "artist": "GARENA INTERNATIONAL I",
-      "icon": "https://play-lh.googleusercontent.com/hnnIRd5AAf7T2gWzwki00aA9aWMX9JUbr8N42WjGqSVEq36Ey5_T0GCvyekeBkn_rSknR3vXvF4zTkZh4j-KRw",
-      "url": "https://play.google.com/store/apps/details?id=com.dts.freefireth",
-      "price": 0,
-      "priceLabel": "免费",
-      "rating": 4.3547397,
-      "ratingText": "4.4"
     },
     {
       "rank": 30,
-      "id": "com.playrix.homescapes",
-      "name": "Homescapes",
-      "artist": "Playrix",
-      "icon": "https://play-lh.googleusercontent.com/98F-rCvO3NbMvijqi_bRDAt4x9y3sBbTffMFxK0iOn8W0SlFqs7BkmKE9UsqgPH07yDNj2B2IrKeoYGjvGGYcHU",
-      "url": "https://play.google.com/store/apps/details?id=com.playrix.homescapes",
-      "price": 0,
-      "priceLabel": "免费",
-      "rating": 4.728489,
-      "ratingText": "4.7"
-    },
-    {
-      "rank": 31,
       "id": "net.peakgames.match",
       "name": "Match Factory!",
       "artist": "Peak",
@@ -379,7 +367,19 @@
       "url": "https://play.google.com/store/apps/details?id=net.peakgames.match",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.6601033,
+      "rating": 4.659973,
+      "ratingText": "4.7"
+    },
+    {
+      "rank": 31,
+      "id": "com.playrix.homescapes",
+      "name": "Homescapes",
+      "artist": "Playrix",
+      "icon": "https://play-lh.googleusercontent.com/98F-rCvO3NbMvijqi_bRDAt4x9y3sBbTffMFxK0iOn8W0SlFqs7BkmKE9UsqgPH07yDNj2B2IrKeoYGjvGGYcHU",
+      "url": "https://play.google.com/store/apps/details?id=com.playrix.homescapes",
+      "price": 0,
+      "priceLabel": "免费",
+      "rating": 4.7284517,
       "ratingText": "4.7"
     },
     {
@@ -391,7 +391,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.king.candycrushsodasaga",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.5751443,
+      "rating": 4.575089,
       "ratingText": "4.6"
     },
     {
@@ -403,7 +403,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.combo.yarnflow",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.5108323,
+      "rating": 4.5120993,
       "ratingText": "4.5"
     },
     {
@@ -415,7 +415,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.supercell.clashofclans",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.5135183,
+      "rating": 4.513554,
       "ratingText": "4.5"
     },
     {
@@ -427,7 +427,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.activision.callofduty.shooter",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.259036,
+      "rating": 4.2591357,
       "ratingText": "4.3"
     },
     {
@@ -439,7 +439,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.diamondlife.slots.vegas.free",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.835631,
+      "rating": 4.8357,
       "ratingText": "4.8"
     },
     {
@@ -451,7 +451,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.moonactive.cmboard",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.7546153,
+      "rating": 4.7531915,
       "ratingText": "4.8"
     },
     {
@@ -463,20 +463,20 @@
       "url": "https://play.google.com/store/apps/details?id=com.zjcs.android.us",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.608932,
+      "rating": 4.6093307,
       "ratingText": "4.6"
     },
     {
       "rank": 39,
-      "id": "com.cedargames.mysterytown",
-      "name": "Mystery Town: Merge Games",
-      "artist": "Cedar Games Studio",
-      "icon": "https://play-lh.googleusercontent.com/uVjVMEJrhT-xRoUtKIUj8tOVSbCWw4IsRHaTDYICRNjQycUj6SucVpeoAPiNZWeJ5JuzIt_ZZRo1X1pW6XJFAQE",
-      "url": "https://play.google.com/store/apps/details?id=com.cedargames.mysterytown",
+      "id": "net.supertreat.solitaire",
+      "name": "Solitaire Grand Harvest",
+      "artist": "Supertreat - A Playtika Studio",
+      "icon": "https://play-lh.googleusercontent.com/4dsPtcGXkfF3ylgSZgkb54ay86InZVQdKvs6UrBwYdsCPpv1AegcN_V38sWqCqopDPsGYiPvQ48mgY5lyMtdzw",
+      "url": "https://play.google.com/store/apps/details?id=net.supertreat.solitaire",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.77901,
-      "ratingText": "4.8"
+      "rating": 4.6929274,
+      "ratingText": "4.7"
     },
     {
       "rank": 40,
@@ -487,20 +487,20 @@
       "url": "https://play.google.com/store/apps/details?id=com.loomgames.pixelflow",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.4996595,
+      "rating": 4.5011263,
       "ratingText": "4.5"
     },
     {
       "rank": 41,
-      "id": "net.supertreat.solitaire",
-      "name": "Solitaire Grand Harvest",
-      "artist": "Supertreat - A Playtika Studio",
-      "icon": "https://play-lh.googleusercontent.com/4dsPtcGXkfF3ylgSZgkb54ay86InZVQdKvs6UrBwYdsCPpv1AegcN_V38sWqCqopDPsGYiPvQ48mgY5lyMtdzw",
-      "url": "https://play.google.com/store/apps/details?id=net.supertreat.solitaire",
+      "id": "com.cedargames.mysterytown",
+      "name": "Mystery Town: Merge Games",
+      "artist": "Cedar Games Studio",
+      "icon": "https://play-lh.googleusercontent.com/uVjVMEJrhT-xRoUtKIUj8tOVSbCWw4IsRHaTDYICRNjQycUj6SucVpeoAPiNZWeJ5JuzIt_ZZRo1X1pW6XJFAQE",
+      "url": "https://play.google.com/store/apps/details?id=com.cedargames.mysterytown",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.692934,
-      "ratingText": "4.7"
+      "rating": 4.7745175,
+      "ratingText": "4.8"
     },
     {
       "rank": 42,
@@ -511,7 +511,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.readygo.dark.gp",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.425505,
+      "rating": 4.423991,
       "ratingText": "4.4"
     },
     {
@@ -523,7 +523,7 @@
       "url": "https://play.google.com/store/apps/details?id=io.randomco.travel",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.507877,
+      "rating": 4.507725,
       "ratingText": "4.5"
     },
     {
@@ -535,7 +535,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.abi.colony.flow",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.465414,
+      "rating": 4.456976,
       "ratingText": "4.5"
     },
     {
@@ -547,7 +547,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.s01.global",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.4209213,
+      "rating": 4.4156957,
       "ratingText": "4.4"
     },
     {
@@ -559,23 +559,11 @@
       "url": "https://play.google.com/store/apps/details?id=slots.pcg.casino.games.free.android",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.7458024,
+      "rating": 4.7457027,
       "ratingText": "4.7"
     },
     {
       "rank": 47,
-      "id": "com.merge.cooking.theme.restaurant.food",
-      "name": "Merge Cooking®",
-      "artist": "Happibits Game",
-      "icon": "https://play-lh.googleusercontent.com/eAeYjdl3YeCgqPktbVbMp5APjT1QaCwI1dNEnTXoM2bmcx1KJykj7GDTFuPwIYara9BItd22stpDtydbyenrbg",
-      "url": "https://play.google.com/store/apps/details?id=com.merge.cooking.theme.restaurant.food",
-      "price": 0,
-      "priceLabel": "免费",
-      "rating": 4.52725,
-      "ratingText": "4.5"
-    },
-    {
-      "rank": 48,
       "id": "com.ballytechnologies.quickhitslots",
       "name": "Quick Hit Casino Slots Games",
       "artist": "SciPlay",
@@ -583,35 +571,23 @@
       "url": "https://play.google.com/store/apps/details?id=com.ballytechnologies.quickhitslots",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.666897,
+      "rating": 4.6668086,
       "ratingText": "4.7"
     },
     {
+      "rank": 48,
+      "id": "com.merge.cooking.theme.restaurant.food",
+      "name": "Merge Cooking®",
+      "artist": "Happibits Game",
+      "icon": "https://play-lh.googleusercontent.com/eAeYjdl3YeCgqPktbVbMp5APjT1QaCwI1dNEnTXoM2bmcx1KJykj7GDTFuPwIYara9BItd22stpDtydbyenrbg",
+      "url": "https://play.google.com/store/apps/details?id=com.merge.cooking.theme.restaurant.food",
+      "price": 0,
+      "priceLabel": "免费",
+      "rating": 4.527602,
+      "ratingText": "4.5"
+    },
+    {
       "rank": 49,
-      "id": "com.cola.game",
-      "name": "Flambé®: Merge & Cook",
-      "artist": "Microfun Limited",
-      "icon": "https://play-lh.googleusercontent.com/DxEYTS_nNDbesjgAGulDTgl8V2cV42UUmeOGPei2c95XRW7GY_XgihSsaPF7rnRua18Egkd1-siIgbkVjq73Hg",
-      "url": "https://play.google.com/store/apps/details?id=com.cola.game",
-      "price": 0,
-      "priceLabel": "免费",
-      "rating": 4.282235,
-      "ratingText": "4.3"
-    },
-    {
-      "rank": 50,
-      "id": "com.homagames.studio.allinhole",
-      "name": "All in Hole: Black Hole Games",
-      "artist": "Homa",
-      "icon": "https://play-lh.googleusercontent.com/C9bF6DEb9Ppu-S8M_d6o1n0Wg7p6mwf3_pgGERHPtlt5IoRxH1V0O0bhGhdqliNivGeZ4I8vO51qxeCOu_RzS3o",
-      "url": "https://play.google.com/store/apps/details?id=com.homagames.studio.allinhole",
-      "price": 0,
-      "priceLabel": "免费",
-      "rating": 4.7827525,
-      "ratingText": "4.8"
-    },
-    {
-      "rank": 51,
       "id": "com.productmadness.hovmobile",
       "name": "Heart of Vegas Casino Slots",
       "artist": "Product Madness",
@@ -619,8 +595,32 @@
       "url": "https://play.google.com/store/apps/details?id=com.productmadness.hovmobile",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.666769,
+      "rating": 4.6666665,
       "ratingText": "4.7"
+    },
+    {
+      "rank": 50,
+      "id": "com.cola.game",
+      "name": "Flambé®: Merge & Cook",
+      "artist": "Microfun Limited",
+      "icon": "https://play-lh.googleusercontent.com/DxEYTS_nNDbesjgAGulDTgl8V2cV42UUmeOGPei2c95XRW7GY_XgihSsaPF7rnRua18Egkd1-siIgbkVjq73Hg",
+      "url": "https://play.google.com/store/apps/details?id=com.cola.game",
+      "price": 0,
+      "priceLabel": "免费",
+      "rating": 4.275568,
+      "ratingText": "4.3"
+    },
+    {
+      "rank": 51,
+      "id": "com.homagames.studio.allinhole",
+      "name": "All in Hole: Black Hole Games",
+      "artist": "Homa",
+      "icon": "https://play-lh.googleusercontent.com/C9bF6DEb9Ppu-S8M_d6o1n0Wg7p6mwf3_pgGERHPtlt5IoRxH1V0O0bhGhdqliNivGeZ4I8vO51qxeCOu_RzS3o",
+      "url": "https://play.google.com/store/apps/details?id=com.homagames.studio.allinhole",
+      "price": 0,
+      "priceLabel": "免费",
+      "rating": 4.7829213,
+      "ratingText": "4.8"
     },
     {
       "rank": 52,
@@ -631,7 +631,7 @@
       "url": "https://play.google.com/store/apps/details?id=jp.pokemon.pokemontcgp",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.6073484,
+      "rating": 4.6075287,
       "ratingText": "4.6"
     },
     {
@@ -643,7 +643,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.hollywood.merge",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.6852984,
+      "rating": 4.686138,
       "ratingText": "4.7"
     },
     {
@@ -655,7 +655,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.grandgames.magicsort",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.547052,
+      "rating": 4.5470667,
       "ratingText": "4.5"
     },
     {
@@ -679,7 +679,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.miHoYo.GenshinImpact",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 3.3207982,
+      "rating": 3.320875,
       "ratingText": "3.3"
     },
     {
@@ -691,7 +691,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.zroute.global",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.08547,
+      "rating": 4.1157026,
       "ratingText": "4.1"
     },
     {
@@ -703,7 +703,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.joycastle.mergematch",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.855006,
+      "rating": 4.855157,
       "ratingText": "4.9"
     },
     {
@@ -715,7 +715,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.cygames.umamusume",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.082108,
+      "rating": 4.0832314,
       "ratingText": "4.1"
     },
     {
@@ -727,59 +727,11 @@
       "url": "https://play.google.com/store/apps/details?id=com.papegames.lysk.en",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 1.8046273,
+      "rating": 1.8026316,
       "ratingText": "1.8"
     },
     {
       "rank": 61,
-      "id": "com.cyphergames.royalsmash",
-      "name": "Royal Smash! - Physics Puzzle",
-      "artist": "Cypher Games",
-      "icon": "https://play-lh.googleusercontent.com/VqJWXEzCPnmd4pCVdTBOvzYzbRs9u_BEcKVWUuL07RhKCtUmun3J5qC2p9_1C0A27Fpg8EaGUaE8AmDmF1pBfA",
-      "url": "https://play.google.com/store/apps/details?id=com.cyphergames.royalsmash",
-      "price": 0,
-      "priceLabel": "免费",
-      "rating": 4.631745,
-      "ratingText": "4.6"
-    },
-    {
-      "rank": 62,
-      "id": "com.playstudios.popslots",
-      "name": "POP! Slots™",
-      "artist": "PLAYSTUDIOS US, LLC",
-      "icon": "https://play-lh.googleusercontent.com/zXR2hRH7woK2ernH0OXBjjbyJOK_8OD6oEPzVfz916SGQ_VTwYPq586QGJjL9rWw-4ObiKcuf5zaA2G4-a3nFx4",
-      "url": "https://play.google.com/store/apps/details?id=com.playstudios.popslots",
-      "price": 0,
-      "priceLabel": "免费",
-      "rating": 4.75936,
-      "ratingText": "4.8"
-    },
-    {
-      "rank": 63,
-      "id": "com.global.ztmslg",
-      "name": "Puzzles & Survival",
-      "artist": "37GAMES",
-      "icon": "https://play-lh.googleusercontent.com/ummlqp5oiU1hRPrz9pt-XYFhbMIITY_b-viFnnMu-RgtdH--uFrcFoEEGrXpRrOTVf94f8GCDQwEK-VBln18",
-      "url": "https://play.google.com/store/apps/details?id=com.global.ztmslg",
-      "price": 0,
-      "priceLabel": "免费",
-      "rating": 4.463427,
-      "ratingText": "4.5"
-    },
-    {
-      "rank": 64,
-      "id": "com.online.huntingsniper",
-      "name": "Hunting Sniper",
-      "artist": "Sparks Info",
-      "icon": "https://play-lh.googleusercontent.com/tdWX1eNxiACKdDANLdwuODpKejDGr4eA9aOKmSP0wbCRqDfElOSxtBffhbMaqFMtuOhV_KlTPjgv2Ncwn1APkA",
-      "url": "https://play.google.com/store/apps/details?id=com.online.huntingsniper",
-      "price": 0,
-      "priceLabel": "免费",
-      "rating": 4.300207,
-      "ratingText": "4.3"
-    },
-    {
-      "rank": 65,
       "id": "com.screenshake.dominodreams",
       "name": "Domino Dreams™",
       "artist": "SuperPlay.",
@@ -787,11 +739,23 @@
       "url": "https://play.google.com/store/apps/details?id=com.screenshake.dominodreams",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.7388773,
+      "rating": 4.7388124,
       "ratingText": "4.7"
     },
     {
-      "rank": 66,
+      "rank": 62,
+      "id": "com.cyphergames.royalsmash",
+      "name": "Royal Smash! - Physics Puzzle",
+      "artist": "Cypher Games",
+      "icon": "https://play-lh.googleusercontent.com/VqJWXEzCPnmd4pCVdTBOvzYzbRs9u_BEcKVWUuL07RhKCtUmun3J5qC2p9_1C0A27Fpg8EaGUaE8AmDmF1pBfA",
+      "url": "https://play.google.com/store/apps/details?id=com.cyphergames.royalsmash",
+      "price": 0,
+      "priceLabel": "免费",
+      "rating": 4.633253,
+      "ratingText": "4.6"
+    },
+    {
+      "rank": 63,
       "id": "net.wooga.junes_journey_hidden_object_mystery_game",
       "name": "June's Journey: Hidden Objects",
       "artist": "Wooga",
@@ -799,23 +763,47 @@
       "url": "https://play.google.com/store/apps/details?id=net.wooga.junes_journey_hidden_object_mystery_game",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.4253545,
+      "rating": 4.4252644,
       "ratingText": "4.4"
     },
     {
-      "rank": 67,
-      "id": "com.supercell.brawlstars",
-      "name": "Brawl Stars",
-      "artist": "Supercell",
-      "icon": "https://play-lh.googleusercontent.com/QNLPDSxg6A4xz5pRQW30Fec-Q9JtyBe_oNIZ84ssgmaX-06nKgoKu9qbwq1ug1jwdqSD17eZ8P_Oz_IshakH5g",
-      "url": "https://play.google.com/store/apps/details?id=com.supercell.brawlstars",
+      "rank": 64,
+      "id": "com.global.ztmslg",
+      "name": "Puzzles & Survival",
+      "artist": "37GAMES",
+      "icon": "https://play-lh.googleusercontent.com/ummlqp5oiU1hRPrz9pt-XYFhbMIITY_b-viFnnMu-RgtdH--uFrcFoEEGrXpRrOTVf94f8GCDQwEK-VBln18",
+      "url": "https://play.google.com/store/apps/details?id=com.global.ztmslg",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.194232,
-      "ratingText": "4.2"
+      "rating": 4.463472,
+      "ratingText": "4.5"
     },
     {
-      "rank": 68,
+      "rank": 65,
+      "id": "com.playstudios.popslots",
+      "name": "POP! Slots™",
+      "artist": "PLAYSTUDIOS US, LLC",
+      "icon": "https://play-lh.googleusercontent.com/zXR2hRH7woK2ernH0OXBjjbyJOK_8OD6oEPzVfz916SGQ_VTwYPq586QGJjL9rWw-4ObiKcuf5zaA2G4-a3nFx4",
+      "url": "https://play.google.com/store/apps/details?id=com.playstudios.popslots",
+      "price": 0,
+      "priceLabel": "免费",
+      "rating": 4.7593784,
+      "ratingText": "4.8"
+    },
+    {
+      "rank": 66,
+      "id": "com.online.huntingsniper",
+      "name": "Hunting Sniper",
+      "artist": "Sparks Info",
+      "icon": "https://play-lh.googleusercontent.com/tdWX1eNxiACKdDANLdwuODpKejDGr4eA9aOKmSP0wbCRqDfElOSxtBffhbMaqFMtuOhV_KlTPjgv2Ncwn1APkA",
+      "url": "https://play.google.com/store/apps/details?id=com.online.huntingsniper",
+      "price": 0,
+      "priceLabel": "免费",
+      "rating": 4.3006806,
+      "ratingText": "4.3"
+    },
+    {
+      "rank": 67,
       "id": "com.gamespark.topking.gp",
       "name": "Top Lords",
       "artist": "GAME SPARK PTE. LTD.",
@@ -823,47 +811,11 @@
       "url": "https://play.google.com/store/apps/details?id=com.gamespark.topking.gp",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.6847415,
+      "rating": 4.6933513,
       "ratingText": "4.7"
     },
     {
-      "rank": 69,
-      "id": "com.ea.gp.fifamobile",
-      "name": "EA SPORTS FC Soccer Mobile 27",
-      "artist": "ELECTRONIC ARTS",
-      "icon": "https://play-lh.googleusercontent.com/uT1JkXWK9pv1DWWOuVebnsbATHMZmhG4LUDkvoXne9H2MDF1im00_-U4taZPifIBpJ47sA0i8IoCh5aEVuUG5JI",
-      "url": "https://play.google.com/store/apps/details?id=com.ea.gp.fifamobile",
-      "price": 0,
-      "priceLabel": "免费",
-      "rating": 4.635868,
-      "ratingText": "4.6"
-    },
-    {
-      "rank": 70,
-      "id": "com.farlightgames.pgame.gp",
-      "name": "Clash of Critters",
-      "artist": "FARLIGHT",
-      "icon": "https://play-lh.googleusercontent.com/nIjO9pFz1R7G_wct00QMBKVqAmLHs2TqiaCmSUJfnKPw7yG_VzSmp26TRGCmm98v-Mye0MtsW_xz8CHNdIFD1A",
-      "url": "https://play.google.com/store/apps/details?id=com.farlightgames.pgame.gp",
-      "price": 0,
-      "priceLabel": "免费",
-      "rating": 4.226769,
-      "ratingText": "4.2"
-    },
-    {
-      "rank": 71,
-      "id": "com.rotatelab.cubeblast",
-      "name": "Cube Land Puzzle Game",
-      "artist": "Rotatelab Yazilim ve Bilisim A.S.",
-      "icon": "https://play-lh.googleusercontent.com/OxZ_l4qJpJOVmuCiGAXBXSMA5EyJZsjik90OkXbbXCQjDW7ho99Rr2f7YjWxjidw1VTdM22d3XtUbTqV6eegxuc",
-      "url": "https://play.google.com/store/apps/details?id=com.rotatelab.cubeblast",
-      "price": 0,
-      "priceLabel": "免费",
-      "rating": 4.5004697,
-      "ratingText": "4.5"
-    },
-    {
-      "rank": 72,
+      "rank": 68,
       "id": "air.com.playtika.slotomania",
       "name": "Slotomania™ Slots Casino Games",
       "artist": "Playtika",
@@ -875,19 +827,43 @@
       "ratingText": "4.4"
     },
     {
-      "rank": 73,
-      "id": "com.moonactive.holestars",
-      "name": "Hole Stars: Puzzle Game",
-      "artist": "Moon Active",
-      "icon": "https://play-lh.googleusercontent.com/FNCz82sncnDjBLqJyHmQZEuHFVxbQIpVuSExCOTCcelqEo654O2z-bUVAFxo0IR5MX3-64UBgqZl7HLq-_3WgQ",
-      "url": "https://play.google.com/store/apps/details?id=com.moonactive.holestars",
+      "rank": 69,
+      "id": "com.ea.gp.fifamobile",
+      "name": "EA SPORTS FC Soccer Mobile 27",
+      "artist": "ELECTRONIC ARTS",
+      "icon": "https://play-lh.googleusercontent.com/uT1JkXWK9pv1DWWOuVebnsbATHMZmhG4LUDkvoXne9H2MDF1im00_-U4taZPifIBpJ47sA0i8IoCh5aEVuUG5JI",
+      "url": "https://play.google.com/store/apps/details?id=com.ea.gp.fifamobile",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.708193,
-      "ratingText": "4.7"
+      "rating": 4.6371813,
+      "ratingText": "4.6"
     },
     {
-      "rank": 74,
+      "rank": 70,
+      "id": "com.supercell.brawlstars",
+      "name": "Brawl Stars",
+      "artist": "Supercell",
+      "icon": "https://play-lh.googleusercontent.com/QNLPDSxg6A4xz5pRQW30Fec-Q9JtyBe_oNIZ84ssgmaX-06nKgoKu9qbwq1ug1jwdqSD17eZ8P_Oz_IshakH5g",
+      "url": "https://play.google.com/store/apps/details?id=com.supercell.brawlstars",
+      "price": 0,
+      "priceLabel": "免费",
+      "rating": 4.1942997,
+      "ratingText": "4.2"
+    },
+    {
+      "rank": 71,
+      "id": "com.rotatelab.cubeblast",
+      "name": "Cube Land Puzzle Game",
+      "artist": "Rotatelab Yazilim ve Bilisim A.S.",
+      "icon": "https://play-lh.googleusercontent.com/OxZ_l4qJpJOVmuCiGAXBXSMA5EyJZsjik90OkXbbXCQjDW7ho99Rr2f7YjWxjidw1VTdM22d3XtUbTqV6eegxuc",
+      "url": "https://play.google.com/store/apps/details?id=com.rotatelab.cubeblast",
+      "price": 0,
+      "priceLabel": "免费",
+      "rating": 4.498624,
+      "ratingText": "4.5"
+    },
+    {
+      "rank": 72,
       "id": "com.global.pnck",
       "name": "Puzzles & Chaos: Frozen Castle",
       "artist": "37GAMES",
@@ -895,8 +871,32 @@
       "url": "https://play.google.com/store/apps/details?id=com.global.pnck",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.0595675,
+      "rating": 4.058566,
       "ratingText": "4.1"
+    },
+    {
+      "rank": 73,
+      "id": "com.farlightgames.pgame.gp",
+      "name": "Clash of Critters",
+      "artist": "FARLIGHT",
+      "icon": "https://play-lh.googleusercontent.com/nIjO9pFz1R7G_wct00QMBKVqAmLHs2TqiaCmSUJfnKPw7yG_VzSmp26TRGCmm98v-Mye0MtsW_xz8CHNdIFD1A",
+      "url": "https://play.google.com/store/apps/details?id=com.farlightgames.pgame.gp",
+      "price": 0,
+      "priceLabel": "免费",
+      "rating": 4.2287416,
+      "ratingText": "4.2"
+    },
+    {
+      "rank": 74,
+      "id": "com.moonactive.holestars",
+      "name": "Hole Stars: Puzzle Game",
+      "artist": "Moon Active",
+      "icon": "https://play-lh.googleusercontent.com/FNCz82sncnDjBLqJyHmQZEuHFVxbQIpVuSExCOTCcelqEo654O2z-bUVAFxo0IR5MX3-64UBgqZl7HLq-_3WgQ",
+      "url": "https://play.google.com/store/apps/details?id=com.moonactive.holestars",
+      "price": 0,
+      "priceLabel": "免费",
+      "rating": 4.7095222,
+      "ratingText": "4.7"
     },
     {
       "rank": 75,
@@ -907,20 +907,20 @@
       "url": "https://play.google.com/store/apps/details?id=com.supercell.hayday",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.414781,
+      "rating": 4.4146633,
       "ratingText": "4.4"
     },
     {
       "rank": 76,
-      "id": "com.project.idle.cd",
-      "name": "Top Force",
-      "artist": "Century Games Innovation Pte. Ltd.",
-      "icon": "https://play-lh.googleusercontent.com/dIGYOhW1mwhxLLCti6-O-VQAL_5oz7yzyLkP5WJH80i6j3HWcaIOfTnJ-FaQC1tQ7DC2pR5BphwkZJ9tFQe_ag",
-      "url": "https://play.google.com/store/apps/details?id=com.project.idle.cd",
+      "id": "com.playtika.wsop.gp",
+      "name": "WSOP Poker: Texas Holdem Game",
+      "artist": "Playtika",
+      "icon": "https://play-lh.googleusercontent.com/VJNLmLOCYVyEmAT7aWIPuwG9aBWk0mi_gs8FH8SOW5aNJ2j-hzTONDW9dQED9sH9lhEaVjsv01qLeeTrMD-ecg",
+      "url": "https://play.google.com/store/apps/details?id=com.playtika.wsop.gp",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.3826814,
-      "ratingText": "4.4"
+      "rating": 4.196024,
+      "ratingText": "4.2"
     },
     {
       "rank": 77,
@@ -931,11 +931,23 @@
       "url": "https://play.google.com/store/apps/details?id=com.bingo.cruise.free.best.top.game",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.84061,
+      "rating": 4.8410206,
       "ratingText": "4.8"
     },
     {
       "rank": 78,
+      "id": "com.project.idle.cd",
+      "name": "Top Force",
+      "artist": "Century Games Innovation Pte. Ltd.",
+      "icon": "https://play-lh.googleusercontent.com/dIGYOhW1mwhxLLCti6-O-VQAL_5oz7yzyLkP5WJH80i6j3HWcaIOfTnJ-FaQC1tQ7DC2pR5BphwkZJ9tFQe_ag",
+      "url": "https://play.google.com/store/apps/details?id=com.project.idle.cd",
+      "price": 0,
+      "priceLabel": "免费",
+      "rating": 4.376022,
+      "ratingText": "4.4"
+    },
+    {
+      "rank": 79,
       "id": "com.nexon.ma",
       "name": "MapleStory : Idle RPG",
       "artist": "NEXON Company",
@@ -943,47 +955,23 @@
       "url": "https://play.google.com/store/apps/details?id=com.nexon.ma",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.4328475,
+      "rating": 4.4267178,
       "ratingText": "4.4"
     },
     {
-      "rank": 79,
-      "id": "com.playtika.wsop.gp",
-      "name": "WSOP Poker: Texas Holdem Game",
-      "artist": "Playtika",
-      "icon": "https://play-lh.googleusercontent.com/VJNLmLOCYVyEmAT7aWIPuwG9aBWk0mi_gs8FH8SOW5aNJ2j-hzTONDW9dQED9sH9lhEaVjsv01qLeeTrMD-ecg",
-      "url": "https://play.google.com/store/apps/details?id=com.playtika.wsop.gp",
+      "rank": 80,
+      "id": "com.wizards.mtga",
+      "name": "Magic: The Gathering Arena",
+      "artist": "Wizards of the Coast LLC",
+      "icon": "https://play-lh.googleusercontent.com/C6GsT9wPHhPAJezxQFAKcQwEiavyFms7diovfdg2asCvFkcpU0XMvHyexaTNWcjyFlN-6jIfmLa3p8GoZ2zf8Qc",
+      "url": "https://play.google.com/store/apps/details?id=com.wizards.mtga",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.1962323,
+      "rating": 4.19413,
       "ratingText": "4.2"
     },
     {
-      "rank": 80,
-      "id": "com.slg.policewar",
-      "name": "Police Chief",
-      "artist": "VoyagerOne IE",
-      "icon": "https://play-lh.googleusercontent.com/w33GZBYhYKwUwUzkNcIcw-EruqdrCciVN5UhCmyn1Z8BDGLDyKeqBrU8IXVKz6P1R5tX1NT6H2sX75YADW4Lug",
-      "url": "https://play.google.com/store/apps/details?id=com.slg.policewar",
-      "price": 0,
-      "priceLabel": "免费",
-      "rating": 4.738291,
-      "ratingText": "4.7"
-    },
-    {
       "rank": 81,
-      "id": "com.cooking.bingo.ldkwh",
-      "name": "Bingo Frenzy™-Live Bingo Games",
-      "artist": "VERTEX GAMES PTE. LTD.",
-      "icon": "https://play-lh.googleusercontent.com/yGy1-C3K0ljKyDLez9ezf-TYHiRknDluW9Mez4CmQD35Z-ChI6-zjCe74oRBlJWlT_27ypw1UbtV2D438vvPwg",
-      "url": "https://play.google.com/store/apps/details?id=com.cooking.bingo.ldkwh",
-      "price": 0,
-      "priceLabel": "免费",
-      "rating": 4.8636394,
-      "ratingText": "4.9"
-    },
-    {
-      "rank": 82,
       "id": "jp.co.goodroid.hyper.busflow",
       "name": "Bus Traffic Fever!",
       "artist": "GOODROID,Inc.",
@@ -991,20 +979,32 @@
       "url": "https://play.google.com/store/apps/details?id=jp.co.goodroid.hyper.busflow",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.1373725,
+      "rating": 4.1360097,
       "ratingText": "4.1"
     },
     {
-      "rank": 83,
-      "id": "com.mobile.legends.usa",
-      "name": "Mobile Legends: Bang Bang.US",
-      "artist": "Skystone Games Pte. Ltd.",
-      "icon": "https://play-lh.googleusercontent.com/YrLxu4GfSsZk9hPcAxx7kARnV9tc5Xyn7Am4cZcfqEsBC4fWK02woGxoa2a9L978LpYaxDjcL0YfphUUpEk3Z2c",
-      "url": "https://play.google.com/store/apps/details?id=com.mobile.legends.usa",
+      "rank": 82,
+      "id": "com.cooking.bingo.ldkwh",
+      "name": "Bingo Frenzy™-Live Bingo Games",
+      "artist": "VERTEX GAMES PTE. LTD.",
+      "icon": "https://play-lh.googleusercontent.com/yGy1-C3K0ljKyDLez9ezf-TYHiRknDluW9Mez4CmQD35Z-ChI6-zjCe74oRBlJWlT_27ypw1UbtV2D438vvPwg",
+      "url": "https://play.google.com/store/apps/details?id=com.cooking.bingo.ldkwh",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 3.5072856,
-      "ratingText": "3.5"
+      "rating": 4.8637505,
+      "ratingText": "4.9"
+    },
+    {
+      "rank": 83,
+      "id": "com.slg.policewar",
+      "name": "Police Chief",
+      "artist": "VoyagerOne IE",
+      "icon": "https://play-lh.googleusercontent.com/w33GZBYhYKwUwUzkNcIcw-EruqdrCciVN5UhCmyn1Z8BDGLDyKeqBrU8IXVKz6P1R5tX1NT6H2sX75YADW4Lug",
+      "url": "https://play.google.com/store/apps/details?id=com.slg.policewar",
+      "price": 0,
+      "priceLabel": "免费",
+      "rating": 4.7393074,
+      "ratingText": "4.7"
     },
     {
       "rank": 84,
@@ -1015,7 +1015,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.olleyo.piggy.king.free",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.8368807,
+      "rating": 4.8370304,
       "ratingText": "4.8"
     },
     {
@@ -1027,7 +1027,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.GybeGames.ColorBlockJam",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.119494,
+      "rating": 4.119448,
       "ratingText": "4.1"
     },
     {
@@ -1039,11 +1039,23 @@
       "url": "https://play.google.com/store/apps/details?id=com.hitappsgames.wordsolitaire",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.3811116,
+      "rating": 4.3813057,
       "ratingText": "4.4"
     },
     {
       "rank": 87,
+      "id": "com.mobile.legends.usa",
+      "name": "Mobile Legends: Bang Bang.US",
+      "artist": "Skystone Games Pte. Ltd.",
+      "icon": "https://play-lh.googleusercontent.com/YrLxu4GfSsZk9hPcAxx7kARnV9tc5Xyn7Am4cZcfqEsBC4fWK02woGxoa2a9L978LpYaxDjcL0YfphUUpEk3Z2c",
+      "url": "https://play.google.com/store/apps/details?id=com.mobile.legends.usa",
+      "price": 0,
+      "priceLabel": "免费",
+      "rating": 3.5107758,
+      "ratingText": "3.5"
+    },
+    {
+      "rank": 88,
       "id": "com.grandegames.slots.dafu.casino",
       "name": "Jackpot World™ - Slots Casino",
       "artist": "SpinX Games Limited",
@@ -1051,11 +1063,11 @@
       "url": "https://play.google.com/store/apps/details?id=com.grandegames.slots.dafu.casino",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.710133,
+      "rating": 4.7099733,
       "ratingText": "4.7"
     },
     {
-      "rank": 88,
+      "rank": 89,
       "id": "com.supercell.clashroyale",
       "name": "Clash Royale",
       "artist": "Supercell",
@@ -1063,11 +1075,11 @@
       "url": "https://play.google.com/store/apps/details?id=com.supercell.clashroyale",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.4142795,
+      "rating": 4.4143414,
       "ratingText": "4.4"
     },
     {
-      "rank": 89,
+      "rank": 90,
       "id": "net.peakgames.amy",
       "name": "Toy Blast",
       "artist": "Peak",
@@ -1075,11 +1087,23 @@
       "url": "https://play.google.com/store/apps/details?id=net.peakgames.amy",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.662477,
+      "rating": 4.66237,
       "ratingText": "4.7"
     },
     {
-      "rank": 90,
+      "rank": 91,
+      "id": "com.innplaylabs.animalkingdomraid",
+      "name": "Animals & Coins Adventure Game",
+      "artist": "Innplay Labs",
+      "icon": "https://play-lh.googleusercontent.com/hkBI676r8G05kQEhxXgzDuACsU3FG9QdAH-6po7D9Ev-UTW3cVmAai6U6GhZHSIE4iU_lX2_zFcJpCcOcxHr",
+      "url": "https://play.google.com/store/apps/details?id=com.innplaylabs.animalkingdomraid",
+      "price": 0,
+      "priceLabel": "免费",
+      "rating": 4.859506,
+      "ratingText": "4.9"
+    },
+    {
+      "rank": 92,
       "id": "com.nexters.herowars",
       "name": "Hero Wars: Alliance RPG Legend",
       "artist": "NEXTERS GLOBAL LTD",
@@ -1087,32 +1111,8 @@
       "url": "https://play.google.com/store/apps/details?id=com.nexters.herowars",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.556844,
+      "rating": 4.556965,
       "ratingText": "4.6"
-    },
-    {
-      "rank": 91,
-      "id": "com.wizards.mtga",
-      "name": "Magic: The Gathering Arena",
-      "artist": "Wizards of the Coast LLC",
-      "icon": "https://play-lh.googleusercontent.com/C6GsT9wPHhPAJezxQFAKcQwEiavyFms7diovfdg2asCvFkcpU0XMvHyexaTNWcjyFlN-6jIfmLa3p8GoZ2zf8Qc",
-      "url": "https://play.google.com/store/apps/details?id=com.wizards.mtga",
-      "price": 0,
-      "priceLabel": "免费",
-      "rating": 4.193718,
-      "ratingText": "4.2"
-    },
-    {
-      "rank": 92,
-      "id": "com.foxnextgames.m3",
-      "name": "MARVEL Strike Force: Squad RPG",
-      "artist": "Scopely",
-      "icon": "https://play-lh.googleusercontent.com/AI9bcRd6c_QXUriLEr-z03oqA72psQqGkUbYj7xVae8fh3V7u9dxd5u7oQFoSMwlZWQar3p0T3qmpoQIbHhhbQ8",
-      "url": "https://play.google.com/store/apps/details?id=com.foxnextgames.m3",
-      "price": 0,
-      "priceLabel": "免费",
-      "rating": 4.291112,
-      "ratingText": "4.3"
     },
     {
       "rank": 93,
@@ -1128,6 +1128,18 @@
     },
     {
       "rank": 94,
+      "id": "com.foxnextgames.m3",
+      "name": "MARVEL Strike Force: Squad RPG",
+      "artist": "Scopely",
+      "icon": "https://play-lh.googleusercontent.com/AI9bcRd6c_QXUriLEr-z03oqA72psQqGkUbYj7xVae8fh3V7u9dxd5u7oQFoSMwlZWQar3p0T3qmpoQIbHhhbQ8",
+      "url": "https://play.google.com/store/apps/details?id=com.foxnextgames.m3",
+      "price": 0,
+      "priceLabel": "免费",
+      "rating": 4.2910924,
+      "ratingText": "4.3"
+    },
+    {
+      "rank": 95,
       "id": "com.mojang.minecraftpe",
       "name": "Minecraft: Dream it, Build it!",
       "artist": "Mojang",
@@ -1135,20 +1147,8 @@
       "url": "https://play.google.com/store/apps/details?id=com.mojang.minecraftpe",
       "price": 6.99,
       "priceLabel": "$6.99",
-      "rating": 4.3015766,
+      "rating": 4.301457,
       "ratingText": "4.3"
-    },
-    {
-      "rank": 95,
-      "id": "com.ea.game.starwarscapital_row",
-      "name": "Star Wars™: Galaxy of Heroes",
-      "artist": "ELECTRONIC ARTS",
-      "icon": "https://play-lh.googleusercontent.com/RXUeJn7Eas8mkAf8KxMxR9NF9zUwWWb5W6u5KntDZUlTND31x6yusb9tGJ4aV40JwU1HxeSA_fHqwxndiRU2Bg",
-      "url": "https://play.google.com/store/apps/details?id=com.ea.game.starwarscapital_row",
-      "price": 0,
-      "priceLabel": "免费",
-      "rating": 4.064705,
-      "ratingText": "4.1"
     },
     {
       "rank": 96,
@@ -1164,15 +1164,15 @@
     },
     {
       "rank": 97,
-      "id": "com.innplaylabs.animalkingdomraid",
-      "name": "Animals & Coins Adventure Game",
-      "artist": "Innplay Labs",
-      "icon": "https://play-lh.googleusercontent.com/hkBI676r8G05kQEhxXgzDuACsU3FG9QdAH-6po7D9Ev-UTW3cVmAai6U6GhZHSIE4iU_lX2_zFcJpCcOcxHr",
-      "url": "https://play.google.com/store/apps/details?id=com.innplaylabs.animalkingdomraid",
+      "id": "com.ea.game.starwarscapital_row",
+      "name": "Star Wars™: Galaxy of Heroes",
+      "artist": "ELECTRONIC ARTS",
+      "icon": "https://play-lh.googleusercontent.com/RXUeJn7Eas8mkAf8KxMxR9NF9zUwWWb5W6u5KntDZUlTND31x6yusb9tGJ4aV40JwU1HxeSA_fHqwxndiRU2Bg",
+      "url": "https://play.google.com/store/apps/details?id=com.ea.game.starwarscapital_row",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.859572,
-      "ratingText": "4.9"
+      "rating": 4.065194,
+      "ratingText": "4.1"
     },
     {
       "rank": 98,
@@ -1183,7 +1183,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.unicornstudio.cashparty.slots.casino.vegas.free",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.7105846,
+      "rating": 4.7106204,
       "ratingText": "4.7"
     },
     {
@@ -1195,7 +1195,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.scopely.yux",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.4814734,
+      "rating": 4.481475,
       "ratingText": "4.5"
     },
     {
@@ -1207,7 +1207,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.rovio.baba",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.066062,
+      "rating": 4.0658703,
       "ratingText": "4.1"
     }
   ]

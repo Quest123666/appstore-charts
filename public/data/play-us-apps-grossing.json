@@ -7,7 +7,7 @@
   "chart": "grossing",
   "chartLabel": "畅销榜",
   "count": 100,
-  "fetchedAt": "2026-11-10T22:36:19.345Z",
+  "fetchedAt": "2026-11-11T03:18:54.958Z",
   "source": "google-play-scraper",
   "results": [
     {
@@ -19,7 +19,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.google.android.apps.subscriptions.red",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.1324067,
+      "rating": 4.132261,
       "ratingText": "4.1"
     },
     {
@@ -31,7 +31,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.zhiliaoapp.musically",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 3.9528506,
+      "rating": 3.9528134,
       "ratingText": "4.0"
     },
     {
@@ -43,7 +43,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.openai.chatgpt",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.778971,
+      "rating": 4.7792387,
       "ratingText": "4.8"
     },
     {
@@ -55,7 +55,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.amazon.mShop.android.shopping",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.3906126,
+      "rating": 4.3906584,
       "ratingText": "4.4"
     },
     {
@@ -67,7 +67,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.peacocktv.peacockandroid",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.596803,
+      "rating": 4.596791,
       "ratingText": "4.6"
     },
     {
@@ -79,7 +79,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.spotify.music",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.3485456,
+      "rating": 4.348554,
       "ratingText": "4.3"
     },
     {
@@ -91,7 +91,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.anthropic.claude",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.5438666,
+      "rating": 4.543057,
       "ratingText": "4.5"
     },
     {
@@ -103,7 +103,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.crunchyroll.crunchyroid",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.6432314,
+      "rating": 4.643349,
       "ratingText": "4.6"
     },
     {
@@ -115,7 +115,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.cbs.app",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.1351967,
+      "rating": 4.13524,
       "ratingText": "4.1"
     },
     {
@@ -127,7 +127,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.wbd.stream",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.785399,
+      "rating": 4.7854075,
       "ratingText": "4.8"
     },
     {
@@ -139,7 +139,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.tinder",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 3.9514892,
+      "rating": 3.952274,
       "ratingText": "4.0"
     },
     {
@@ -151,23 +151,11 @@
       "url": "https://play.google.com/store/apps/details?id=com.pandora.android",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 3.8949714,
+      "rating": 3.8950875,
       "ratingText": "3.9"
     },
     {
       "rank": 13,
-      "id": "com.radio.pocketfm",
-      "name": "Pocket FM: Audio Dramas",
-      "artist": "PocketFM",
-      "icon": "https://play-lh.googleusercontent.com/WpXQtLSdj7RatTG5mQ8ssNoy7sfEZle2pqVCEd2Ab6EQ2Prnw0jGS8uFOpP48ocfXa2VoNfyOvR3I89xFL9F",
-      "url": "https://play.google.com/store/apps/details?id=com.radio.pocketfm",
-      "price": 0,
-      "priceLabel": "免费",
-      "rating": 4.369155,
-      "ratingText": "4.4"
-    },
-    {
-      "rank": 14,
       "id": "com.audible.application",
       "name": "Audible: Audiobooks & Podcasts",
       "artist": "Audible, Inc.",
@@ -175,23 +163,23 @@
       "url": "https://play.google.com/store/apps/details?id=com.audible.application",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.5763474,
+      "rating": 4.5763893,
       "ratingText": "4.6"
     },
     {
-      "rank": 15,
-      "id": "com.disney.disneyplus",
-      "name": "Disney+",
-      "artist": "Disney",
-      "icon": "https://play-lh.googleusercontent.com/AEX_3Bk5_SEZfR4fUcJsWiyqW_RRVcLED9AM2HMUVHAPVTZhZHfP2q3M35mRe4LtCXlb712DtkKwkZa_nJ-0",
-      "url": "https://play.google.com/store/apps/details?id=com.disney.disneyplus",
+      "rank": 14,
+      "id": "com.radio.pocketfm",
+      "name": "Pocket FM: Audio Dramas",
+      "artist": "PocketFM",
+      "icon": "https://play-lh.googleusercontent.com/WpXQtLSdj7RatTG5mQ8ssNoy7sfEZle2pqVCEd2Ab6EQ2Prnw0jGS8uFOpP48ocfXa2VoNfyOvR3I89xFL9F",
+      "url": "https://play.google.com/store/apps/details?id=com.radio.pocketfm",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.366805,
+      "rating": 4.369352,
       "ratingText": "4.4"
     },
     {
-      "rank": 16,
+      "rank": 15,
       "id": "com.life360.android.safetymapd",
       "name": "Life360: Family Safety & GPS",
       "artist": "Life360",
@@ -199,23 +187,23 @@
       "url": "https://play.google.com/store/apps/details?id=com.life360.android.safetymapd",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.7664194,
+      "rating": 4.7662296,
       "ratingText": "4.8"
     },
     {
-      "rank": 17,
-      "id": "ai.x.grok",
-      "name": "Grok",
-      "artist": "SpaceX Super Intelligence",
-      "icon": "https://play-lh.googleusercontent.com/-VnI9BrQO0PYyZG15YE6wt68KOmZ7AXGAqGti58g25ES1XdXWDBaaWUMIewHaiROwge6ibvn_b3WalmpgWGG",
-      "url": "https://play.google.com/store/apps/details?id=ai.x.grok",
+      "rank": 16,
+      "id": "com.disney.disneyplus",
+      "name": "Disney+",
+      "artist": "Disney",
+      "icon": "https://play-lh.googleusercontent.com/AEX_3Bk5_SEZfR4fUcJsWiyqW_RRVcLED9AM2HMUVHAPVTZhZHfP2q3M35mRe4LtCXlb712DtkKwkZa_nJ-0",
+      "url": "https://play.google.com/store/apps/details?id=com.disney.disneyplus",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.888866,
-      "ratingText": "4.9"
+      "rating": 4.367115,
+      "ratingText": "4.4"
     },
     {
-      "rank": 18,
+      "rank": 17,
       "id": "onxmaps.hunt",
       "name": "onX Hunt: Offline Hunting Maps",
       "artist": "onXmaps",
@@ -223,8 +211,20 @@
       "url": "https://play.google.com/store/apps/details?id=onxmaps.hunt",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.4515486,
+      "rating": 4.4516397,
       "ratingText": "4.5"
+    },
+    {
+      "rank": 18,
+      "id": "ai.x.grok",
+      "name": "Grok",
+      "artist": "SpaceX Super Intelligence",
+      "icon": "https://play-lh.googleusercontent.com/-VnI9BrQO0PYyZG15YE6wt68KOmZ7AXGAqGti58g25ES1XdXWDBaaWUMIewHaiROwge6ibvn_b3WalmpgWGG",
+      "url": "https://play.google.com/store/apps/details?id=ai.x.grok",
+      "price": 0,
+      "priceLabel": "免费",
+      "rating": 4.888689,
+      "ratingText": "4.9"
     },
     {
       "rank": 19,
@@ -235,7 +235,7 @@
       "url": "https://play.google.com/store/apps/details?id=tv.twitch.android.app",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.316915,
+      "rating": 4.316838,
       "ratingText": "4.3"
     },
     {
@@ -247,7 +247,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.linkedin.android",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 3.839798,
+      "rating": 3.8396785,
       "ratingText": "3.8"
     },
     {
@@ -259,47 +259,11 @@
       "url": "https://play.google.com/store/apps/details?id=com.tipsyturbo.app",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 3.5216782,
+      "rating": 3.5268226,
       "ratingText": "3.5"
     },
     {
       "rank": 22,
-      "id": "com.storymatrix.drama",
-      "name": "DramaBox - Stream Drama Shorts",
-      "artist": "STORYMATRIX",
-      "icon": "https://play-lh.googleusercontent.com/GGi0g65ySR86svFuxny2J2FgfkTZuFlJcftmeAZ_bZ7sM86XfwUNL1h9omSyoRKha1c1-_BoFkUbyJz2VSXI",
-      "url": "https://play.google.com/store/apps/details?id=com.storymatrix.drama",
-      "price": 0,
-      "priceLabel": "免费",
-      "rating": 4.5415416,
-      "ratingText": "4.5"
-    },
-    {
-      "rank": 23,
-      "id": "co.hinge.app",
-      "name": "Hinge Dating App: Date & Chat",
-      "artist": "Hinge, Inc.",
-      "icon": "https://play-lh.googleusercontent.com/ex9N2rDqY3GljAzBNgpyU5HVH_IerticG-jugwoaSXGtJAeBqLac7pYOXCtb9qYevmcog8uYba6UsjE8sbWc1w",
-      "url": "https://play.google.com/store/apps/details?id=co.hinge.app",
-      "price": 0,
-      "priceLabel": "免费",
-      "rating": 3.547371,
-      "ratingText": "3.5"
-    },
-    {
-      "rank": 24,
-      "id": "com.discord",
-      "name": "Discord - Talk, Play, Hang Out",
-      "artist": "Discord Inc.",
-      "icon": "https://play-lh.googleusercontent.com/w2DdjDHGSj3DQElQQM0_J3PsNsALS-WD3CBeH0aXOYceR-F3aT02gFonhoFzz-Tc9ec8Dx9cLqh48-tzIFcP",
-      "url": "https://play.google.com/store/apps/details?id=com.discord",
-      "price": 0,
-      "priceLabel": "免费",
-      "rating": 4.283252,
-      "ratingText": "4.3"
-    },
-    {
-      "rank": 25,
       "id": "com.amazon.kindle",
       "name": "Amazon Kindle: Reading App",
       "artist": "Amazon Mobile LLC",
@@ -307,8 +271,44 @@
       "url": "https://play.google.com/store/apps/details?id=com.amazon.kindle",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.7685876,
+      "rating": 4.7685833,
       "ratingText": "4.8"
+    },
+    {
+      "rank": 23,
+      "id": "com.storymatrix.drama",
+      "name": "DramaBox - Stream Drama Shorts",
+      "artist": "STORYMATRIX",
+      "icon": "https://play-lh.googleusercontent.com/GGi0g65ySR86svFuxny2J2FgfkTZuFlJcftmeAZ_bZ7sM86XfwUNL1h9omSyoRKha1c1-_BoFkUbyJz2VSXI",
+      "url": "https://play.google.com/store/apps/details?id=com.storymatrix.drama",
+      "price": 0,
+      "priceLabel": "免费",
+      "rating": 4.5414095,
+      "ratingText": "4.5"
+    },
+    {
+      "rank": 24,
+      "id": "co.hinge.app",
+      "name": "Hinge Dating App: Date & Chat",
+      "artist": "Hinge, Inc.",
+      "icon": "https://play-lh.googleusercontent.com/ex9N2rDqY3GljAzBNgpyU5HVH_IerticG-jugwoaSXGtJAeBqLac7pYOXCtb9qYevmcog8uYba6UsjE8sbWc1w",
+      "url": "https://play.google.com/store/apps/details?id=co.hinge.app",
+      "price": 0,
+      "priceLabel": "免费",
+      "rating": 3.547469,
+      "ratingText": "3.5"
+    },
+    {
+      "rank": 25,
+      "id": "com.discord",
+      "name": "Discord - Talk, Play, Hang Out",
+      "artist": "Discord Inc.",
+      "icon": "https://play-lh.googleusercontent.com/w2DdjDHGSj3DQElQQM0_J3PsNsALS-WD3CBeH0aXOYceR-F3aT02gFonhoFzz-Tc9ec8Dx9cLqh48-tzIFcP",
+      "url": "https://play.google.com/store/apps/details?id=com.discord",
+      "price": 0,
+      "priceLabel": "免费",
+      "rating": 4.283345,
+      "ratingText": "4.3"
     },
     {
       "rank": 26,
@@ -319,7 +319,7 @@
       "url": "https://play.google.com/store/apps/details?id=org.telegram.messenger",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 3.8145394,
+      "rating": 3.814879,
       "ratingText": "3.8"
     },
     {
@@ -331,7 +331,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.snapchat.android",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.1677127,
+      "rating": 4.167675,
       "ratingText": "4.2"
     },
     {
@@ -343,7 +343,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.newai.ooc",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.3215146,
+      "rating": 4.324389,
       "ratingText": "4.3"
     },
     {
@@ -355,7 +355,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.duolingo",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.7463655,
+      "rating": 4.746342,
       "ratingText": "4.7"
     },
     {
@@ -367,7 +367,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.lemon.lvoverseas",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 3.546697,
+      "rating": 3.545721,
       "ratingText": "3.5"
     },
     {
@@ -379,7 +379,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.facebook.katana",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.558235,
+      "rating": 4.558263,
       "ratingText": "4.6"
     },
     {
@@ -391,7 +391,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.bumble.app",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 3.7800179,
+      "rating": 3.7805588,
       "ratingText": "3.8"
     },
     {
@@ -403,7 +403,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.microsoft.skydrive",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.6158757,
+      "rating": 4.616017,
       "ratingText": "4.6"
     },
     {
@@ -415,7 +415,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.grindrapp.android",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.2862577,
+      "rating": 4.287013,
       "ratingText": "4.3"
     },
     {
@@ -427,23 +427,11 @@
       "url": "https://play.google.com/store/apps/details?id=com.instagram.android",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 3.9847324,
+      "rating": 3.9847858,
       "ratingText": "4.0"
     },
     {
       "rank": 36,
-      "id": "com.gotv.nflgamecenter.us.lite",
-      "name": "NFL",
-      "artist": "NFL Enterprises LLC",
-      "icon": "https://play-lh.googleusercontent.com/dQDEgXGTpwMf87NioCeSnVC3-996Ybj_vX__qbY0-HcWb7xznh4kNBBsq9_v9rVFYRzKft7g8jByQwXGgmCS",
-      "url": "https://play.google.com/store/apps/details?id=com.gotv.nflgamecenter.us.lite",
-      "price": 0,
-      "priceLabel": "免费",
-      "rating": 2.4750562,
-      "ratingText": "2.5"
-    },
-    {
-      "rank": 37,
       "id": "com.newleaf.app.android.victor",
       "name": "ReelShort - Stream Drama & TV",
       "artist": "NewLeaf Publishing",
@@ -451,8 +439,20 @@
       "url": "https://play.google.com/store/apps/details?id=com.newleaf.app.android.victor",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 3.7661695,
+      "rating": 3.7663546,
       "ratingText": "3.8"
+    },
+    {
+      "rank": 37,
+      "id": "com.gotv.nflgamecenter.us.lite",
+      "name": "NFL",
+      "artist": "NFL Enterprises LLC",
+      "icon": "https://play-lh.googleusercontent.com/dQDEgXGTpwMf87NioCeSnVC3-996Ybj_vX__qbY0-HcWb7xznh4kNBBsq9_v9rVFYRzKft7g8jByQwXGgmCS",
+      "url": "https://play.google.com/store/apps/details?id=com.gotv.nflgamecenter.us.lite",
+      "price": 0,
+      "priceLabel": "免费",
+      "rating": 2.475,
+      "ratingText": "2.5"
     },
     {
       "rank": 38,
@@ -463,23 +463,11 @@
       "url": "https://play.google.com/store/apps/details?id=com.amazon.avod.thirdpartyclient",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.6716394,
+      "rating": 4.6715474,
       "ratingText": "4.7"
     },
     {
       "rank": 39,
-      "id": "air.com.vudu.air.DownloaderTablet",
-      "name": "Fandango: Movies & Series",
-      "artist": "Fandango Media",
-      "icon": "https://play-lh.googleusercontent.com/_EPRmQipVVgOF1G00HKLz1HsbZl6IZMGL89SJlpJADC3Psh8p9nXtPkfQHzk247BZ5QsJD_U8-f_NStyIzMsxGo",
-      "url": "https://play.google.com/store/apps/details?id=air.com.vudu.air.DownloaderTablet",
-      "price": 0,
-      "priceLabel": "免费",
-      "rating": 4.4827013,
-      "ratingText": "4.5"
-    },
-    {
-      "rank": 40,
       "id": "com.canva.editor",
       "name": "Canva: AI Photo & Video Editor",
       "artist": "Canva",
@@ -487,8 +475,20 @@
       "url": "https://play.google.com/store/apps/details?id=com.canva.editor",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.78165,
+      "rating": 4.7817807,
       "ratingText": "4.8"
+    },
+    {
+      "rank": 40,
+      "id": "air.com.vudu.air.DownloaderTablet",
+      "name": "Fandango: Movies & Series",
+      "artist": "Fandango Media",
+      "icon": "https://play-lh.googleusercontent.com/_EPRmQipVVgOF1G00HKLz1HsbZl6IZMGL89SJlpJADC3Psh8p9nXtPkfQHzk247BZ5QsJD_U8-f_NStyIzMsxGo",
+      "url": "https://play.google.com/store/apps/details?id=air.com.vudu.air.DownloaderTablet",
+      "price": 0,
+      "priceLabel": "免费",
+      "rating": 4.4821553,
+      "ratingText": "4.5"
     },
     {
       "rank": 41,
@@ -499,7 +499,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.cbs.ott",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 2.6534064,
+      "rating": 2.6555831,
       "ratingText": "2.7"
     },
     {
@@ -511,7 +511,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.netshort.abroad",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.6077375,
+      "rating": 4.608049,
       "ratingText": "4.6"
     },
     {
@@ -523,7 +523,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.twitter.android",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.8043385,
+      "rating": 4.80435,
       "ratingText": "4.8"
     },
     {
@@ -535,7 +535,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.zyhwplatform.shortplay",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.4955697,
+      "rating": 4.494512,
       "ratingText": "4.5"
     },
     {
@@ -547,23 +547,11 @@
       "url": "https://play.google.com/store/apps/details?id=com.hualai",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.3938236,
+      "rating": 4.3942785,
       "ratingText": "4.4"
     },
     {
       "rank": 46,
-      "id": "com.newsclapper.video",
-      "name": "Clapper: Video, Live, Chat",
-      "artist": "Clapper Media Group Inc.",
-      "icon": "https://play-lh.googleusercontent.com/_LzzlMyVJISduUZQkpdz6N219Ndtk9KpECtiL6TYf66rpL_cQPaV80khjUHSLKijrNWSrGKjqH4o2hs4kROW4w",
-      "url": "https://play.google.com/store/apps/details?id=com.newsclapper.video",
-      "price": 0,
-      "priceLabel": "免费",
-      "rating": 4.621902,
-      "ratingText": "4.6"
-    },
-    {
-      "rank": 47,
       "id": "com.storage.androidcleaner",
       "name": "Cleanup: Phone Storage Cleaner",
       "artist": "Codeway Technologies",
@@ -571,11 +559,11 @@
       "url": "https://play.google.com/store/apps/details?id=com.storage.androidcleaner",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.414841,
+      "rating": 4.4136834,
       "ratingText": "4.4"
     },
     {
-      "rank": 48,
+      "rank": 47,
       "id": "com.dropbox.android",
       "name": "Dropbox: Secure Cloud Storage",
       "artist": "Dropbox, Inc.",
@@ -583,11 +571,11 @@
       "url": "https://play.google.com/store/apps/details?id=com.dropbox.android",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.3473835,
+      "rating": 4.34701,
       "ratingText": "4.3"
     },
     {
-      "rank": 49,
+      "rank": 48,
       "id": "com.apple.atve.androidtv.appletv",
       "name": "Apple TV: Shows, Movies & More",
       "artist": "Apple",
@@ -595,23 +583,23 @@
       "url": "https://play.google.com/store/apps/details?id=com.apple.atve.androidtv.appletv",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.098224,
+      "rating": 4.098339,
       "ratingText": "4.1"
     },
     {
-      "rank": 50,
-      "id": "com.apple.android.music",
-      "name": "Apple Music",
-      "artist": "Apple",
-      "icon": "https://play-lh.googleusercontent.com/KvngbEdIpmKyn-6C1pKfZBBs_3mwS1lUfvZf6LxOg2p4ZLqAdKy9WTGSUIUR5DT4LdMkdwvqzng2rxNpLa5c",
-      "url": "https://play.google.com/store/apps/details?id=com.apple.android.music",
+      "rank": 49,
+      "id": "com.newsclapper.video",
+      "name": "Clapper: Video, Live, Chat",
+      "artist": "Clapper Media Group Inc.",
+      "icon": "https://play-lh.googleusercontent.com/_LzzlMyVJISduUZQkpdz6N219Ndtk9KpECtiL6TYf66rpL_cQPaV80khjUHSLKijrNWSrGKjqH4o2hs4kROW4w",
+      "url": "https://play.google.com/store/apps/details?id=com.newsclapper.video",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.5497966,
-      "ratingText": "4.5"
+      "rating": 4.622408,
+      "ratingText": "4.6"
     },
     {
-      "rank": 51,
+      "rank": 50,
       "id": "com.adobe.reader",
       "name": "Acrobat Reader: PDF Converter",
       "artist": "Adobe",
@@ -619,47 +607,23 @@
       "url": "https://play.google.com/store/apps/details?id=com.adobe.reader",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.508667,
+      "rating": 4.508594,
+      "ratingText": "4.5"
+    },
+    {
+      "rank": 51,
+      "id": "com.apple.android.music",
+      "name": "Apple Music",
+      "artist": "Apple",
+      "icon": "https://play-lh.googleusercontent.com/KvngbEdIpmKyn-6C1pKfZBBs_3mwS1lUfvZf6LxOg2p4ZLqAdKy9WTGSUIUR5DT4LdMkdwvqzng2rxNpLa5c",
+      "url": "https://play.google.com/store/apps/details?id=com.apple.android.music",
+      "price": 0,
+      "priceLabel": "免费",
+      "rating": 4.5499644,
       "ratingText": "4.5"
     },
     {
       "rank": 52,
-      "id": "ai.socialapps.speakmaster",
-      "name": "PolyBuzz: Chat with AI Friends",
-      "artist": "CLOUD WHALE INTERACTIVE TECHNOLOGY LLC.",
-      "icon": "https://play-lh.googleusercontent.com/w6j4BXhnJm7Atki9psCVHBopdNiV_B8vOtyTcHUnp3DWTg3nbfUXEDQvmm1BnxUtNdUelr20PRzsmtlGb6Klf3A",
-      "url": "https://play.google.com/store/apps/details?id=ai.socialapps.speakmaster",
-      "price": 0,
-      "priceLabel": "免费",
-      "rating": 3.9886785,
-      "ratingText": "4.0"
-    },
-    {
-      "rank": 53,
-      "id": "sg.bigo.live",
-      "name": "Bigo Live - Live Streaming App",
-      "artist": "Bigo Technology Pte. Ltd.",
-      "icon": "https://play-lh.googleusercontent.com/8nDM585uK3X3AXiDQJC4lEARF_VLFrgdma-1YkdFMAwKi1LSrg4bMnWMGq7GqsviTKyL_LUfYayflZgs0SqCqQ",
-      "url": "https://play.google.com/store/apps/details?id=sg.bigo.live",
-      "price": 0,
-      "priceLabel": "免费",
-      "rating": 4.5388393,
-      "ratingText": "4.5"
-    },
-    {
-      "rank": 54,
-      "id": "com.sling",
-      "name": "Sling: Live TV + Freestream",
-      "artist": "Sling TV",
-      "icon": "https://play-lh.googleusercontent.com/C_rcMdbOPSfHMqzhuP3QD3ygAPXdono-spM-BhOfQ7vL1BC_CHeQ0Vxvp3YxaTMqr0-hAi2PHl1JKxAfsc7bjw",
-      "url": "https://play.google.com/store/apps/details?id=com.sling",
-      "price": 0,
-      "priceLabel": "免费",
-      "rating": 4.4878554,
-      "ratingText": "4.5"
-    },
-    {
-      "rank": 55,
       "id": "com.dramawave.app",
       "name": "DramaWave - Dramas & Reels",
       "artist": "SKYWORK AI PTE.LTD.",
@@ -667,23 +631,47 @@
       "url": "https://play.google.com/store/apps/details?id=com.dramawave.app",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.5700164,
+      "rating": 4.565035,
       "ratingText": "4.6"
     },
     {
-      "rank": 56,
-      "id": "com.newreading.goodreels",
-      "name": "GoodShort - Short Dramas Hub",
-      "artist": "GoodNovel",
-      "icon": "https://play-lh.googleusercontent.com/KRRusfufUnwu85IplvKDA87UugyOqoqQExymB6aahV6Rh_yN3vwIkgbC3qmol0Wdt9cP2yTDFeetrvWA8Gyj",
-      "url": "https://play.google.com/store/apps/details?id=com.newreading.goodreels",
+      "rank": 53,
+      "id": "ai.socialapps.speakmaster",
+      "name": "PolyBuzz: Chat with AI Friends",
+      "artist": "CLOUD WHALE INTERACTIVE TECHNOLOGY LLC.",
+      "icon": "https://play-lh.googleusercontent.com/w6j4BXhnJm7Atki9psCVHBopdNiV_B8vOtyTcHUnp3DWTg3nbfUXEDQvmm1BnxUtNdUelr20PRzsmtlGb6Klf3A",
+      "url": "https://play.google.com/store/apps/details?id=ai.socialapps.speakmaster",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.6956215,
-      "ratingText": "4.7"
+      "rating": 3.988197,
+      "ratingText": "4.0"
     },
     {
-      "rank": 57,
+      "rank": 54,
+      "id": "sg.bigo.live",
+      "name": "Bigo Live - Live Streaming App",
+      "artist": "Bigo Technology Pte. Ltd.",
+      "icon": "https://play-lh.googleusercontent.com/8nDM585uK3X3AXiDQJC4lEARF_VLFrgdma-1YkdFMAwKi1LSrg4bMnWMGq7GqsviTKyL_LUfYayflZgs0SqCqQ",
+      "url": "https://play.google.com/store/apps/details?id=sg.bigo.live",
+      "price": 0,
+      "priceLabel": "免费",
+      "rating": 4.5385857,
+      "ratingText": "4.5"
+    },
+    {
+      "rank": 55,
+      "id": "com.sling",
+      "name": "Sling: Live TV + Freestream",
+      "artist": "Sling TV",
+      "icon": "https://play-lh.googleusercontent.com/C_rcMdbOPSfHMqzhuP3QD3ygAPXdono-spM-BhOfQ7vL1BC_CHeQ0Vxvp3YxaTMqr0-hAi2PHl1JKxAfsc7bjw",
+      "url": "https://play.google.com/store/apps/details?id=com.sling",
+      "price": 0,
+      "priceLabel": "免费",
+      "rating": 4.487471,
+      "ratingText": "4.5"
+    },
+    {
+      "rank": 56,
       "id": "com.suno.android",
       "name": "Suno - AI Music & Songs Maker",
       "artist": "Suno, Inc",
@@ -691,8 +679,20 @@
       "url": "https://play.google.com/store/apps/details?id=com.suno.android",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.815403,
+      "rating": 4.815474,
       "ratingText": "4.8"
+    },
+    {
+      "rank": 57,
+      "id": "com.newreading.goodreels",
+      "name": "GoodShort - Short Dramas Hub",
+      "artist": "GoodNovel",
+      "icon": "https://play-lh.googleusercontent.com/KRRusfufUnwu85IplvKDA87UugyOqoqQExymB6aahV6Rh_yN3vwIkgbC3qmol0Wdt9cP2yTDFeetrvWA8Gyj",
+      "url": "https://play.google.com/store/apps/details?id=com.newreading.goodreels",
+      "price": 0,
+      "priceLabel": "免费",
+      "rating": 4.6960087,
+      "ratingText": "4.7"
     },
     {
       "rank": 58,
@@ -703,7 +703,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.fitbit.FitbitMobile",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 3.6007454,
+      "rating": 3.5994878,
       "ratingText": "3.6"
     },
     {
@@ -715,23 +715,11 @@
       "url": "https://play.google.com/store/apps/details?id=com.symantec.mobilesecurity",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.5653253,
+      "rating": 4.5653753,
       "ratingText": "4.6"
     },
     {
       "rank": 60,
-      "id": "com.enflick.android.TextNow",
-      "name": "TextNow: Call + Text Unlimited",
-      "artist": "TextNow, Inc.",
-      "icon": "https://play-lh.googleusercontent.com/dhPBaff_7shT1IF0fV0P1R0psaYknV9ppvu1IyNrj3f1uXET9F56C_7w5OvfT16nKdKIGJG8Q86QI0YsjU6tIA",
-      "url": "https://play.google.com/store/apps/details?id=com.enflick.android.TextNow",
-      "price": 0,
-      "priceLabel": "免费",
-      "rating": 4.607852,
-      "ratingText": "4.6"
-    },
-    {
-      "rank": 61,
       "id": "com.nordvpn.android",
       "name": "NordVPN – fast VPN for privacy",
       "artist": "Nord Security",
@@ -739,7 +727,19 @@
       "url": "https://play.google.com/store/apps/details?id=com.nordvpn.android",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.583364,
+      "rating": 4.583525,
+      "ratingText": "4.6"
+    },
+    {
+      "rank": 61,
+      "id": "com.enflick.android.TextNow",
+      "name": "TextNow: Call + Text Unlimited",
+      "artist": "TextNow, Inc.",
+      "icon": "https://play-lh.googleusercontent.com/dhPBaff_7shT1IF0fV0P1R0psaYknV9ppvu1IyNrj3f1uXET9F56C_7w5OvfT16nKdKIGJG8Q86QI0YsjU6tIA",
+      "url": "https://play.google.com/store/apps/details?id=com.enflick.android.TextNow",
+      "price": 0,
+      "priceLabel": "免费",
+      "rating": 4.607704,
       "ratingText": "4.6"
     },
     {
@@ -751,7 +751,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.naver.linewebtoon",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.604283,
+      "rating": 4.604196,
       "ratingText": "4.6"
     },
     {
@@ -763,7 +763,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.univision.prendetv",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.312848,
+      "rating": 4.312092,
       "ratingText": "4.3"
     },
     {
@@ -775,35 +775,11 @@
       "url": "https://play.google.com/store/apps/details?id=com.discovery.discoveryplus.mobile",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.7254095,
+      "rating": 4.725472,
       "ratingText": "4.7"
     },
     {
       "rank": 65,
-      "id": "com.bydeluxe.d3.android.program.starz",
-      "name": "STARZ",
-      "artist": "Starz Entertainment, LLC",
-      "icon": "https://play-lh.googleusercontent.com/TQRIRBXk3GFDHxa8FTNKbxFT_Qn7Xa89HkeJRCQugyuoBJLKyP4e_3UUl9SbLnJicB69Jpxaj_n286GMp7Vu",
-      "url": "https://play.google.com/store/apps/details?id=com.bydeluxe.d3.android.program.starz",
-      "price": 0,
-      "priceLabel": "免费",
-      "rating": 4.3631043,
-      "ratingText": "4.4"
-    },
-    {
-      "rank": 66,
-      "id": "com.vidangel.thechosen",
-      "name": "Angel: Watch Movies & TV Shows",
-      "artist": "Angel Studios, Inc.",
-      "icon": "https://play-lh.googleusercontent.com/kpYdnyrZWXiDfSJGq3xraMdrEu4MTQPwwT6h-ur3ggNR85CbtmR2cxmRPThXxDuSklZlLQjo72ssV_ZICLFBHQQ",
-      "url": "https://play.google.com/store/apps/details?id=com.vidangel.thechosen",
-      "price": 0,
-      "priceLabel": "免费",
-      "rating": 4.59341,
-      "ratingText": "4.6"
-    },
-    {
-      "rank": 67,
       "id": "com.scatterlab.messenger",
       "name": "zeta: AI Chat, Story, Play",
       "artist": "Scatter Lab, Inc.",
@@ -811,8 +787,32 @@
       "url": "https://play.google.com/store/apps/details?id=com.scatterlab.messenger",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.447565,
+      "rating": 4.463909,
+      "ratingText": "4.5"
+    },
+    {
+      "rank": 66,
+      "id": "com.bydeluxe.d3.android.program.starz",
+      "name": "STARZ",
+      "artist": "Starz Entertainment, LLC",
+      "icon": "https://play-lh.googleusercontent.com/TQRIRBXk3GFDHxa8FTNKbxFT_Qn7Xa89HkeJRCQugyuoBJLKyP4e_3UUl9SbLnJicB69Jpxaj_n286GMp7Vu",
+      "url": "https://play.google.com/store/apps/details?id=com.bydeluxe.d3.android.program.starz",
+      "price": 0,
+      "priceLabel": "免费",
+      "rating": 4.363204,
       "ratingText": "4.4"
+    },
+    {
+      "rank": 67,
+      "id": "com.vidangel.thechosen",
+      "name": "Angel: Watch Movies & TV Shows",
+      "artist": "Angel Studios, Inc.",
+      "icon": "https://play-lh.googleusercontent.com/kpYdnyrZWXiDfSJGq3xraMdrEu4MTQPwwT6h-ur3ggNR85CbtmR2cxmRPThXxDuSklZlLQjo72ssV_ZICLFBHQQ",
+      "url": "https://play.google.com/store/apps/details?id=com.vidangel.thechosen",
+      "price": 0,
+      "priceLabel": "免费",
+      "rating": 4.593291,
+      "ratingText": "4.6"
     },
     {
       "rank": 68,
@@ -823,7 +823,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.espn.score_center",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.4667077,
+      "rating": 4.4668818,
       "ratingText": "4.5"
     },
     {
@@ -835,7 +835,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.myfitnesspal.android",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.408609,
+      "rating": 4.4089594,
       "ratingText": "4.4"
     },
     {
@@ -847,7 +847,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.Beauchamp.Messenger.external",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 2.6920953,
+      "rating": 2.6925418,
       "ratingText": "2.7"
     },
     {
@@ -859,7 +859,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.hulu.plus",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.5208755,
+      "rating": 4.5207944,
       "ratingText": "4.5"
     },
     {
@@ -871,7 +871,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.ai.dulci.chat",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.5136986,
+      "rating": 4.4968944,
       "ratingText": "4.5"
     },
     {
@@ -883,7 +883,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.sixdays.truckerpath",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.693552,
+      "rating": 4.693771,
       "ratingText": "4.7"
     },
     {
@@ -895,7 +895,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.gc.teammanager",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.415914,
+      "rating": 4.4170156,
       "ratingText": "4.4"
     },
     {
@@ -907,23 +907,11 @@
       "url": "https://play.google.com/store/apps/details?id=co.feeld",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 3.1342082,
+      "rating": 3.1357868,
       "ratingText": "3.1"
     },
     {
       "rank": 76,
-      "id": "com.cricut.designspace",
-      "name": "Design Space: DIY with Cricut",
-      "artist": "Cricut",
-      "icon": "https://play-lh.googleusercontent.com/bkPjv1wN495PzS_2QTm4JevCHzPhOtoieBM-LMSANLMx17RDy16_PpdF-545h_iREO91ZV2Ow3BokIEbYg1w4w",
-      "url": "https://play.google.com/store/apps/details?id=com.cricut.designspace",
-      "price": 0,
-      "priceLabel": "免费",
-      "rating": 3.8696125,
-      "ratingText": "3.9"
-    },
-    {
-      "rank": 77,
       "id": "com.hily.app",
       "name": "Hily Dating app: Meet & Date",
       "artist": "Hily Corp.",
@@ -931,11 +919,11 @@
       "url": "https://play.google.com/store/apps/details?id=com.hily.app",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.38631,
+      "rating": 4.3851323,
       "ratingText": "4.4"
     },
     {
-      "rank": 78,
+      "rank": 77,
       "id": "com.pocketfm.toons",
       "name": "Pocket Saga - Short Dramas",
       "artist": "PocketFM",
@@ -943,11 +931,11 @@
       "url": "https://play.google.com/store/apps/details?id=com.pocketfm.toons",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.6708407,
+      "rating": 4.6731796,
       "ratingText": "4.7"
     },
     {
-      "rank": 79,
+      "rank": 78,
       "id": "com.amazon.amazonvideo.livingroom",
       "name": "Prime Video",
       "artist": "Amazon Mobile LLC",
@@ -955,23 +943,23 @@
       "url": "https://play.google.com/store/apps/details?id=com.amazon.amazonvideo.livingroom",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 3.2198954,
+      "rating": 3.2181818,
       "ratingText": "3.2"
     },
     {
-      "rank": 80,
-      "id": "ai.x.grok.bot",
-      "name": "Grok Bot",
-      "artist": "SpaceX Super Intelligence",
-      "icon": "https://play-lh.googleusercontent.com/yQblC3CCrdtX-XRHUKXsKwEGGFOPTwBWkKr-XeBZiouALcVDdh6liKbxNstwllkyUUpb_0EkzkYtDI1mVx8Q",
-      "url": "https://play.google.com/store/apps/details?id=ai.x.grok.bot",
+      "rank": 79,
+      "id": "com.cricut.designspace",
+      "name": "Design Space: DIY with Cricut",
+      "artist": "Cricut",
+      "icon": "https://play-lh.googleusercontent.com/bkPjv1wN495PzS_2QTm4JevCHzPhOtoieBM-LMSANLMx17RDy16_PpdF-545h_iREO91ZV2Ow3BokIEbYg1w4w",
+      "url": "https://play.google.com/store/apps/details?id=com.cricut.designspace",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.708128,
-      "ratingText": "4.7"
+      "rating": 3.8688958,
+      "ratingText": "3.9"
     },
     {
-      "rank": 81,
+      "rank": 80,
       "id": "com.read.goodnovel",
       "name": "GoodNovel - Booktok, Stories",
       "artist": "GoodNovel",
@@ -979,8 +967,20 @@
       "url": "https://play.google.com/store/apps/details?id=com.read.goodnovel",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.552746,
+      "rating": 4.553294,
       "ratingText": "4.6"
+    },
+    {
+      "rank": 81,
+      "id": "ai.x.grok.bot",
+      "name": "Grok Bot",
+      "artist": "SpaceX Super Intelligence",
+      "icon": "https://play-lh.googleusercontent.com/yQblC3CCrdtX-XRHUKXsKwEGGFOPTwBWkKr-XeBZiouALcVDdh6liKbxNstwllkyUUpb_0EkzkYtDI1mVx8Q",
+      "url": "https://play.google.com/store/apps/details?id=ai.x.grok.bot",
+      "price": 0,
+      "priceLabel": "免费",
+      "rating": 4.684354,
+      "ratingText": "4.7"
     },
     {
       "rank": 82,
@@ -991,23 +991,11 @@
       "url": "https://play.google.com/store/apps/details?id=com.codeway.aitutor",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.6158934,
+      "rating": 4.615891,
       "ratingText": "4.6"
     },
     {
       "rank": 83,
-      "id": "com.nbaimd.gametime.nba2011",
-      "name": "NBA: Live Games & Scores",
-      "artist": "NBA Properties, Inc.",
-      "icon": "https://play-lh.googleusercontent.com/7XOkKce3M81tCiWdcOYd1U59bhBtN81bv_eH7QLhFIYqA7n4PlDaYvrhAbAfpAU0DHFnAvaT7RhIsmtQwUFAJFg",
-      "url": "https://play.google.com/store/apps/details?id=com.nbaimd.gametime.nba2011",
-      "price": 0,
-      "priceLabel": "免费",
-      "rating": 4.595036,
-      "ratingText": "4.6"
-    },
-    {
-      "rank": 84,
       "id": "video.chat.joi",
       "name": "Joi - Live Video Chat",
       "artist": "VLMedia A.Ş.",
@@ -1015,11 +1003,11 @@
       "url": "https://play.google.com/store/apps/details?id=video.chat.joi",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.3633986,
+      "rating": 4.3629823,
       "ratingText": "4.4"
     },
     {
-      "rank": 85,
+      "rank": 84,
       "id": "com.ancestry.android.apps.ancestry",
       "name": "Ancestry: Family History & DNA",
       "artist": "Ancestry.com",
@@ -1027,11 +1015,11 @@
       "url": "https://play.google.com/store/apps/details?id=com.ancestry.android.apps.ancestry",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.642624,
+      "rating": 4.6425858,
       "ratingText": "4.6"
     },
     {
-      "rank": 86,
+      "rank": 85,
       "id": "com.hkfuliao.chamet",
       "name": "Chamet - Live Chat & Party",
       "artist": "Chamet Team",
@@ -1043,6 +1031,18 @@
       "ratingText": "4.1"
     },
     {
+      "rank": 86,
+      "id": "com.nbaimd.gametime.nba2011",
+      "name": "NBA: Live Games & Scores",
+      "artist": "NBA Properties, Inc.",
+      "icon": "https://play-lh.googleusercontent.com/7XOkKce3M81tCiWdcOYd1U59bhBtN81bv_eH7QLhFIYqA7n4PlDaYvrhAbAfpAU0DHFnAvaT7RhIsmtQwUFAJFg",
+      "url": "https://play.google.com/store/apps/details?id=com.nbaimd.gametime.nba2011",
+      "price": 0,
+      "priceLabel": "免费",
+      "rating": 4.591656,
+      "ratingText": "4.6"
+    },
+    {
       "rank": 87,
       "id": "com.nytimes.android",
       "name": "NYTimes: US and Global News",
@@ -1051,7 +1051,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.nytimes.android",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.699392,
+      "rating": 4.6994705,
       "ratingText": "4.7"
     },
     {
@@ -1063,7 +1063,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.soundcloud.android",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.6757016,
+      "rating": 4.6757793,
       "ratingText": "4.7"
     },
     {
@@ -1075,7 +1075,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.takimi.android",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.1445193,
+      "rating": 4.14397,
       "ratingText": "4.1"
     },
     {
@@ -1087,7 +1087,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.joyreels.video",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.511693,
+      "rating": 4.513094,
       "ratingText": "4.5"
     },
     {
@@ -1099,7 +1099,7 @@
       "url": "https://play.google.com/store/apps/details?id=ai.enjoy.world",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.3873963,
+      "rating": 4.3800893,
       "ratingText": "4.4"
     },
     {
@@ -1111,7 +1111,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.viki.android",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.739168,
+      "rating": 4.7394967,
       "ratingText": "4.7"
     },
     {
@@ -1123,11 +1123,23 @@
       "url": "https://play.google.com/store/apps/details?id=com.getpure.pure",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 3.130719,
+      "rating": 3.1305394,
       "ratingText": "3.1"
     },
     {
       "rank": 94,
+      "id": "com.microsoft.office.officehubrow",
+      "name": "Microsoft Copilot",
+      "artist": "Microsoft Corporation",
+      "icon": "https://play-lh.googleusercontent.com/LO0qJeIk4uKo6HJB5fkMpipB9x4BedNr0YegnCJKOxsX8SNZIoY-NC8-KL-cLQyUgmmKFyZRa0cdyaNkDsyBveg",
+      "url": "https://play.google.com/store/apps/details?id=com.microsoft.office.officehubrow",
+      "price": 0,
+      "priceLabel": "免费",
+      "rating": 4.4481907,
+      "ratingText": "4.4"
+    },
+    {
+      "rank": 95,
       "id": "com.flow.mobile",
       "name": "Emochi: Chat With Character",
       "artist": "FlowGPT",
@@ -1135,20 +1147,8 @@
       "url": "https://play.google.com/store/apps/details?id=com.flow.mobile",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.4616766,
+      "rating": 4.4621496,
       "ratingText": "4.5"
-    },
-    {
-      "rank": 95,
-      "id": "com.thezeusnetwork.www",
-      "name": "Zeus",
-      "artist": "The Zeus Network",
-      "icon": "https://play-lh.googleusercontent.com/FmhBTLoYR_DUGjo3B5sZIBYklgN7gDn8_poPqmGrl4FagVp9cRH-dA-wv669tF4vlBkfdkKItj4pfJOaFWUY",
-      "url": "https://play.google.com/store/apps/details?id=com.thezeusnetwork.www",
-      "price": 0,
-      "priceLabel": "免费",
-      "rating": 4.6931524,
-      "ratingText": "4.7"
     },
     {
       "rank": 96,
@@ -1159,23 +1159,11 @@
       "url": "https://play.google.com/store/apps/details?id=com.strava",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.606187,
+      "rating": 4.6077037,
       "ratingText": "4.6"
     },
     {
       "rank": 97,
-      "id": "com.microsoft.office.officehubrow",
-      "name": "Microsoft Copilot",
-      "artist": "Microsoft Corporation",
-      "icon": "https://play-lh.googleusercontent.com/LO0qJeIk4uKo6HJB5fkMpipB9x4BedNr0YegnCJKOxsX8SNZIoY-NC8-KL-cLQyUgmmKFyZRa0cdyaNkDsyBveg",
-      "url": "https://play.google.com/store/apps/details?id=com.microsoft.office.officehubrow",
-      "price": 0,
-      "priceLabel": "免费",
-      "rating": 4.4483285,
-      "ratingText": "4.4"
-    },
-    {
-      "rank": 98,
       "id": "org.malwarebytes.antimalware",
       "name": "Malwarebytes - Mobile Security",
       "artist": "Malwarebytes",
@@ -1183,11 +1171,11 @@
       "url": "https://play.google.com/store/apps/details?id=org.malwarebytes.antimalware",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.4188523,
+      "rating": 4.4190364,
       "ratingText": "4.4"
     },
     {
-      "rank": 99,
+      "rank": 98,
       "id": "com.alltrails.alltrails",
       "name": "AllTrails: Hike, Bike & Run",
       "artist": "AllTrails, LLC",
@@ -1199,7 +1187,7 @@
       "ratingText": "4.5"
     },
     {
-      "rank": 100,
+      "rank": 99,
       "id": "com.elink.fittrackhealth.pro",
       "name": "Hume Health",
       "artist": "Hume Health Corp",
@@ -1207,8 +1195,20 @@
       "url": "https://play.google.com/store/apps/details?id=com.elink.fittrackhealth.pro",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.022908,
+      "rating": 4.0213413,
       "ratingText": "4.0"
+    },
+    {
+      "rank": 100,
+      "id": "com.thezeusnetwork.www",
+      "name": "Zeus",
+      "artist": "The Zeus Network",
+      "icon": "https://play-lh.googleusercontent.com/FmhBTLoYR_DUGjo3B5sZIBYklgN7gDn8_poPqmGrl4FagVp9cRH-dA-wv669tF4vlBkfdkKItj4pfJOaFWUY",
+      "url": "https://play.google.com/store/apps/details?id=com.thezeusnetwork.www",
+      "price": 0,
+      "priceLabel": "免费",
+      "rating": 4.692606,
+      "ratingText": "4.7"
     }
   ]
 }
