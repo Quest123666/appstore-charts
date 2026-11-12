@@ -7,7 +7,7 @@
   "chart": "free",
   "chartLabel": "免费榜",
   "count": 100,
-  "fetchedAt": "2026-11-12T04:29:47.632Z",
+  "fetchedAt": "2026-11-12T14:04:04.755Z",
   "source": "google-play-scraper",
   "results": [
     {
@@ -19,7 +19,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.oakever.meowdoku",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.643534,
+      "rating": 4.6418715,
       "ratingText": "4.6"
     },
     {
@@ -31,7 +31,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.block.juggle",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.8474183,
+      "rating": 4.846991,
       "ratingText": "4.8"
     },
     {
@@ -43,7 +43,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.roblox.client",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.237408,
+      "rating": 4.2377505,
       "ratingText": "4.2"
     },
     {
@@ -55,7 +55,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.nebula.rotaterings",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.784228,
+      "rating": 4.784105,
       "ratingText": "4.8"
     },
     {
@@ -67,7 +67,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.grandgames.magicsort",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.5429735,
+      "rating": 4.5435348,
       "ratingText": "4.5"
     },
     {
@@ -79,7 +79,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.mergegames.gossipharbor",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.393466,
+      "rating": 4.393515,
       "ratingText": "4.4"
     },
     {
@@ -91,7 +91,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.cyphergames.royalsmash",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.6308355,
+      "rating": 4.62908,
       "ratingText": "4.6"
     },
     {
@@ -103,7 +103,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.tank.busters",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.39885,
+      "rating": 4.4011016,
       "ratingText": "4.4"
     },
     {
@@ -115,7 +115,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.epicgames.fortnite",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.611701,
+      "rating": 4.6123886,
       "ratingText": "4.6"
     },
     {
@@ -127,7 +127,7 @@
       "url": "https://play.google.com/store/apps/details?id=io.voodoo.paper2",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.0874968,
+      "rating": 4.087544,
       "ratingText": "4.1"
     },
     {
@@ -139,7 +139,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.vitastudio.mahjong",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.8575034,
+      "rating": 4.857484,
       "ratingText": "4.9"
     },
     {
@@ -151,7 +151,7 @@
       "url": "https://play.google.com/store/apps/details?id=gridplus.busjam.carpuzzle",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 3.928437,
+      "rating": 3.9441118,
       "ratingText": "3.9"
     },
     {
@@ -163,7 +163,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.gl.unbolt",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.5750284,
+      "rating": 4.5897684,
       "ratingText": "4.6"
     },
     {
@@ -175,7 +175,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.agavegames.wordtiles",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.856512,
+      "rating": 4.854202,
       "ratingText": "4.9"
     },
     {
@@ -192,18 +192,6 @@
     },
     {
       "rank": 16,
-      "id": "com.brain.crazy.joygame",
-      "name": "Brain Puzzle 3: Crazy Mind",
-      "artist": "JoyGame Studio",
-      "icon": "https://play-lh.googleusercontent.com/dYD6ANoZC1zG4g2cCdRcU3LtI6IoHGBTVQL754cjrI9OTjrJmvsZG4j3ESlxTSoIV-ujgiR8Jh7HTQJVLoVjWOU",
-      "url": "https://play.google.com/store/apps/details?id=com.brain.crazy.joygame",
-      "price": 0,
-      "priceLabel": "免费",
-      "rating": 4.7157893,
-      "ratingText": "4.7"
-    },
-    {
-      "rank": 17,
       "id": "com.oakever.arrows",
       "name": "Amaze GO!™",
       "artist": "Oakever Games",
@@ -211,23 +199,23 @@
       "url": "https://play.google.com/store/apps/details?id=com.oakever.arrows",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.8422956,
+      "rating": 4.8424773,
       "ratingText": "4.8"
     },
     {
-      "rank": 18,
-      "id": "com.chess",
-      "name": "Chess - Play and Learn Online",
-      "artist": "Chess.com",
-      "icon": "https://play-lh.googleusercontent.com/JO7Z75U1oypXpNTAklroO5emKWePni0sK9zn1E_nRgqmbAHoMxz1oQHDfSTpcycdht92dTBejkpEDXttGeCWN74",
-      "url": "https://play.google.com/store/apps/details?id=com.chess",
+      "rank": 17,
+      "id": "com.brain.crazy.joygame",
+      "name": "Brain Puzzle 3: Crazy Mind",
+      "artist": "JoyGame Studio",
+      "icon": "https://play-lh.googleusercontent.com/dYD6ANoZC1zG4g2cCdRcU3LtI6IoHGBTVQL754cjrI9OTjrJmvsZG4j3ESlxTSoIV-ujgiR8Jh7HTQJVLoVjWOU",
+      "url": "https://play.google.com/store/apps/details?id=com.brain.crazy.joygame",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.7091274,
+      "rating": 4.716418,
       "ratingText": "4.7"
     },
     {
-      "rank": 19,
+      "rank": 18,
       "id": "com.nebula.mahjongtile",
       "name": "Mahjong Blast",
       "artist": "Nebula  Studio",
@@ -235,8 +223,20 @@
       "url": "https://play.google.com/store/apps/details?id=com.nebula.mahjongtile",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.802127,
+      "rating": 4.803059,
       "ratingText": "4.8"
+    },
+    {
+      "rank": 19,
+      "id": "com.chess",
+      "name": "Chess - Play and Learn Online",
+      "artist": "Chess.com",
+      "icon": "https://play-lh.googleusercontent.com/JO7Z75U1oypXpNTAklroO5emKWePni0sK9zn1E_nRgqmbAHoMxz1oQHDfSTpcycdht92dTBejkpEDXttGeCWN74",
+      "url": "https://play.google.com/store/apps/details?id=com.chess",
+      "price": 0,
+      "priceLabel": "免费",
+      "rating": 4.709773,
+      "ratingText": "4.7"
     },
     {
       "rank": 20,
@@ -247,7 +247,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.youmusic.magictiles",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.623612,
+      "rating": 4.6237164,
       "ratingText": "4.6"
     },
     {
@@ -259,7 +259,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.superplaystudios.disneysolitairedreams",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.77614,
+      "rating": 4.7761745,
       "ratingText": "4.8"
     },
     {
@@ -271,7 +271,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.playrix.township",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.6880455,
+      "rating": 4.6881666,
       "ratingText": "4.7"
     },
     {
@@ -283,8 +283,8 @@
       "url": "https://play.google.com/store/apps/details?id=com.loop.packedloop",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.656,
-      "ratingText": "4.7"
+      "rating": 4.643312,
+      "ratingText": "4.6"
     },
     {
       "rank": 24,
@@ -295,7 +295,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.combo.yarnflow",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.5111732,
+      "rating": 4.5102606,
       "ratingText": "4.5"
     },
     {
@@ -307,7 +307,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.greatplay.farklecash",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.8790097,
+      "rating": 4.881959,
       "ratingText": "4.9"
     },
     {
@@ -319,7 +319,7 @@
       "url": "https://play.google.com/store/apps/details?id=io.supercent.bulldozermasters",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.3496017,
+      "rating": 4.3464336,
       "ratingText": "4.3"
     },
     {
@@ -331,20 +331,20 @@
       "url": "https://play.google.com/store/apps/details?id=com.fungames.blockcraft",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.483253,
+      "rating": 4.4849343,
       "ratingText": "4.5"
     },
     {
       "rank": 28,
-      "id": "in.playsimple.wordsearch",
-      "name": "Word Search Explorer",
-      "artist": "PlaySimple Games",
-      "icon": "https://play-lh.googleusercontent.com/BhSjXMNR8wZi48F4NWlRhskKyM_pa8DFNzisNTTa8_16uLNCk5nsZo_3fCmo1szCv05Qpe6VHNZBUsWBtSpjpA",
-      "url": "https://play.google.com/store/apps/details?id=in.playsimple.wordsearch",
+      "id": "com.gamefactory.roomsort",
+      "name": "Mochiroom Puzzle:Room Sort",
+      "artist": "ABF ALPENHOF",
+      "icon": "https://play-lh.googleusercontent.com/y3ZuZkHerFoVHYbL5axAtygHeT-KqUMJWBXl8wqJI7nzE5QJSLODspwlE622yjc3Toc-48JlFX7vEdQ27CMoQQ",
+      "url": "https://play.google.com/store/apps/details?id=com.gamefactory.roomsort",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.914647,
-      "ratingText": "4.9"
+      "rating": 3.975,
+      "ratingText": "4.0"
     },
     {
       "rank": 29,
@@ -360,15 +360,15 @@
     },
     {
       "rank": 30,
-      "id": "com.gamefactory.roomsort",
-      "name": "Mochiroom Puzzle:Room Sort",
-      "artist": "ABF ALPENHOF",
-      "icon": "https://play-lh.googleusercontent.com/y3ZuZkHerFoVHYbL5axAtygHeT-KqUMJWBXl8wqJI7nzE5QJSLODspwlE622yjc3Toc-48JlFX7vEdQ27CMoQQ",
-      "url": "https://play.google.com/store/apps/details?id=com.gamefactory.roomsort",
+      "id": "in.playsimple.wordsearch",
+      "name": "Word Search Explorer",
+      "artist": "PlaySimple Games",
+      "icon": "https://play-lh.googleusercontent.com/BhSjXMNR8wZi48F4NWlRhskKyM_pa8DFNzisNTTa8_16uLNCk5nsZo_3fCmo1szCv05Qpe6VHNZBUsWBtSpjpA",
+      "url": "https://play.google.com/store/apps/details?id=in.playsimple.wordsearch",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 3.9722223,
-      "ratingText": "4.0"
+      "rating": 4.914742,
+      "ratingText": "4.9"
     },
     {
       "rank": 31,
@@ -379,7 +379,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.vaultystudios.eightytwoand0",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.6325707,
+      "rating": 4.6413503,
       "ratingText": "4.6"
     },
     {
@@ -391,7 +391,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.pocket.sort.coin.puzzle.game",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.4909663,
+      "rating": 4.4863873,
       "ratingText": "4.5"
     },
     {
@@ -403,7 +403,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.farlightgames.warline.gp.global",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.8741875,
+      "rating": 4.870201,
       "ratingText": "4.9"
     },
     {
@@ -415,7 +415,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.vincentb.MobControl",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.3081503,
+      "rating": 4.3065734,
       "ratingText": "4.3"
     },
     {
@@ -427,7 +427,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.scopely.monopolygo",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.5939703,
+      "rating": 4.593986,
       "ratingText": "4.6"
     },
     {
@@ -439,23 +439,11 @@
       "url": "https://play.google.com/store/apps/details?id=com.mobsmile.coinbounce",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.265823,
-      "ratingText": "4.3"
+      "rating": 4.208,
+      "ratingText": "4.2"
     },
     {
       "rank": 37,
-      "id": "jp.co.goodroid.hyper.puzzle.arrows3dcubepuzzle",
-      "name": "CubeAway - 3DPuzzle",
-      "artist": "GOODROID,Inc.",
-      "icon": "https://play-lh.googleusercontent.com/k_9MZtpdy3gYNVgynIWwv-1omuSkl4WGr5bOKYT-PJDC5PsEdFQMXWEBU7Jr3TfyjeBviAD3DN3_2KpDhGfa",
-      "url": "https://play.google.com/store/apps/details?id=jp.co.goodroid.hyper.puzzle.arrows3dcubepuzzle",
-      "price": 0,
-      "priceLabel": "免费",
-      "rating": 4.402299,
-      "ratingText": "4.4"
-    },
-    {
-      "rank": 38,
       "id": "com.kiloo.subwaysurf",
       "name": "Subway Surfers",
       "artist": "SYBO Games",
@@ -463,11 +451,11 @@
       "url": "https://play.google.com/store/apps/details?id=com.kiloo.subwaysurf",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.5506454,
+      "rating": 4.5505924,
       "ratingText": "4.6"
     },
     {
-      "rank": 39,
+      "rank": 38,
       "id": "bus.sand.fall.jam.loop.traffic.flow",
       "name": "Jam Bus:Sandfall",
       "artist": "Nova Games Technology Limited",
@@ -475,11 +463,11 @@
       "url": "https://play.google.com/store/apps/details?id=bus.sand.fall.jam.loop.traffic.flow",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.660279,
+      "rating": 4.6642337,
       "ratingText": "4.7"
     },
     {
-      "rank": 40,
+      "rank": 39,
       "id": "com.rotatelab.cubeblast",
       "name": "Cube Land Puzzle Game",
       "artist": "Rotatelab Yazilim ve Bilisim A.S.",
@@ -487,8 +475,20 @@
       "url": "https://play.google.com/store/apps/details?id=com.rotatelab.cubeblast",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.490635,
+      "rating": 4.490975,
       "ratingText": "4.5"
+    },
+    {
+      "rank": 40,
+      "id": "jp.co.goodroid.hyper.puzzle.arrows3dcubepuzzle",
+      "name": "CubeAway - 3DPuzzle",
+      "artist": "GOODROID,Inc.",
+      "icon": "https://play-lh.googleusercontent.com/k_9MZtpdy3gYNVgynIWwv-1omuSkl4WGr5bOKYT-PJDC5PsEdFQMXWEBU7Jr3TfyjeBviAD3DN3_2KpDhGfa",
+      "url": "https://play.google.com/store/apps/details?id=jp.co.goodroid.hyper.puzzle.arrows3dcubepuzzle",
+      "price": 0,
+      "priceLabel": "免费",
+      "rating": 4.392672,
+      "ratingText": "4.4"
     },
     {
       "rank": 41,
@@ -499,7 +499,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.underdogsports.fantasy",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.643208,
+      "rating": 4.6434193,
       "ratingText": "4.6"
     },
     {
@@ -511,35 +511,23 @@
       "url": "https://play.google.com/store/apps/details?id=com.king.candycrushsaga",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.6307793,
+      "rating": 4.630798,
       "ratingText": "4.6"
     },
     {
       "rank": 43,
       "id": "com.tiny.ride.game",
       "name": "Tiny Ride",
-      "artist": "TabTale",
+      "artist": "CrazyLabs LTD",
       "icon": "https://play-lh.googleusercontent.com/9KxeSJ8g4MrPEwxFlz-enq-R6p0Nrhb0vxRLiYe6XA0J4ASYZLGh002FedGVZygPbBE0KIB-8pKOi8Qofc8f",
       "url": "https://play.google.com/store/apps/details?id=com.tiny.ride.game",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.4210525,
+      "rating": 4.426396,
       "ratingText": "4.4"
     },
     {
       "rank": 44,
-      "id": "com.blast.puzzlegame.bear",
-      "name": "CarLoop",
-      "artist": "UUTEAM Technology Limited",
-      "icon": "https://play-lh.googleusercontent.com/h3L4qv_vdhOCBuwn5k4aBnJoHhWxEdncfdr2HsR9c4VwVfU2JGRjMxJUgLGyPxDAKcNLwb3a_gKBYjKZRINe1rQ",
-      "url": "https://play.google.com/store/apps/details?id=com.blast.puzzlegame.bear",
-      "price": 0,
-      "priceLabel": "免费",
-      "rating": 4.841202,
-      "ratingText": "4.8"
-    },
-    {
-      "rank": 45,
       "id": "com.sled.surfers.game",
       "name": "Sled Surfers",
       "artist": "CrazyLabs LTD",
@@ -547,8 +535,20 @@
       "url": "https://play.google.com/store/apps/details?id=com.sled.surfers.game",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.398079,
+      "rating": 4.4021697,
       "ratingText": "4.4"
+    },
+    {
+      "rank": 45,
+      "id": "com.blast.puzzlegame.bear",
+      "name": "CarLoop",
+      "artist": "UUTEAM Technology Limited",
+      "icon": "https://play-lh.googleusercontent.com/h3L4qv_vdhOCBuwn5k4aBnJoHhWxEdncfdr2HsR9c4VwVfU2JGRjMxJUgLGyPxDAKcNLwb3a_gKBYjKZRINe1rQ",
+      "url": "https://play.google.com/store/apps/details?id=com.blast.puzzlegame.bear",
+      "price": 0,
+      "priceLabel": "免费",
+      "rating": 4.8424172,
+      "ratingText": "4.8"
     },
     {
       "rank": 46,
@@ -559,7 +559,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.dreamgames.royalkingdom",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.778706,
+      "rating": 4.7788277,
       "ratingText": "4.8"
     },
     {
@@ -571,23 +571,11 @@
       "url": "https://play.google.com/store/apps/details?id=com.robtopx.geometryjumplite",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.422379,
+      "rating": 4.4223857,
       "ratingText": "4.4"
     },
     {
       "rank": 48,
-      "id": "com.GybeGames.ColorBlockJam",
-      "name": "Color Block Jam",
-      "artist": "Rollic Games",
-      "icon": "https://play-lh.googleusercontent.com/mmcnrLEVPqe16t2EYFUmFHHCpr9oo98YSi-z4BlbGE5nxQGjEjlEVrIHBMpqsLmiVLrJsZK_rRYVuHkNzH26",
-      "url": "https://play.google.com/store/apps/details?id=com.GybeGames.ColorBlockJam",
-      "price": 0,
-      "priceLabel": "免费",
-      "rating": 4.1233616,
-      "ratingText": "4.1"
-    },
-    {
-      "rank": 49,
       "id": "com.tfgco.apps.coloring.free.color.by.number",
       "name": "Color by Number：Coloring Games",
       "artist": "Wildlife Studios",
@@ -595,8 +583,20 @@
       "url": "https://play.google.com/store/apps/details?id=com.tfgco.apps.coloring.free.color.by.number",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.6613946,
+      "rating": 4.6615205,
       "ratingText": "4.7"
+    },
+    {
+      "rank": 49,
+      "id": "com.GybeGames.ColorBlockJam",
+      "name": "Color Block Jam",
+      "artist": "Rollic Games",
+      "icon": "https://play-lh.googleusercontent.com/mmcnrLEVPqe16t2EYFUmFHHCpr9oo98YSi-z4BlbGE5nxQGjEjlEVrIHBMpqsLmiVLrJsZK_rRYVuHkNzH26",
+      "url": "https://play.google.com/store/apps/details?id=com.GybeGames.ColorBlockJam",
+      "price": 0,
+      "priceLabel": "免费",
+      "rating": 4.1239185,
+      "ratingText": "4.1"
     },
     {
       "rank": 50,
@@ -607,23 +607,11 @@
       "url": "https://play.google.com/store/apps/details?id=io.supercent.linkedcubic",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.531773,
+      "rating": 4.5321126,
       "ratingText": "4.5"
     },
     {
       "rank": 51,
-      "id": "com.agavegames.findthecat2",
-      "name": "Find The Cat 2 - Spot It!",
-      "artist": "Agave Games",
-      "icon": "https://play-lh.googleusercontent.com/HYJXaueeICWwIMzbpoJFNSfmerd0BY77gQSJd7ZCm-mXeHSMOmnq7677UwJLrWC17e20a3ZwacNqvVtpSJAzmlM",
-      "url": "https://play.google.com/store/apps/details?id=com.agavegames.findthecat2",
-      "price": 0,
-      "priceLabel": "免费",
-      "rating": 4.9479413,
-      "ratingText": "4.9"
-    },
-    {
-      "rank": 52,
       "id": "com.tripledot.blockbash",
       "name": "Woodoku Blast",
       "artist": "Tripledot Studios Limited",
@@ -631,11 +619,11 @@
       "url": "https://play.google.com/store/apps/details?id=com.tripledot.blockbash",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.771209,
+      "rating": 4.773082,
       "ratingText": "4.8"
     },
     {
-      "rank": 53,
+      "rank": 52,
       "id": "com.yourstudio.pinkpour",
       "name": "Pink Pour: Water Sort",
       "artist": "NEW PACE PRODUCTIONS",
@@ -643,8 +631,20 @@
       "url": "https://play.google.com/store/apps/details?id=com.yourstudio.pinkpour",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.245098,
-      "ratingText": "4.2"
+      "rating": 4.291262,
+      "ratingText": "4.3"
+    },
+    {
+      "rank": 53,
+      "id": "com.agavegames.findthecat2",
+      "name": "Find The Cat 2 - Spot It!",
+      "artist": "Agave Games",
+      "icon": "https://play-lh.googleusercontent.com/HYJXaueeICWwIMzbpoJFNSfmerd0BY77gQSJd7ZCm-mXeHSMOmnq7677UwJLrWC17e20a3ZwacNqvVtpSJAzmlM",
+      "url": "https://play.google.com/store/apps/details?id=com.agavegames.findthecat2",
+      "price": 0,
+      "priceLabel": "免费",
+      "rating": 4.9484653,
+      "ratingText": "4.9"
     },
     {
       "rank": 54,
@@ -655,23 +655,11 @@
       "url": "https://play.google.com/store/apps/details?id=com.ecffri.arrows",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.6825023,
+      "rating": 4.6829615,
       "ratingText": "4.7"
     },
     {
       "rank": 55,
-      "id": "com.zigzagame.paranoize",
-      "name": "Paranoize",
-      "artist": "ZigZaGame Inc.",
-      "icon": "https://play-lh.googleusercontent.com/7LQtnB1OywAs4z9kyDT5NiAQtoE_TNMU6OdiPAm0znOARQB6lOlxZ7Dq9SQ8kdCvBAsDjGQKzhV2JMHHN2iuQ5g",
-      "url": "https://play.google.com/store/apps/details?id=com.zigzagame.paranoize",
-      "price": 0,
-      "priceLabel": "免费",
-      "rating": 4.6990743,
-      "ratingText": "4.7"
-    },
-    {
-      "rank": 56,
       "id": "com.leap.searchit",
       "name": "Search It - Hidden Objects",
       "artist": "Leap Game Studios",
@@ -679,11 +667,11 @@
       "url": "https://play.google.com/store/apps/details?id=com.leap.searchit",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.921102,
+      "rating": 4.9218802,
       "ratingText": "4.9"
     },
     {
-      "rank": 57,
+      "rank": 56,
       "id": "com.tripledot.spades",
       "name": "Spades - Classic Cards",
       "artist": "Tripledot Studios Limited",
@@ -691,7 +679,19 @@
       "url": "https://play.google.com/store/apps/details?id=com.tripledot.spades",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.8482327,
+      "rating": 4.848345,
+      "ratingText": "4.8"
+    },
+    {
+      "rank": 57,
+      "id": "com.easybrain.arrow.puzzle.game",
+      "name": "Arrow Puzzle: Tap Puzzle Games",
+      "artist": "Easybrain",
+      "icon": "https://play-lh.googleusercontent.com/b--9J_VPY-VBj6ZAYDkXBZIni5JSi44_tFOeJ_HW3uVnxw1XNIkUvHF8qT9V6aLzyK_W4U5EAlDoofjjOfqWXQ",
+      "url": "https://play.google.com/store/apps/details?id=com.easybrain.arrow.puzzle.game",
+      "price": 0,
+      "priceLabel": "免费",
+      "rating": 4.840935,
       "ratingText": "4.8"
     },
     {
@@ -703,23 +703,11 @@
       "url": "https://play.google.com/store/apps/details?id=com.loomgames.pixelflow",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.5040054,
+      "rating": 4.5043178,
       "ratingText": "4.5"
     },
     {
       "rank": 59,
-      "id": "com.pixel.art.coloring.color.number",
-      "name": "Happy Color®: Color by Number",
-      "artist": "X-FLOW",
-      "icon": "https://play-lh.googleusercontent.com/SrSr_L4l99jgmGMy79N0_mEhpdn-fBqpg1hxobrs_daqRyZU-IUaiz3_07Bx-c5fB8JtHE0R5HpB2S8V3XAfJTs",
-      "url": "https://play.google.com/store/apps/details?id=com.pixel.art.coloring.color.number",
-      "price": 0,
-      "priceLabel": "免费",
-      "rating": 4.5552034,
-      "ratingText": "4.6"
-    },
-    {
-      "rank": 60,
       "id": "com.superplaystudios.dicedreams",
       "name": "Dice Dreams™️",
       "artist": "SuperPlay.",
@@ -727,35 +715,35 @@
       "url": "https://play.google.com/store/apps/details?id=com.superplaystudios.dicedreams",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.695028,
+      "rating": 4.6950393,
+      "ratingText": "4.7"
+    },
+    {
+      "rank": 60,
+      "id": "com.zigzagame.paranoize",
+      "name": "Paranoize",
+      "artist": "ZigZaGame Inc.",
+      "icon": "https://play-lh.googleusercontent.com/7LQtnB1OywAs4z9kyDT5NiAQtoE_TNMU6OdiPAm0znOARQB6lOlxZ7Dq9SQ8kdCvBAsDjGQKzhV2JMHHN2iuQ5g",
+      "url": "https://play.google.com/store/apps/details?id=com.zigzagame.paranoize",
+      "price": 0,
+      "priceLabel": "免费",
+      "rating": 4.7215385,
       "ratingText": "4.7"
     },
     {
       "rank": 61,
-      "id": "com.pl.clean.perfect.asrm.ocd",
-      "name": "Clean Perfect OCD",
-      "artist": "Funlab Games",
-      "icon": "https://play-lh.googleusercontent.com/CpX1XFXP1KUxKIJsZOG9EG9acxkuObVD3ReSa9dfYfsAP8jCZ2DZSWNh-2Uyl50AyV6xjQoQ8ltVGytJ-ePX",
-      "url": "https://play.google.com/store/apps/details?id=com.pl.clean.perfect.asrm.ocd",
+      "id": "com.pixel.art.coloring.color.number",
+      "name": "Happy Color®: Color by Number",
+      "artist": "X-FLOW",
+      "icon": "https://play-lh.googleusercontent.com/SrSr_L4l99jgmGMy79N0_mEhpdn-fBqpg1hxobrs_daqRyZU-IUaiz3_07Bx-c5fB8JtHE0R5HpB2S8V3XAfJTs",
+      "url": "https://play.google.com/store/apps/details?id=com.pixel.art.coloring.color.number",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.119658,
-      "ratingText": "4.1"
+      "rating": 4.555165,
+      "ratingText": "4.6"
     },
     {
       "rank": 62,
-      "id": "com.easybrain.arrow.puzzle.game",
-      "name": "Arrow Puzzle: Tap Puzzle Games",
-      "artist": "Easybrain",
-      "icon": "https://play-lh.googleusercontent.com/b--9J_VPY-VBj6ZAYDkXBZIni5JSi44_tFOeJ_HW3uVnxw1XNIkUvHF8qT9V6aLzyK_W4U5EAlDoofjjOfqWXQ",
-      "url": "https://play.google.com/store/apps/details?id=com.easybrain.arrow.puzzle.game",
-      "price": 0,
-      "priceLabel": "免费",
-      "rating": 4.8419275,
-      "ratingText": "4.8"
-    },
-    {
-      "rank": 63,
       "id": "in.playsimple.crossword.go",
       "name": "Crossword Go!",
       "artist": "PlaySimple Games",
@@ -763,20 +751,32 @@
       "url": "https://play.google.com/store/apps/details?id=in.playsimple.crossword.go",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.8587265,
+      "rating": 4.856595,
       "ratingText": "4.9"
     },
     {
-      "rank": 64,
-      "id": "com.RC67.surprise.dumpling.ASMR.box",
-      "name": "Surprise Dumpling: ASMR Box",
-      "artist": "NAMIGAME",
-      "icon": "https://play-lh.googleusercontent.com/PdAsT_HFz2NLE7H53RY3i496pamKJia8So45cf8jTbTHuoVboDlURFxcp2qaHyoPaZcQChNAI_b0Vc40sguQ2A",
-      "url": "https://play.google.com/store/apps/details?id=com.RC67.surprise.dumpling.ASMR.box",
+      "rank": 63,
+      "id": "com.pl.clean.perfect.asrm.ocd",
+      "name": "Clean Perfect OCD",
+      "artist": "Funlab Games",
+      "icon": "https://play-lh.googleusercontent.com/CpX1XFXP1KUxKIJsZOG9EG9acxkuObVD3ReSa9dfYfsAP8jCZ2DZSWNh-2Uyl50AyV6xjQoQ8ltVGytJ-ePX",
+      "url": "https://play.google.com/store/apps/details?id=com.pl.clean.perfect.asrm.ocd",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.67451,
-      "ratingText": "4.7"
+      "rating": 4.04,
+      "ratingText": "4.0"
+    },
+    {
+      "rank": 64,
+      "id": "sort.casual.color.cat.puzzle.match",
+      "name": "Cutie Sort: Kitten Games",
+      "artist": "Easetouch",
+      "icon": "https://play-lh.googleusercontent.com/64udQifq6ukd71ZgNxM4C_n0DcBFEVBa2Blx1-Jcgt7b1J9TAq89qKXy54RcKghq4H6xBNcw05kxBxPJr50tOw",
+      "url": "https://play.google.com/store/apps/details?id=sort.casual.color.cat.puzzle.match",
+      "price": 0,
+      "priceLabel": "免费",
+      "rating": 4.896936,
+      "ratingText": "4.9"
     },
     {
       "rank": 65,
@@ -787,35 +787,11 @@
       "url": "https://play.google.com/store/apps/details?id=com.uncosoft.wordpuzzle",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.1463413,
-      "ratingText": "4.1"
+      "rating": 4.15625,
+      "ratingText": "4.2"
     },
     {
       "rank": 66,
-      "id": "com.grandgames.catblockjam",
-      "name": "Block Out! - Color Sort Puzzle",
-      "artist": "Grand Games A.Ş.",
-      "icon": "https://play-lh.googleusercontent.com/JgD4PuYhmjs0poBoJ-qZrIKKKgIvLqLZ5ouOYjJHZa2cePVlPtA9xUA02hj8v-nAVJGuOEUwHYL4uARhsryxPv4",
-      "url": "https://play.google.com/store/apps/details?id=com.grandgames.catblockjam",
-      "price": 0,
-      "priceLabel": "免费",
-      "rating": 4.5807085,
-      "ratingText": "4.6"
-    },
-    {
-      "rank": 67,
-      "id": "com.Garawell.LoopSort",
-      "name": "Loop Sort",
-      "artist": "VOODOO",
-      "icon": "https://play-lh.googleusercontent.com/5wPzX6vBVV-kr4jknuW4ACmYrRgD5m2UwjXw9VFlWAhIsJ5k_8BND8m8NGUv6hOgPuXQzOmvNBQYKY-GWNfDxg",
-      "url": "https://play.google.com/store/apps/details?id=com.Garawell.LoopSort",
-      "price": 0,
-      "priceLabel": "免费",
-      "rating": 4.4849906,
-      "ratingText": "4.5"
-    },
-    {
-      "rank": 68,
       "id": "com.abi.colony.flow",
       "name": "Colony Flow!",
       "artist": "ABI GAMES PTE. LTD.",
@@ -823,35 +799,47 @@
       "url": "https://play.google.com/store/apps/details?id=com.abi.colony.flow",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.410596,
+      "rating": 4.415459,
       "ratingText": "4.4"
     },
     {
-      "rank": 69,
-      "id": "sort.casual.color.cat.puzzle.match",
-      "name": "Cutie Sort: Kitten Games",
-      "artist": "Easetouch",
-      "icon": "https://play-lh.googleusercontent.com/64udQifq6ukd71ZgNxM4C_n0DcBFEVBa2Blx1-Jcgt7b1J9TAq89qKXy54RcKghq4H6xBNcw05kxBxPJr50tOw",
-      "url": "https://play.google.com/store/apps/details?id=sort.casual.color.cat.puzzle.match",
+      "rank": 67,
+      "id": "com.RC67.surprise.dumpling.ASMR.box",
+      "name": "Surprise Dumpling: ASMR Box",
+      "artist": "NAMIGAME",
+      "icon": "https://play-lh.googleusercontent.com/PdAsT_HFz2NLE7H53RY3i496pamKJia8So45cf8jTbTHuoVboDlURFxcp2qaHyoPaZcQChNAI_b0Vc40sguQ2A",
+      "url": "https://play.google.com/store/apps/details?id=com.RC67.surprise.dumpling.ASMR.box",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.8944283,
-      "ratingText": "4.9"
+      "rating": 4.677043,
+      "ratingText": "4.7"
     },
     {
-      "rank": 70,
-      "id": "com.paradyme.solarsmash",
-      "name": "Solar Smash",
-      "artist": "Paradyme Games",
-      "icon": "https://play-lh.googleusercontent.com/JFGt_7eWZ_wz6h0zXPzVu-atY0HdrI1dS4EhQncxADO-qsQAu7NHEBBBZ3gZ0JlwAJF8je2SrpjWeirw_OABEA",
-      "url": "https://play.google.com/store/apps/details?id=com.paradyme.solarsmash",
+      "rank": 68,
+      "id": "com.Garawell.LoopSort",
+      "name": "Loop Sort",
+      "artist": "VOODOO",
+      "icon": "https://play-lh.googleusercontent.com/5wPzX6vBVV-kr4jknuW4ACmYrRgD5m2UwjXw9VFlWAhIsJ5k_8BND8m8NGUv6hOgPuXQzOmvNBQYKY-GWNfDxg",
+      "url": "https://play.google.com/store/apps/details?id=com.Garawell.LoopSort",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.5780587,
+      "rating": 4.4855814,
+      "ratingText": "4.5"
+    },
+    {
+      "rank": 69,
+      "id": "com.grandgames.catblockjam",
+      "name": "Block Out! - Color Sort Puzzle",
+      "artist": "Grand Games A.Ş.",
+      "icon": "https://play-lh.googleusercontent.com/JgD4PuYhmjs0poBoJ-qZrIKKKgIvLqLZ5ouOYjJHZa2cePVlPtA9xUA02hj8v-nAVJGuOEUwHYL4uARhsryxPv4",
+      "url": "https://play.google.com/store/apps/details?id=com.grandgames.catblockjam",
+      "price": 0,
+      "priceLabel": "免费",
+      "rating": 4.6077924,
       "ratingText": "4.6"
     },
     {
-      "rank": 71,
+      "rank": 70,
       "id": "sniper.war.target.soldier.shooter.aldagames.com",
       "name": "Ghost Sniper: War FPS Shooter",
       "artist": "Alda Games",
@@ -859,20 +847,32 @@
       "url": "https://play.google.com/store/apps/details?id=sniper.war.target.soldier.shooter.aldagames.com",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.5188,
+      "rating": 4.5174785,
       "ratingText": "4.5"
     },
     {
-      "rank": 72,
-      "id": "net.happywit.screw.out.jam",
-      "name": "Screw Out 3D: Nut Sort Jam",
-      "artist": "Unico Studio",
-      "icon": "https://play-lh.googleusercontent.com/tL7oVf9_W4Oi0lJSZEYHgdYR1ySweJ3nWGD6ndI1IWq6cYWR2o3xJgitj2KMr5rK4Ush4Bs7P_hd81wh812ypA",
-      "url": "https://play.google.com/store/apps/details?id=net.happywit.screw.out.jam",
+      "rank": 71,
+      "id": "com.paradyme.solarsmash",
+      "name": "Solar Smash",
+      "artist": "Paradyme Games",
+      "icon": "https://play-lh.googleusercontent.com/JFGt_7eWZ_wz6h0zXPzVu-atY0HdrI1dS4EhQncxADO-qsQAu7NHEBBBZ3gZ0JlwAJF8je2SrpjWeirw_OABEA",
+      "url": "https://play.google.com/store/apps/details?id=com.paradyme.solarsmash",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.658869,
-      "ratingText": "4.7"
+      "rating": 4.5779715,
+      "ratingText": "4.6"
+    },
+    {
+      "rank": 72,
+      "id": "com.tocaboca.tocalifeworld",
+      "name": "Toca Boca World",
+      "artist": "Toca Boca",
+      "icon": "https://play-lh.googleusercontent.com/EQJQ_3OTKMq8h5ULR30LouHVfe-Ii5LDCR3jk_dlXZRlByJlVDlDndgw09GDE7c5-k9k8xiJ2DfEG5vw_v_q",
+      "url": "https://play.google.com/store/apps/details?id=com.tocaboca.tocalifeworld",
+      "price": 0,
+      "priceLabel": "免费",
+      "rating": 4.3623095,
+      "ratingText": "4.4"
     },
     {
       "rank": 73,
@@ -883,47 +883,35 @@
       "url": "https://play.google.com/store/apps/details?id=hidden.object.find.seek.search.mystery.puzzle.games.free",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.90891,
+      "rating": 4.9092283,
       "ratingText": "4.9"
     },
     {
       "rank": 74,
-      "id": "com.tocaboca.tocalifeworld",
-      "name": "Toca Boca World",
-      "artist": "Toca Boca",
-      "icon": "https://play-lh.googleusercontent.com/EQJQ_3OTKMq8h5ULR30LouHVfe-Ii5LDCR3jk_dlXZRlByJlVDlDndgw09GDE7c5-k9k8xiJ2DfEG5vw_v_q",
-      "url": "https://play.google.com/store/apps/details?id=com.tocaboca.tocalifeworld",
+      "id": "com.oakever.sortparade",
+      "name": "Sort Streak: Color Puzzle",
+      "artist": "Oakever Games",
+      "icon": "https://play-lh.googleusercontent.com/Gt6y9cxYV9e-Z_eZRDtERhFXDHde7HgdYfH4A59gIRmCK9lBYo4o-_-oogcHBDr0D6tkRWqhDLjfi16d5rHk",
+      "url": "https://play.google.com/store/apps/details?id=com.oakever.sortparade",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.362635,
-      "ratingText": "4.4"
+      "rating": 4.6946235,
+      "ratingText": "4.7"
     },
     {
       "rank": 75,
-      "id": "com.miniclip.eightballpool",
-      "name": "8 Ball Pool",
-      "artist": "Miniclip.com",
-      "icon": "https://play-lh.googleusercontent.com/F2_Kbn1-vQePDh_Y0qNCDhkmpEK5qdEyPwcJqwXho54ZVG4w6Szt32VHsyPzeVLPR2kfYI62-hGmNpQoDxS-wQ",
-      "url": "https://play.google.com/store/apps/details?id=com.miniclip.eightballpool",
+      "id": "net.happywit.screw.out.jam",
+      "name": "Screw Out 3D: Nut Sort Jam",
+      "artist": "Unico Studio",
+      "icon": "https://play-lh.googleusercontent.com/tL7oVf9_W4Oi0lJSZEYHgdYR1ySweJ3nWGD6ndI1IWq6cYWR2o3xJgitj2KMr5rK4Ush4Bs7P_hd81wh812ypA",
+      "url": "https://play.google.com/store/apps/details?id=net.happywit.screw.out.jam",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.7876835,
-      "ratingText": "4.8"
+      "rating": 4.657624,
+      "ratingText": "4.7"
     },
     {
       "rank": 76,
-      "id": "com.yg.mini.games",
-      "name": "Relax Mini Games",
-      "artist": "SUPERIOR  STUDIO",
-      "icon": "https://play-lh.googleusercontent.com/svuPSiGNjjZAjMZolPgPTI2VBMWUxksxnE_2_if58hKp10IP9yBB8JyXXx-e_RXNfuGSUbIxy-gI-NOc3nGQJg",
-      "url": "https://play.google.com/store/apps/details?id=com.yg.mini.games",
-      "price": 0,
-      "priceLabel": "免费",
-      "rating": 4.7561727,
-      "ratingText": "4.8"
-    },
-    {
-      "rank": 77,
       "id": "com.JindoBlu.OfflineGames",
       "name": "Offline Games - No Wifi Games",
       "artist": "JindoBlu",
@@ -931,11 +919,35 @@
       "url": "https://play.google.com/store/apps/details?id=com.JindoBlu.OfflineGames",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.58613,
+      "rating": 4.585078,
       "ratingText": "4.6"
     },
     {
+      "rank": 77,
+      "id": "com.yg.mini.games",
+      "name": "Relax Mini Games",
+      "artist": "SUPERIOR  STUDIO",
+      "icon": "https://play-lh.googleusercontent.com/svuPSiGNjjZAjMZolPgPTI2VBMWUxksxnE_2_if58hKp10IP9yBB8JyXXx-e_RXNfuGSUbIxy-gI-NOc3nGQJg",
+      "url": "https://play.google.com/store/apps/details?id=com.yg.mini.games",
+      "price": 0,
+      "priceLabel": "免费",
+      "rating": 4.754658,
+      "ratingText": "4.8"
+    },
+    {
       "rank": 78,
+      "id": "com.activision.callofduty.shooter",
+      "name": "Call of Duty®: Mobile",
+      "artist": "Activision Publishing, Inc.",
+      "icon": "https://play-lh.googleusercontent.com/cKXlbU72_2wSXdjcD_zPWED3EVaaOQVqqHgiA9JoRQMprYen49arNUMTngcRc9UWLnv-ANT9gyQBDQpvAn61lg",
+      "url": "https://play.google.com/store/apps/details?id=com.activision.callofduty.shooter",
+      "price": 0,
+      "priceLabel": "免费",
+      "rating": 4.259034,
+      "ratingText": "4.3"
+    },
+    {
+      "rank": 79,
       "id": "com.puzzlegames.puzzlebrickslegend",
       "name": "Color Block: Combo Blast",
       "artist": "Ivy",
@@ -943,11 +955,23 @@
       "url": "https://play.google.com/store/apps/details?id=com.puzzlegames.puzzlebrickslegend",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.273743,
+      "rating": 4.2804427,
       "ratingText": "4.3"
     },
     {
-      "rank": 79,
+      "rank": 80,
+      "id": "com.miniclip.eightballpool",
+      "name": "8 Ball Pool",
+      "artist": "Miniclip.com",
+      "icon": "https://play-lh.googleusercontent.com/F2_Kbn1-vQePDh_Y0qNCDhkmpEK5qdEyPwcJqwXho54ZVG4w6Szt32VHsyPzeVLPR2kfYI62-hGmNpQoDxS-wQ",
+      "url": "https://play.google.com/store/apps/details?id=com.miniclip.eightballpool",
+      "price": 0,
+      "priceLabel": "免费",
+      "rating": 4.7877593,
+      "ratingText": "4.8"
+    },
+    {
+      "rank": 81,
       "id": "solitaire.patience.card.games.klondike.free",
       "name": "Solitaire - Classic Card Games",
       "artist": "Guru Puzzle Game",
@@ -955,11 +979,11 @@
       "url": "https://play.google.com/store/apps/details?id=solitaire.patience.card.games.klondike.free",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.877037,
+      "rating": 4.876607,
       "ratingText": "4.9"
     },
     {
-      "rank": 80,
+      "rank": 82,
       "id": "busflow.traffic.puzzle",
       "name": "Bus Crowd - Traffic Jam",
       "artist": "Hyper Surfer Games",
@@ -971,19 +995,7 @@
       "ratingText": "3.8"
     },
     {
-      "rank": 81,
-      "id": "com.oakever.sortparade",
-      "name": "Sort Streak: Color Puzzle",
-      "artist": "Oakever Games",
-      "icon": "https://play-lh.googleusercontent.com/Gt6y9cxYV9e-Z_eZRDtERhFXDHde7HgdYfH4A59gIRmCK9lBYo4o-_-oogcHBDr0D6tkRWqhDLjfi16d5rHk",
-      "url": "https://play.google.com/store/apps/details?id=com.oakever.sortparade",
-      "price": 0,
-      "priceLabel": "免费",
-      "rating": 4.732143,
-      "ratingText": "4.7"
-    },
-    {
-      "rank": 82,
+      "rank": 83,
       "id": "io.heseri.car",
       "name": "Car Evolve",
       "artist": "Heseri Games",
@@ -991,20 +1003,8 @@
       "url": "https://play.google.com/store/apps/details?id=io.heseri.car",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 3.0337079,
+      "rating": 3.0055249,
       "ratingText": "3.0"
-    },
-    {
-      "rank": 83,
-      "id": "com.activision.callofduty.shooter",
-      "name": "Call of Duty®: Mobile",
-      "artist": "Activision Publishing, Inc.",
-      "icon": "https://play-lh.googleusercontent.com/cKXlbU72_2wSXdjcD_zPWED3EVaaOQVqqHgiA9JoRQMprYen49arNUMTngcRc9UWLnv-ANT9gyQBDQpvAn61lg",
-      "url": "https://play.google.com/store/apps/details?id=com.activision.callofduty.shooter",
-      "price": 0,
-      "priceLabel": "免费",
-      "rating": 4.259219,
-      "ratingText": "4.3"
     },
     {
       "rank": 84,
@@ -1015,7 +1015,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.yolo.hiddenobjects",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.8749514,
+      "rating": 4.8754363,
       "ratingText": "4.9"
     },
     {
@@ -1027,23 +1027,11 @@
       "url": "https://play.google.com/store/apps/details?id=com.gl.crowncrush",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.562083,
+      "rating": 4.57266,
       "ratingText": "4.6"
     },
     {
       "rank": 86,
-      "id": "com.kayac.slow_mo_strike",
-      "name": "Slow Mo Strike: Knives in Time",
-      "artist": "KAYAC Inc.",
-      "icon": "https://play-lh.googleusercontent.com/n66j7RW_nkiV0Os2VqV6SYjSr9IZw0ClAoU40xFu63p2laphNaWDrr7aOlgqMRah6wWfhaauGCcMTUe7n_Tm",
-      "url": "https://play.google.com/store/apps/details?id=com.kayac.slow_mo_strike",
-      "price": 0,
-      "priceLabel": "免费",
-      "rating": 4.5384617,
-      "ratingText": "4.5"
-    },
-    {
-      "rank": 87,
       "id": "com.uc.gym.clicker",
       "name": "Gym Idle Clicker: Fitness Hero",
       "artist": "Unicorn Studio Official",
@@ -1051,8 +1039,20 @@
       "url": "https://play.google.com/store/apps/details?id=com.uc.gym.clicker",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.7218246,
+      "rating": 4.722372,
       "ratingText": "4.7"
+    },
+    {
+      "rank": 87,
+      "id": "com.kayac.slow_mo_strike",
+      "name": "Slow Mo Strike: Knives in Time",
+      "artist": "KAYAC Inc.",
+      "icon": "https://play-lh.googleusercontent.com/n66j7RW_nkiV0Os2VqV6SYjSr9IZw0ClAoU40xFu63p2laphNaWDrr7aOlgqMRah6wWfhaauGCcMTUe7n_Tm",
+      "url": "https://play.google.com/store/apps/details?id=com.kayac.slow_mo_strike",
+      "price": 0,
+      "priceLabel": "免费",
+      "rating": 4.54375,
+      "ratingText": "4.5"
     },
     {
       "rank": 88,
@@ -1063,11 +1063,23 @@
       "url": "https://play.google.com/store/apps/details?id=com.studio27.MelonPlayground",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.689776,
+      "rating": 4.6898527,
       "ratingText": "4.7"
     },
     {
       "rank": 89,
+      "id": "com.epicoro.castleclashers",
+      "name": "Castle Busters",
+      "artist": "VOODOO",
+      "icon": "https://play-lh.googleusercontent.com/HoZEAZ079BkQ1Aoog3_Lb7sca-XQHtS6ooYfj8gTKJmV2Q-GnWuQ2Y0Qo-IC0zn6VhxNijeC9pYjiWe6znVr6GQ",
+      "url": "https://play.google.com/store/apps/details?id=com.epicoro.castleclashers",
+      "price": 0,
+      "priceLabel": "免费",
+      "rating": 3.5371492,
+      "ratingText": "3.5"
+    },
+    {
+      "rank": 90,
       "id": "in.playsimple.wordtrip.association",
       "name": "Word Connect Association",
       "artist": "PlaySimple Games",
@@ -1075,20 +1087,8 @@
       "url": "https://play.google.com/store/apps/details?id=in.playsimple.wordtrip.association",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.820572,
+      "rating": 4.8208714,
       "ratingText": "4.8"
-    },
-    {
-      "rank": 90,
-      "id": "com.vigafun.funfinity.foodhunt",
-      "name": "Food Hunt: Pixel Puzzle",
-      "artist": "EVERFUN",
-      "icon": "https://play-lh.googleusercontent.com/f7HHbEOewA0rIk299hsDv6vN4Iz_W5OvivKF2lMKOKzttF1g4lp8kE7qDAUGlJLAelw56TSRd6V5y4SFGCKp",
-      "url": "https://play.google.com/store/apps/details?id=com.vigafun.funfinity.foodhunt",
-      "price": 0,
-      "priceLabel": "免费",
-      "rating": 4.555973,
-      "ratingText": "4.6"
     },
     {
       "rank": 91,
@@ -1099,11 +1099,35 @@
       "url": "https://play.google.com/store/apps/details?id=com.moonactive.holestars",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.708795,
+      "rating": 4.707478,
       "ratingText": "4.7"
     },
     {
       "rank": 92,
+      "id": "com.vigafun.funfinity.foodhunt",
+      "name": "Food Hunt: Pixel Puzzle",
+      "artist": "EVERFUN",
+      "icon": "https://play-lh.googleusercontent.com/f7HHbEOewA0rIk299hsDv6vN4Iz_W5OvivKF2lMKOKzttF1g4lp8kE7qDAUGlJLAelw56TSRd6V5y4SFGCKp",
+      "url": "https://play.google.com/store/apps/details?id=com.vigafun.funfinity.foodhunt",
+      "price": 0,
+      "priceLabel": "免费",
+      "rating": 4.5534406,
+      "ratingText": "4.6"
+    },
+    {
+      "rank": 93,
+      "id": "com.thrivegames.bashbest",
+      "name": "Tiki Smash! Smashing game",
+      "artist": "PeopleFun",
+      "icon": "https://play-lh.googleusercontent.com/wrL6_KaT0gzj3fdSmXCZ8JTFGZEsawfEubff2OglqIZSWxKm2WaIi481qokmQ-n2e7mCsQeGPpDSsSaAoW6mCJI",
+      "url": "https://play.google.com/store/apps/details?id=com.thrivegames.bashbest",
+      "price": 0,
+      "priceLabel": "免费",
+      "rating": 4.867647,
+      "ratingText": "4.9"
+    },
+    {
+      "rank": 94,
       "id": "com.cscmobi.livestream.idle.clicker",
       "name": "Viral Streamer: Idle Clicker",
       "artist": "CSCMobi Studios",
@@ -1111,59 +1135,11 @@
       "url": "https://play.google.com/store/apps/details?id=com.cscmobi.livestream.idle.clicker",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.6299214,
+      "rating": 4.637037,
       "ratingText": "4.6"
     },
     {
-      "rank": 93,
-      "id": "com.epicoro.castleclashers",
-      "name": "Castle Busters",
-      "artist": "VOODOO",
-      "icon": "https://play-lh.googleusercontent.com/HoZEAZ079BkQ1Aoog3_Lb7sca-XQHtS6ooYfj8gTKJmV2Q-GnWuQ2Y0Qo-IC0zn6VhxNijeC9pYjiWe6znVr6GQ",
-      "url": "https://play.google.com/store/apps/details?id=com.epicoro.castleclashers",
-      "price": 0,
-      "priceLabel": "免费",
-      "rating": 3.5339592,
-      "ratingText": "3.5"
-    },
-    {
-      "rank": 94,
-      "id": "com.phs.global",
-      "name": "Last Asylum: Plague",
-      "artist": "37GAMES GLOBAL",
-      "icon": "https://play-lh.googleusercontent.com/HOFXbIOJIZGru5_UM5hdGDmP7HIgxGJEx4dQAbPClmAtrNw3tVL9fY5NNHfa7VgIMFU-Sr3-s5FQGfaYJYhP",
-      "url": "https://play.google.com/store/apps/details?id=com.phs.global",
-      "price": 0,
-      "priceLabel": "免费",
-      "rating": 4.2265606,
-      "ratingText": "4.2"
-    },
-    {
       "rank": 95,
-      "id": "com.godlike.vigormahjong",
-      "name": "Vigor Mahjong",
-      "artist": "CanaryDroid",
-      "icon": "https://play-lh.googleusercontent.com/5Bs25wUaHe0m5rRa92kNTnNejqa3bWEqnmtlUvBZbbzAFYdaTmcXAIpR-6CwBdSO4_JJoVDo6bPyq-_zdrsA",
-      "url": "https://play.google.com/store/apps/details?id=com.godlike.vigormahjong",
-      "price": 0,
-      "priceLabel": "免费",
-      "rating": 4.82979,
-      "ratingText": "4.8"
-    },
-    {
-      "rank": 96,
-      "id": "triple.sorting.bubble.fish.match",
-      "name": "Fish Sort Puzzle",
-      "artist": "Shycheese",
-      "icon": "https://play-lh.googleusercontent.com/33uObVFJ0-1md9XkQSTMHnh-E91drVuMj6cODaGcKuag07lwFVfWxCg0Ef-gKfaY9iKFrCOdaw5GJa0-6JV7FQ",
-      "url": "https://play.google.com/store/apps/details?id=triple.sorting.bubble.fish.match",
-      "price": 0,
-      "priceLabel": "免费",
-      "rating": 4.764877,
-      "ratingText": "4.8"
-    },
-    {
-      "rank": 97,
       "id": "com.gof.global",
       "name": "Whiteout Survival",
       "artist": "Century Games PTE. LTD.",
@@ -1171,23 +1147,59 @@
       "url": "https://play.google.com/store/apps/details?id=com.gof.global",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.064882,
+      "rating": 4.064887,
       "ratingText": "4.1"
     },
     {
-      "rank": 98,
-      "id": "com.peoplefun.wordcross",
-      "name": "Wordscapes: Word puzzle game",
-      "artist": "PeopleFun",
-      "icon": "https://play-lh.googleusercontent.com/BhdmZ3uVx7aYrJcEE9D8UoBmXMFpiXeAwB7UMXx1PF5ereMMB-WDoVIVwmvsTdmuk9LSWo1HeBiuZXxmDjk1",
-      "url": "https://play.google.com/store/apps/details?id=com.peoplefun.wordcross",
+      "rank": 96,
+      "id": "com.phs.global",
+      "name": "Last Asylum: Plague",
+      "artist": "37GAMES GLOBAL",
+      "icon": "https://play-lh.googleusercontent.com/HOFXbIOJIZGru5_UM5hdGDmP7HIgxGJEx4dQAbPClmAtrNw3tVL9fY5NNHfa7VgIMFU-Sr3-s5FQGfaYJYhP",
+      "url": "https://play.google.com/store/apps/details?id=com.phs.global",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.6743193,
-      "ratingText": "4.7"
+      "rating": 4.2253976,
+      "ratingText": "4.2"
+    },
+    {
+      "rank": 97,
+      "id": "com.godlike.vigormahjong",
+      "name": "Vigor Mahjong",
+      "artist": "CanaryDroid",
+      "icon": "https://play-lh.googleusercontent.com/5Bs25wUaHe0m5rRa92kNTnNejqa3bWEqnmtlUvBZbbzAFYdaTmcXAIpR-6CwBdSO4_JJoVDo6bPyq-_zdrsA",
+      "url": "https://play.google.com/store/apps/details?id=com.godlike.vigormahjong",
+      "price": 0,
+      "priceLabel": "免费",
+      "rating": 4.8297424,
+      "ratingText": "4.8"
+    },
+    {
+      "rank": 98,
+      "id": "com.mahjong.master.solitaire.match.puzzle",
+      "name": "Mahjong Master: Daily Match",
+      "artist": "Mindful Daily Puzzles",
+      "icon": "https://play-lh.googleusercontent.com/nUHFn87Lc2AifraSGdQH3DnwOZNzwEj25zYYk3qz3lsxsAa5p_RbXwCHZg38XpZMOcc4KQqlSMWJHfZiBMzErQ",
+      "url": "https://play.google.com/store/apps/details?id=com.mahjong.master.solitaire.match.puzzle",
+      "price": 0,
+      "priceLabel": "免费",
+      "rating": 4.931392,
+      "ratingText": "4.9"
     },
     {
       "rank": 99,
+      "id": "triple.sorting.bubble.fish.match",
+      "name": "Fish Sort Puzzle",
+      "artist": "Shycheese",
+      "icon": "https://play-lh.googleusercontent.com/33uObVFJ0-1md9XkQSTMHnh-E91drVuMj6cODaGcKuag07lwFVfWxCg0Ef-gKfaY9iKFrCOdaw5GJa0-6JV7FQ",
+      "url": "https://play.google.com/store/apps/details?id=triple.sorting.bubble.fish.match",
+      "price": 0,
+      "priceLabel": "免费",
+      "rating": 4.7654233,
+      "ratingText": "4.8"
+    },
+    {
+      "rank": 100,
       "id": "com.funcraft.profootballmanager",
       "name": "17-0 Football Manager",
       "artist": "FunCraft Games",
@@ -1195,20 +1207,8 @@
       "url": "https://play.google.com/store/apps/details?id=com.funcraft.profootballmanager",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.7859197,
+      "rating": 4.786795,
       "ratingText": "4.8"
-    },
-    {
-      "rank": 100,
-      "id": "ball.sort.puzzle.color.sorting.bubble.games",
-      "name": "Ball Sort Puzzle - Color Game",
-      "artist": "Guru Puzzle Game",
-      "icon": "https://play-lh.googleusercontent.com/A-E2jczrwGXsu42MoQdEFQ0YFhMT_9Svyk_7eOCiyYQx8PVcs6gUV99ZYycWiqGca2Zzr8YqUHtxSHhdmm1uw0I",
-      "url": "https://play.google.com/store/apps/details?id=ball.sort.puzzle.color.sorting.bubble.games",
-      "price": 0,
-      "priceLabel": "免费",
-      "rating": 4.890061,
-      "ratingText": "4.9"
     }
   ]
 }
