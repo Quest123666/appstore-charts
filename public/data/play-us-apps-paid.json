@@ -7,7 +7,7 @@
   "chart": "paid",
   "chartLabel": "付费榜",
   "count": 100,
-  "fetchedAt": "2026-11-13T03:44:04.553Z",
+  "fetchedAt": "2026-11-13T13:29:33.670Z",
   "source": "google-play-scraper",
   "results": [
     {
@@ -19,7 +19,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.tdr3.hs.android",
       "price": 2.99,
       "priceLabel": "$2.99",
-      "rating": 3.5541527,
+      "rating": 3.5544488,
       "ratingText": "3.6"
     },
     {
@@ -55,23 +55,11 @@
       "url": "https://play.google.com/store/apps/details?id=com.mayacrew.rolliescam",
       "price": 6.99,
       "priceLabel": "$6.99",
-      "rating": 4.6285715,
+      "rating": 4.611111,
       "ratingText": "4.6"
     },
     {
       "rank": 5,
-      "id": "com.jndapp.oneui.widgets.pack",
-      "name": "OneX Widgets",
-      "artist": "JustNewDesigns",
-      "icon": "https://play-lh.googleusercontent.com/c5Hq-zmJjV8O58OEgES-kuc5VRkDKvyBW_q6NHH_GiBtOiSpGi88joFBYvAG_nL0flpNMOsyRvxbl-riB-jKLPI",
-      "url": "https://play.google.com/store/apps/details?id=com.jndapp.oneui.widgets.pack",
-      "price": 1.09,
-      "priceLabel": "$1.09",
-      "rating": 4.529412,
-      "ratingText": "4.5"
-    },
-    {
-      "rank": 6,
       "id": "com.goblintools",
       "name": "Goblin Tools",
       "artist": "Skyhook Belgium",
@@ -83,19 +71,7 @@
       "ratingText": "4.5"
     },
     {
-      "rank": 7,
-      "id": "com.sonosaurus.tonalenergytuner",
-      "name": "TonalEnergy Tuner & Metronome",
-      "artist": "TonalEnergy, Inc",
-      "icon": "https://play-lh.googleusercontent.com/tlWfjUqDzOjJFiWzEDlh8cT9AkRT6mJWjVjJlddPAgL3jhzUTUMtgtUriwwdCkye5U_PkJlugikqzVLyvjzT",
-      "url": "https://play.google.com/store/apps/details?id=com.sonosaurus.tonalenergytuner",
-      "price": 5.99,
-      "priceLabel": "$5.99",
-      "rating": 4.1560283,
-      "ratingText": "4.2"
-    },
-    {
-      "rank": 8,
+      "rank": 6,
       "id": "net.dinglisch.android.taskerm",
       "name": "Tasker",
       "artist": "joaomgcd",
@@ -107,6 +83,30 @@
       "ratingText": "4.0"
     },
     {
+      "rank": 7,
+      "id": "com.jndapp.oneui.widgets.pack",
+      "name": "OneX Widgets",
+      "artist": "JustNewDesigns",
+      "icon": "https://play-lh.googleusercontent.com/c5Hq-zmJjV8O58OEgES-kuc5VRkDKvyBW_q6NHH_GiBtOiSpGi88joFBYvAG_nL0flpNMOsyRvxbl-riB-jKLPI",
+      "url": "https://play.google.com/store/apps/details?id=com.jndapp.oneui.widgets.pack",
+      "price": 1.09,
+      "priceLabel": "$1.09",
+      "rating": 4.56,
+      "ratingText": "4.6"
+    },
+    {
+      "rank": 8,
+      "id": "com.sonosaurus.tonalenergytuner",
+      "name": "TonalEnergy Tuner & Metronome",
+      "artist": "TonalEnergy, Inc",
+      "icon": "https://play-lh.googleusercontent.com/tlWfjUqDzOjJFiWzEDlh8cT9AkRT6mJWjVjJlddPAgL3jhzUTUMtgtUriwwdCkye5U_PkJlugikqzVLyvjzT",
+      "url": "https://play.google.com/store/apps/details?id=com.sonosaurus.tonalenergytuner",
+      "price": 5.99,
+      "priceLabel": "$5.99",
+      "rating": 4.1560283,
+      "ratingText": "4.2"
+    },
+    {
       "rank": 9,
       "id": "com.facer.pipboy_se",
       "name": "Fallout Pip-Boy SE Watch Face",
@@ -115,7 +115,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.facer.pipboy_se",
       "price": 1.99,
       "priceLabel": "$1.99",
-      "rating": 4.671795,
+      "rating": 4.6666665,
       "ratingText": "4.7"
     },
     {
@@ -132,6 +132,18 @@
     },
     {
       "rank": 11,
+      "id": "com.ekwatchfaces.paperoftime",
+      "name": "Paper of Time - Watch Face",
+      "artist": "EK Watch Faces ™",
+      "icon": "https://play-lh.googleusercontent.com/6SRgzDycyjP5eFEV7k-Cdba6e8-Jn-Gyi0tIAL4VWto2xV0YrksYUkTobnsSidJjT9lNAjfnY5ZHD6n6ab3YB6M",
+      "url": "https://play.google.com/store/apps/details?id=com.ekwatchfaces.paperoftime",
+      "price": 1.99,
+      "priceLabel": "$1.99",
+      "rating": 4.2268043,
+      "ratingText": "4.2"
+    },
+    {
+      "rank": 12,
       "id": "psplay.grill.com",
       "name": "PXPlay: Remote Play",
       "artist": "GF Frame Technologies (Streaming Dev)",
@@ -143,7 +155,7 @@
       "ratingText": "4.7"
     },
     {
-      "rank": 12,
+      "rank": 13,
       "id": "com.edde746.plezy",
       "name": "Plezy: Media Server Client",
       "artist": "edde746",
@@ -152,18 +164,6 @@
       "price": 5.99,
       "priceLabel": "$5.99",
       "rating": 4.25,
-      "ratingText": "4.2"
-    },
-    {
-      "rank": 13,
-      "id": "com.ekwatchfaces.paperoftime",
-      "name": "Paper of Time - Watch Face",
-      "artist": "EK Watch Faces ™",
-      "icon": "https://play-lh.googleusercontent.com/6SRgzDycyjP5eFEV7k-Cdba6e8-Jn-Gyi0tIAL4VWto2xV0YrksYUkTobnsSidJjT9lNAjfnY5ZHD6n6ab3YB6M",
-      "url": "https://play.google.com/store/apps/details?id=com.ekwatchfaces.paperoftime",
-      "price": 1.99,
-      "priceLabel": "$1.99",
-      "rating": 4.2268043,
       "ratingText": "4.2"
     },
     {
@@ -180,18 +180,6 @@
     },
     {
       "rank": 15,
-      "id": "com.zubersoft.mobilesheetspro",
-      "name": "MobileSheets",
-      "artist": "Zubersoft",
-      "icon": "https://play-lh.googleusercontent.com/Ps6X4q5EXaIK6heMRHtt5pXQZzSS2JN9YLxTTNuoEDthS0bB0Y8B-07m9ZrKlrGE2S5fDTPGSK1_I2aPyTAg0iY",
-      "url": "https://play.google.com/store/apps/details?id=com.zubersoft.mobilesheetspro",
-      "price": 15.99,
-      "priceLabel": "$15.99",
-      "rating": 4.68,
-      "ratingText": "4.7"
-    },
-    {
-      "rank": 16,
       "id": "ae.A.A10",
       "name": "Nixie Digital - Wear OS Face",
       "artist": "Inspire Watch",
@@ -201,6 +189,18 @@
       "priceLabel": "$1.99",
       "rating": 4.308511,
       "ratingText": "4.3"
+    },
+    {
+      "rank": 16,
+      "id": "com.zubersoft.mobilesheetspro",
+      "name": "MobileSheets",
+      "artist": "Zubersoft",
+      "icon": "https://play-lh.googleusercontent.com/Ps6X4q5EXaIK6heMRHtt5pXQZzSS2JN9YLxTTNuoEDthS0bB0Y8B-07m9ZrKlrGE2S5fDTPGSK1_I2aPyTAg0iY",
+      "url": "https://play.google.com/store/apps/details?id=com.zubersoft.mobilesheetspro",
+      "price": 15.99,
+      "priceLabel": "$15.99",
+      "rating": 4.68,
+      "ratingText": "4.7"
     },
     {
       "rank": 17,
@@ -252,42 +252,6 @@
     },
     {
       "rank": 21,
-      "id": "com.watchfacestudio.md312analog",
-      "name": "MD312 Hybrid watch face",
-      "artist": "Matteo Dini MD ® Watch Faces",
-      "icon": "https://play-lh.googleusercontent.com/ItT9QfNcwG4lAEOoRVgaZ74gkGD7pd3vx7-WnzUJ7PGHzs-D6jySba-wEZM4H6g0rJsXTfgTtay9ipV-W_Hdjg",
-      "url": "https://play.google.com/store/apps/details?id=com.watchfacestudio.md312analog",
-      "price": 2.69,
-      "priceLabel": "$2.69",
-      "rating": 4.181818,
-      "ratingText": "4.2"
-    },
-    {
-      "rank": 22,
-      "id": "com.SpottedGhosts.SpiritTalker",
-      "name": "Spirit Talker ®",
-      "artist": "Spotted: Ghosts",
-      "icon": "https://play-lh.googleusercontent.com/Ewwr_UPIXaXNY2T2VYnZd_Qo8c-yDR1jbcayoKY00p6wUrMU4yO_yU6GXBbeq5jjgoDJPHZPf6zmBZyunsq2wVM",
-      "url": "https://play.google.com/store/apps/details?id=com.SpottedGhosts.SpiritTalker",
-      "price": 5.49,
-      "priceLabel": "$5.49",
-      "rating": 4.3247128,
-      "ratingText": "4.3"
-    },
-    {
-      "rank": 23,
-      "id": "net.esword.esword",
-      "name": "e-Sword: Bible Study to Go",
-      "artist": "Rick Meyers",
-      "icon": "https://play-lh.googleusercontent.com/R4_k836Q-fAn-UuIJnABgWfvI8ozrCDDhv2HKAPLqdxcK5L_JnbCIpe8okvKXo5TZrgKUiR3BtdexTBx5GwGnrQ",
-      "url": "https://play.google.com/store/apps/details?id=net.esword.esword",
-      "price": 2.99,
-      "priceLabel": "$2.99",
-      "rating": 4.722689,
-      "ratingText": "4.7"
-    },
-    {
-      "rank": 24,
       "id": "hardman.bret.quickbend.pro",
       "name": "QuickBend: Conduit Bending",
       "artist": "Bret H. Hardman",
@@ -299,7 +263,31 @@
       "ratingText": "4.2"
     },
     {
-      "rank": 25,
+      "rank": 22,
+      "id": "com.watchfacestudio.md312analog",
+      "name": "MD312 Hybrid watch face",
+      "artist": "Matteo Dini MD ® Watch Faces",
+      "icon": "https://play-lh.googleusercontent.com/ItT9QfNcwG4lAEOoRVgaZ74gkGD7pd3vx7-WnzUJ7PGHzs-D6jySba-wEZM4H6g0rJsXTfgTtay9ipV-W_Hdjg",
+      "url": "https://play.google.com/store/apps/details?id=com.watchfacestudio.md312analog",
+      "price": 2.69,
+      "priceLabel": "$2.69",
+      "rating": 4.181818,
+      "ratingText": "4.2"
+    },
+    {
+      "rank": 23,
+      "id": "com.SpottedGhosts.SpiritTalker",
+      "name": "Spirit Talker ®",
+      "artist": "Spotted: Ghosts",
+      "icon": "https://play-lh.googleusercontent.com/Ewwr_UPIXaXNY2T2VYnZd_Qo8c-yDR1jbcayoKY00p6wUrMU4yO_yU6GXBbeq5jjgoDJPHZPf6zmBZyunsq2wVM",
+      "url": "https://play.google.com/store/apps/details?id=com.SpottedGhosts.SpiritTalker",
+      "price": 5.49,
+      "priceLabel": "$5.49",
+      "rating": 4.3247128,
+      "ratingText": "4.3"
+    },
+    {
+      "rank": 24,
       "id": "com.monashuniversity.fodmap",
       "name": "Monash University FODMAP diet",
       "artist": "Monash University Low FODMAP diet team",
@@ -309,6 +297,18 @@
       "priceLabel": "$9.00",
       "rating": 4.23,
       "ratingText": "4.2"
+    },
+    {
+      "rank": 25,
+      "id": "net.esword.esword",
+      "name": "e-Sword: Bible Study to Go",
+      "artist": "Rick Meyers",
+      "icon": "https://play-lh.googleusercontent.com/R4_k836Q-fAn-UuIJnABgWfvI8ozrCDDhv2HKAPLqdxcK5L_JnbCIpe8okvKXo5TZrgKUiR3BtdexTBx5GwGnrQ",
+      "url": "https://play.google.com/store/apps/details?id=net.esword.esword",
+      "price": 2.99,
+      "priceLabel": "$2.99",
+      "rating": 4.722689,
+      "ratingText": "4.7"
     },
     {
       "rank": 26,
@@ -324,18 +324,6 @@
     },
     {
       "rank": 27,
-      "id": "org.hamstudy.mobile",
-      "name": "HamStudy.org",
-      "artist": "Signal Stuff",
-      "icon": "https://play-lh.googleusercontent.com/cpsfI20Wn8fLzUZ0aoxHuKwJNafAV9bE3KIBy-VyNkoklLp1LItw2ALbW1_OAeleI9MjoGI172aYrNYCB3Q2IQ",
-      "url": "https://play.google.com/store/apps/details?id=org.hamstudy.mobile",
-      "price": 3.99,
-      "priceLabel": "$3.99",
-      "rating": 4.9638553,
-      "ratingText": "5.0"
-    },
-    {
-      "rank": 28,
       "id": "ch.threema.app",
       "name": "Threema. The Secure Messenger",
       "artist": "Threema AG",
@@ -345,6 +333,18 @@
       "priceLabel": "$7.49",
       "rating": 3.9,
       "ratingText": "3.9"
+    },
+    {
+      "rank": 28,
+      "id": "org.hamstudy.mobile",
+      "name": "HamStudy.org",
+      "artist": "Signal Stuff",
+      "icon": "https://play-lh.googleusercontent.com/cpsfI20Wn8fLzUZ0aoxHuKwJNafAV9bE3KIBy-VyNkoklLp1LItw2ALbW1_OAeleI9MjoGI172aYrNYCB3Q2IQ",
+      "url": "https://play.google.com/store/apps/details?id=org.hamstudy.mobile",
+      "price": 3.99,
+      "priceLabel": "$3.99",
+      "rating": 4.9640718,
+      "ratingText": "5.0"
     },
     {
       "rank": 29,
@@ -360,15 +360,15 @@
     },
     {
       "rank": 30,
-      "id": "com.t11.skyview",
-      "name": "SkyView® Explore the Universe",
-      "artist": "Terminal Eleven LLC",
-      "icon": "https://play-lh.googleusercontent.com/X1jtBuDTBA9y9ViZLYoOcpW74DkrW4xSocPsLzX1_x3eG7Gn6RqExa-r9be1AZASERbH6kyYSJ_EK77SKK7RDg",
-      "url": "https://play.google.com/store/apps/details?id=com.t11.skyview",
-      "price": 4.99,
-      "priceLabel": "$4.99",
-      "rating": 4.5,
-      "ratingText": "4.5"
+      "id": "com.g19mobile.gameboosterplus",
+      "name": "Game Mode Pro: Launcher & HUD",
+      "artist": "G19 Mobile",
+      "icon": "https://play-lh.googleusercontent.com/WOkGr_qV2QmBMJrFhT5NZ4UTE-ByneJW7u9X0YITYZMgRp4gFOff7Hghm2BLUmz9CsgWaYJTvC8YI2luM8aEsw",
+      "url": "https://play.google.com/store/apps/details?id=com.g19mobile.gameboosterplus",
+      "price": 0.49,
+      "priceLabel": "$0.49",
+      "rating": 4.373106,
+      "ratingText": "4.4"
     },
     {
       "rank": 31,
@@ -384,18 +384,6 @@
     },
     {
       "rank": 32,
-      "id": "com.g19mobile.gameboosterplus",
-      "name": "Game Mode Pro: Launcher & HUD",
-      "artist": "G19 Mobile",
-      "icon": "https://play-lh.googleusercontent.com/WOkGr_qV2QmBMJrFhT5NZ4UTE-ByneJW7u9X0YITYZMgRp4gFOff7Hghm2BLUmz9CsgWaYJTvC8YI2luM8aEsw",
-      "url": "https://play.google.com/store/apps/details?id=com.g19mobile.gameboosterplus",
-      "price": 0.49,
-      "priceLabel": "$0.49",
-      "rating": 4.3707223,
-      "ratingText": "4.4"
-    },
-    {
-      "rank": 33,
       "id": "com.solocator",
       "name": "Solocator - GPS Field Camera",
       "artist": "Civi Corp",
@@ -405,6 +393,18 @@
       "priceLabel": "$0.99",
       "rating": 3.64,
       "ratingText": "3.6"
+    },
+    {
+      "rank": 33,
+      "id": "com.t11.skyview",
+      "name": "SkyView® Explore the Universe",
+      "artist": "Terminal Eleven LLC",
+      "icon": "https://play-lh.googleusercontent.com/X1jtBuDTBA9y9ViZLYoOcpW74DkrW4xSocPsLzX1_x3eG7Gn6RqExa-r9be1AZASERbH6kyYSJ_EK77SKK7RDg",
+      "url": "https://play.google.com/store/apps/details?id=com.t11.skyview",
+      "price": 4.99,
+      "priceLabel": "$4.99",
+      "rating": 4.502146,
+      "ratingText": "4.5"
     },
     {
       "rank": 34,
@@ -420,78 +420,6 @@
     },
     {
       "rank": 35,
-      "id": "com.milgpspro.jsps",
-      "name": "MilGPS PRO",
-      "artist": "Military App",
-      "icon": "https://play-lh.googleusercontent.com/WdDdj4cbrWBC1KNfh4PHY4x1i26OvRhszjy5u3HG9Xc_G9evq0pJZgsRHgH1xzNsemg0GNJgx7KoKDpi8mUblQ",
-      "url": "https://play.google.com/store/apps/details?id=com.milgpspro.jsps",
-      "price": 10.99,
-      "priceLabel": "$10.99",
-      "rating": 4.4666667,
-      "ratingText": "4.5"
-    },
-    {
-      "rank": 36,
-      "id": "com.watchfacestudio.per27",
-      "name": "PER27 Digital Watch Face",
-      "artist": "Persona Watch Face",
-      "icon": "https://play-lh.googleusercontent.com/VBREa33Tk7yKdZXE8_AndM08q_H2WXqM34r4vKUFD5hNSfrCgws761O3ubWY3gO-cfOGNJPcMkCQbGO_kFqF",
-      "url": "https://play.google.com/store/apps/details?id=com.watchfacestudio.per27",
-      "price": 2.99,
-      "priceLabel": "$2.99",
-      "rating": 4.48,
-      "ratingText": "4.5"
-    },
-    {
-      "rank": 37,
-      "id": "com.watchfacestudio.per32",
-      "name": "PER32 Ultra Hybrid Watch Face",
-      "artist": "Persona Watch Face",
-      "icon": "https://play-lh.googleusercontent.com/ppwt23ZuZBWgVGE9ETSoMSQqbuBS808Mgfct6rDBropvNjF7aqKyfISwNq3lvTn2ZrsK7UqLRfQYqvi6jjzZhUg",
-      "url": "https://play.google.com/store/apps/details?id=com.watchfacestudio.per32",
-      "price": 2.99,
-      "priceLabel": "$2.99",
-      "rating": 3.96,
-      "ratingText": "4.0"
-    },
-    {
-      "rank": 38,
-      "id": "com.digipom.easyvoicerecorder.pro",
-      "name": "Easy Voice Recorder Pro",
-      "artist": "Digipom",
-      "icon": "https://play-lh.googleusercontent.com/nlNNFiUdnbSbhUlpc2AN2Yp1LzoBM0rUAAmfL2ps7HNH-6k3Typ8jhONJ-TMlMnQgdoSNz_-6sWXl4OpXr89aw",
-      "url": "https://play.google.com/store/apps/details?id=com.digipom.easyvoicerecorder.pro",
-      "price": 4.99,
-      "priceLabel": "$4.99",
-      "rating": 4.695833,
-      "ratingText": "4.7"
-    },
-    {
-      "rank": 39,
-      "id": "com.minimaa.minimal.detox.launcher",
-      "name": "MINIMAA: Minimalist Launcher",
-      "artist": "Bract Studio",
-      "icon": "https://play-lh.googleusercontent.com/fBKTExn-IwOCdHQ9zaJ5NUCHJwMkfEYtO0dxnLvxCKBHFE01CDQz6Qb10BxJjG0k8ktlMlYDeMZkUie5zYRH0g",
-      "url": "https://play.google.com/store/apps/details?id=com.minimaa.minimal.detox.launcher",
-      "price": 0.99,
-      "priceLabel": "$0.99",
-      "rating": 4.71,
-      "ratingText": "4.7"
-    },
-    {
-      "rank": 40,
-      "id": "com.eatos.onedarkpro",
-      "name": "OnePro (Dark) - Icon Pack",
-      "artist": "Eatos",
-      "icon": "https://play-lh.googleusercontent.com/PHDW2otfldMDo_GKIhLILar8_BoQgYqFSUBWtApmOe2NCv7uRzdE60yRF9lwSR8hn2TdJptufgMbC43V-QC7",
-      "url": "https://play.google.com/store/apps/details?id=com.eatos.onedarkpro",
-      "price": 1.49,
-      "priceLabel": "$1.49",
-      "rating": 4.77,
-      "ratingText": "4.8"
-    },
-    {
-      "rank": 41,
       "id": "com.nerdykidapps21.carequalizermc",
       "name": "MCEqual - EQ for Android",
       "artist": "corelogiclabs",
@@ -503,43 +431,79 @@
       "ratingText": "4.0"
     },
     {
-      "rank": 42,
-      "id": "net.playmusictheory.app",
-      "name": "play_music_theory",
-      "artist": "Tala Schlossberg",
-      "icon": "https://play-lh.googleusercontent.com/_yP3y2Q-V7Yv7ek6w_wbjFg7tu-xW9cpmXCh3lhTwXlyOEELHXhNb6jd7Mtw2rslJ2gGhiWm7sCSTTxQaNHikKs",
-      "url": "https://play.google.com/store/apps/details?id=net.playmusictheory.app",
-      "price": 1.99,
-      "priceLabel": "$1.99",
-      "rating": 3.625,
-      "ratingText": "3.6"
+      "rank": 36,
+      "id": "com.digipom.easyvoicerecorder.pro",
+      "name": "Easy Voice Recorder Pro",
+      "artist": "Digipom",
+      "icon": "https://play-lh.googleusercontent.com/nlNNFiUdnbSbhUlpc2AN2Yp1LzoBM0rUAAmfL2ps7HNH-6k3Typ8jhONJ-TMlMnQgdoSNz_-6sWXl4OpXr89aw",
+      "url": "https://play.google.com/store/apps/details?id=com.digipom.easyvoicerecorder.pro",
+      "price": 4.99,
+      "priceLabel": "$4.99",
+      "rating": 4.695833,
+      "ratingText": "4.7"
     },
     {
-      "rank": 43,
-      "id": "com.appslab.glass.widgets",
-      "name": "Glass Widgets",
-      "artist": "AppsLab Co.",
-      "icon": "https://play-lh.googleusercontent.com/f_ktwWDx_2bf16Lc74YLeTeJ21Ymej7uMHEQbNvSRj7DTDyS3_DMoIrAjQfhHxihwSm2m5yC1LyUR_RgfgcG",
-      "url": "https://play.google.com/store/apps/details?id=com.appslab.glass.widgets",
-      "price": 1.99,
-      "priceLabel": "$1.99",
-      "rating": 4.24,
-      "ratingText": "4.2"
+      "rank": 37,
+      "id": "com.eatos.onedarkpro",
+      "name": "OnePro (Dark) - Icon Pack",
+      "artist": "Eatos",
+      "icon": "https://play-lh.googleusercontent.com/PHDW2otfldMDo_GKIhLILar8_BoQgYqFSUBWtApmOe2NCv7uRzdE60yRF9lwSR8hn2TdJptufgMbC43V-QC7",
+      "url": "https://play.google.com/store/apps/details?id=com.eatos.onedarkpro",
+      "price": 1.49,
+      "priceLabel": "$1.49",
+      "rating": 4.77,
+      "ratingText": "4.8"
     },
     {
-      "rank": 44,
-      "id": "com.watchfacestudio.per023pro",
-      "name": "PER23 Digital Watch Face",
+      "rank": 38,
+      "id": "com.milgpspro.jsps",
+      "name": "MilGPS PRO",
+      "artist": "Military App",
+      "icon": "https://play-lh.googleusercontent.com/WdDdj4cbrWBC1KNfh4PHY4x1i26OvRhszjy5u3HG9Xc_G9evq0pJZgsRHgH1xzNsemg0GNJgx7KoKDpi8mUblQ",
+      "url": "https://play.google.com/store/apps/details?id=com.milgpspro.jsps",
+      "price": 10.99,
+      "priceLabel": "$10.99",
+      "rating": 4.4666667,
+      "ratingText": "4.5"
+    },
+    {
+      "rank": 39,
+      "id": "com.watchfacestudio.per27",
+      "name": "PER27 Digital Watch Face",
       "artist": "Persona Watch Face",
-      "icon": "https://play-lh.googleusercontent.com/DpipsAHT_TsTMUpyLXqEPwdwlA57eAMXS_YX8V8xSFS_DT59Cs15VKgIW0jU5vmXGPsxJtPf2aMZBsNdv8aaRvI",
-      "url": "https://play.google.com/store/apps/details?id=com.watchfacestudio.per023pro",
+      "icon": "https://play-lh.googleusercontent.com/VBREa33Tk7yKdZXE8_AndM08q_H2WXqM34r4vKUFD5hNSfrCgws761O3ubWY3gO-cfOGNJPcMkCQbGO_kFqF",
+      "url": "https://play.google.com/store/apps/details?id=com.watchfacestudio.per27",
       "price": 2.99,
       "priceLabel": "$2.99",
-      "rating": 4.44,
-      "ratingText": "4.4"
+      "rating": 4.4752474,
+      "ratingText": "4.5"
     },
     {
-      "rank": 45,
+      "rank": 40,
+      "id": "com.minimaa.minimal.detox.launcher",
+      "name": "MINIMAA: Minimalist Launcher",
+      "artist": "Bract Studio",
+      "icon": "https://play-lh.googleusercontent.com/fBKTExn-IwOCdHQ9zaJ5NUCHJwMkfEYtO0dxnLvxCKBHFE01CDQz6Qb10BxJjG0k8ktlMlYDeMZkUie5zYRH0g",
+      "url": "https://play.google.com/store/apps/details?id=com.minimaa.minimal.detox.launcher",
+      "price": 0.99,
+      "priceLabel": "$0.99",
+      "rating": 4.71,
+      "ratingText": "4.7"
+    },
+    {
+      "rank": 41,
+      "id": "com.watchfacestudio.per32",
+      "name": "PER32 Ultra Hybrid Watch Face",
+      "artist": "Persona Watch Face",
+      "icon": "https://play-lh.googleusercontent.com/ppwt23ZuZBWgVGE9ETSoMSQqbuBS808Mgfct6rDBropvNjF7aqKyfISwNq3lvTn2ZrsK7UqLRfQYqvi6jjzZhUg",
+      "url": "https://play.google.com/store/apps/details?id=com.watchfacestudio.per32",
+      "price": 2.99,
+      "priceLabel": "$2.99",
+      "rating": 3.96,
+      "ratingText": "4.0"
+    },
+    {
+      "rank": 42,
       "id": "com.WagotabiLimited.Wagotabi",
       "name": "Wagotabi: Learn Japanese",
       "artist": "Wagotabi Ltd",
@@ -551,31 +515,43 @@
       "ratingText": "4.9"
     },
     {
-      "rank": 46,
-      "id": "com.appslab.nothing.widgetspro",
-      "name": "NewThing Widgets Pro",
+      "rank": 43,
+      "id": "com.watchfacestudio.per023pro",
+      "name": "PER23 Digital Watch Face",
+      "artist": "Persona Watch Face",
+      "icon": "https://play-lh.googleusercontent.com/DpipsAHT_TsTMUpyLXqEPwdwlA57eAMXS_YX8V8xSFS_DT59Cs15VKgIW0jU5vmXGPsxJtPf2aMZBsNdv8aaRvI",
+      "url": "https://play.google.com/store/apps/details?id=com.watchfacestudio.per023pro",
+      "price": 2.99,
+      "priceLabel": "$2.99",
+      "rating": 4.43,
+      "ratingText": "4.4"
+    },
+    {
+      "rank": 44,
+      "id": "com.appslab.glass.widgets",
+      "name": "Glass Widgets",
       "artist": "AppsLab Co.",
-      "icon": "https://play-lh.googleusercontent.com/cf0jeAGfhTQb5ccA8iDPDEgCxSy7j5vQr8r_izDqbpfSBhEG71Yt9MsoFuzzDHOAYKF9BZ8n37MczkL5G-elljs",
-      "url": "https://play.google.com/store/apps/details?id=com.appslab.nothing.widgetspro",
-      "price": 1,
-      "priceLabel": "$1.00",
-      "rating": 4.49,
-      "ratingText": "4.5"
+      "icon": "https://play-lh.googleusercontent.com/f_ktwWDx_2bf16Lc74YLeTeJ21Ymej7uMHEQbNvSRj7DTDyS3_DMoIrAjQfhHxihwSm2m5yC1LyUR_RgfgcG",
+      "url": "https://play.google.com/store/apps/details?id=com.appslab.glass.widgets",
+      "price": 1.99,
+      "priceLabel": "$1.99",
+      "rating": 4.24,
+      "ratingText": "4.2"
     },
     {
-      "rank": 47,
-      "id": "OCTech.Mobile.Applications.TouchScan",
-      "name": "OBD Fusion (Car Diagnostics)",
-      "artist": "OCTech, LLC",
-      "icon": "https://play-lh.googleusercontent.com/Uli-iwym9l81lnEpSCcDpeRFTEL-EJjTppSyj5D3SnKT6LY9cxQWeYfNJ4kJWqsOkSm27mZ84MdRcqlgDNEm_g",
-      "url": "https://play.google.com/store/apps/details?id=OCTech.Mobile.Applications.TouchScan",
-      "price": 5.99,
-      "priceLabel": "$5.99",
-      "rating": 4.716312,
-      "ratingText": "4.7"
+      "rank": 45,
+      "id": "net.playmusictheory.app",
+      "name": "play_music_theory",
+      "artist": "Tala Schlossberg",
+      "icon": "https://play-lh.googleusercontent.com/_yP3y2Q-V7Yv7ek6w_wbjFg7tu-xW9cpmXCh3lhTwXlyOEELHXhNb6jd7Mtw2rslJ2gGhiWm7sCSTTxQaNHikKs",
+      "url": "https://play.google.com/store/apps/details?id=net.playmusictheory.app",
+      "price": 1.99,
+      "priceLabel": "$1.99",
+      "rating": 3.625,
+      "ratingText": "3.6"
     },
     {
-      "rank": 48,
+      "rank": 46,
       "id": "us.flexswag.flexutilitypremium",
       "name": "Flex Utility Premium",
       "artist": "JW Dev;",
@@ -587,67 +563,31 @@
       "ratingText": "4.7"
     },
     {
-      "rank": 49,
-      "id": "org.peakfinder.area.alps",
-      "name": "PeakFinder",
-      "artist": "PeakFinder GmbH",
-      "icon": "https://play-lh.googleusercontent.com/TO3nHTFOQ5q4xHfslsIxjNNb1LgHRQKNxSE8QQvcxihQDt6-xWKTF5KoC-47xXdJu9P7Sc_lpYDf-U6Vt32009U",
-      "url": "https://play.google.com/store/apps/details?id=org.peakfinder.area.alps",
-      "price": 5.99,
-      "priceLabel": "$5.99",
-      "rating": 4.207921,
-      "ratingText": "4.2"
-    },
-    {
-      "rank": 50,
-      "id": "com.blueprint.pocket",
-      "name": "Blueprint 4-Track",
-      "artist": "Max Helgemo",
-      "icon": "https://play-lh.googleusercontent.com/4Zfd97tl_JI2HqqePersSn4AKxoWRNbLyJ_5kjdsLj8cV5eLzBm4HhNREUURnl0eQEtoWAzrcwT6IyNohvkiLfM",
-      "url": "https://play.google.com/store/apps/details?id=com.blueprint.pocket",
-      "price": 5.99,
-      "priceLabel": "$5.99",
-      "rating": 0,
-      "ratingText": ""
-    },
-    {
-      "rank": 51,
-      "id": "com.watchfacestudio.md339",
-      "name": "MD339 Digital watch face",
-      "artist": "Matteo Dini MD ® Watch Faces",
-      "icon": "https://play-lh.googleusercontent.com/xXV5PdkY30yQ85l877WZ68Vy1hW9gmS9svANzsf1naC_PLOrYaybvtulVnSjj0kI2EQvhOf9eoL_11MKSZjDqaA",
-      "url": "https://play.google.com/store/apps/details?id=com.watchfacestudio.md339",
-      "price": 2.99,
-      "priceLabel": "$2.99",
-      "rating": 4.3960395,
-      "ratingText": "4.4"
-    },
-    {
-      "rank": 52,
-      "id": "com.jndapp.nothing.widgets.pack",
-      "name": "Everything Widgets",
-      "artist": "JustNewDesigns",
-      "icon": "https://play-lh.googleusercontent.com/FHWMaZZDktGCK6ylBfiY3yBPEZUyla9AMlN-pHgRg09gomfoP0uVwsTxbmKIAs31JcK9MJsWJNKvAm43wp0xwnk",
-      "url": "https://play.google.com/store/apps/details?id=com.jndapp.nothing.widgets.pack",
-      "price": 0.99,
-      "priceLabel": "$0.99",
-      "rating": 4.51,
+      "rank": 47,
+      "id": "com.appslab.nothing.widgetspro",
+      "name": "NewThing Widgets Pro",
+      "artist": "AppsLab Co.",
+      "icon": "https://play-lh.googleusercontent.com/cf0jeAGfhTQb5ccA8iDPDEgCxSy7j5vQr8r_izDqbpfSBhEG71Yt9MsoFuzzDHOAYKF9BZ8n37MczkL5G-elljs",
+      "url": "https://play.google.com/store/apps/details?id=com.appslab.nothing.widgetspro",
+      "price": 1,
+      "priceLabel": "$1.00",
+      "rating": 4.49,
       "ratingText": "4.5"
     },
     {
-      "rank": 53,
-      "id": "com.panda.mouse",
-      "name": "Panda Mouse Pro",
-      "artist": "Panda Gaming Studio",
-      "icon": "https://play-lh.googleusercontent.com/II6DMcHX2qN5QTdpGKEaabl2T_zJL8wL8eD420cQpSt5Vk_6RZZsjIeZJ73W_JOm44EnZEdjJxaphw8HXDcs",
-      "url": "https://play.google.com/store/apps/details?id=com.panda.mouse",
+      "rank": 48,
+      "id": "OCTech.Mobile.Applications.TouchScan",
+      "name": "OBD Fusion (Car Diagnostics)",
+      "artist": "OCTech, LLC",
+      "icon": "https://play-lh.googleusercontent.com/Uli-iwym9l81lnEpSCcDpeRFTEL-EJjTppSyj5D3SnKT6LY9cxQWeYfNJ4kJWqsOkSm27mZ84MdRcqlgDNEm_g",
+      "url": "https://play.google.com/store/apps/details?id=OCTech.Mobile.Applications.TouchScan",
       "price": 5.99,
       "priceLabel": "$5.99",
-      "rating": 4.42,
-      "ratingText": "4.4"
+      "rating": 4.716312,
+      "ratingText": "4.7"
     },
     {
-      "rank": 54,
+      "rank": 49,
       "id": "com.veamstudios.siteauditpro",
       "name": "Site Audit Pro",
       "artist": "Veam Studios Ltd",
@@ -659,7 +599,19 @@
       "ratingText": "4.2"
     },
     {
-      "rank": 55,
+      "rank": 50,
+      "id": "org.peakfinder.area.alps",
+      "name": "PeakFinder",
+      "artist": "PeakFinder GmbH",
+      "icon": "https://play-lh.googleusercontent.com/TO3nHTFOQ5q4xHfslsIxjNNb1LgHRQKNxSE8QQvcxihQDt6-xWKTF5KoC-47xXdJu9P7Sc_lpYDf-U6Vt32009U",
+      "url": "https://play.google.com/store/apps/details?id=org.peakfinder.area.alps",
+      "price": 5.99,
+      "priceLabel": "$5.99",
+      "rating": 4.207921,
+      "ratingText": "4.2"
+    },
+    {
+      "rank": 51,
       "id": "com.flyersoft.moonreaderp",
       "name": "Moon+ Reader Pro",
       "artist": "Moon+",
@@ -669,6 +621,54 @@
       "priceLabel": "$11.99",
       "rating": 4.192394,
       "ratingText": "4.2"
+    },
+    {
+      "rank": 52,
+      "id": "com.blueprint.pocket",
+      "name": "Blueprint 4-Track",
+      "artist": "Max Helgemo",
+      "icon": "https://play-lh.googleusercontent.com/4Zfd97tl_JI2HqqePersSn4AKxoWRNbLyJ_5kjdsLj8cV5eLzBm4HhNREUURnl0eQEtoWAzrcwT6IyNohvkiLfM",
+      "url": "https://play.google.com/store/apps/details?id=com.blueprint.pocket",
+      "price": 5.99,
+      "priceLabel": "$5.99",
+      "rating": 0,
+      "ratingText": ""
+    },
+    {
+      "rank": 53,
+      "id": "com.watchfacestudio.md339",
+      "name": "MD339 Digital watch face",
+      "artist": "Matteo Dini MD ® Watch Faces",
+      "icon": "https://play-lh.googleusercontent.com/xXV5PdkY30yQ85l877WZ68Vy1hW9gmS9svANzsf1naC_PLOrYaybvtulVnSjj0kI2EQvhOf9eoL_11MKSZjDqaA",
+      "url": "https://play.google.com/store/apps/details?id=com.watchfacestudio.md339",
+      "price": 2.99,
+      "priceLabel": "$2.99",
+      "rating": 4.3960395,
+      "ratingText": "4.4"
+    },
+    {
+      "rank": 54,
+      "id": "com.jndapp.nothing.widgets.pack",
+      "name": "Everything Widgets",
+      "artist": "JustNewDesigns",
+      "icon": "https://play-lh.googleusercontent.com/FHWMaZZDktGCK6ylBfiY3yBPEZUyla9AMlN-pHgRg09gomfoP0uVwsTxbmKIAs31JcK9MJsWJNKvAm43wp0xwnk",
+      "url": "https://play.google.com/store/apps/details?id=com.jndapp.nothing.widgets.pack",
+      "price": 0.99,
+      "priceLabel": "$0.99",
+      "rating": 4.51,
+      "ratingText": "4.5"
+    },
+    {
+      "rank": 55,
+      "id": "com.panda.mouse",
+      "name": "Panda Mouse Pro",
+      "artist": "Panda Gaming Studio",
+      "icon": "https://play-lh.googleusercontent.com/II6DMcHX2qN5QTdpGKEaabl2T_zJL8wL8eD420cQpSt5Vk_6RZZsjIeZJ73W_JOm44EnZEdjJxaphw8HXDcs",
+      "url": "https://play.google.com/store/apps/details?id=com.panda.mouse",
+      "price": 5.99,
+      "priceLabel": "$5.99",
+      "rating": 4.42,
+      "ratingText": "4.4"
     },
     {
       "rank": 56,
@@ -696,14 +696,14 @@
     },
     {
       "rank": 58,
-      "id": "com.riteshsahu.SMSBackupRestorePro",
-      "name": "SMS Backup & Restore Pro",
-      "artist": "SyncTech Pty Ltd",
-      "icon": "https://play-lh.googleusercontent.com/N31k1dacf7EvnDXYw5zqOk6bHjSFW-Us06TFJ_GVofznf5okv46ffWO0hfgCvB4BOr_jYY_xk8Y_syDmgPHb_Ac",
-      "url": "https://play.google.com/store/apps/details?id=com.riteshsahu.SMSBackupRestorePro",
-      "price": 7.49,
-      "priceLabel": "$7.49",
-      "rating": 4.42,
+      "id": "com.radikal.gamelauncher",
+      "name": "Beacon Game Launcher",
+      "artist": "NERDS TAKE OVER",
+      "icon": "https://play-lh.googleusercontent.com/9k3xoQaMinZqR19EHHU5ZkrfikV9NQWvg8U8tWpiFFKbobUE_JkVc24frgqCfsbVaebJGjKwU0l3UfnmJBJdyfk",
+      "url": "https://play.google.com/store/apps/details?id=com.radikal.gamelauncher",
+      "price": 2.99,
+      "priceLabel": "$2.99",
+      "rating": 4.37,
       "ratingText": "4.4"
     },
     {
@@ -744,54 +744,6 @@
     },
     {
       "rank": 62,
-      "id": "com.radikal.gamelauncher",
-      "name": "Beacon Game Launcher",
-      "artist": "NERDS TAKE OVER",
-      "icon": "https://play-lh.googleusercontent.com/9k3xoQaMinZqR19EHHU5ZkrfikV9NQWvg8U8tWpiFFKbobUE_JkVc24frgqCfsbVaebJGjKwU0l3UfnmJBJdyfk",
-      "url": "https://play.google.com/store/apps/details?id=com.radikal.gamelauncher",
-      "price": 2.99,
-      "priceLabel": "$2.99",
-      "rating": 4.37,
-      "ratingText": "4.4"
-    },
-    {
-      "rank": 63,
-      "id": "com.BitPlague.Necrometer",
-      "name": "Necrometer",
-      "artist": "ChillSeekers",
-      "icon": "https://play-lh.googleusercontent.com/hO0c0Ue3gpk403Nou6ZBeTtZVRK15hj7TkM7pf7m0rSsqu24rLjVWgHCSGPWZoPtg8suS89Q3H9R31ONq9-gRw",
-      "url": "https://play.google.com/store/apps/details?id=com.BitPlague.Necrometer",
-      "price": 9.99,
-      "priceLabel": "$9.99",
-      "rating": 3.53,
-      "ratingText": "3.5"
-    },
-    {
-      "rank": 64,
-      "id": "com.andrerinas.headunitrevived",
-      "name": "Open Headunit",
-      "artist": "André Rinas",
-      "icon": "https://play-lh.googleusercontent.com/ydnR2dfy0lsUoLnH11TjO5noH8-GmQ9vpBaj8dCrrjJV9pdpMPzlBbyR2soO5g80OOfiSa6SjLD1b0HcbyE3ig",
-      "url": "https://play.google.com/store/apps/details?id=com.andrerinas.headunitrevived",
-      "price": 3.99,
-      "priceLabel": "$3.99",
-      "rating": 3.6166666,
-      "ratingText": "3.6"
-    },
-    {
-      "rank": 65,
-      "id": "aaa.a.nixie_digital",
-      "name": "Nixie Retro - Watch Face",
-      "artist": "AstraTime",
-      "icon": "https://play-lh.googleusercontent.com/4gJKMyNFkxWtfTiBgCQFhHf0T5kNP70LHc76Y9Bg986siEf2o0E6wWOkn41YIWHlEOvwrqDWiS21-jr315NZ7y4",
-      "url": "https://play.google.com/store/apps/details?id=aaa.a.nixie_digital",
-      "price": 1.69,
-      "priceLabel": "$1.69",
-      "rating": 3.8,
-      "ratingText": "3.8"
-    },
-    {
-      "rank": 66,
       "id": "wb.illuminator.hybridlcd",
       "name": "ILLUMINATOR Hybrid-LCD",
       "artist": "WatchBase",
@@ -803,7 +755,31 @@
       "ratingText": "4.1"
     },
     {
-      "rank": 67,
+      "rank": 63,
+      "id": "com.riteshsahu.SMSBackupRestorePro",
+      "name": "SMS Backup & Restore Pro",
+      "artist": "SyncTech Pty Ltd",
+      "icon": "https://play-lh.googleusercontent.com/N31k1dacf7EvnDXYw5zqOk6bHjSFW-Us06TFJ_GVofznf5okv46ffWO0hfgCvB4BOr_jYY_xk8Y_syDmgPHb_Ac",
+      "url": "https://play.google.com/store/apps/details?id=com.riteshsahu.SMSBackupRestorePro",
+      "price": 7.49,
+      "priceLabel": "$7.49",
+      "rating": 4.42,
+      "ratingText": "4.4"
+    },
+    {
+      "rank": 64,
+      "id": "com.wifi.signal.wifisignalmeter.wifisignal.pro",
+      "name": "WiFi Signal Strength Meter Pro",
+      "artist": "Network Scanner - WiFi Scanner & Network Monitor",
+      "icon": "https://play-lh.googleusercontent.com/T2EzvB1RNJPFqxoOXlif5lrt8G2hCkJIHViRVQEdpLPGQ8QlI1yKBDZcEbaQ_9LkED7gaZXIDzXAsjFF9gNm",
+      "url": "https://play.google.com/store/apps/details?id=com.wifi.signal.wifisignalmeter.wifisignal.pro",
+      "price": 0.49,
+      "priceLabel": "$0.49",
+      "rating": 4.92,
+      "ratingText": "4.9"
+    },
+    {
+      "rank": 65,
       "id": "org.fossify.thankyou",
       "name": "Fossify Thank You",
       "artist": "Fossify",
@@ -815,7 +791,7 @@
       "ratingText": "4.8"
     },
     {
-      "rank": 68,
+      "rank": 66,
       "id": "in.sunilpaulmathew.ashell",
       "name": "aShell - Your Local ADB Shell",
       "artist": "sunilpaulmathew",
@@ -827,16 +803,40 @@
       "ratingText": "4.2"
     },
     {
+      "rank": 67,
+      "id": "com.BitPlague.Necrometer",
+      "name": "Necrometer",
+      "artist": "ChillSeekers",
+      "icon": "https://play-lh.googleusercontent.com/hO0c0Ue3gpk403Nou6ZBeTtZVRK15hj7TkM7pf7m0rSsqu24rLjVWgHCSGPWZoPtg8suS89Q3H9R31ONq9-gRw",
+      "url": "https://play.google.com/store/apps/details?id=com.BitPlague.Necrometer",
+      "price": 9.99,
+      "priceLabel": "$9.99",
+      "rating": 3.53,
+      "ratingText": "3.5"
+    },
+    {
+      "rank": 68,
+      "id": "com.andrerinas.headunitrevived",
+      "name": "Open Headunit",
+      "artist": "André Rinas",
+      "icon": "https://play-lh.googleusercontent.com/ydnR2dfy0lsUoLnH11TjO5noH8-GmQ9vpBaj8dCrrjJV9pdpMPzlBbyR2soO5g80OOfiSa6SjLD1b0HcbyE3ig",
+      "url": "https://play.google.com/store/apps/details?id=com.andrerinas.headunitrevived",
+      "price": 3.99,
+      "priceLabel": "$3.99",
+      "rating": 3.6166666,
+      "ratingText": "3.6"
+    },
+    {
       "rank": 69,
-      "id": "com.progdigy.cdisplay",
-      "name": "CDisplayEx Comic Reader",
-      "artist": "Progdigy Software",
-      "icon": "https://play-lh.googleusercontent.com/ILJof5HGPb9FYITJIbekgvyqz-YwUIgvMf_rg4_Rfd_pP1-FbXZIaz6R7ge2WVi-YtoBV9pmguO8_5zEV2_WyQ",
-      "url": "https://play.google.com/store/apps/details?id=com.progdigy.cdisplay",
-      "price": 5.99,
-      "priceLabel": "$5.99",
-      "rating": 4.8444443,
-      "ratingText": "4.8"
+      "id": "aaa.a.nixie_digital",
+      "name": "Nixie Retro - Watch Face",
+      "artist": "AstraTime",
+      "icon": "https://play-lh.googleusercontent.com/4gJKMyNFkxWtfTiBgCQFhHf0T5kNP70LHc76Y9Bg986siEf2o0E6wWOkn41YIWHlEOvwrqDWiS21-jr315NZ7y4",
+      "url": "https://play.google.com/store/apps/details?id=aaa.a.nixie_digital",
+      "price": 1.69,
+      "priceLabel": "$1.69",
+      "rating": 3.8,
+      "ratingText": "3.8"
     },
     {
       "rank": 70,
@@ -852,30 +852,6 @@
     },
     {
       "rank": 71,
-      "id": "com.watchfacestudio.md326",
-      "name": "MD326 3D Modern Watch Face",
-      "artist": "Matteo Dini MD ® Watch Faces",
-      "icon": "https://play-lh.googleusercontent.com/KVNMG-XGM2Rmm7bRmVjzIBXwYvqt1dy88FVDVA5rLpL1Xdh4enpmglmzRnMPbR45eINXsE8Bpa543e5M5DJRRzA",
-      "url": "https://play.google.com/store/apps/details?id=com.watchfacestudio.md326",
-      "price": 2.49,
-      "priceLabel": "$2.49",
-      "rating": 4.74,
-      "ratingText": "4.7"
-    },
-    {
-      "rank": 72,
-      "id": "com.darkopd.iconpack",
-      "name": "Darko - Icon Pack",
-      "artist": "PhunktasticDesigns",
-      "icon": "https://play-lh.googleusercontent.com/PLWelupyP1E5WZNxDStcoomSdoISygNzaDf50NLkbAgtQ8n3FPId1iwg2kvTzZ1oPxZIFUJnQlkONBhJb6aTxw",
-      "url": "https://play.google.com/store/apps/details?id=com.darkopd.iconpack",
-      "price": 1.49,
-      "priceLabel": "$1.49",
-      "rating": 4.633663,
-      "ratingText": "4.6"
-    },
-    {
-      "rank": 73,
       "id": "com.extreamsd.usbaudioplayerpro",
       "name": "USB Audio Player PRO",
       "artist": "eXtream Software Development",
@@ -887,7 +863,55 @@
       "ratingText": "3.9"
     },
     {
+      "rank": 72,
+      "id": "com.progdigy.cdisplay",
+      "name": "CDisplayEx Comic Reader",
+      "artist": "Progdigy Software",
+      "icon": "https://play-lh.googleusercontent.com/ILJof5HGPb9FYITJIbekgvyqz-YwUIgvMf_rg4_Rfd_pP1-FbXZIaz6R7ge2WVi-YtoBV9pmguO8_5zEV2_WyQ",
+      "url": "https://play.google.com/store/apps/details?id=com.progdigy.cdisplay",
+      "price": 5.99,
+      "priceLabel": "$5.99",
+      "rating": 4.8444443,
+      "ratingText": "4.8"
+    },
+    {
+      "rank": 73,
+      "id": "com.watchfacestudio.md326",
+      "name": "MD326 3D Modern Watch Face",
+      "artist": "Matteo Dini MD ® Watch Faces",
+      "icon": "https://play-lh.googleusercontent.com/KVNMG-XGM2Rmm7bRmVjzIBXwYvqt1dy88FVDVA5rLpL1Xdh4enpmglmzRnMPbR45eINXsE8Bpa543e5M5DJRRzA",
+      "url": "https://play.google.com/store/apps/details?id=com.watchfacestudio.md326",
+      "price": 2.49,
+      "priceLabel": "$2.49",
+      "rating": 4.74,
+      "ratingText": "4.7"
+    },
+    {
       "rank": 74,
+      "id": "com.booster.gfxpro",
+      "name": "Game Turbo: Exp. Booster & HUD",
+      "artist": "TOLAN",
+      "icon": "https://play-lh.googleusercontent.com/O35yhJuR1YPT_M2MT_7Dn_-F-lyVo-A3ndDrlEN9u2bSREBSwdN5ethbusAYqBofZEMW3wAFbsBovowhNHR2mg",
+      "url": "https://play.google.com/store/apps/details?id=com.booster.gfxpro",
+      "price": 0.29,
+      "priceLabel": "$0.29",
+      "rating": 4.33,
+      "ratingText": "4.3"
+    },
+    {
+      "rank": 75,
+      "id": "com.darkopd.iconpack",
+      "name": "Darko - Icon Pack",
+      "artist": "PhunktasticDesigns",
+      "icon": "https://play-lh.googleusercontent.com/PLWelupyP1E5WZNxDStcoomSdoISygNzaDf50NLkbAgtQ8n3FPId1iwg2kvTzZ1oPxZIFUJnQlkONBhJb6aTxw",
+      "url": "https://play.google.com/store/apps/details?id=com.darkopd.iconpack",
+      "price": 1.49,
+      "priceLabel": "$1.49",
+      "rating": 4.633663,
+      "ratingText": "4.6"
+    },
+    {
+      "rank": 76,
       "id": "com.alexvas.dvr.pro",
       "name": "tinyCam Monitor PRO for IP Cam",
       "artist": "Tiny Solutions LLC",
@@ -899,7 +923,7 @@
       "ratingText": "3.9"
     },
     {
-      "rank": 75,
+      "rank": 77,
       "id": "com.watchfacestudio.regarder_minimal_2",
       "name": "Regarder Minimal 2 Watch Face",
       "artist": "Regarder Watch Faces",
@@ -911,52 +935,28 @@
       "ratingText": "4.4"
     },
     {
-      "rank": 76,
-      "id": "net.techet.netanalyzer.an",
-      "name": "Network Analyzer Pro",
-      "artist": "Jiri Techet",
-      "icon": "https://play-lh.googleusercontent.com/BKx2jP7z79gtyXVk7VQBrZ752D_LxM02uLB5E4nm1lqTPkTUPOl7aYigmbqLkPQwFOCVo0cBequhjZzPHFaXYg",
-      "url": "https://play.google.com/store/apps/details?id=net.techet.netanalyzer.an",
-      "price": 3.99,
-      "priceLabel": "$3.99",
-      "rating": 4.832558,
-      "ratingText": "4.8"
-    },
-    {
-      "rank": 77,
-      "id": "jp.ne.ibis.ibispaint.app",
-      "name": "ibis Paint",
-      "artist": "ibis inc.",
-      "icon": "https://play-lh.googleusercontent.com/Zgjh-LcMQXK9iseeXmLCZPdN8_ACK1AlLO_7NmLdVk529FWVoYVzB13DlEx3eIybjzdpByifQZl7yhZ0e5c01A",
-      "url": "https://play.google.com/store/apps/details?id=jp.ne.ibis.ibispaint.app",
-      "price": 15.99,
-      "priceLabel": "$15.99",
-      "rating": 4.2930403,
-      "ratingText": "4.3"
-    },
-    {
       "rank": 78,
-      "id": "de.twokit.video.tv.cast.browser.lg.pro",
-      "name": "TV Cast Pro for LG webOS",
-      "artist": "2kit consulting",
-      "icon": "https://play-lh.googleusercontent.com/JJO4VaJKp9aBCAnaxo46VpDdAGFhO_nX_xze3vVlUpYyfTPnqM1BZOoIsEJ8NrJIRkyGKAEzEl02aG-VcP1pITM",
-      "url": "https://play.google.com/store/apps/details?id=de.twokit.video.tv.cast.browser.lg.pro",
-      "price": 6.99,
-      "priceLabel": "$6.99",
-      "rating": 4.270073,
+      "id": "at.bitfire.davdroid",
+      "name": "DAVx⁵ – CalDAV CardDAV WebDAV",
+      "artist": "bitfire web engineering",
+      "icon": "https://play-lh.googleusercontent.com/qRWGEUyHWHyRY2lR4ZP0cKC3wvo_JYzdIfDLIIBhoRRb6z8_CJ3S0SNpVlfuNlfvrtv9QS6I7KWKWjVtDjWTQw",
+      "url": "https://play.google.com/store/apps/details?id=at.bitfire.davdroid",
+      "price": 6.49,
+      "priceLabel": "$6.49",
+      "rating": 4.34,
       "ratingText": "4.3"
     },
     {
       "rank": 79,
-      "id": "com.wifi.signal.wifisignalmeter.wifisignal.pro",
-      "name": "WiFi Signal Strength Meter Pro",
-      "artist": "Network Scanner - WiFi Scanner & Network Monitor",
-      "icon": "https://play-lh.googleusercontent.com/T2EzvB1RNJPFqxoOXlif5lrt8G2hCkJIHViRVQEdpLPGQ8QlI1yKBDZcEbaQ_9LkED7gaZXIDzXAsjFF9gNm",
-      "url": "https://play.google.com/store/apps/details?id=com.wifi.signal.wifisignalmeter.wifisignal.pro",
-      "price": 0.49,
-      "priceLabel": "$0.49",
-      "rating": 4.92,
-      "ratingText": "4.9"
+      "id": "com.tmsoft.whitenoise.full",
+      "name": "White Noise",
+      "artist": "TMSOFT",
+      "icon": "https://play-lh.googleusercontent.com/GaQ2vHNOSfpwW8v_Z2Pq2NsEXbNo5E0M8H3uKXpTY_yJ8o4rdhbyCAI917DV7F7I9_PuCSPyU6DejpibSrcOQw",
+      "url": "https://play.google.com/store/apps/details?id=com.tmsoft.whitenoise.full",
+      "price": 0.99,
+      "priceLabel": "$0.99",
+      "rating": 4.442748,
+      "ratingText": "4.4"
     },
     {
       "rank": 80,
@@ -972,30 +972,42 @@
     },
     {
       "rank": 81,
-      "id": "com.photopills.android.photopills",
-      "name": "PhotoPills",
-      "artist": "PhotoPills, SL",
-      "icon": "https://play-lh.googleusercontent.com/grScZ_0EPa4RhFBT4IStbAmeuFTINgzPjND8amLstiv4xNYKEyAQErIEvuFHTTdAIm2Kvpgas_LYHzomXbtp",
-      "url": "https://play.google.com/store/apps/details?id=com.photopills.android.photopills",
-      "price": 10.99,
-      "priceLabel": "$10.99",
-      "rating": 4.8039217,
+      "id": "net.techet.netanalyzer.an",
+      "name": "Network Analyzer Pro",
+      "artist": "Jiri Techet",
+      "icon": "https://play-lh.googleusercontent.com/BKx2jP7z79gtyXVk7VQBrZ752D_LxM02uLB5E4nm1lqTPkTUPOl7aYigmbqLkPQwFOCVo0cBequhjZzPHFaXYg",
+      "url": "https://play.google.com/store/apps/details?id=net.techet.netanalyzer.an",
+      "price": 3.99,
+      "priceLabel": "$3.99",
+      "rating": 4.830745,
       "ratingText": "4.8"
     },
     {
       "rank": 82,
-      "id": "at.bitfire.davdroid",
-      "name": "DAVx⁵ – CalDAV CardDAV WebDAV",
-      "artist": "bitfire web engineering",
-      "icon": "https://play-lh.googleusercontent.com/qRWGEUyHWHyRY2lR4ZP0cKC3wvo_JYzdIfDLIIBhoRRb6z8_CJ3S0SNpVlfuNlfvrtv9QS6I7KWKWjVtDjWTQw",
-      "url": "https://play.google.com/store/apps/details?id=at.bitfire.davdroid",
-      "price": 6.49,
-      "priceLabel": "$6.49",
-      "rating": 4.34,
+      "id": "jp.ne.ibis.ibispaint.app",
+      "name": "ibis Paint",
+      "artist": "ibis inc.",
+      "icon": "https://play-lh.googleusercontent.com/Zgjh-LcMQXK9iseeXmLCZPdN8_ACK1AlLO_7NmLdVk529FWVoYVzB13DlEx3eIybjzdpByifQZl7yhZ0e5c01A",
+      "url": "https://play.google.com/store/apps/details?id=jp.ne.ibis.ibispaint.app",
+      "price": 15.99,
+      "priceLabel": "$15.99",
+      "rating": 4.2930403,
       "ratingText": "4.3"
     },
     {
       "rank": 83,
+      "id": "de.twokit.video.tv.cast.browser.lg.pro",
+      "name": "TV Cast Pro for LG webOS",
+      "artist": "2kit consulting",
+      "icon": "https://play-lh.googleusercontent.com/JJO4VaJKp9aBCAnaxo46VpDdAGFhO_nX_xze3vVlUpYyfTPnqM1BZOoIsEJ8NrJIRkyGKAEzEl02aG-VcP1pITM",
+      "url": "https://play.google.com/store/apps/details?id=de.twokit.video.tv.cast.browser.lg.pro",
+      "price": 6.99,
+      "priceLabel": "$6.99",
+      "rating": 4.2608695,
+      "ratingText": "4.3"
+    },
+    {
+      "rank": 84,
       "id": "com.bearessentials.knotIQ",
       "name": "Knot IQ: 3D Knot Tying",
       "artist": "The Bear Essentials Outdoors Co. LTD.",
@@ -1005,18 +1017,6 @@
       "priceLabel": "$4.99",
       "rating": 4.94,
       "ratingText": "4.9"
-    },
-    {
-      "rank": 84,
-      "id": "com.recreative.reseasonal54",
-      "name": "ReS54 - Thanksgiving",
-      "artist": "RECREATIVE Watch Faces",
-      "icon": "https://play-lh.googleusercontent.com/GOmUAV3Cb6jkEdRPlgvLPxO2jbNQ6lTtii6s7GZU3StB7QtXyem9f4DUBhX-co_7XRpyy8sh0NGv91pUCvkPUQ",
-      "url": "https://play.google.com/store/apps/details?id=com.recreative.reseasonal54",
-      "price": 1.49,
-      "priceLabel": "$1.49",
-      "rating": 4.25,
-      "ratingText": "4.2"
     },
     {
       "rank": 85,
@@ -1056,102 +1056,6 @@
     },
     {
       "rank": 88,
-      "id": "org.prowl.torque",
-      "name": "Torque Pro (OBD 2 & Car)",
-      "artist": "Ian Hawkins",
-      "icon": "https://play-lh.googleusercontent.com/6FrY-Xy6WWGRau9_VtPAWTe5ee4NyhnIKBSDx7ldV_bRlT1six2qn23q2HCRMSrH8ySas4FCWg_GdFDdVpJf",
-      "url": "https://play.google.com/store/apps/details?id=org.prowl.torque",
-      "price": 4.95,
-      "priceLabel": "$4.95",
-      "rating": 3.9828327,
-      "ratingText": "4.0"
-    },
-    {
-      "rank": 89,
-      "id": "com.acmeandroid.listen",
-      "name": "Listen Audiobook Player",
-      "artist": "acme-android.com",
-      "icon": "https://play-lh.googleusercontent.com/6l6dc1zgQOzM5LOuvUTmZQdQvnyMul86uUKRpEC_y9BNkdw_c7vYiL1O2BRAxIpxjVDbGgmoG90WeQmVli13",
-      "url": "https://play.google.com/store/apps/details?id=com.acmeandroid.listen",
-      "price": 1.99,
-      "priceLabel": "$1.99",
-      "rating": 4.37,
-      "ratingText": "4.4"
-    },
-    {
-      "rank": 90,
-      "id": "com.utorrent.client.pro",
-      "name": "µTorrent® Pro - Torrent App",
-      "artist": "bittorrent.com",
-      "icon": "https://play-lh.googleusercontent.com/OQy_UK8b0K_Nu8Eva3zPzNud88UkDcE0JQBtceLzLJK5xw1sh86xnaFUT3M4OlrrSn3RanknAHiaJwEyVF8yjw",
-      "url": "https://play.google.com/store/apps/details?id=com.utorrent.client.pro",
-      "price": 2.99,
-      "priceLabel": "$2.99",
-      "rating": 4.742424,
-      "ratingText": "4.7"
-    },
-    {
-      "rank": 91,
-      "id": "com.fulldive.extension.fullroid.pro",
-      "name": "Pro Emulator for Game Consoles",
-      "artist": "Browser by Fulldive Co.",
-      "icon": "https://play-lh.googleusercontent.com/Y95Tgff09nCjSVm7dRzioaTttfssIOBq97sBOK9NYVOv6cpGocsap752tNQ4FYHc5x97SEsokO-W7LzO_fkHCRs",
-      "url": "https://play.google.com/store/apps/details?id=com.fulldive.extension.fullroid.pro",
-      "price": 2.99,
-      "priceLabel": "$2.99",
-      "rating": 4.458182,
-      "ratingText": "4.5"
-    },
-    {
-      "rank": 92,
-      "id": "com.cateater.stopmotionstudiopro",
-      "name": "Stop Motion Studio Pro",
-      "artist": "Cateater",
-      "icon": "https://play-lh.googleusercontent.com/N1LI8EBJxywvLEyOX1qHGnNIraa880QAikZi2AejFwy1B8MSSVTmdnH759Ll4gA96lJs75Eyqi9T7AvfcFEaC5o",
-      "url": "https://play.google.com/store/apps/details?id=com.cateater.stopmotionstudiopro",
-      "price": 5.99,
-      "priceLabel": "$5.99",
-      "rating": 4.54902,
-      "ratingText": "4.5"
-    },
-    {
-      "rank": 93,
-      "id": "com.chillseekers.Necrophonic",
-      "name": "Necrophonic",
-      "artist": "ChillSeekers",
-      "icon": "https://play-lh.googleusercontent.com/F7wnj7SbG6Bv5sMDUKRJ66-xw-OH8jAau8nKyJWC8E3XKVl50PiN13yhg4NjXEyh3OKofIg6g35OFw43NTPLPA",
-      "url": "https://play.google.com/store/apps/details?id=com.chillseekers.Necrophonic",
-      "price": 9.99,
-      "priceLabel": "$9.99",
-      "rating": 3.7894738,
-      "ratingText": "3.8"
-    },
-    {
-      "rank": 94,
-      "id": "com.tmsoft.whitenoise.full",
-      "name": "White Noise",
-      "artist": "TMSOFT",
-      "icon": "https://play-lh.googleusercontent.com/GaQ2vHNOSfpwW8v_Z2Pq2NsEXbNo5E0M8H3uKXpTY_yJ8o4rdhbyCAI917DV7F7I9_PuCSPyU6DejpibSrcOQw",
-      "url": "https://play.google.com/store/apps/details?id=com.tmsoft.whitenoise.full",
-      "price": 0.99,
-      "priceLabel": "$0.99",
-      "rating": 4.442748,
-      "ratingText": "4.4"
-    },
-    {
-      "rank": 95,
-      "id": "org.fortheloss.sticknodespro",
-      "name": "Stick Nodes Pro - Animator",
-      "artist": "ForTheLoss Games",
-      "icon": "https://play-lh.googleusercontent.com/696BTEmf1gsKLS9vMCRDzOnMdxFKUQtAO13b1k1aQMHCbxUOERjbtKcCynDWkbBY6855lkW-FJVNqbWd1CwrPaw",
-      "url": "https://play.google.com/store/apps/details?id=org.fortheloss.sticknodespro",
-      "price": 3.99,
-      "priceLabel": "$3.99",
-      "rating": 4.846753,
-      "ratingText": "4.8"
-    },
-    {
-      "rank": 96,
       "id": "com.gammonapps.android.straightlinenavigator",
       "name": "Land Nav Assistant",
       "artist": "Land Nav Assistant",
@@ -1163,7 +1067,115 @@
       "ratingText": "4.1"
     },
     {
+      "rank": 89,
+      "id": "com.photopills.android.photopills",
+      "name": "PhotoPills",
+      "artist": "PhotoPills, SL",
+      "icon": "https://play-lh.googleusercontent.com/grScZ_0EPa4RhFBT4IStbAmeuFTINgzPjND8amLstiv4xNYKEyAQErIEvuFHTTdAIm2Kvpgas_LYHzomXbtp",
+      "url": "https://play.google.com/store/apps/details?id=com.photopills.android.photopills",
+      "price": 10.99,
+      "priceLabel": "$10.99",
+      "rating": 4.8039217,
+      "ratingText": "4.8"
+    },
+    {
+      "rank": 90,
+      "id": "com.acmeandroid.listen",
+      "name": "Listen Audiobook Player",
+      "artist": "acme-android.com",
+      "icon": "https://play-lh.googleusercontent.com/6l6dc1zgQOzM5LOuvUTmZQdQvnyMul86uUKRpEC_y9BNkdw_c7vYiL1O2BRAxIpxjVDbGgmoG90WeQmVli13",
+      "url": "https://play.google.com/store/apps/details?id=com.acmeandroid.listen",
+      "price": 1.99,
+      "priceLabel": "$1.99",
+      "rating": 4.37,
+      "ratingText": "4.4"
+    },
+    {
+      "rank": 91,
+      "id": "com.recreative.reseasonal54",
+      "name": "ReS54 - Thanksgiving",
+      "artist": "RECREATIVE Watch Faces",
+      "icon": "https://play-lh.googleusercontent.com/GOmUAV3Cb6jkEdRPlgvLPxO2jbNQ6lTtii6s7GZU3StB7QtXyem9f4DUBhX-co_7XRpyy8sh0NGv91pUCvkPUQ",
+      "url": "https://play.google.com/store/apps/details?id=com.recreative.reseasonal54",
+      "price": 1.49,
+      "priceLabel": "$1.49",
+      "rating": 4.25,
+      "ratingText": "4.2"
+    },
+    {
+      "rank": 92,
+      "id": "com.fulldive.extension.fullroid.pro",
+      "name": "Pro Emulator for Game Consoles",
+      "artist": "Browser by Fulldive Co.",
+      "icon": "https://play-lh.googleusercontent.com/Y95Tgff09nCjSVm7dRzioaTttfssIOBq97sBOK9NYVOv6cpGocsap752tNQ4FYHc5x97SEsokO-W7LzO_fkHCRs",
+      "url": "https://play.google.com/store/apps/details?id=com.fulldive.extension.fullroid.pro",
+      "price": 2.99,
+      "priceLabel": "$2.99",
+      "rating": 4.4525547,
+      "ratingText": "4.5"
+    },
+    {
+      "rank": 93,
+      "id": "org.prowl.torque",
+      "name": "Torque Pro (OBD 2 & Car)",
+      "artist": "Ian Hawkins",
+      "icon": "https://play-lh.googleusercontent.com/6FrY-Xy6WWGRau9_VtPAWTe5ee4NyhnIKBSDx7ldV_bRlT1six2qn23q2HCRMSrH8ySas4FCWg_GdFDdVpJf",
+      "url": "https://play.google.com/store/apps/details?id=org.prowl.torque",
+      "price": 4.95,
+      "priceLabel": "$4.95",
+      "rating": 3.9828327,
+      "ratingText": "4.0"
+    },
+    {
+      "rank": 94,
+      "id": "com.utorrent.client.pro",
+      "name": "µTorrent® Pro - Torrent App",
+      "artist": "bittorrent.com",
+      "icon": "https://play-lh.googleusercontent.com/OQy_UK8b0K_Nu8Eva3zPzNud88UkDcE0JQBtceLzLJK5xw1sh86xnaFUT3M4OlrrSn3RanknAHiaJwEyVF8yjw",
+      "url": "https://play.google.com/store/apps/details?id=com.utorrent.client.pro",
+      "price": 2.99,
+      "priceLabel": "$2.99",
+      "rating": 4.742424,
+      "ratingText": "4.7"
+    },
+    {
+      "rank": 95,
+      "id": "com.cateater.stopmotionstudiopro",
+      "name": "Stop Motion Studio Pro",
+      "artist": "Cateater",
+      "icon": "https://play-lh.googleusercontent.com/N1LI8EBJxywvLEyOX1qHGnNIraa880QAikZi2AejFwy1B8MSSVTmdnH759Ll4gA96lJs75Eyqi9T7AvfcFEaC5o",
+      "url": "https://play.google.com/store/apps/details?id=com.cateater.stopmotionstudiopro",
+      "price": 5.99,
+      "priceLabel": "$5.99",
+      "rating": 4.54902,
+      "ratingText": "4.5"
+    },
+    {
+      "rank": 96,
+      "id": "com.chillseekers.Necrophonic",
+      "name": "Necrophonic",
+      "artist": "ChillSeekers",
+      "icon": "https://play-lh.googleusercontent.com/F7wnj7SbG6Bv5sMDUKRJ66-xw-OH8jAau8nKyJWC8E3XKVl50PiN13yhg4NjXEyh3OKofIg6g35OFw43NTPLPA",
+      "url": "https://play.google.com/store/apps/details?id=com.chillseekers.Necrophonic",
+      "price": 9.99,
+      "priceLabel": "$9.99",
+      "rating": 3.7894738,
+      "ratingText": "3.8"
+    },
+    {
       "rank": 97,
+      "id": "org.fortheloss.sticknodespro",
+      "name": "Stick Nodes Pro - Animator",
+      "artist": "ForTheLoss Games",
+      "icon": "https://play-lh.googleusercontent.com/696BTEmf1gsKLS9vMCRDzOnMdxFKUQtAO13b1k1aQMHCbxUOERjbtKcCynDWkbBY6855lkW-FJVNqbWd1CwrPaw",
+      "url": "https://play.google.com/store/apps/details?id=org.fortheloss.sticknodespro",
+      "price": 3.99,
+      "priceLabel": "$3.99",
+      "rating": 4.846753,
+      "ratingText": "4.8"
+    },
+    {
+      "rank": 98,
       "id": "com.hughjeffreyssoftware.iTest_Battery",
       "name": "iTest Battery",
       "artist": "Hugh Jeffreys",
@@ -1175,7 +1187,7 @@
       "ratingText": "3.4"
     },
     {
-      "rank": 98,
+      "rank": 99,
       "id": "com.sixty9design.hifi",
       "name": "[69D] Hi-Fi Stereo watch face",
       "artist": "69 Design",
@@ -1187,7 +1199,7 @@
       "ratingText": "5.0"
     },
     {
-      "rank": 99,
+      "rank": 100,
       "id": "com.watchfacestudio.s4uassen",
       "name": "S4U Assen - Hybrid watch face",
       "artist": "styles4you",
@@ -1197,18 +1209,6 @@
       "priceLabel": "$1.99",
       "rating": 4.48,
       "ratingText": "4.5"
-    },
-    {
-      "rank": 100,
-      "id": "hmzinnovation.bionictape",
-      "name": "Bionic Tape: Cassette Player",
-      "artist": "HMZ.swiss",
-      "icon": "https://play-lh.googleusercontent.com/4LFI6pozO6NOBrItlNHU1X0qhlyaARlc1LBhvh365amcgm8Wwd8p9Yx_M7bL-WZoXMmVKn2wMSNB3fuXUj1v",
-      "url": "https://play.google.com/store/apps/details?id=hmzinnovation.bionictape",
-      "price": 2.99,
-      "priceLabel": "$2.99",
-      "rating": 4.4,
-      "ratingText": "4.4"
     }
   ]
 }
