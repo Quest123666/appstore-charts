@@ -7,7 +7,7 @@
   "chart": "paid",
   "chartLabel": "付费榜",
   "count": 100,
-  "fetchedAt": "2026-11-18T14:39:50.493Z",
+  "fetchedAt": "2026-11-18T23:38:52.737Z",
   "source": "google-play-scraper",
   "results": [
     {
@@ -31,7 +31,7 @@
       "url": "https://play.google.com/store/apps/details?id=psplay.grill.com",
       "price": 6.99,
       "priceLabel": "$6.99",
-      "rating": 4.727494,
+      "rating": 4.732034,
       "ratingText": "4.7"
     },
     {
@@ -67,7 +67,7 @@
       "url": "https://play.google.com/store/apps/details?id=net.dinglisch.android.taskerm",
       "price": 4.49,
       "priceLabel": "$4.49",
-      "rating": 3.9850428,
+      "rating": 3.987207,
       "ratingText": "4.0"
     },
     {
@@ -127,7 +127,7 @@
       "url": "https://play.google.com/store/apps/details?id=net.liveatc.liveatc_app",
       "price": 5.99,
       "priceLabel": "$5.99",
-      "rating": 3.61,
+      "rating": 3.57,
       "ratingText": "3.6"
     },
     {
@@ -151,8 +151,8 @@
       "url": "https://play.google.com/store/apps/details?id=psremoteplay.gamecontroller.playstream.pro",
       "price": 0.09,
       "priceLabel": "$0.09",
-      "rating": 4.2,
-      "ratingText": "4.2"
+      "rating": 4.3333335,
+      "ratingText": "4.3"
     },
     {
       "rank": 13,
@@ -163,8 +163,8 @@
       "url": "https://play.google.com/store/apps/details?id=com.samruston.buzzkill",
       "price": 3.99,
       "priceLabel": "$3.99",
-      "rating": 4.678571,
-      "ratingText": "4.7"
+      "rating": 4.63964,
+      "ratingText": "4.6"
     },
     {
       "rank": 14,
@@ -271,7 +271,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.wakdev.nfctools.pro",
       "price": 3.99,
       "priceLabel": "$3.99",
-      "rating": 4.715026,
+      "rating": 4.695876,
       "ratingText": "4.7"
     },
     {
@@ -319,7 +319,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.watchfacestudio.per27",
       "price": 2.99,
       "priceLabel": "$2.99",
-      "rating": 4.4903846,
+      "rating": 4.5,
       "ratingText": "4.5"
     },
     {
@@ -343,7 +343,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.watchfacestudio.md312analog",
       "price": 2.99,
       "priceLabel": "$2.99",
-      "rating": 4.1714287,
+      "rating": 4.169014,
       "ratingText": "4.2"
     },
     {
@@ -415,7 +415,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.jndapp.oneui.widgets.pack",
       "price": 1.09,
       "priceLabel": "$1.09",
-      "rating": 4.5643563,
+      "rating": 4.5686274,
       "ratingText": "4.6"
     },
     {
@@ -487,7 +487,7 @@
       "url": "https://play.google.com/store/apps/details?id=org.readera.premium",
       "price": 14.99,
       "priceLabel": "$14.99",
-      "rating": 4.8251,
+      "rating": 4.825333,
       "ratingText": "4.8"
     },
     {
@@ -497,10 +497,10 @@
       "artist": "LIBERTY WATCH FACES™",
       "icon": "https://play-lh.googleusercontent.com/5GXm45wpHEHtVQ-qCTz8JJLKd2zq1Q4fs9eT6RNdHcHBbUnGgePLXirZjegDU9bdCnUohf9fnM_YujBxe1eufsc",
       "url": "https://play.google.com/store/apps/details?id=com.watchfacestudio.lbclassic06",
-      "price": 1.29,
-      "priceLabel": "$1.29",
-      "rating": 4.116279,
-      "ratingText": "4.1"
+      "price": 1.49,
+      "priceLabel": "$1.49",
+      "rating": 4.0454545,
+      "ratingText": "4.0"
     },
     {
       "rank": 42,
@@ -595,7 +595,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.flyersoft.moonreaderp",
       "price": 11.99,
       "priceLabel": "$11.99",
-      "rating": 4.1882086,
+      "rating": 4.197279,
       "ratingText": "4.2"
     },
     {
@@ -607,7 +607,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.nerdykidapps21.carequalizermc",
       "price": 3.99,
       "priceLabel": "$3.99",
-      "rating": 4,
+      "rating": 4.035714,
       "ratingText": "4.0"
     },
     {
@@ -641,8 +641,8 @@
       "artist": "Fatih Balsoy",
       "icon": "https://play-lh.googleusercontent.com/eLzeBdJo507PpUwWTEo_A1a3vy79QvdqWyhI5tMSgb7eIWxl87ig64uihqotlo_ILXTmjbcbDY_iCaUzG3bs",
       "url": "https://play.google.com/store/apps/details?id=com.balsoy.fatih.compass",
-      "price": 1.99,
-      "priceLabel": "$1.99",
+      "price": 0.99,
+      "priceLabel": "$0.99",
       "rating": 4.81,
       "ratingText": "4.8"
     },
@@ -715,7 +715,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.appslab.materialyou.widgetspro",
       "price": 1.99,
       "priceLabel": "$1.99",
-      "rating": 4.38,
+      "rating": 4.36,
       "ratingText": "4.4"
     },
     {
@@ -775,7 +775,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.projectfluffy.icons",
       "price": 0.99,
       "priceLabel": "$0.99",
-      "rating": 4.5142856,
+      "rating": 4.5211267,
       "ratingText": "4.5"
     },
     {
@@ -991,7 +991,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.nynix.knots3d",
       "price": 5.99,
       "priceLabel": "$5.99",
-      "rating": 4.920082,
+      "rating": 4.9204082,
       "ratingText": "4.9"
     },
     {
@@ -1044,6 +1044,18 @@
     },
     {
       "rank": 87,
+      "id": "org.prowl.torque",
+      "name": "Torque Pro (OBD 2 & Car)",
+      "artist": "Ian Hawkins",
+      "icon": "https://play-lh.googleusercontent.com/6FrY-Xy6WWGRau9_VtPAWTe5ee4NyhnIKBSDx7ldV_bRlT1six2qn23q2HCRMSrH8ySas4FCWg_GdFDdVpJf",
+      "url": "https://play.google.com/store/apps/details?id=org.prowl.torque",
+      "price": 4.95,
+      "priceLabel": "$4.95",
+      "rating": 3.9770772,
+      "ratingText": "4.0"
+    },
+    {
+      "rank": 88,
       "id": "com.tmsoft.whitenoise.full",
       "name": "White Noise",
       "artist": "TMSOFT",
@@ -1051,11 +1063,11 @@
       "url": "https://play.google.com/store/apps/details?id=com.tmsoft.whitenoise.full",
       "price": 0.99,
       "priceLabel": "$0.99",
-      "rating": 4.4347825,
+      "rating": 4.4362245,
       "ratingText": "4.4"
     },
     {
-      "rank": 88,
+      "rank": 89,
       "id": "com.penly.penly",
       "name": "Penly: Digital Planner & Notes",
       "artist": "Penly",
@@ -1067,7 +1079,7 @@
       "ratingText": "4.0"
     },
     {
-      "rank": 89,
+      "rank": 90,
       "id": "org.cagnulen.qdomyoszwift",
       "name": "QZ Fitness",
       "artist": "Roberto Viola - Cagnulein",
@@ -1079,7 +1091,7 @@
       "ratingText": "4.5"
     },
     {
-      "rank": 90,
+      "rank": 91,
       "id": "com.fulldive.extension.fullroid.pro",
       "name": "Pro Emulator for Game Consoles",
       "artist": "Browser by Fulldive Co.",
@@ -1091,7 +1103,7 @@
       "ratingText": "4.5"
     },
     {
-      "rank": 91,
+      "rank": 92,
       "id": "com.watchfacestudio.s4uassen",
       "name": "S4U Assen - Hybrid watch face",
       "artist": "styles4you",
@@ -1103,7 +1115,7 @@
       "ratingText": "4.5"
     },
     {
-      "rank": 92,
+      "rank": 93,
       "id": "in.sunilpaulmathew.ashell",
       "name": "aShell - Your Local ADB Shell",
       "artist": "sunilpaulmathew",
@@ -1115,7 +1127,7 @@
       "ratingText": "4.2"
     },
     {
-      "rank": 93,
+      "rank": 94,
       "id": "tech.ula.gimp",
       "name": "GIMP",
       "artist": "UserLAnd Technologies",
@@ -1127,7 +1139,7 @@
       "ratingText": "3.1"
     },
     {
-      "rank": 94,
+      "rank": 95,
       "id": "com.fmapp.findmyapp",
       "name": "Find my app",
       "artist": "Gannon Developments Software",
@@ -1139,7 +1151,7 @@
       "ratingText": "2.1"
     },
     {
-      "rank": 95,
+      "rank": 96,
       "id": "wb.illuminator.hybridlcd",
       "name": "ILLUMINATOR Hybrid-LCD",
       "artist": "WatchBase",
@@ -1151,7 +1163,7 @@
       "ratingText": "4.1"
     },
     {
-      "rank": 96,
+      "rank": 97,
       "id": "com.progdigy.cdisplay",
       "name": "CDisplayEx Comic Reader",
       "artist": "Progdigy Software",
@@ -1163,7 +1175,7 @@
       "ratingText": "4.8"
     },
     {
-      "rank": 97,
+      "rank": 98,
       "id": "org.fortheloss.sticknodespro",
       "name": "Stick Nodes Pro - Animator",
       "artist": "ForTheLoss Games",
@@ -1175,7 +1187,7 @@
       "ratingText": "4.8"
     },
     {
-      "rank": 98,
+      "rank": 99,
       "id": "com.veamstudios.siteauditpro",
       "name": "Site Audit Pro",
       "artist": "Veam Studios Ltd",
@@ -1183,11 +1195,11 @@
       "url": "https://play.google.com/store/apps/details?id=com.veamstudios.siteauditpro",
       "price": 12.9,
       "priceLabel": "$12.90",
-      "rating": 4.15,
+      "rating": 4.2,
       "ratingText": "4.2"
     },
     {
-      "rank": 99,
+      "rank": 100,
       "id": "com.BitPlague.Necrometer",
       "name": "Necrometer",
       "artist": "ChillSeekers",
@@ -1197,18 +1209,6 @@
       "priceLabel": "$9.99",
       "rating": 3.53,
       "ratingText": "3.5"
-    },
-    {
-      "rank": 100,
-      "id": "com.Relmtech.RemotePaid",
-      "name": "Unified Remote Full",
-      "artist": "Unified Intents",
-      "icon": "https://play-lh.googleusercontent.com/NLsjRWg_SW-PvxZpL7WRsquCH8GxB_RhXK6-PRVbmJS1duZfD1E27-mKl-PCwmdABPB4nNQ3avfbvo8lw_Y-ypM",
-      "url": "https://play.google.com/store/apps/details?id=com.Relmtech.RemotePaid",
-      "price": 4.99,
-      "priceLabel": "$4.99",
-      "rating": 4.707819,
-      "ratingText": "4.7"
     }
   ]
 }
