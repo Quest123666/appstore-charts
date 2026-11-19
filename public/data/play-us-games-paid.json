@@ -7,7 +7,7 @@
   "chart": "paid",
   "chartLabel": "付费榜",
   "count": 100,
-  "fetchedAt": "2026-11-18T23:38:52.737Z",
+  "fetchedAt": "2026-11-19T04:40:47.189Z",
   "source": "google-play-scraper",
   "results": [
     {
@@ -19,7 +19,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.mojang.minecraftpe",
       "price": 6.99,
       "priceLabel": "$6.99",
-      "rating": 4.30086,
+      "rating": 4.300343,
       "ratingText": "4.3"
     },
     {
@@ -31,7 +31,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.AurochDigital.WarhammerSurvivors",
       "price": 7.99,
       "priceLabel": "$7.99",
-      "rating": 3.9215686,
+      "rating": 3.9245284,
       "ratingText": "3.9"
     },
     {
@@ -43,7 +43,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.robtopx.geometryjump",
       "price": 3.99,
       "priceLabel": "$3.99",
-      "rating": 4.758753,
+      "rating": 4.7583103,
       "ratingText": "4.8"
     },
     {
@@ -55,7 +55,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.quanticbit.neonvalleyvoid",
       "price": 0.05,
       "priceLabel": "$0.05",
-      "rating": 4.037037,
+      "rating": 4,
       "ratingText": "4.0"
     },
     {
@@ -67,7 +67,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.fundaygames.boosterpack",
       "price": 6.99,
       "priceLabel": "$6.99",
-      "rating": 4.865546,
+      "rating": 4.857143,
       "ratingText": "4.9"
     },
     {
@@ -79,7 +79,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.ninjakiwi.bloonstd6",
       "price": 6.99,
       "priceLabel": "$6.99",
-      "rating": 4.7640634,
+      "rating": 4.7640486,
       "ratingText": "4.8"
     },
     {
@@ -91,7 +91,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.chucklefish.stardewvalley",
       "price": 4.99,
       "priceLabel": "$4.99",
-      "rating": 4.594689,
+      "rating": 4.59458,
       "ratingText": "4.6"
     },
     {
@@ -127,7 +127,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.rockstargames.gtasa",
       "price": 6.99,
       "priceLabel": "$6.99",
-      "rating": 4.546706,
+      "rating": 4.54666,
       "ratingText": "4.5"
     },
     {
@@ -139,7 +139,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.humble.SlayTheSpire",
       "price": 9.99,
       "priceLabel": "$9.99",
-      "rating": 4.3396945,
+      "rating": 4.337165,
       "ratingText": "4.3"
     },
     {
@@ -151,8 +151,8 @@
       "url": "https://play.google.com/store/apps/details?id=com.quanticbit.pocketrpg",
       "price": 0.05,
       "priceLabel": "$0.05",
-      "rating": 3.7894738,
-      "ratingText": "3.8"
+      "rating": 3.7222223,
+      "ratingText": "3.7"
     },
     {
       "rank": 13,
@@ -161,9 +161,9 @@
       "artist": "Playdigious",
       "icon": "https://play-lh.googleusercontent.com/fP7atrfDcPJVgFSuY5bmfx4kbvdu2-wfrwcJaHy4XZU5piyxYpKJaulXPXrWcv5DB3Mh-xF2QYI71xV7675g",
       "url": "https://play.google.com/store/apps/details?id=com.playdigious.sor4",
-      "price": 1.8,
-      "priceLabel": "$1.80",
-      "rating": 4.8358207,
+      "price": 8.99,
+      "priceLabel": "$8.99",
+      "rating": 4.834897,
       "ratingText": "4.8"
     },
     {
@@ -187,7 +187,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.scottgames.fivenightsatfreddys",
       "price": 2.99,
       "priceLabel": "$2.99",
-      "rating": 4.6949906,
+      "rating": 4.694764,
       "ratingText": "4.7"
     },
     {
@@ -199,7 +199,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.and.games505.TerrariaPaid",
       "price": 4.99,
       "priceLabel": "$4.99",
-      "rating": 4.55184,
+      "rating": 4.5520353,
       "ratingText": "4.6"
     },
     {
@@ -211,7 +211,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.sofarsogood.incredibox",
       "price": 2.99,
       "priceLabel": "$2.99",
-      "rating": 4.8849416,
+      "rating": 4.884778,
       "ratingText": "4.9"
     },
     {
@@ -235,7 +235,7 @@
       "url": "https://play.google.com/store/apps/details?id=nz.co.codepoint.minimetro",
       "price": 0.99,
       "priceLabel": "$0.99",
-      "rating": 4.642773,
+      "rating": 4.642353,
       "ratingText": "4.6"
     },
     {
@@ -259,8 +259,8 @@
       "url": "https://play.google.com/store/apps/details?id=com.quanticbit.megavoid",
       "price": 0.05,
       "priceLabel": "$0.05",
-      "rating": 3.7142856,
-      "ratingText": "3.7"
+      "rating": 3.6153846,
+      "ratingText": "3.6"
     },
     {
       "rank": 22,
@@ -271,7 +271,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.marmalade.monopoly",
       "price": 4.99,
       "priceLabel": "$4.99",
-      "rating": 4.111004,
+      "rating": 4.1111755,
       "ratingText": "4.1"
     },
     {
@@ -295,8 +295,8 @@
       "url": "https://play.google.com/store/apps/details?id=com.pid.lilguardsman",
       "price": 5.39,
       "priceLabel": "$5.39",
-      "rating": 4.5454545,
-      "ratingText": "4.5"
+      "rating": 4.553571,
+      "ratingText": "4.6"
     },
     {
       "rank": 25,
@@ -307,8 +307,8 @@
       "url": "https://play.google.com/store/apps/details?id=com.poncle.vampirecrawlers",
       "price": 9.99,
       "priceLabel": "$9.99",
-      "rating": 4.0493827,
-      "ratingText": "4.0"
+      "rating": 4.0609756,
+      "ratingText": "4.1"
     },
     {
       "rank": 26,
@@ -319,7 +319,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.fundaygames.scritchyscratchy",
       "price": 6.99,
       "priceLabel": "$6.99",
-      "rating": 4.736,
+      "rating": 4.737052,
       "ratingText": "4.7"
     },
     {
@@ -331,7 +331,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.mobentertainment.PoppyPlaytimeChapter5",
       "price": 6.99,
       "priceLabel": "$6.99",
-      "rating": 4.0408163,
+      "rating": 4.0208335,
       "ratingText": "4.0"
     },
     {
@@ -355,7 +355,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.ironhidegames.android.kingdomrush6.genesis",
       "price": 6.99,
       "priceLabel": "$6.99",
-      "rating": 4.607143,
+      "rating": 4.612676,
       "ratingText": "4.6"
     },
     {
@@ -365,8 +365,8 @@
       "artist": "Playdigious",
       "icon": "https://play-lh.googleusercontent.com/RF7tWjj2PVpY-qAjOqg19zq3s4UIdjfuVbSrwsd6QjK0rPUF3lwd48L33mT_mDnhd4j8pk31bi0tsMuG1l-vcw",
       "url": "https://play.google.com/store/apps/details?id=com.playdigious.absolum",
-      "price": 8.99,
-      "priceLabel": "$8.99",
+      "price": 11.99,
+      "priceLabel": "$11.99",
       "rating": 4.803738,
       "ratingText": "4.8"
     },
@@ -391,7 +391,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.scottgames.fnaf2",
       "price": 2.99,
       "priceLabel": "$2.99",
-      "rating": 4.625698,
+      "rating": 4.628232,
       "ratingText": "4.6"
     },
     {
@@ -403,7 +403,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.rockstargames.gtavc",
       "price": 4.99,
       "priceLabel": "$4.99",
-      "rating": 3.3330684,
+      "rating": 3.3341308,
       "ratingText": "3.3"
     },
     {
@@ -415,7 +415,7 @@
       "url": "https://play.google.com/store/apps/details?id=air.com.flipline.papasfreezeriatogo",
       "price": 0.99,
       "priceLabel": "$0.99",
-      "rating": 4.5830817,
+      "rating": 4.581818,
       "ratingText": "4.6"
     },
     {
@@ -427,7 +427,7 @@
       "url": "https://play.google.com/store/apps/details?id=it.dbtecno.pizzaboygbapro",
       "price": 5.99,
       "priceLabel": "$5.99",
-      "rating": 4.832664,
+      "rating": 4.833111,
       "ratingText": "4.8"
     },
     {
@@ -451,7 +451,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.direwolfdigital.root",
       "price": 5,
       "priceLabel": "$5.00",
-      "rating": 4.828125,
+      "rating": 4.8285713,
       "ratingText": "4.8"
     },
     {
@@ -463,7 +463,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.lavaflame.fortunemill",
       "price": 8.99,
       "priceLabel": "$8.99",
-      "rating": 4.2970295,
+      "rating": 4.29,
       "ratingText": "4.3"
     },
     {
@@ -475,7 +475,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.brotato.shooting.survivors.games.paid.android",
       "price": 4.99,
       "priceLabel": "$4.99",
-      "rating": 4.821652,
+      "rating": 4.8213167,
       "ratingText": "4.8"
     },
     {
@@ -499,7 +499,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.ninjakiwi.zombieassault",
       "price": 9.99,
       "priceLabel": "$9.99",
-      "rating": 3.4220183,
+      "rating": 3.418182,
       "ratingText": "3.4"
     },
     {
@@ -511,7 +511,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.Friedemann.SlotsAndDaggers",
       "price": 3.99,
       "priceLabel": "$3.99",
-      "rating": 4.761468,
+      "rating": 4.8235292,
       "ratingText": "4.8"
     },
     {
@@ -523,7 +523,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.batomon.showdown",
       "price": 5.99,
       "priceLabel": "$5.99",
-      "rating": 4.201923,
+      "rating": 4.2,
       "ratingText": "4.2"
     },
     {
@@ -583,7 +583,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.ninjakiwi.bloonstd5",
       "price": 2.99,
       "priceLabel": "$2.99",
-      "rating": 4.5765862,
+      "rating": 4.576259,
       "ratingText": "4.6"
     },
     {
@@ -607,7 +607,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.FireproofStudios.TheRoom",
       "price": 0.99,
       "priceLabel": "$0.99",
-      "rating": 4.7963448,
+      "rating": 4.796451,
       "ratingText": "4.8"
     },
     {
@@ -751,7 +751,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.bandainamcoent.op_restaurant",
       "price": 12.99,
       "priceLabel": "$12.99",
-      "rating": 4.5576925,
+      "rating": 4.561905,
       "ratingText": "4.6"
     },
     {
@@ -787,7 +787,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.playdigious.skul",
       "price": 1.6,
       "priceLabel": "$1.60",
-      "rating": 4.7272725,
+      "rating": 4.723077,
       "ratingText": "4.7"
     },
     {
@@ -799,7 +799,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.PanikArcade.CloverPit",
       "price": 6.99,
       "priceLabel": "$6.99",
-      "rating": 4.840206,
+      "rating": 4.840617,
       "ratingText": "4.8"
     },
     {
@@ -811,8 +811,8 @@
       "url": "https://play.google.com/store/apps/details?id=com.Doborog.CloneDroneInTheDangerPhone",
       "price": 9.99,
       "priceLabel": "$9.99",
-      "rating": 4.888889,
-      "ratingText": "4.9"
+      "rating": 4.8,
+      "ratingText": "4.8"
     },
     {
       "rank": 68,
@@ -835,7 +835,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.devolver.reigns",
       "price": 2.99,
       "priceLabel": "$2.99",
-      "rating": 4.152809,
+      "rating": 4.15,
       "ratingText": "4.2"
     },
     {
@@ -907,7 +907,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.zx.horror.escape.house",
       "price": 2.99,
       "priceLabel": "$2.99",
-      "rating": 1.3461539,
+      "rating": 1.3333334,
       "ratingText": "1.3"
     },
     {
@@ -919,7 +919,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.clickteam.ultimatecustomnight",
       "price": 2.99,
       "priceLabel": "$2.99",
-      "rating": 4.6157246,
+      "rating": 4.6153846,
       "ratingText": "4.6"
     },
     {
@@ -931,8 +931,8 @@
       "url": "https://play.google.com/store/apps/details?id=tech.ula.ogtrail",
       "price": 1.99,
       "priceLabel": "$1.99",
-      "rating": 4.27,
-      "ratingText": "4.3"
+      "rating": 4.25,
+      "ratingText": "4.2"
     },
     {
       "rank": 78,
@@ -1051,7 +1051,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.doghowlgames.thronefall",
       "price": 10.99,
       "priceLabel": "$10.99",
-      "rating": 4.8863235,
+      "rating": 4.8865247,
       "ratingText": "4.9"
     },
     {
@@ -1087,8 +1087,8 @@
       "url": "https://play.google.com/store/apps/details?id=com.feralinteractive.saintsrow3_android",
       "price": 19.99,
       "priceLabel": "$19.99",
-      "rating": 3.855856,
-      "ratingText": "3.9"
+      "rating": 3.970297,
+      "ratingText": "4.0"
     },
     {
       "rank": 91,
@@ -1135,7 +1135,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.clickteam.freddyfazbearspizzeriasimulator",
       "price": 2.99,
       "priceLabel": "$2.99",
-      "rating": 4.581395,
+      "rating": 4.580854,
       "ratingText": "4.6"
     },
     {

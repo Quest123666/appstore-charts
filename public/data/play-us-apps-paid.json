@@ -7,7 +7,7 @@
   "chart": "paid",
   "chartLabel": "付费榜",
   "count": 100,
-  "fetchedAt": "2026-11-18T23:38:52.737Z",
+  "fetchedAt": "2026-11-19T04:40:47.189Z",
   "source": "google-play-scraper",
   "results": [
     {
@@ -31,7 +31,7 @@
       "url": "https://play.google.com/store/apps/details?id=psplay.grill.com",
       "price": 6.99,
       "priceLabel": "$6.99",
-      "rating": 4.732034,
+      "rating": 4.730488,
       "ratingText": "4.7"
     },
     {
@@ -43,7 +43,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.imageline.FLM",
       "price": 14.99,
       "priceLabel": "$14.99",
-      "rating": 4.014833,
+      "rating": 4.012407,
       "ratingText": "4.0"
     },
     {
@@ -55,7 +55,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.mayacrew.rolliescam",
       "price": 6.99,
       "priceLabel": "$6.99",
-      "rating": 4.5869565,
+      "rating": 4.5833335,
       "ratingText": "4.6"
     },
     {
@@ -235,7 +235,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.watchfacestudio.per023pro",
       "price": 2.99,
       "priceLabel": "$2.99",
-      "rating": 4.37,
+      "rating": 4.4,
       "ratingText": "4.4"
     },
     {
@@ -307,7 +307,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.watchfacestudio.md307digital",
       "price": 2.49,
       "priceLabel": "$2.49",
-      "rating": 4.424569,
+      "rating": 4.4319654,
       "ratingText": "4.4"
     },
     {
@@ -319,7 +319,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.watchfacestudio.per27",
       "price": 2.99,
       "priceLabel": "$2.99",
-      "rating": 4.5,
+      "rating": 4.4952383,
       "ratingText": "4.5"
     },
     {
@@ -343,7 +343,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.watchfacestudio.md312analog",
       "price": 2.99,
       "priceLabel": "$2.99",
-      "rating": 4.169014,
+      "rating": 4.1805553,
       "ratingText": "4.2"
     },
     {
@@ -365,8 +365,8 @@
       "artist": "JustNewDesigns",
       "icon": "https://play-lh.googleusercontent.com/wAgcsPdwW40U9MqAGA8ekd4fQaLo6m0VdxoMt41DTkSP0qt5vlWWSzqyeVhppOQHVPVnP3lTbverZX-phgw12mM",
       "url": "https://play.google.com/store/apps/details?id=com.jndapp.i.widgets.pack",
-      "price": 0.19,
-      "priceLabel": "$0.19",
+      "price": 0.99,
+      "priceLabel": "$0.99",
       "rating": 4.7901235,
       "ratingText": "4.8"
     },
@@ -463,7 +463,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.digipom.easyvoicerecorder.pro",
       "price": 4.99,
       "priceLabel": "$4.99",
-      "rating": 4.7023644,
+      "rating": 4.7015343,
       "ratingText": "4.7"
     },
     {
@@ -487,7 +487,7 @@
       "url": "https://play.google.com/store/apps/details?id=org.readera.premium",
       "price": 14.99,
       "priceLabel": "$14.99",
-      "rating": 4.825333,
+      "rating": 4.825566,
       "ratingText": "4.8"
     },
     {
@@ -595,7 +595,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.flyersoft.moonreaderp",
       "price": 11.99,
       "priceLabel": "$11.99",
-      "rating": 4.197279,
+      "rating": 4.1954546,
       "ratingText": "4.2"
     },
     {
@@ -667,7 +667,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.alexvas.dvr.pro",
       "price": 4.99,
       "priceLabel": "$4.99",
-      "rating": 3.8829432,
+      "rating": 3.881072,
       "ratingText": "3.9"
     },
     {
@@ -679,7 +679,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.WagotabiLimited.Wagotabi",
       "price": 4.99,
       "priceLabel": "$4.99",
-      "rating": 4.9083333,
+      "rating": 4.909091,
       "ratingText": "4.9"
     },
     {
@@ -739,7 +739,7 @@
       "url": "https://play.google.com/store/apps/details?id=fluffy.oneui.icons",
       "price": 0.99,
       "priceLabel": "$0.99",
-      "rating": 4.6226416,
+      "rating": 4.6296296,
       "ratingText": "4.6"
     },
     {
@@ -931,7 +931,7 @@
       "url": "https://play.google.com/store/apps/details?id=org.fossify.thankyou",
       "price": 3.49,
       "priceLabel": "$3.49",
-      "rating": 4.78,
+      "rating": 4.818182,
       "ratingText": "4.8"
     },
     {
@@ -943,7 +943,7 @@
       "url": "https://play.google.com/store/apps/details?id=jp.ne.ibis.ibispaint.app",
       "price": 15.99,
       "priceLabel": "$15.99",
-      "rating": 4.289377,
+      "rating": 4.285714,
       "ratingText": "4.3"
     },
     {
@@ -1027,7 +1027,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.cateater.stopmotionstudiopro",
       "price": 5.99,
       "priceLabel": "$5.99",
-      "rating": 4.54902,
+      "rating": 4.54,
       "ratingText": "4.5"
     },
     {
