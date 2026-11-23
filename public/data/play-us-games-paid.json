@@ -7,7 +7,7 @@
   "chart": "paid",
   "chartLabel": "付费榜",
   "count": 100,
-  "fetchedAt": "2026-11-23T04:14:16.739Z",
+  "fetchedAt": "2026-11-23T16:36:44.644Z",
   "source": "google-play-scraper",
   "results": [
     {
@@ -19,7 +19,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.mojang.minecraftpe",
       "price": 6.99,
       "priceLabel": "$6.99",
-      "rating": 4.3006506,
+      "rating": 4.3007727,
       "ratingText": "4.3"
     },
     {
@@ -31,7 +31,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.rockstargames.gtasa",
       "price": 6.99,
       "priceLabel": "$6.99",
-      "rating": 4.5452876,
+      "rating": 4.5457425,
       "ratingText": "4.5"
     },
     {
@@ -43,7 +43,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.robtopx.geometryjump",
       "price": 3.99,
       "priceLabel": "$3.99",
-      "rating": 4.7591496,
+      "rating": 4.759185,
       "ratingText": "4.8"
     },
     {
@@ -55,7 +55,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.ninjakiwi.bloonstd6",
       "price": 6.99,
       "priceLabel": "$6.99",
-      "rating": 4.7644453,
+      "rating": 4.764041,
       "ratingText": "4.8"
     },
     {
@@ -67,23 +67,11 @@
       "url": "https://play.google.com/store/apps/details?id=com.AurochDigital.WarhammerSurvivors",
       "price": 7.99,
       "priceLabel": "$7.99",
-      "rating": 3.5454545,
+      "rating": 3.5441177,
       "ratingText": "3.5"
     },
     {
       "rank": 6,
-      "id": "com.playstack.balatro.android",
-      "name": "Balatro",
-      "artist": "Playstack",
-      "icon": "https://play-lh.googleusercontent.com/A3TixeAj-tHxxvfuIPvkPZxXGdG7c9wynmbZq0m4HSwcogS4KdLn1Ia69_xZ67hL2wwEySv2--O5f79PVYRy",
-      "url": "https://play.google.com/store/apps/details?id=com.playstack.balatro.android",
-      "price": 9.99,
-      "priceLabel": "$9.99",
-      "rating": 4.684332,
-      "ratingText": "4.7"
-    },
-    {
-      "rank": 7,
       "id": "com.chucklefish.stardewvalley",
       "name": "Stardew Valley",
       "artist": "ConcernedApe",
@@ -93,6 +81,18 @@
       "priceLabel": "$4.99",
       "rating": 4.5951233,
       "ratingText": "4.6"
+    },
+    {
+      "rank": 7,
+      "id": "com.playstack.balatro.android",
+      "name": "Balatro",
+      "artist": "Playstack",
+      "icon": "https://play-lh.googleusercontent.com/A3TixeAj-tHxxvfuIPvkPZxXGdG7c9wynmbZq0m4HSwcogS4KdLn1Ia69_xZ67hL2wwEySv2--O5f79PVYRy",
+      "url": "https://play.google.com/store/apps/details?id=com.playstack.balatro.android",
+      "price": 9.99,
+      "priceLabel": "$9.99",
+      "rating": 4.684332,
+      "ratingText": "4.7"
     },
     {
       "rank": 8,
@@ -115,7 +115,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.fundaygames.boosterpack",
       "price": 6.99,
       "priceLabel": "$6.99",
-      "rating": 4.7843137,
+      "rating": 4.792453,
       "ratingText": "4.8"
     },
     {
@@ -151,7 +151,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.rockstargames.gtavc",
       "price": 4.99,
       "priceLabel": "$4.99",
-      "rating": 3.333866,
+      "rating": 3.34,
       "ratingText": "3.3"
     },
     {
@@ -168,18 +168,6 @@
     },
     {
       "rank": 14,
-      "id": "com.beamdog.nwnandroid",
-      "name": "Neverwinter Nights: Enhanced",
-      "artist": "Beamdog",
-      "icon": "https://play-lh.googleusercontent.com/7sIuELoH5DT3ZhKFWxjySTQOCWCl_JpLJzjoscPjZ3tyhiZ72U-LGlH76j9qpq0qgi8Bp2jlAwzwbVj10r-t4-0",
-      "url": "https://play.google.com/store/apps/details?id=com.beamdog.nwnandroid",
-      "price": 3,
-      "priceLabel": "$3.00",
-      "rating": 3.9481483,
-      "ratingText": "3.9"
-    },
-    {
-      "rank": 15,
       "id": "com.scottgames.fivenightsatfreddys",
       "name": "Five Nights at Freddy's",
       "artist": "Clickteam USA LLC",
@@ -189,6 +177,18 @@
       "priceLabel": "$2.99",
       "rating": 4.693254,
       "ratingText": "4.7"
+    },
+    {
+      "rank": 15,
+      "id": "com.beamdog.nwnandroid",
+      "name": "Neverwinter Nights: Enhanced",
+      "artist": "Beamdog",
+      "icon": "https://play-lh.googleusercontent.com/7sIuELoH5DT3ZhKFWxjySTQOCWCl_JpLJzjoscPjZ3tyhiZ72U-LGlH76j9qpq0qgi8Bp2jlAwzwbVj10r-t4-0",
+      "url": "https://play.google.com/store/apps/details?id=com.beamdog.nwnandroid",
+      "price": 3,
+      "priceLabel": "$3.00",
+      "rating": 3.9481483,
+      "ratingText": "3.9"
     },
     {
       "rank": 16,
@@ -211,8 +211,8 @@
       "url": "https://play.google.com/store/apps/details?id=com.and.games505.TerrariaPaid",
       "price": 4.99,
       "priceLabel": "$4.99",
-      "rating": 4.5503545,
-      "ratingText": "4.6"
+      "rating": 4.549956,
+      "ratingText": "4.5"
     },
     {
       "rank": 18,
@@ -247,11 +247,23 @@
       "url": "https://play.google.com/store/apps/details?id=com.playdigious.skul",
       "price": 1.6,
       "priceLabel": "$1.60",
-      "rating": 4.6742425,
+      "rating": 4.6969695,
       "ratingText": "4.7"
     },
     {
       "rank": 21,
+      "id": "com.quanticbit.megavoid",
+      "name": "MEGAVOID: Roguelike",
+      "artist": "Quantic Bit",
+      "icon": "https://play-lh.googleusercontent.com/SRVq6INTlPv0QqQ_cp7tAYEMZJz3FgWk5juyEYZtNwen7aPHEgATkWsT3gB3w79W-de3YltyaybCsAsA1ZZ7cw",
+      "url": "https://play.google.com/store/apps/details?id=com.quanticbit.megavoid",
+      "price": 0.05,
+      "priceLabel": "$0.05",
+      "rating": 3.4285715,
+      "ratingText": "3.4"
+    },
+    {
+      "rank": 22,
       "id": "nz.co.codepoint.minimetro",
       "name": "Mini Metro",
       "artist": "Dinosaur Polo Club",
@@ -261,18 +273,6 @@
       "priceLabel": "$0.99",
       "rating": 4.6407537,
       "ratingText": "4.6"
-    },
-    {
-      "rank": 22,
-      "id": "com.quanticbit.megavoid",
-      "name": "MEGAVOID: Roguelike",
-      "artist": "Quantic Bit",
-      "icon": "https://play-lh.googleusercontent.com/SRVq6INTlPv0QqQ_cp7tAYEMZJz3FgWk5juyEYZtNwen7aPHEgATkWsT3gB3w79W-de3YltyaybCsAsA1ZZ7cw",
-      "url": "https://play.google.com/store/apps/details?id=com.quanticbit.megavoid",
-      "price": 0.05,
-      "priceLabel": "$0.05",
-      "rating": 3.6153846,
-      "ratingText": "3.6"
     },
     {
       "rank": 23,
@@ -288,18 +288,6 @@
     },
     {
       "rank": 24,
-      "id": "com.ironhidegames.android.kingdomrush6.genesis",
-      "name": "Kingdom Rush 6: Genesis TD",
-      "artist": "Ironhide Games",
-      "icon": "https://play-lh.googleusercontent.com/OEcpMNaiFRCca12qpIQWR8jGJCxPrRQsly00833YrzDh65hpTzVe2c1lBwReZku2j6ApAvWRC9Zz19X92Q8Dqg",
-      "url": "https://play.google.com/store/apps/details?id=com.ironhidegames.android.kingdomrush6.genesis",
-      "price": 6.99,
-      "priceLabel": "$6.99",
-      "rating": 4.6458335,
-      "ratingText": "4.6"
-    },
-    {
-      "rank": 25,
       "id": "com.QuanticBit.MonsterSiegeTactics",
       "name": "Monster Siege Tactics: RPG",
       "artist": "Quantic Bit",
@@ -307,35 +295,11 @@
       "url": "https://play.google.com/store/apps/details?id=com.QuanticBit.MonsterSiegeTactics",
       "price": 0.13,
       "priceLabel": "$0.13",
-      "rating": 4.65,
+      "rating": 4.6666665,
       "ratingText": "4.7"
     },
     {
-      "rank": 26,
-      "id": "com.marmalade.monopoly",
-      "name": "MONOPOLY",
-      "artist": "Marmalade Game Studio",
-      "icon": "https://play-lh.googleusercontent.com/InQDZJSAdNFejIjlTw7eDl8TORl_6wmXJV6ANi3vWFgmqDudh_c7T2zT6jvALqXT-Pe3e--Bkat6c1YSVBUXrw",
-      "url": "https://play.google.com/store/apps/details?id=com.marmalade.monopoly",
-      "price": 4.99,
-      "priceLabel": "$4.99",
-      "rating": 4.1120358,
-      "ratingText": "4.1"
-    },
-    {
-      "rank": 27,
-      "id": "com.playdigious.evoland2",
-      "name": "Evoland 2",
-      "artist": "Playdigious",
-      "icon": "https://play-lh.googleusercontent.com/nD8rFvazCYDiGNKAi_Umc8HnKB1gQhDgW52_B94_9ae5fp9m_zraXYFJ_Uuj0UsCqVOsAE4X6QlPqG0OuRA8Mg",
-      "url": "https://play.google.com/store/apps/details?id=com.playdigious.evoland2",
-      "price": 0.7,
-      "priceLabel": "$0.70",
-      "rating": 4.204819,
-      "ratingText": "4.2"
-    },
-    {
-      "rank": 28,
+      "rank": 25,
       "id": "com.playdigious.childrenofmorta",
       "name": "Children of Morta",
       "artist": "Playdigious",
@@ -347,16 +311,52 @@
       "ratingText": "4.5"
     },
     {
+      "rank": 26,
+      "id": "com.ironhidegames.android.kingdomrush6.genesis",
+      "name": "Kingdom Rush 6: Genesis TD",
+      "artist": "Ironhide Games",
+      "icon": "https://play-lh.googleusercontent.com/OEcpMNaiFRCca12qpIQWR8jGJCxPrRQsly00833YrzDh65hpTzVe2c1lBwReZku2j6ApAvWRC9Zz19X92Q8Dqg",
+      "url": "https://play.google.com/store/apps/details?id=com.ironhidegames.android.kingdomrush6.genesis",
+      "price": 6.99,
+      "priceLabel": "$6.99",
+      "rating": 4.650685,
+      "ratingText": "4.7"
+    },
+    {
+      "rank": 27,
+      "id": "com.marmalade.monopoly",
+      "name": "MONOPOLY",
+      "artist": "Marmalade Game Studio",
+      "icon": "https://play-lh.googleusercontent.com/InQDZJSAdNFejIjlTw7eDl8TORl_6wmXJV6ANi3vWFgmqDudh_c7T2zT6jvALqXT-Pe3e--Bkat6c1YSVBUXrw",
+      "url": "https://play.google.com/store/apps/details?id=com.marmalade.monopoly",
+      "price": 4.99,
+      "priceLabel": "$4.99",
+      "rating": 4.1124225,
+      "ratingText": "4.1"
+    },
+    {
+      "rank": 28,
+      "id": "com.playdigious.evoland2",
+      "name": "Evoland 2",
+      "artist": "Playdigious",
+      "icon": "https://play-lh.googleusercontent.com/nD8rFvazCYDiGNKAi_Umc8HnKB1gQhDgW52_B94_9ae5fp9m_zraXYFJ_Uuj0UsCqVOsAE4X6QlPqG0OuRA8Mg",
+      "url": "https://play.google.com/store/apps/details?id=com.playdigious.evoland2",
+      "price": 0.7,
+      "priceLabel": "$0.70",
+      "rating": 4.204819,
+      "ratingText": "4.2"
+    },
+    {
       "rank": 29,
-      "id": "com.bscotch.hmd",
-      "name": "How Many Dudes?",
-      "artist": "Butterscotch Shenanigans",
-      "icon": "https://play-lh.googleusercontent.com/2wHXIQ0iFHmkai6kyACtq0tNLR-crzn9_lTSqFrWMg5f7o-V3iZUARSWbqslVZs4vLZBCQyDNjiWHDT8oRL7Bdc",
-      "url": "https://play.google.com/store/apps/details?id=com.bscotch.hmd",
-      "price": 9.99,
-      "priceLabel": "$9.99",
-      "rating": 4.5643563,
-      "ratingText": "4.6"
+      "id": "com.rockstargames.gtasa.de",
+      "name": "GTA: San Andreas - Definitive",
+      "artist": "Rockstar Games",
+      "icon": "https://play-lh.googleusercontent.com/Plgr-TF6CRvZSLuXeCeximGXI86YLR-oH1M9ja-yuRz40eXsOTe-HgqbD6XtHVRCcGK6CLjq8sj2p4vfZfJ6sYI",
+      "url": "https://play.google.com/store/apps/details?id=com.rockstargames.gtasa.de",
+      "price": 19.99,
+      "priceLabel": "$19.99",
+      "rating": 4.2178216,
+      "ratingText": "4.2"
     },
     {
       "rank": 30,
@@ -372,6 +372,18 @@
     },
     {
       "rank": 31,
+      "id": "com.bscotch.hmd",
+      "name": "How Many Dudes?",
+      "artist": "Butterscotch Shenanigans",
+      "icon": "https://play-lh.googleusercontent.com/2wHXIQ0iFHmkai6kyACtq0tNLR-crzn9_lTSqFrWMg5f7o-V3iZUARSWbqslVZs4vLZBCQyDNjiWHDT8oRL7Bdc",
+      "url": "https://play.google.com/store/apps/details?id=com.bscotch.hmd",
+      "price": 9.99,
+      "priceLabel": "$9.99",
+      "rating": 4.5686274,
+      "ratingText": "4.6"
+    },
+    {
+      "rank": 32,
       "id": "com.fundaygames.scritchyscratchy",
       "name": "Scritchy Scratchy",
       "artist": "Funday Games ApS",
@@ -379,47 +391,11 @@
       "url": "https://play.google.com/store/apps/details?id=com.fundaygames.scritchyscratchy",
       "price": 6.99,
       "priceLabel": "$6.99",
-      "rating": 4.7362204,
+      "rating": 4.737255,
       "ratingText": "4.7"
     },
     {
-      "rank": 32,
-      "id": "com.rockstargames.gtasa.de",
-      "name": "GTA: San Andreas - Definitive",
-      "artist": "Rockstar Games",
-      "icon": "https://play-lh.googleusercontent.com/Plgr-TF6CRvZSLuXeCeximGXI86YLR-oH1M9ja-yuRz40eXsOTe-HgqbD6XtHVRCcGK6CLjq8sj2p4vfZfJ6sYI",
-      "url": "https://play.google.com/store/apps/details?id=com.rockstargames.gtasa.de",
-      "price": 19.99,
-      "priceLabel": "$19.99",
-      "rating": 4.2178216,
-      "ratingText": "4.2"
-    },
-    {
       "rank": 33,
-      "id": "com.brotato.shooting.survivors.games.paid.android",
-      "name": "Brotato: Premium",
-      "artist": "Erabit Studios",
-      "icon": "https://play-lh.googleusercontent.com/COVeOjtijN6FOfWvNQ9LnqBdU5L-R0YNKpOv-yZHPXdy8E8hdFGH5tGKWydVorxfiEeRtJqLMWEppsrTn-QdVg",
-      "url": "https://play.google.com/store/apps/details?id=com.brotato.shooting.survivors.games.paid.android",
-      "price": 4.99,
-      "priceLabel": "$4.99",
-      "rating": 4.8229427,
-      "ratingText": "4.8"
-    },
-    {
-      "rank": 34,
-      "id": "com.scottgames.fnaf2",
-      "name": "Five Nights at Freddy's 2",
-      "artist": "Clickteam USA LLC",
-      "icon": "https://play-lh.googleusercontent.com/ax7Yy0SvZ9GUS5o0MHtXFD0vEPqK5BEadf2a5O0I_36GYaUkZ29PYGQNxktEflYOFsG34n5PWVCyAlKD7n-9Ww",
-      "url": "https://play.google.com/store/apps/details?id=com.scottgames.fnaf2",
-      "price": 2.99,
-      "priceLabel": "$2.99",
-      "rating": 4.6301756,
-      "ratingText": "4.6"
-    },
-    {
-      "rank": 35,
       "id": "com.giantssoftware.fs26.google",
       "name": "Farming Simulator 26 Mobile",
       "artist": "GIANTS Software",
@@ -427,11 +403,11 @@
       "url": "https://play.google.com/store/apps/details?id=com.giantssoftware.fs26.google",
       "price": 4.95,
       "priceLabel": "$4.95",
-      "rating": 3.61,
+      "rating": 3.6138613,
       "ratingText": "3.6"
     },
     {
-      "rank": 36,
+      "rank": 34,
       "id": "com.rikegames.billsmustbepaid",
       "name": "Bills Must Be Paid",
       "artist": "Rike Games",
@@ -439,35 +415,47 @@
       "url": "https://play.google.com/store/apps/details?id=com.rikegames.billsmustbepaid",
       "price": 5.99,
       "priceLabel": "$5.99",
-      "rating": 4.76,
+      "rating": 4.728155,
+      "ratingText": "4.7"
+    },
+    {
+      "rank": 35,
+      "id": "com.scottgames.fnaf2",
+      "name": "Five Nights at Freddy's 2",
+      "artist": "Clickteam USA LLC",
+      "icon": "https://play-lh.googleusercontent.com/ax7Yy0SvZ9GUS5o0MHtXFD0vEPqK5BEadf2a5O0I_36GYaUkZ29PYGQNxktEflYOFsG34n5PWVCyAlKD7n-9Ww",
+      "url": "https://play.google.com/store/apps/details?id=com.scottgames.fnaf2",
+      "price": 2.99,
+      "priceLabel": "$2.99",
+      "rating": 4.630435,
+      "ratingText": "4.6"
+    },
+    {
+      "rank": 36,
+      "id": "com.brotato.shooting.survivors.games.paid.android",
+      "name": "Brotato: Premium",
+      "artist": "Erabit Studios",
+      "icon": "https://play-lh.googleusercontent.com/COVeOjtijN6FOfWvNQ9LnqBdU5L-R0YNKpOv-yZHPXdy8E8hdFGH5tGKWydVorxfiEeRtJqLMWEppsrTn-QdVg",
+      "url": "https://play.google.com/store/apps/details?id=com.brotato.shooting.survivors.games.paid.android",
+      "price": 4.99,
+      "priceLabel": "$4.99",
+      "rating": 4.822389,
       "ratingText": "4.8"
     },
     {
       "rank": 37,
-      "id": "com.RobotGentleman.game60SecondsReatomized",
-      "name": "60 Seconds! Reatomized",
-      "artist": "Robot Gentleman",
-      "icon": "https://play-lh.googleusercontent.com/kbkll26a63FvsfCSeGfi1pBH1Wk0tPDTFMWzuA_1g5bWfMKtu5xEYwt05pTbzdkWEPyVt8xd5krPr-scI1FwKg",
-      "url": "https://play.google.com/store/apps/details?id=com.RobotGentleman.game60SecondsReatomized",
-      "price": 2,
-      "priceLabel": "$2.00",
-      "rating": 3.6,
-      "ratingText": "3.6"
+      "id": "com.giantssoftware.fs23.google",
+      "name": "Farming Simulator 23 Mobile",
+      "artist": "GIANTS Software",
+      "icon": "https://play-lh.googleusercontent.com/8AhKZR3O6MCdIVsPPzxTU5c7S82ZY43tfRwBweLwnurXeJyiL9_6P5aaiViWXDA-Cgx3Ou6DzCnCYqHJKNyAtw",
+      "url": "https://play.google.com/store/apps/details?id=com.giantssoftware.fs23.google",
+      "price": 1.98,
+      "priceLabel": "$1.98",
+      "rating": 4.3034186,
+      "ratingText": "4.3"
     },
     {
       "rank": 38,
-      "id": "com.beamdog.icewinddale",
-      "name": "Icewind Dale: Enhanced Edition",
-      "artist": "Beamdog",
-      "icon": "https://play-lh.googleusercontent.com/zzKE-j0MSJRsL3uy7s1fvJ6-nI59WwJDXy3g7go95Cn6bqSghXwuKkNjg3WLhF_xBoe0exfqW5VUlgIZBtIILA",
-      "url": "https://play.google.com/store/apps/details?id=com.beamdog.icewinddale",
-      "price": 3,
-      "priceLabel": "$3.00",
-      "rating": 3.94,
-      "ratingText": "3.9"
-    },
-    {
-      "rank": 39,
       "id": "air.com.flipline.papasfreezeriatogo",
       "name": "Papa's Freezeria To Go!",
       "artist": "Flipline Studios",
@@ -479,19 +467,43 @@
       "ratingText": "4.6"
     },
     {
+      "rank": 39,
+      "id": "com.RobotGentleman.game60SecondsReatomized",
+      "name": "60 Seconds! Reatomized",
+      "artist": "Robot Gentleman",
+      "icon": "https://play-lh.googleusercontent.com/kbkll26a63FvsfCSeGfi1pBH1Wk0tPDTFMWzuA_1g5bWfMKtu5xEYwt05pTbzdkWEPyVt8xd5krPr-scI1FwKg",
+      "url": "https://play.google.com/store/apps/details?id=com.RobotGentleman.game60SecondsReatomized",
+      "price": 2,
+      "priceLabel": "$2.00",
+      "rating": 3.6,
+      "ratingText": "3.6"
+    },
+    {
       "rank": 40,
-      "id": "com.giantssoftware.fs23.google",
-      "name": "Farming Simulator 23 Mobile",
-      "artist": "GIANTS Software",
-      "icon": "https://play-lh.googleusercontent.com/8AhKZR3O6MCdIVsPPzxTU5c7S82ZY43tfRwBweLwnurXeJyiL9_6P5aaiViWXDA-Cgx3Ou6DzCnCYqHJKNyAtw",
-      "url": "https://play.google.com/store/apps/details?id=com.giantssoftware.fs23.google",
-      "price": 1.98,
-      "priceLabel": "$1.98",
-      "rating": 4.3234043,
-      "ratingText": "4.3"
+      "id": "com.beamdog.icewinddale",
+      "name": "Icewind Dale: Enhanced Edition",
+      "artist": "Beamdog",
+      "icon": "https://play-lh.googleusercontent.com/zzKE-j0MSJRsL3uy7s1fvJ6-nI59WwJDXy3g7go95Cn6bqSghXwuKkNjg3WLhF_xBoe0exfqW5VUlgIZBtIILA",
+      "url": "https://play.google.com/store/apps/details?id=com.beamdog.icewinddale",
+      "price": 3,
+      "priceLabel": "$3.00",
+      "rating": 3.94,
+      "ratingText": "3.9"
     },
     {
       "rank": 41,
+      "id": "com.mobentertainment.PoppyPlaytimeChapter5",
+      "name": "Poppy Playtime Chapter 5",
+      "artist": "Mob Entertainment",
+      "icon": "https://play-lh.googleusercontent.com/J9tMKf6ChDi0_Ym1pWAG_fI9yMUI61JYxV0Db_P2C2JyNcLqhzBaEh3r1KEVoty0ryOaF6BwLMM2VOl9Ee76GGQ",
+      "url": "https://play.google.com/store/apps/details?id=com.mobentertainment.PoppyPlaytimeChapter5",
+      "price": 6.99,
+      "priceLabel": "$6.99",
+      "rating": 4.037037,
+      "ratingText": "4.0"
+    },
+    {
+      "rank": 42,
       "id": "com.rockstar.gta3",
       "name": "Grand Theft Auto III",
       "artist": "Rockstar Games",
@@ -503,7 +515,7 @@
       "ratingText": "3.4"
     },
     {
-      "rank": 42,
+      "rank": 43,
       "id": "com.Friedemann.SlotsAndDaggers",
       "name": "Slots & Daggers",
       "artist": "Future Friends Games",
@@ -511,47 +523,11 @@
       "url": "https://play.google.com/store/apps/details?id=com.Friedemann.SlotsAndDaggers",
       "price": 3.99,
       "priceLabel": "$3.99",
-      "rating": 4.747826,
+      "rating": 4.733333,
       "ratingText": "4.7"
     },
     {
-      "rank": 43,
-      "id": "com.mobentertainment.PoppyPlaytimeChapter5",
-      "name": "Poppy Playtime Chapter 5",
-      "artist": "Mob Entertainment",
-      "icon": "https://play-lh.googleusercontent.com/J9tMKf6ChDi0_Ym1pWAG_fI9yMUI61JYxV0Db_P2C2JyNcLqhzBaEh3r1KEVoty0ryOaF6BwLMM2VOl9Ee76GGQ",
-      "url": "https://play.google.com/store/apps/details?id=com.mobentertainment.PoppyPlaytimeChapter5",
-      "price": 6.99,
-      "priceLabel": "$6.99",
-      "rating": 4.0961537,
-      "ratingText": "4.1"
-    },
-    {
       "rank": 44,
-      "id": "com.lavaflame.fortunemill",
-      "name": "Fortune Mill",
-      "artist": "LavaFlame2",
-      "icon": "https://play-lh.googleusercontent.com/yJczyCJqSR785kJihWlsX7ZASLHuHVh8mmrlhSBR-OhrilZhDsc_5Hrun8CS68xPrWzNU4mS-XrwlWvQF3qz",
-      "url": "https://play.google.com/store/apps/details?id=com.lavaflame.fortunemill",
-      "price": 8.99,
-      "priceLabel": "$8.99",
-      "rating": 4.3235292,
-      "ratingText": "4.3"
-    },
-    {
-      "rank": 45,
-      "id": "it.dbtecno.pizzaboygbapro",
-      "name": "Pizza Boy A Pro: GBA Emulator",
-      "artist": "Pizza Emulators",
-      "icon": "https://play-lh.googleusercontent.com/UBk-Dz6axuI40pE-ZlK-4-WG2bCx6CMELlGvc_jNBl1Tj8qtN5fcrqi5QaTzkuYZXm4_mFFHTt0RcOIlP5kwYQ",
-      "url": "https://play.google.com/store/apps/details?id=it.dbtecno.pizzaboygbapro",
-      "price": 5.99,
-      "priceLabel": "$5.99",
-      "rating": 4.823765,
-      "ratingText": "4.8"
-    },
-    {
-      "rank": 46,
       "id": "com.playdigious.littlenightmare",
       "name": "Little Nightmares",
       "artist": "Playdigious",
@@ -563,7 +539,43 @@
       "ratingText": "4.3"
     },
     {
+      "rank": 45,
+      "id": "it.dbtecno.pizzaboygbapro",
+      "name": "Pizza Boy A Pro: GBA Emulator",
+      "artist": "Pizza Emulators",
+      "icon": "https://play-lh.googleusercontent.com/UBk-Dz6axuI40pE-ZlK-4-WG2bCx6CMELlGvc_jNBl1Tj8qtN5fcrqi5QaTzkuYZXm4_mFFHTt0RcOIlP5kwYQ",
+      "url": "https://play.google.com/store/apps/details?id=it.dbtecno.pizzaboygbapro",
+      "price": 5.99,
+      "priceLabel": "$5.99",
+      "rating": 4.824,
+      "ratingText": "4.8"
+    },
+    {
+      "rank": 46,
+      "id": "com.lavaflame.fortunemill",
+      "name": "Fortune Mill",
+      "artist": "LavaFlame2",
+      "icon": "https://play-lh.googleusercontent.com/yJczyCJqSR785kJihWlsX7ZASLHuHVh8mmrlhSBR-OhrilZhDsc_5Hrun8CS68xPrWzNU4mS-XrwlWvQF3qz",
+      "url": "https://play.google.com/store/apps/details?id=com.lavaflame.fortunemill",
+      "price": 8.99,
+      "priceLabel": "$8.99",
+      "rating": 4.3235292,
+      "ratingText": "4.3"
+    },
+    {
       "rank": 47,
+      "id": "com.PanikArcade.CloverPit",
+      "name": "CloverPit",
+      "artist": "Future Friends Games",
+      "icon": "https://play-lh.googleusercontent.com/2CR6ecP2mz281zfOZZoZS4kdZg1WaGfCXdQxdWmt2JkQRDSQG8NhdbgIuH0UepzEyrWTKA7zaqre6xAthebFwyA",
+      "url": "https://play.google.com/store/apps/details?id=com.PanikArcade.CloverPit",
+      "price": 6.99,
+      "priceLabel": "$6.99",
+      "rating": 4.844761,
+      "ratingText": "4.8"
+    },
+    {
+      "rank": 48,
       "id": "net.kairosoft.android.bouken_en",
       "name": "Dungeon Village",
       "artist": "Kairosoft",
@@ -575,31 +587,7 @@
       "ratingText": "4.7"
     },
     {
-      "rank": 48,
-      "id": "it.rortos.realflightsimulator",
-      "name": "RFS - Real Flight Simulator",
-      "artist": "RORTOS",
-      "icon": "https://play-lh.googleusercontent.com/cjMQXsrPSPPpUO1X37rr6_vNWRTkMBWFoqlxqchrguLB019BVD6-COFFMgP9Y2EK4VzsdyHrUwbjFq_MXTA9DA",
-      "url": "https://play.google.com/store/apps/details?id=it.rortos.realflightsimulator",
-      "price": 0.99,
-      "priceLabel": "$0.99",
-      "rating": 4.2355595,
-      "ratingText": "4.2"
-    },
-    {
       "rank": 49,
-      "id": "com.PanikArcade.CloverPit",
-      "name": "CloverPit",
-      "artist": "Future Friends Games",
-      "icon": "https://play-lh.googleusercontent.com/2CR6ecP2mz281zfOZZoZS4kdZg1WaGfCXdQxdWmt2JkQRDSQG8NhdbgIuH0UepzEyrWTKA7zaqre6xAthebFwyA",
-      "url": "https://play.google.com/store/apps/details?id=com.PanikArcade.CloverPit",
-      "price": 6.99,
-      "priceLabel": "$6.99",
-      "rating": 4.844156,
-      "ratingText": "4.8"
-    },
-    {
-      "rank": 50,
       "id": "com.batomon.showdown",
       "name": "Batomon Showdown",
       "artist": "berrymint",
@@ -611,19 +599,7 @@
       "ratingText": "4.2"
     },
     {
-      "rank": 51,
-      "id": "com.FireproofStudios.TheRoom",
-      "name": "The Room",
-      "artist": "Fireproof Games",
-      "icon": "https://play-lh.googleusercontent.com/Fb1LHCIof1pRx7cu4qEJc6UZxEPlSyR8QG03idnRxTtcchpVJ68gRxX8N8IlB4gGA5PtFD1fHwFjwxp_wlnwag",
-      "url": "https://play.google.com/store/apps/details?id=com.FireproofStudios.TheRoom",
-      "price": 0.99,
-      "priceLabel": "$0.99",
-      "rating": 4.797071,
-      "ratingText": "4.8"
-    },
-    {
-      "rank": 52,
+      "rank": 50,
       "id": "com.rubberbandgames.wobblylifev2",
       "name": "Wobbly Life",
       "artist": "Curve Games",
@@ -631,8 +607,32 @@
       "url": "https://play.google.com/store/apps/details?id=com.rubberbandgames.wobblylifev2",
       "price": 9.99,
       "priceLabel": "$9.99",
-      "rating": 4.47,
-      "ratingText": "4.5"
+      "rating": 4.44,
+      "ratingText": "4.4"
+    },
+    {
+      "rank": 51,
+      "id": "it.rortos.realflightsimulator",
+      "name": "RFS - Real Flight Simulator",
+      "artist": "RORTOS",
+      "icon": "https://play-lh.googleusercontent.com/cjMQXsrPSPPpUO1X37rr6_vNWRTkMBWFoqlxqchrguLB019BVD6-COFFMgP9Y2EK4VzsdyHrUwbjFq_MXTA9DA",
+      "url": "https://play.google.com/store/apps/details?id=it.rortos.realflightsimulator",
+      "price": 0.99,
+      "priceLabel": "$0.99",
+      "rating": 4.2355595,
+      "ratingText": "4.2"
+    },
+    {
+      "rank": 52,
+      "id": "com.FireproofStudios.TheRoom",
+      "name": "The Room",
+      "artist": "Fireproof Games",
+      "icon": "https://play-lh.googleusercontent.com/Fb1LHCIof1pRx7cu4qEJc6UZxEPlSyR8QG03idnRxTtcchpVJ68gRxX8N8IlB4gGA5PtFD1fHwFjwxp_wlnwag",
+      "url": "https://play.google.com/store/apps/details?id=com.FireproofStudios.TheRoom",
+      "price": 0.99,
+      "priceLabel": "$0.99",
+      "rating": 4.796859,
+      "ratingText": "4.8"
     },
     {
       "rank": 53,
@@ -648,15 +648,15 @@
     },
     {
       "rank": 54,
-      "id": "jp.co.capcom.rxdoff",
-      "name": "MEGA MAN X DiVE Offline",
-      "artist": "CAPCOM CO., LTD.",
-      "icon": "https://play-lh.googleusercontent.com/Ql_FwHbAx9U8YXBbRA_vm1FLGSAZ5uUZkfueYoEQWxAgFC08cX2VSrefbuNK-3oEkmTC6Afp71FSPS-Fv3j8TQ",
-      "url": "https://play.google.com/store/apps/details?id=jp.co.capcom.rxdoff",
-      "price": 2.99,
-      "priceLabel": "$2.99",
-      "rating": 4.2,
-      "ratingText": "4.2"
+      "id": "com.quanticbit.papermayhem",
+      "name": "Paper Mayhem",
+      "artist": "Quantic Bit",
+      "icon": "https://play-lh.googleusercontent.com/mbyQ1SCU_ahA4snfGQoFnCeiIJ1-VYA2FBJxk8H51Trfrs9_4q8w1AIWCaAMUzYGg2BrEaxbBongULjkgQf2BQ",
+      "url": "https://play.google.com/store/apps/details?id=com.quanticbit.papermayhem",
+      "price": 0.05,
+      "priceLabel": "$0.05",
+      "rating": 4.6,
+      "ratingText": "4.6"
     },
     {
       "rank": 55,
@@ -672,27 +672,27 @@
     },
     {
       "rank": 56,
-      "id": "com.quanticbit.papermayhem",
-      "name": "Paper Mayhem",
-      "artist": "Quantic Bit",
-      "icon": "https://play-lh.googleusercontent.com/mbyQ1SCU_ahA4snfGQoFnCeiIJ1-VYA2FBJxk8H51Trfrs9_4q8w1AIWCaAMUzYGg2BrEaxbBongULjkgQf2BQ",
-      "url": "https://play.google.com/store/apps/details?id=com.quanticbit.papermayhem",
-      "price": 0.05,
-      "priceLabel": "$0.05",
-      "rating": 4.6,
-      "ratingText": "4.6"
+      "id": "jp.co.capcom.rxdoff",
+      "name": "MEGA MAN X DiVE Offline",
+      "artist": "CAPCOM CO., LTD.",
+      "icon": "https://play-lh.googleusercontent.com/Ql_FwHbAx9U8YXBbRA_vm1FLGSAZ5uUZkfueYoEQWxAgFC08cX2VSrefbuNK-3oEkmTC6Afp71FSPS-Fv3j8TQ",
+      "url": "https://play.google.com/store/apps/details?id=jp.co.capcom.rxdoff",
+      "price": 2.99,
+      "priceLabel": "$2.99",
+      "rating": 4.2,
+      "ratingText": "4.2"
     },
     {
       "rank": 57,
-      "id": "com.GameCoaster.DungeonWithin",
-      "name": "Dungeon Within",
-      "artist": "GameCoaster",
-      "icon": "https://play-lh.googleusercontent.com/Vs_DtZ1spA9Etf7VIvRZq1AUh_C8S8s7iR8AJQqJKAZM8Rkx6GLCADT_Y_T1Yw_cWdS294vdEzzO6g3Ld5B6",
-      "url": "https://play.google.com/store/apps/details?id=com.GameCoaster.DungeonWithin",
-      "price": 5.99,
-      "priceLabel": "$5.99",
-      "rating": 4.7969923,
-      "ratingText": "4.8"
+      "id": "tech.ula.ogtrail",
+      "name": "OG Trail - Travel to Oregon",
+      "artist": "UserLAnd Technologies",
+      "icon": "https://play-lh.googleusercontent.com/k290kC2AdroIKxUIaGqAHs5GHkxH83F4mcuW3Dd89QL8jnxkg4xOwjz_c7-ou4wj0dyir9TQLPFM0eMqPGz-OZY",
+      "url": "https://play.google.com/store/apps/details?id=tech.ula.ogtrail",
+      "price": 1.99,
+      "priceLabel": "$1.99",
+      "rating": 4.2156863,
+      "ratingText": "4.2"
     },
     {
       "rank": 58,
@@ -708,18 +708,6 @@
     },
     {
       "rank": 59,
-      "id": "com.countlessnights.diceamillion",
-      "name": "Dice A Million",
-      "artist": "countlessnights",
-      "icon": "https://play-lh.googleusercontent.com/JuIC4DV3HmE-22ZjB2N6OqR0A-0xLD8O_GksJhaymmAXSU-TG5-Q1eQN5Mz5MgD_jQeBD7KY57LE7tZAoGOGZw",
-      "url": "https://play.google.com/store/apps/details?id=com.countlessnights.diceamillion",
-      "price": 4.99,
-      "priceLabel": "$4.99",
-      "rating": 4.529412,
-      "ratingText": "4.5"
-    },
-    {
-      "rank": 60,
       "id": "com.beamdog.pstee",
       "name": "Planescape: Torment: Enhanced",
       "artist": "Beamdog",
@@ -731,79 +719,31 @@
       "ratingText": "3.8"
     },
     {
-      "rank": 61,
-      "id": "com.xd.tabs.google",
-      "name": "TABS Pocket Edition",
-      "artist": "Landfall Games",
-      "icon": "https://play-lh.googleusercontent.com/UV2WA12ACtPusqzkazu1PK-bOJNFI2CdFcK7Lf3xkGcj7ppGnfJllPLeSALX59Z6ZxJ1KAq0kDvvUJXfdiJP2A",
-      "url": "https://play.google.com/store/apps/details?id=com.xd.tabs.google",
-      "price": 4.99,
-      "priceLabel": "$4.99",
-      "rating": 4.11,
-      "ratingText": "4.1"
+      "rank": 60,
+      "id": "com.GameCoaster.DungeonWithin",
+      "name": "Dungeon Within",
+      "artist": "GameCoaster",
+      "icon": "https://play-lh.googleusercontent.com/Vs_DtZ1spA9Etf7VIvRZq1AUh_C8S8s7iR8AJQqJKAZM8Rkx6GLCADT_Y_T1Yw_cWdS294vdEzzO6g3Ld5B6",
+      "url": "https://play.google.com/store/apps/details?id=com.GameCoaster.DungeonWithin",
+      "price": 5.99,
+      "priceLabel": "$5.99",
+      "rating": 4.7985077,
+      "ratingText": "4.8"
     },
     {
-      "rank": 62,
-      "id": "com.scottgames.fnaf4",
-      "name": "Five Nights at Freddy's 4",
-      "artist": "Clickteam USA LLC",
-      "icon": "https://play-lh.googleusercontent.com/uND9auR58VWaFSjBHWEHDRxm7VzUZOrhBwxvTfNse76e4-_UOXDbk1w9JVMVUuDSntUpfN1KnBclGzqE3AgNQNI",
-      "url": "https://play.google.com/store/apps/details?id=com.scottgames.fnaf4",
-      "price": 2.99,
-      "priceLabel": "$2.99",
-      "rating": 4.52044,
+      "rank": 61,
+      "id": "com.countlessnights.diceamillion",
+      "name": "Dice A Million",
+      "artist": "countlessnights",
+      "icon": "https://play-lh.googleusercontent.com/JuIC4DV3HmE-22ZjB2N6OqR0A-0xLD8O_GksJhaymmAXSU-TG5-Q1eQN5Mz5MgD_jQeBD7KY57LE7tZAoGOGZw",
+      "url": "https://play.google.com/store/apps/details?id=com.countlessnights.diceamillion",
+      "price": 4.99,
+      "priceLabel": "$4.99",
+      "rating": 4.529412,
       "ratingText": "4.5"
     },
     {
-      "rank": 63,
-      "id": "com.quanticbit.echoesbeyondtime",
-      "name": "Echoes Beyond Time",
-      "artist": "Quantic Bit",
-      "icon": "https://play-lh.googleusercontent.com/mrgj47m3Uyn1H7SwFI1sdvOWz21R2pVwaPkuJHKxQ-Z1lJL_7fVHecP3a8etqLGnXP6hz5p8GFG0vOklog_NgpI",
-      "url": "https://play.google.com/store/apps/details?id=com.quanticbit.echoesbeyondtime",
-      "price": 0.05,
-      "priceLabel": "$0.05",
-      "rating": 3.9166667,
-      "ratingText": "3.9"
-    },
-    {
-      "rank": 64,
-      "id": "tech.ula.ogtrail",
-      "name": "OG Trail - Travel to Oregon",
-      "artist": "UserLAnd Technologies",
-      "icon": "https://play-lh.googleusercontent.com/k290kC2AdroIKxUIaGqAHs5GHkxH83F4mcuW3Dd89QL8jnxkg4xOwjz_c7-ou4wj0dyir9TQLPFM0eMqPGz-OZY",
-      "url": "https://play.google.com/store/apps/details?id=tech.ula.ogtrail",
-      "price": 1.99,
-      "priceLabel": "$1.99",
-      "rating": 4.2156863,
-      "ratingText": "4.2"
-    },
-    {
-      "rank": 65,
-      "id": "com.quanticbit.neonvalleyoverdrive",
-      "name": "Neon Valley Overdrive",
-      "artist": "Quantic Bit",
-      "icon": "https://play-lh.googleusercontent.com/mJNuWpADVeOVzu0XmCR_Ig-jAWPbHixD35jXocXH5xSy9yZqTC6ZFYkIPHU7hY1xgKmdzfk-H4aVKwj4BPc89Q",
-      "url": "https://play.google.com/store/apps/details?id=com.quanticbit.neonvalleyoverdrive",
-      "price": 0.05,
-      "priceLabel": "$0.05",
-      "rating": 4.3,
-      "ratingText": "4.3"
-    },
-    {
-      "rank": 66,
-      "id": "com.ninjakiwi.zombieassault",
-      "name": "Zombie Assault: Resurgence",
-      "artist": "ninja kiwi",
-      "icon": "https://play-lh.googleusercontent.com/pkv7gwBnOBYaKjv_PsP1UVx8xzB1jfaDNz-uuK7zyjso6u98VwKYr4mFkEH13KUrq0HkEizgrIu1x8zzjLkn25s",
-      "url": "https://play.google.com/store/apps/details?id=com.ninjakiwi.zombieassault",
-      "price": 9.99,
-      "priceLabel": "$9.99",
-      "rating": 3.27451,
-      "ratingText": "3.3"
-    },
-    {
-      "rank": 67,
+      "rank": 62,
       "id": "com.rockstar.maxpayne",
       "name": "Max Payne Mobile",
       "artist": "Rockstar Games",
@@ -815,28 +755,88 @@
       "ratingText": "4.0"
     },
     {
+      "rank": 63,
+      "id": "com.scottgames.fnaf4",
+      "name": "Five Nights at Freddy's 4",
+      "artist": "Clickteam USA LLC",
+      "icon": "https://play-lh.googleusercontent.com/uND9auR58VWaFSjBHWEHDRxm7VzUZOrhBwxvTfNse76e4-_UOXDbk1w9JVMVUuDSntUpfN1KnBclGzqE3AgNQNI",
+      "url": "https://play.google.com/store/apps/details?id=com.scottgames.fnaf4",
+      "price": 2.99,
+      "priceLabel": "$2.99",
+      "rating": 4.52044,
+      "ratingText": "4.5"
+    },
+    {
+      "rank": 64,
+      "id": "com.xd.tabs.google",
+      "name": "TABS Pocket Edition",
+      "artist": "Landfall Games",
+      "icon": "https://play-lh.googleusercontent.com/UV2WA12ACtPusqzkazu1PK-bOJNFI2CdFcK7Lf3xkGcj7ppGnfJllPLeSALX59Z6ZxJ1KAq0kDvvUJXfdiJP2A",
+      "url": "https://play.google.com/store/apps/details?id=com.xd.tabs.google",
+      "price": 4.99,
+      "priceLabel": "$4.99",
+      "rating": 4.11,
+      "ratingText": "4.1"
+    },
+    {
+      "rank": 65,
+      "id": "com.Gcenter.DefenseLegend.TowerDefense.TD.survivor.V5.Pro",
+      "name": "Tower Defense Legend 5 Pro",
+      "artist": "GCenter",
+      "icon": "https://play-lh.googleusercontent.com/myC1hEorL9NcqfRNFoLL1oZrZwfaJUu2A73s6SXzDfchDfzvGE9LGLth79h4ABmLcpUIqpCPCkKRQUCPKXNl1g",
+      "url": "https://play.google.com/store/apps/details?id=com.Gcenter.DefenseLegend.TowerDefense.TD.survivor.V5.Pro",
+      "price": 0.2,
+      "priceLabel": "$0.20",
+      "rating": 4.4,
+      "ratingText": "4.4"
+    },
+    {
+      "rank": 66,
+      "id": "com.nintendo.zasa",
+      "name": "Animal Crossing: Pocket Camp C",
+      "artist": "Nintendo Co., Ltd.",
+      "icon": "https://play-lh.googleusercontent.com/AdbC183a2-NTPma4H5nAH8ZmaamyYvIyullmsICSsxRPjYnqIG21NfGbeqD44kVM2TzIqA_ZyLms3HsWgH2r",
+      "url": "https://play.google.com/store/apps/details?id=com.nintendo.zasa",
+      "price": 19.99,
+      "priceLabel": "$19.99",
+      "rating": 4.3764257,
+      "ratingText": "4.4"
+    },
+    {
+      "rank": 67,
+      "id": "com.quanticbit.echoesbeyondtime",
+      "name": "Echoes Beyond Time",
+      "artist": "Quantic Bit",
+      "icon": "https://play-lh.googleusercontent.com/mrgj47m3Uyn1H7SwFI1sdvOWz21R2pVwaPkuJHKxQ-Z1lJL_7fVHecP3a8etqLGnXP6hz5p8GFG0vOklog_NgpI",
+      "url": "https://play.google.com/store/apps/details?id=com.quanticbit.echoesbeyondtime",
+      "price": 0.05,
+      "priceLabel": "$0.05",
+      "rating": 3.9166667,
+      "ratingText": "3.9"
+    },
+    {
       "rank": 68,
-      "id": "com.direwolfdigital.root",
-      "name": "Root Board Game",
-      "artist": "Dire Wolf Digital",
-      "icon": "https://play-lh.googleusercontent.com/dvYqlodQm0jFfZYnXCddCJmZ_w2VsiZ6eaJQNX7AE3wCSblSztjg-0tz83WdjglZR-A31zjn7A3U0g6g9lsR",
-      "url": "https://play.google.com/store/apps/details?id=com.direwolfdigital.root",
+      "id": "com.ninjakiwi.zombieassault",
+      "name": "Zombie Assault: Resurgence",
+      "artist": "ninja kiwi",
+      "icon": "https://play-lh.googleusercontent.com/pkv7gwBnOBYaKjv_PsP1UVx8xzB1jfaDNz-uuK7zyjso6u98VwKYr4mFkEH13KUrq0HkEizgrIu1x8zzjLkn25s",
+      "url": "https://play.google.com/store/apps/details?id=com.ninjakiwi.zombieassault",
       "price": 9.99,
       "priceLabel": "$9.99",
-      "rating": 4.829897,
-      "ratingText": "4.8"
+      "rating": 3.27451,
+      "ratingText": "3.3"
     },
     {
       "rank": 69,
-      "id": "com.QuanticBit.NeonStack3D",
-      "name": "Neon Stack 3D - Stack blocks",
+      "id": "com.quanticbit.pocketdungeon",
+      "name": "Pocket Dungeon Online: RPG",
       "artist": "Quantic Bit",
-      "icon": "https://play-lh.googleusercontent.com/IT1lAE2_sgFgfzgW1rmrOo2JIG0QtnE3OeRNxIWtjmXTnaW4kB3b5cqKsXufGXyl4NrxkXHq-HBYpyNpLDoReQ",
-      "url": "https://play.google.com/store/apps/details?id=com.QuanticBit.NeonStack3D",
+      "icon": "https://play-lh.googleusercontent.com/AqYcN7Wi44bP0lHMxCIQo6xrfgNcPq3UHyLxdh0z3DNyCTDnfFkr-CkhiKgxHL-LvRC8EZ34E3eydSeHwEgtqQ",
+      "url": "https://play.google.com/store/apps/details?id=com.quanticbit.pocketdungeon",
       "price": 0.05,
       "priceLabel": "$0.05",
-      "rating": 4.28,
-      "ratingText": "4.3"
+      "rating": 2.8,
+      "ratingText": "2.8"
     },
     {
       "rank": 70,
@@ -852,18 +852,6 @@
     },
     {
       "rank": 71,
-      "id": "com.Gcenter.DefenseLegend.TowerDefense.TD.survivor.V5.Pro",
-      "name": "Tower Defense Legend 5 Pro",
-      "artist": "GCenter",
-      "icon": "https://play-lh.googleusercontent.com/myC1hEorL9NcqfRNFoLL1oZrZwfaJUu2A73s6SXzDfchDfzvGE9LGLth79h4ABmLcpUIqpCPCkKRQUCPKXNl1g",
-      "url": "https://play.google.com/store/apps/details?id=com.Gcenter.DefenseLegend.TowerDefense.TD.survivor.V5.Pro",
-      "price": 0.2,
-      "priceLabel": "$0.20",
-      "rating": 4.4,
-      "ratingText": "4.4"
-    },
-    {
-      "rank": 72,
       "id": "com.llc3909.papersplease",
       "name": "Papers, Please",
       "artist": "3909",
@@ -875,55 +863,19 @@
       "ratingText": "4.6"
     },
     {
+      "rank": 72,
+      "id": "com.QuanticBit.NeonStack3D",
+      "name": "Neon Stack 3D - Stack blocks",
+      "artist": "Quantic Bit",
+      "icon": "https://play-lh.googleusercontent.com/IT1lAE2_sgFgfzgW1rmrOo2JIG0QtnE3OeRNxIWtjmXTnaW4kB3b5cqKsXufGXyl4NrxkXHq-HBYpyNpLDoReQ",
+      "url": "https://play.google.com/store/apps/details?id=com.QuanticBit.NeonStack3D",
+      "price": 0.05,
+      "priceLabel": "$0.05",
+      "rating": 4.28,
+      "ratingText": "4.3"
+    },
+    {
       "rank": 73,
-      "id": "com.nintendo.zasa",
-      "name": "Animal Crossing: Pocket Camp C",
-      "artist": "Nintendo Co., Ltd.",
-      "icon": "https://play-lh.googleusercontent.com/AdbC183a2-NTPma4H5nAH8ZmaamyYvIyullmsICSsxRPjYnqIG21NfGbeqD44kVM2TzIqA_ZyLms3HsWgH2r",
-      "url": "https://play.google.com/store/apps/details?id=com.nintendo.zasa",
-      "price": 19.99,
-      "priceLabel": "$19.99",
-      "rating": 4.366412,
-      "ratingText": "4.4"
-    },
-    {
-      "rank": 74,
-      "id": "com.quanticbit.deepkeeptactics",
-      "name": "Deepkeep Tactics",
-      "artist": "Quantic Bit",
-      "icon": "https://play-lh.googleusercontent.com/VWNY7ayZb1k-I8LpImw-WF_zuTb5ZLn05iHGQkH3mFsxr0mUFU2tfkEisNh-QtOYq69yD8PtJNqJK23CzZOD",
-      "url": "https://play.google.com/store/apps/details?id=com.quanticbit.deepkeeptactics",
-      "price": 0.05,
-      "priceLabel": "$0.05",
-      "rating": 0,
-      "ratingText": ""
-    },
-    {
-      "rank": 75,
-      "id": "com.quanticbit.pocketdungeon",
-      "name": "Pocket Dungeon Online: RPG",
-      "artist": "Quantic Bit",
-      "icon": "https://play-lh.googleusercontent.com/AqYcN7Wi44bP0lHMxCIQo6xrfgNcPq3UHyLxdh0z3DNyCTDnfFkr-CkhiKgxHL-LvRC8EZ34E3eydSeHwEgtqQ",
-      "url": "https://play.google.com/store/apps/details?id=com.quanticbit.pocketdungeon",
-      "price": 0.05,
-      "priceLabel": "$0.05",
-      "rating": 2.8,
-      "ratingText": "2.8"
-    },
-    {
-      "rank": 76,
-      "id": "com.bandainamcoent.op_restaurant",
-      "name": "ONE PIECE: Grand Gourmet",
-      "artist": "Bandai Namco Entertainment Inc.",
-      "icon": "https://play-lh.googleusercontent.com/TBEN7rw1DD2vyQyz2Z7YLdzs5P1k5sJ6SuPDyAzA6bt3QeHAwvFggMJxPPV_0IFDkGDDUD3JDN-TxAL4igleaw",
-      "url": "https://play.google.com/store/apps/details?id=com.bandainamcoent.op_restaurant",
-      "price": 12.99,
-      "priceLabel": "$12.99",
-      "rating": 4.556604,
-      "ratingText": "4.6"
-    },
-    {
-      "rank": 77,
       "id": "com.doghowlgames.thronefall",
       "name": "Thronefall",
       "artist": "Doghowl Games Ltd",
@@ -931,23 +883,35 @@
       "url": "https://play.google.com/store/apps/details?id=com.doghowlgames.thronefall",
       "price": 10.99,
       "priceLabel": "$10.99",
-      "rating": 4.8791595,
+      "rating": 4.881416,
       "ratingText": "4.9"
     },
     {
-      "rank": 78,
-      "id": "com.feralinteractive.saintsrow3_android",
-      "name": "Saints Row: The Third",
-      "artist": "Feral Interactive",
-      "icon": "https://play-lh.googleusercontent.com/7BAMr3mEzdKF5iqUgvhyQI0FtIVLxB6dyArW6imNd9UCq-umcYoT55ipZcOKfWehZFK6_Dm5j6iiOIRDFmQEZw",
-      "url": "https://play.google.com/store/apps/details?id=com.feralinteractive.saintsrow3_android",
-      "price": 19.99,
-      "priceLabel": "$19.99",
-      "rating": 3.9345794,
-      "ratingText": "3.9"
+      "rank": 74,
+      "id": "com.quanticbit.neonvalleyoverdrive",
+      "name": "Neon Valley Overdrive",
+      "artist": "Quantic Bit",
+      "icon": "https://play-lh.googleusercontent.com/mJNuWpADVeOVzu0XmCR_Ig-jAWPbHixD35jXocXH5xSy9yZqTC6ZFYkIPHU7hY1xgKmdzfk-H4aVKwj4BPc89Q",
+      "url": "https://play.google.com/store/apps/details?id=com.quanticbit.neonvalleyoverdrive",
+      "price": 0.05,
+      "priceLabel": "$0.05",
+      "rating": 4.3,
+      "ratingText": "4.3"
     },
     {
-      "rank": 79,
+      "rank": 75,
+      "id": "com.direwolfdigital.root",
+      "name": "Root Board Game",
+      "artist": "Dire Wolf Digital",
+      "icon": "https://play-lh.googleusercontent.com/dvYqlodQm0jFfZYnXCddCJmZ_w2VsiZ6eaJQNX7AE3wCSblSztjg-0tz83WdjglZR-A31zjn7A3U0g6g9lsR",
+      "url": "https://play.google.com/store/apps/details?id=com.direwolfdigital.root",
+      "price": 9.99,
+      "priceLabel": "$9.99",
+      "rating": 4.830334,
+      "ratingText": "4.8"
+    },
+    {
+      "rank": 76,
       "id": "com.weswaregames.hamburgerhill",
       "name": "Hamburger Hill",
       "artist": "Wesware",
@@ -959,7 +923,7 @@
       "ratingText": "4.6"
     },
     {
-      "rank": 80,
+      "rank": 77,
       "id": "com.clickteam.freddyfazbearspizzeriasimulator",
       "name": "FNaF 6: Pizzeria Simulator",
       "artist": "Clickteam USA LLC",
@@ -969,6 +933,42 @@
       "priceLabel": "$2.99",
       "rating": 4.581395,
       "ratingText": "4.6"
+    },
+    {
+      "rank": 78,
+      "id": "com.bandainamcoent.op_restaurant",
+      "name": "ONE PIECE: Grand Gourmet",
+      "artist": "Bandai Namco Entertainment Inc.",
+      "icon": "https://play-lh.googleusercontent.com/TBEN7rw1DD2vyQyz2Z7YLdzs5P1k5sJ6SuPDyAzA6bt3QeHAwvFggMJxPPV_0IFDkGDDUD3JDN-TxAL4igleaw",
+      "url": "https://play.google.com/store/apps/details?id=com.bandainamcoent.op_restaurant",
+      "price": 12.99,
+      "priceLabel": "$12.99",
+      "rating": 4.556604,
+      "ratingText": "4.6"
+    },
+    {
+      "rank": 79,
+      "id": "com.quanticbit.deepkeeptactics",
+      "name": "Deepkeep Tactics",
+      "artist": "Quantic Bit",
+      "icon": "https://play-lh.googleusercontent.com/VWNY7ayZb1k-I8LpImw-WF_zuTb5ZLn05iHGQkH3mFsxr0mUFU2tfkEisNh-QtOYq69yD8PtJNqJK23CzZOD",
+      "url": "https://play.google.com/store/apps/details?id=com.quanticbit.deepkeeptactics",
+      "price": 0.05,
+      "priceLabel": "$0.05",
+      "rating": 0,
+      "ratingText": ""
+    },
+    {
+      "rank": 80,
+      "id": "com.ANOOGAMES.SudokuMasterPremiumOffline",
+      "name": "Sudoku Master Premium: Offline",
+      "artist": "otto games",
+      "icon": "https://play-lh.googleusercontent.com/-D0dCwLNugu4Q0yafvogyXQbO9t0vIryrqWR6wZrcKgPSmpQCnwf1AS6h-MqYqNATG5MHdLJL_ybhMjxCBU96w",
+      "url": "https://play.google.com/store/apps/details?id=com.ANOOGAMES.SudokuMasterPremiumOffline",
+      "price": 2.99,
+      "priceLabel": "$2.99",
+      "rating": 4.875458,
+      "ratingText": "4.9"
     },
     {
       "rank": 81,
@@ -984,42 +984,6 @@
     },
     {
       "rank": 82,
-      "id": "postal.rws.com",
-      "name": "POSTAL Classic & Uncut",
-      "artist": "Running With Scissors",
-      "icon": "https://play-lh.googleusercontent.com/EpcD5V1g05blTd4VRDK5oGza2qia7beYKXF6JNPpakpaFW1P4Kp_wifoS4ofGb2D8s7hDEbhwlPuP4aBekOyDw",
-      "url": "https://play.google.com/store/apps/details?id=postal.rws.com",
-      "price": 1.99,
-      "priceLabel": "$1.99",
-      "rating": 4.6666665,
-      "ratingText": "4.7"
-    },
-    {
-      "rank": 83,
-      "id": "com.ANOOGAMES.SudokuMasterPremiumOffline",
-      "name": "Sudoku Master Premium: Offline",
-      "artist": "otto games",
-      "icon": "https://play-lh.googleusercontent.com/-D0dCwLNugu4Q0yafvogyXQbO9t0vIryrqWR6wZrcKgPSmpQCnwf1AS6h-MqYqNATG5MHdLJL_ybhMjxCBU96w",
-      "url": "https://play.google.com/store/apps/details?id=com.ANOOGAMES.SudokuMasterPremiumOffline",
-      "price": 2.99,
-      "priceLabel": "$2.99",
-      "rating": 4.875458,
-      "ratingText": "4.9"
-    },
-    {
-      "rank": 84,
-      "id": "com.QuanticBit.NeonValleyJUMP",
-      "name": "Neon Valley [JUMP]",
-      "artist": "Quantic Bit",
-      "icon": "https://play-lh.googleusercontent.com/7oovkA6VV6qCPJWoTg-gILvTo4uXzJukmWk0xo_TPZa3OaescYZFMo5yEeVyFsCFtwDYKSIVtJr2YiTxU5mvkw",
-      "url": "https://play.google.com/store/apps/details?id=com.QuanticBit.NeonValleyJUMP",
-      "price": 0.05,
-      "priceLabel": "$0.05",
-      "rating": 3.625,
-      "ratingText": "3.6"
-    },
-    {
-      "rank": 85,
       "id": "com.QuanticBit.UppingFloors",
       "name": "Upping Floors – Stack Blocks",
       "artist": "Quantic Bit",
@@ -1031,55 +995,19 @@
       "ratingText": "4.0"
     },
     {
-      "rank": 86,
-      "id": "com.beamdog.aao1942",
-      "name": "Axis & Allies 1942 Online",
-      "artist": "Beamdog",
-      "icon": "https://play-lh.googleusercontent.com/PHDhV0AcxDH64Jx5yindWfiliqJwd5fH9FMp7m0m43NVd9V7cfCazEpzKCvbBUJxYoN7u_70TZC45kf_EI3HS7k",
-      "url": "https://play.google.com/store/apps/details?id=com.beamdog.aao1942",
-      "price": 3,
-      "priceLabel": "$3.00",
-      "rating": 3.07,
-      "ratingText": "3.1"
-    },
-    {
-      "rank": 87,
-      "id": "com.thunderful.legobricktales",
-      "name": "LEGO® Bricktales",
-      "artist": "Thunderful Publishing AB",
-      "icon": "https://play-lh.googleusercontent.com/6tF9PxOHzmV6cJwYuvYYaQYaAK0kE5jEPRo-skXuALqCpemYpBqTAwzcezucfQqjXZ-FCTUMr-ktZMR_9yi3LKQ",
-      "url": "https://play.google.com/store/apps/details?id=com.thunderful.legobricktales",
-      "price": 0.75,
-      "priceLabel": "$0.75",
-      "rating": 4.23,
-      "ratingText": "4.2"
-    },
-    {
-      "rank": 88,
-      "id": "com.beamdog.siegeofdragonspear",
-      "name": "Siege of Dragonspear",
-      "artist": "Beamdog",
-      "icon": "https://play-lh.googleusercontent.com/eWZkFu5GJ-E4fAc5_z8wJLVg15QRdVy4lFOxkPbkiTKs7g1fJ8B4cK3XZWBj91Jhkxv-QtUQQ-P-ENuQ8xxqpA",
-      "url": "https://play.google.com/store/apps/details?id=com.beamdog.siegeofdragonspear",
-      "price": 2.25,
-      "priceLabel": "$2.25",
-      "rating": 4.21,
-      "ratingText": "4.2"
-    },
-    {
-      "rank": 89,
-      "id": "com.trueaxis.trueskate",
-      "name": "True Skate",
-      "artist": "True Axis",
-      "icon": "https://play-lh.googleusercontent.com/LnxWViNjq9A22wRxrN2xa_B-I2b9tff49ssdk_7x91IGSp0kgvCaRBPByfdH0zYmDCYQn8uKn2fxCG2hD5wB",
-      "url": "https://play.google.com/store/apps/details?id=com.trueaxis.trueskate",
-      "price": 1.99,
-      "priceLabel": "$1.99",
-      "rating": 4.008521,
+      "rank": 83,
+      "id": "com.feralinteractive.saintsrow3_android",
+      "name": "Saints Row: The Third",
+      "artist": "Feral Interactive",
+      "icon": "https://play-lh.googleusercontent.com/7BAMr3mEzdKF5iqUgvhyQI0FtIVLxB6dyArW6imNd9UCq-umcYoT55ipZcOKfWehZFK6_Dm5j6iiOIRDFmQEZw",
+      "url": "https://play.google.com/store/apps/details?id=com.feralinteractive.saintsrow3_android",
+      "price": 19.99,
+      "priceLabel": "$19.99",
+      "rating": 3.9615386,
       "ratingText": "4.0"
     },
     {
-      "rank": 90,
+      "rank": 84,
       "id": "com.aladdinx.suikagame",
       "name": "Suika Game",
       "artist": "Aladdin X Inc.",
@@ -1091,31 +1019,7 @@
       "ratingText": "3.6"
     },
     {
-      "rank": 91,
-      "id": "com.strayfawnstudio.gambonanza",
-      "name": "Gambonanza",
-      "artist": "Stray Fawn Studio",
-      "icon": "https://play-lh.googleusercontent.com/aPeUytf5y1c0YCwU-hh1G3vULaPCLnoi5BXrQZWNJ3BH0FqVLXU6AX5i7c8mFkTD5eeOwjzhDHOoj9T_T3UhcrE",
-      "url": "https://play.google.com/store/apps/details?id=com.strayfawnstudio.gambonanza",
-      "price": 5.99,
-      "priceLabel": "$5.99",
-      "rating": 4.799283,
-      "ratingText": "4.8"
-    },
-    {
-      "rank": 92,
-      "id": "com.square_enix.android_googleplay.FFVIII",
-      "name": "FINAL FANTASY VIII Remastered",
-      "artist": "SQUARE ENIX Co.,Ltd.",
-      "icon": "https://play-lh.googleusercontent.com/p6_5euiQg3k9Ag2aF_RMT5EZrUpZp5AK5sRyDZuWo2N7hi9ALKLIbaLgs799WzKAfR8I0xBjYUinwo1yHMZDMw",
-      "url": "https://play.google.com/store/apps/details?id=com.square_enix.android_googleplay.FFVIII",
-      "price": 9.99,
-      "priceLabel": "$9.99",
-      "rating": 4.3069305,
-      "ratingText": "4.3"
-    },
-    {
-      "rank": 93,
+      "rank": 85,
       "id": "com.scryandbuy.billable",
       "name": "Billable - A Law Firm RPG",
       "artist": "ScryAndBuy Apps",
@@ -1127,55 +1031,127 @@
       "ratingText": "4.9"
     },
     {
+      "rank": 86,
+      "id": "com.QuanticBit.NeonValleyJUMP",
+      "name": "Neon Valley [JUMP]",
+      "artist": "Quantic Bit",
+      "icon": "https://play-lh.googleusercontent.com/7oovkA6VV6qCPJWoTg-gILvTo4uXzJukmWk0xo_TPZa3OaescYZFMo5yEeVyFsCFtwDYKSIVtJr2YiTxU5mvkw",
+      "url": "https://play.google.com/store/apps/details?id=com.QuanticBit.NeonValleyJUMP",
+      "price": 0.05,
+      "priceLabel": "$0.05",
+      "rating": 3.625,
+      "ratingText": "3.6"
+    },
+    {
+      "rank": 87,
+      "id": "com.EvilTortillaGamesInc.WhosYourDaddy",
+      "name": "Who's Your Daddy?!",
+      "artist": "Evil Tortilla Games Incorporated",
+      "icon": "https://play-lh.googleusercontent.com/aTXuKGglK2g3kZXcpHGV2V2Icp-cqX3R0-qVar9AWpyiLPCmtcLoUZmAJv0eICqcKb_wjGHuhcFiThCRltPSrQ",
+      "url": "https://play.google.com/store/apps/details?id=com.EvilTortillaGamesInc.WhosYourDaddy",
+      "price": 0.99,
+      "priceLabel": "$0.99",
+      "rating": 2.6587303,
+      "ratingText": "2.7"
+    },
+    {
+      "rank": 88,
+      "id": "com.square_enix.android_googleplay.FFVII",
+      "name": "FINAL FANTASY VII",
+      "artist": "SQUARE ENIX Co.,Ltd.",
+      "icon": "https://play-lh.googleusercontent.com/BkxAUsA_HrjmmZFGwwvNvuT3nPiENFi5Fp-GUSNZa92GfG8K9nbCWTppGLxvIkc3q9czf8lM7x4ea97X4Be8",
+      "url": "https://play.google.com/store/apps/details?id=com.square_enix.android_googleplay.FFVII",
+      "price": 7.99,
+      "priceLabel": "$7.99",
+      "rating": 3.9956615,
+      "ratingText": "4.0"
+    },
+    {
+      "rank": 89,
+      "id": "postal.rws.com",
+      "name": "POSTAL Classic & Uncut",
+      "artist": "Running With Scissors",
+      "icon": "https://play-lh.googleusercontent.com/EpcD5V1g05blTd4VRDK5oGza2qia7beYKXF6JNPpakpaFW1P4Kp_wifoS4ofGb2D8s7hDEbhwlPuP4aBekOyDw",
+      "url": "https://play.google.com/store/apps/details?id=postal.rws.com",
+      "price": 1.99,
+      "priceLabel": "$1.99",
+      "rating": 4.6666665,
+      "ratingText": "4.7"
+    },
+    {
+      "rank": 90,
+      "id": "com.thunderful.legobricktales",
+      "name": "LEGO® Bricktales",
+      "artist": "Thunderful Publishing AB",
+      "icon": "https://play-lh.googleusercontent.com/6tF9PxOHzmV6cJwYuvYYaQYaAK0kE5jEPRo-skXuALqCpemYpBqTAwzcezucfQqjXZ-FCTUMr-ktZMR_9yi3LKQ",
+      "url": "https://play.google.com/store/apps/details?id=com.thunderful.legobricktales",
+      "price": 0.75,
+      "priceLabel": "$0.75",
+      "rating": 4.23,
+      "ratingText": "4.2"
+    },
+    {
+      "rank": 91,
+      "id": "com.beamdog.siegeofdragonspear",
+      "name": "Siege of Dragonspear",
+      "artist": "Beamdog",
+      "icon": "https://play-lh.googleusercontent.com/eWZkFu5GJ-E4fAc5_z8wJLVg15QRdVy4lFOxkPbkiTKs7g1fJ8B4cK3XZWBj91Jhkxv-QtUQQ-P-ENuQ8xxqpA",
+      "url": "https://play.google.com/store/apps/details?id=com.beamdog.siegeofdragonspear",
+      "price": 2.25,
+      "priceLabel": "$2.25",
+      "rating": 4.21,
+      "ratingText": "4.2"
+    },
+    {
+      "rank": 92,
+      "id": "com.beamdog.aao1942",
+      "name": "Axis & Allies 1942 Online",
+      "artist": "Beamdog",
+      "icon": "https://play-lh.googleusercontent.com/PHDhV0AcxDH64Jx5yindWfiliqJwd5fH9FMp7m0m43NVd9V7cfCazEpzKCvbBUJxYoN7u_70TZC45kf_EI3HS7k",
+      "url": "https://play.google.com/store/apps/details?id=com.beamdog.aao1942",
+      "price": 3,
+      "priceLabel": "$3.00",
+      "rating": 3.07,
+      "ratingText": "3.1"
+    },
+    {
+      "rank": 93,
+      "id": "com.g2labs.floatingsandboxmobile",
+      "name": "Floating Sandbox",
+      "artist": "g2-labs",
+      "icon": "https://play-lh.googleusercontent.com/VH_E3zBfs1lUy8KoOUu-BIFn5eIy2spIi1jdFLt61IvlB5JN-LgeXpr1kFXgEeWlIVAfvQrIF5TJRDTRqaU3",
+      "url": "https://play.google.com/store/apps/details?id=com.g2labs.floatingsandboxmobile",
+      "price": 4.49,
+      "priceLabel": "$4.49",
+      "rating": 4.76,
+      "ratingText": "4.8"
+    },
+    {
       "rank": 94,
-      "id": "com.ustwo.monumentvalley",
-      "name": "Monument Valley",
-      "artist": "ustwo games",
-      "icon": "https://play-lh.googleusercontent.com/PSOC0jku9VwvqwGYQvYGmh9BcsCkc-raSp94t1CzOHi6v7MtC-CgqY0MJckRXX2uNCJ7S4p1eWs1d9uACuPfjw",
-      "url": "https://play.google.com/store/apps/details?id=com.ustwo.monumentvalley",
-      "price": 3.99,
-      "priceLabel": "$3.99",
-      "rating": 4.8572245,
-      "ratingText": "4.9"
+      "id": "com.trueaxis.trueskate",
+      "name": "True Skate",
+      "artist": "True Axis",
+      "icon": "https://play-lh.googleusercontent.com/LnxWViNjq9A22wRxrN2xa_B-I2b9tff49ssdk_7x91IGSp0kgvCaRBPByfdH0zYmDCYQn8uKn2fxCG2hD5wB",
+      "url": "https://play.google.com/store/apps/details?id=com.trueaxis.trueskate",
+      "price": 1.99,
+      "priceLabel": "$1.99",
+      "rating": 4.008521,
+      "ratingText": "4.0"
     },
     {
       "rank": 95,
-      "id": "com.scottgames.sisterlocation",
-      "name": "Five Nights at Freddy's: SL",
-      "artist": "Clickteam USA LLC",
-      "icon": "https://play-lh.googleusercontent.com/cJe-kKy3_-ul3tp9GzzUMN0_DuGyfqMraHz9DQRAXHgWkw0YQLj565sjbK-Ee56jKDnCWGzlCbPu00_hbcldXRs",
-      "url": "https://play.google.com/store/apps/details?id=com.scottgames.sisterlocation",
-      "price": 2.99,
-      "priceLabel": "$2.99",
-      "rating": 4.4640923,
-      "ratingText": "4.5"
+      "id": "com.drycactus.polybridge2",
+      "name": "Poly Bridge 2",
+      "artist": "Dry Cactus Limited",
+      "icon": "https://play-lh.googleusercontent.com/OqRhgQW1UO-BOaRRs5UJLXxL3P1-Z9orUcyIZ93bTEE0eKvpJdLdqrjwfi28uxyF14vIfnXAcG06LAvrdSvA",
+      "url": "https://play.google.com/store/apps/details?id=com.drycactus.polybridge2",
+      "price": 1.99,
+      "priceLabel": "$1.99",
+      "rating": 4.721362,
+      "ratingText": "4.7"
     },
     {
       "rank": 96,
-      "id": "com.playdigious.deadcells.mobile",
-      "name": "Dead Cells",
-      "artist": "Playdigious",
-      "icon": "https://play-lh.googleusercontent.com/n0bJeYsKsrAD7hByDv0OmdHuoYQ23kXFsu91iGSLwhVXwlb65xe47TKwdeRGu7vw5IZ25_SoN24wOrZOzrtt_QA",
-      "url": "https://play.google.com/store/apps/details?id=com.playdigious.deadcells.mobile",
-      "price": 8.99,
-      "priceLabel": "$8.99",
-      "rating": 4.8025403,
-      "ratingText": "4.8"
-    },
-    {
-      "rank": 97,
-      "id": "valsar.dungeonwarfare2",
-      "name": "Dungeon Warfare 2",
-      "artist": "Valsar",
-      "icon": "https://play-lh.googleusercontent.com/Y2kSclLNEVnaktkb-H8ZJ45Jgti8-0TufW_8Frx2gwcmcibntFNt2qhb9dPd7BAoQ_Q-d5Cf27Psgw7cLtWuJA",
-      "url": "https://play.google.com/store/apps/details?id=valsar.dungeonwarfare2",
-      "price": 1.25,
-      "priceLabel": "$1.25",
-      "rating": 4.831683,
-      "ratingText": "4.8"
-    },
-    {
-      "rank": 98,
       "id": "com.atari.mobile.rctclassic",
       "name": "RollerCoaster Tycoon® Classic",
       "artist": "Atari, Inc.",
@@ -1187,28 +1163,52 @@
       "ratingText": "3.9"
     },
     {
+      "rank": 97,
+      "id": "com.scottgames.sisterlocation",
+      "name": "Five Nights at Freddy's: SL",
+      "artist": "Clickteam USA LLC",
+      "icon": "https://play-lh.googleusercontent.com/cJe-kKy3_-ul3tp9GzzUMN0_DuGyfqMraHz9DQRAXHgWkw0YQLj565sjbK-Ee56jKDnCWGzlCbPu00_hbcldXRs",
+      "url": "https://play.google.com/store/apps/details?id=com.scottgames.sisterlocation",
+      "price": 2.99,
+      "priceLabel": "$2.99",
+      "rating": 4.4640923,
+      "ratingText": "4.5"
+    },
+    {
+      "rank": 98,
+      "id": "com.strayfawnstudio.gambonanza",
+      "name": "Gambonanza",
+      "artist": "Stray Fawn Studio",
+      "icon": "https://play-lh.googleusercontent.com/aPeUytf5y1c0YCwU-hh1G3vULaPCLnoi5BXrQZWNJ3BH0FqVLXU6AX5i7c8mFkTD5eeOwjzhDHOoj9T_T3UhcrE",
+      "url": "https://play.google.com/store/apps/details?id=com.strayfawnstudio.gambonanza",
+      "price": 5.99,
+      "priceLabel": "$5.99",
+      "rating": 4.799283,
+      "ratingText": "4.8"
+    },
+    {
       "rank": 99,
-      "id": "com.direwolfdigital.dune",
-      "name": "Dune: Imperium Digital",
-      "artist": "Dire Wolf Digital",
-      "icon": "https://play-lh.googleusercontent.com/2CHc-E9VZdofr9Zik4mgPMJRnAisCLlywjhqNpcmnmbhzBrf_j6K4qyLrZQKwo62wRuoF7ntGRZCsdIWCPcT",
-      "url": "https://play.google.com/store/apps/details?id=com.direwolfdigital.dune",
-      "price": 10.99,
-      "priceLabel": "$10.99",
-      "rating": 4.8538814,
-      "ratingText": "4.9"
+      "id": "com.playdigious.deadcells.mobile",
+      "name": "Dead Cells",
+      "artist": "Playdigious",
+      "icon": "https://play-lh.googleusercontent.com/n0bJeYsKsrAD7hByDv0OmdHuoYQ23kXFsu91iGSLwhVXwlb65xe47TKwdeRGu7vw5IZ25_SoN24wOrZOzrtt_QA",
+      "url": "https://play.google.com/store/apps/details?id=com.playdigious.deadcells.mobile",
+      "price": 8.99,
+      "priceLabel": "$8.99",
+      "rating": 4.8026543,
+      "ratingText": "4.8"
     },
     {
       "rank": 100,
-      "id": "joybits.doodlegod",
-      "name": "Doodle God™",
-      "artist": "JoyBits Ltd.",
-      "icon": "https://play-lh.googleusercontent.com/MPWzr194N2WXeqRafBnclrMeEUpaLIX8r9k4taSnIDunnFocb5E4U3fMa5-dSJRNLNztE17yA0HNqYnw7fGmCmc",
-      "url": "https://play.google.com/store/apps/details?id=joybits.doodlegod",
-      "price": 1.49,
-      "priceLabel": "$1.49",
-      "rating": 4.6312847,
-      "ratingText": "4.6"
+      "id": "valsar.dungeonwarfare2",
+      "name": "Dungeon Warfare 2",
+      "artist": "Valsar",
+      "icon": "https://play-lh.googleusercontent.com/Y2kSclLNEVnaktkb-H8ZJ45Jgti8-0TufW_8Frx2gwcmcibntFNt2qhb9dPd7BAoQ_Q-d5Cf27Psgw7cLtWuJA",
+      "url": "https://play.google.com/store/apps/details?id=valsar.dungeonwarfare2",
+      "price": 1.25,
+      "priceLabel": "$1.25",
+      "rating": 4.831683,
+      "ratingText": "4.8"
     }
   ]
 }
