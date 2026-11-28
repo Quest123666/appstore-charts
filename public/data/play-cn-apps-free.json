@@ -8,7 +8,7 @@
   "chart": "free",
   "chartLabel": "免费榜",
   "count": 100,
-  "fetchedAt": "2026-11-28T08:01:27.626Z",
+  "fetchedAt": "2026-11-28T17:22:07.837Z",
   "source": "google-play-scraper",
   "results": [
     {
@@ -20,7 +20,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.twitter.android",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.767137,
+      "rating": 4.7672076,
       "ratingText": "4.8"
     },
     {
@@ -32,7 +32,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.google.android.youtube",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.1206145,
+      "rating": 4.120679,
       "ratingText": "4.1"
     },
     {
@@ -44,7 +44,7 @@
       "url": "https://play.google.com/store/apps/details?id=org.telegram.messenger",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 3.9997764,
+      "rating": 3.9999702,
       "ratingText": "4.0"
     },
     {
@@ -56,7 +56,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.instagram.android",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.3450546,
+      "rating": 4.3450885,
       "ratingText": "4.3"
     },
     {
@@ -68,7 +68,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.google.android.gm",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.3787284,
+      "rating": 4.3786902,
       "ratingText": "4.4"
     },
     {
@@ -80,7 +80,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.google.android.googlequicksearchbox",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.3790765,
+      "rating": 4.379064,
       "ratingText": "4.4"
     },
     {
@@ -92,7 +92,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.android.chrome",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.3397136,
+      "rating": 4.339793,
       "ratingText": "4.3"
     },
     {
@@ -104,7 +104,7 @@
       "url": "https://play.google.com/store/apps/details?id=open.chat.gpt.aichat.bot.free.app",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.502472,
+      "rating": 4.500452,
       "ratingText": "4.5"
     },
     {
@@ -116,23 +116,11 @@
       "url": "https://play.google.com/store/apps/details?id=com.github.android",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.7381573,
+      "rating": 4.7377276,
       "ratingText": "4.7"
     },
     {
       "rank": 10,
-      "id": "com.wrongchao.v2vpn",
-      "name": "V2VPN - 高速、可靠的免费VPN",
-      "artist": "V2VPN",
-      "icon": "https://play-lh.googleusercontent.com/aiXVszo3pCNXQ2bsrY3mi_cpG8gPZc4R03BpGlQvnFqkzSe8uJHOOOsfChOndqpYugP92ZAlzDfvpV8Uez-dUQ",
-      "url": "https://play.google.com/store/apps/details?id=com.wrongchao.v2vpn",
-      "price": 0,
-      "priceLabel": "免费",
-      "rating": 4.7579303,
-      "ratingText": "4.8"
-    },
-    {
-      "rank": 11,
       "id": "com.whatsapp",
       "name": "WhatsApp Messenger",
       "artist": "WhatsApp LLC",
@@ -140,8 +128,20 @@
       "url": "https://play.google.com/store/apps/details?id=com.whatsapp",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.4979305,
+      "rating": 4.497909,
       "ratingText": "4.5"
+    },
+    {
+      "rank": 11,
+      "id": "com.wrongchao.v2vpn",
+      "name": "V2VPN - 高速、可靠的免费VPN",
+      "artist": "V2VPN",
+      "icon": "https://play-lh.googleusercontent.com/aiXVszo3pCNXQ2bsrY3mi_cpG8gPZc4R03BpGlQvnFqkzSe8uJHOOOsfChOndqpYugP92ZAlzDfvpV8Uez-dUQ",
+      "url": "https://play.google.com/store/apps/details?id=com.wrongchao.v2vpn",
+      "price": 0,
+      "priceLabel": "免费",
+      "rating": 4.7539167,
+      "ratingText": "4.8"
     },
     {
       "rank": 12,
@@ -152,7 +152,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.400783,
+      "rating": 4.401259,
       "ratingText": "4.4"
     },
     {
@@ -164,7 +164,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.v2cross.proxy",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.589088,
+      "rating": 4.5902934,
       "ratingText": "4.6"
     },
     {
@@ -176,23 +176,11 @@
       "url": "https://play.google.com/store/apps/details?id=appjp.ucvpn.com",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.5373135,
-      "ratingText": "4.5"
+      "rating": 4.5916667,
+      "ratingText": "4.6"
     },
     {
       "rank": 15,
-      "id": "com.valvesoftware.android.steam.community",
-      "name": "Steam",
-      "artist": "Valve Corporation",
-      "icon": "https://play-lh.googleusercontent.com/E_x2GPSJakCdUYfECBptVyFoVnC4BxIPy3K4OdbwNyEtEJkRAY_J-Lo_Ltiybq6LiJ_aZCIzvqLv5h4Fbk91",
-      "url": "https://play.google.com/store/apps/details?id=com.valvesoftware.android.steam.community",
-      "price": 0,
-      "priceLabel": "免费",
-      "rating": 3.266771,
-      "ratingText": "3.3"
-    },
-    {
-      "rank": 16,
       "id": "com.google.android.apps.agentspace",
       "name": "Google Gemini Enterprise",
       "artist": "Google LLC",
@@ -200,8 +188,20 @@
       "url": "https://play.google.com/store/apps/details?id=com.google.android.apps.agentspace",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 3.9039302,
+      "rating": 3.8931186,
       "ratingText": "3.9"
+    },
+    {
+      "rank": 16,
+      "id": "com.valvesoftware.android.steam.community",
+      "name": "Steam",
+      "artist": "Valve Corporation",
+      "icon": "https://play-lh.googleusercontent.com/E_x2GPSJakCdUYfECBptVyFoVnC4BxIPy3K4OdbwNyEtEJkRAY_J-Lo_Ltiybq6LiJ_aZCIzvqLv5h4Fbk91",
+      "url": "https://play.google.com/store/apps/details?id=com.valvesoftware.android.steam.community",
+      "price": 0,
+      "priceLabel": "免费",
+      "rating": 3.267294,
+      "ratingText": "3.3"
     },
     {
       "rank": 17,
@@ -212,7 +212,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.discord",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.40846,
+      "rating": 4.4084435,
       "ratingText": "4.4"
     },
     {
@@ -224,7 +224,7 @@
       "url": "https://play.google.com/store/apps/details?id=org.thunderdog.challegram",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.0235267,
+      "rating": 4.0233817,
       "ratingText": "4.0"
     },
     {
@@ -236,7 +236,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.instagram.barcelona",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.2061768,
+      "rating": 4.2060394,
       "ratingText": "4.2"
     },
     {
@@ -248,7 +248,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.google.android.apps.maps",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.2801375,
+      "rating": 4.280275,
       "ratingText": "4.3"
     },
     {
@@ -260,35 +260,11 @@
       "url": "https://play.google.com/store/apps/details?id=ch.protonvpn.android",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.610437,
+      "rating": 4.610479,
       "ratingText": "4.6"
     },
     {
       "rank": 22,
-      "id": "com.pikcloud.pikpak",
-      "name": "PikPak - 极速秒存的私密云盘",
-      "artist": "PikCloud Pte. Ltd.",
-      "icon": "https://play-lh.googleusercontent.com/QQe8BLEPfGvCLRNAdOEdGgOUaiTk1cOSxLjx43N8KKtJ4ZvKVHyA_kpg7gVlmgkU6xFc89U5hPySVM15LIQMPA",
-      "url": "https://play.google.com/store/apps/details?id=com.pikcloud.pikpak",
-      "price": 0,
-      "priceLabel": "免费",
-      "rating": 4.684046,
-      "ratingText": "4.7"
-    },
-    {
-      "rank": 23,
-      "id": "moe.shizuku.privileged.api",
-      "name": "Shizuku",
-      "artist": "Xingchen & Rikka",
-      "icon": "https://play-lh.googleusercontent.com/vqtoZBfwl9hlfwhD3153xfdB7WbK87KQKHhznW9HkrBHQVFrdhMkpcHvlKlLLYEsAjhgDr9Yq_lyCk2mGxvpybE",
-      "url": "https://play.google.com/store/apps/details?id=moe.shizuku.privileged.api",
-      "price": 0,
-      "priceLabel": "免费",
-      "rating": 4.344352,
-      "ratingText": "4.3"
-    },
-    {
-      "rank": 24,
       "id": "hub.browser.video.downloader.saver",
       "name": "Hub Video Downloader",
       "artist": "DOSA Apps",
@@ -296,8 +272,32 @@
       "url": "https://play.google.com/store/apps/details?id=hub.browser.video.downloader.saver",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.453434,
+      "rating": 4.453697,
       "ratingText": "4.5"
+    },
+    {
+      "rank": 23,
+      "id": "com.pikcloud.pikpak",
+      "name": "PikPak - 极速秒存的私密云盘",
+      "artist": "PikCloud Pte. Ltd.",
+      "icon": "https://play-lh.googleusercontent.com/QQe8BLEPfGvCLRNAdOEdGgOUaiTk1cOSxLjx43N8KKtJ4ZvKVHyA_kpg7gVlmgkU6xFc89U5hPySVM15LIQMPA",
+      "url": "https://play.google.com/store/apps/details?id=com.pikcloud.pikpak",
+      "price": 0,
+      "priceLabel": "免费",
+      "rating": 4.682297,
+      "ratingText": "4.7"
+    },
+    {
+      "rank": 24,
+      "id": "moe.shizuku.privileged.api",
+      "name": "Shizuku",
+      "artist": "Xingchen & Rikka",
+      "icon": "https://play-lh.googleusercontent.com/vqtoZBfwl9hlfwhD3153xfdB7WbK87KQKHhznW9HkrBHQVFrdhMkpcHvlKlLLYEsAjhgDr9Yq_lyCk2mGxvpybE",
+      "url": "https://play.google.com/store/apps/details?id=moe.shizuku.privileged.api",
+      "price": 0,
+      "priceLabel": "免费",
+      "rating": 4.3461227,
+      "ratingText": "4.3"
     },
     {
       "rank": 25,
@@ -308,7 +308,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.binance.dev",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.6886225,
+      "rating": 4.6886415,
       "ratingText": "4.7"
     },
     {
@@ -320,7 +320,7 @@
       "url": "https://play.google.com/store/apps/details?id=tv.twitch.android.app",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.1147113,
+      "rating": 4.1147017,
       "ratingText": "4.1"
     },
     {
@@ -332,7 +332,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.nbwi.gamung",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.6571426,
+      "rating": 4.6842103,
       "ratingText": "4.7"
     },
     {
@@ -344,11 +344,23 @@
       "url": "https://play.google.com/store/apps/details?id=com.live.earthmap.streetview.livecam",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.5556827,
+      "rating": 4.5561447,
       "ratingText": "4.6"
     },
     {
       "rank": 29,
+      "id": "com.sdno1.app",
+      "name": "黄果短剧-热门短剧漫剧追剧大全",
+      "artist": "Haiou.Ltd",
+      "icon": "https://play-lh.googleusercontent.com/L0EP40bOI-gZFfHQF29XWTFPxMYyNDg5Dxz8Z0zcExr0m0IBg6OK42iyy7GCO31pnLnBn2LRhk-7hqMyDVe5",
+      "url": "https://play.google.com/store/apps/details?id=com.sdno1.app",
+      "price": 0,
+      "priceLabel": "免费",
+      "rating": 3.3125,
+      "ratingText": "3.3"
+    },
+    {
+      "rank": 30,
       "id": "com.google.android.apps.translate",
       "name": "Google 翻译",
       "artist": "Google LLC",
@@ -356,11 +368,11 @@
       "url": "https://play.google.com/store/apps/details?id=com.google.android.apps.translate",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.3942623,
+      "rating": 4.3942685,
       "ratingText": "4.4"
     },
     {
-      "rank": 30,
+      "rank": 31,
       "id": "com.reddit.frontpage",
       "name": "Reddit",
       "artist": "reddit Inc.",
@@ -368,20 +380,8 @@
       "url": "https://play.google.com/store/apps/details?id=com.reddit.frontpage",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.5466495,
+      "rating": 4.5475254,
       "ratingText": "4.5"
-    },
-    {
-      "rank": 31,
-      "id": "com.followstar.acc",
-      "name": "极点 VPN -全球高速网络加速器工具",
-      "artist": "qianli inc",
-      "icon": "https://play-lh.googleusercontent.com/LPm336fzTK3GgDZpXsVGNBria35pCFWAAVDW_24QLVEVw2tu_BXQ4JrEg1X8LBSMbHUS3J0cqt6QCJ16D2TzfSI",
-      "url": "https://play.google.com/store/apps/details?id=com.followstar.acc",
-      "price": 0,
-      "priceLabel": "免费",
-      "rating": 4.6698112,
-      "ratingText": "4.7"
     },
     {
       "rank": 32,
@@ -392,20 +392,20 @@
       "url": "https://play.google.com/store/apps/details?id=com.blackmagicdesign.android.blackmagiccam",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.5182524,
+      "rating": 4.521534,
       "ratingText": "4.5"
     },
     {
       "rank": 33,
-      "id": "com.sdno1.app",
-      "name": "黄果短剧-热门短剧漫剧追剧大全",
-      "artist": "Haiou.Ltd",
-      "icon": "https://play-lh.googleusercontent.com/L0EP40bOI-gZFfHQF29XWTFPxMYyNDg5Dxz8Z0zcExr0m0IBg6OK42iyy7GCO31pnLnBn2LRhk-7hqMyDVe5",
-      "url": "https://play.google.com/store/apps/details?id=com.sdno1.app",
+      "id": "com.followstar.acc",
+      "name": "极点 VPN -全球高速网络加速器工具",
+      "artist": "qianli inc",
+      "icon": "https://play-lh.googleusercontent.com/LPm336fzTK3GgDZpXsVGNBria35pCFWAAVDW_24QLVEVw2tu_BXQ4JrEg1X8LBSMbHUS3J0cqt6QCJ16D2TzfSI",
+      "url": "https://play.google.com/store/apps/details?id=com.followstar.acc",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 3.642857,
-      "ratingText": "3.6"
+      "rating": 4.6776857,
+      "ratingText": "4.7"
     },
     {
       "rank": 34,
@@ -416,7 +416,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.free.vpn.super.hotspot.open",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.59148,
+      "rating": 4.591357,
       "ratingText": "4.6"
     },
     {
@@ -428,7 +428,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.whatsapp.w4b",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.5109997,
+      "rating": 4.510916,
       "ratingText": "4.5"
     },
     {
@@ -440,7 +440,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.microsoft.emmx",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.662347,
+      "rating": 4.6623683,
       "ratingText": "4.7"
     },
     {
@@ -452,7 +452,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.linkedin.android",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.161845,
+      "rating": 4.1619387,
       "ratingText": "4.2"
     },
     {
@@ -464,7 +464,7 @@
       "url": "https://play.google.com/store/apps/details?id=ai.app.ai",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.321378,
+      "rating": 4.3185134,
       "ratingText": "4.3"
     },
     {
@@ -476,7 +476,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.okinc.okex.gp",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.3676996,
+      "rating": 4.3674564,
       "ratingText": "4.4"
     },
     {
@@ -488,23 +488,11 @@
       "url": "https://play.google.com/store/apps/details?id=com.one.vpnapp",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.3871813,
+      "rating": 4.3857703,
       "ratingText": "4.4"
     },
     {
       "rank": 41,
-      "id": "ai.photo.generator.editor.fotos.ai.image.app.free",
-      "name": "AI图片生成器 & AI视频：Muselab AI",
-      "artist": "Shotcut Video Workshop",
-      "icon": "https://play-lh.googleusercontent.com/9892pWxLRBlvS5Fgtbie4y8XmOtZbpIH7Jd6ryPNrTVgt4OuhJE95RYBvvTcqhS_svc-QKK5Wjq3eIyokA_t",
-      "url": "https://play.google.com/store/apps/details?id=ai.photo.generator.editor.fotos.ai.image.app.free",
-      "price": 0,
-      "priceLabel": "免费",
-      "rating": 4.735525,
-      "ratingText": "4.7"
-    },
-    {
-      "rank": 42,
       "id": "authenticator.two.factor.authentication.otp",
       "name": "Authenticator App - SafeAuth",
       "artist": "SafeAuth Services.",
@@ -512,7 +500,19 @@
       "url": "https://play.google.com/store/apps/details?id=authenticator.two.factor.authentication.otp",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.6783414,
+      "rating": 4.679322,
+      "ratingText": "4.7"
+    },
+    {
+      "rank": 42,
+      "id": "ai.photo.generator.editor.fotos.ai.image.app.free",
+      "name": "AI图片生成器 & AI视频：Muselab AI",
+      "artist": "Shotcut Video Workshop",
+      "icon": "https://play-lh.googleusercontent.com/9892pWxLRBlvS5Fgtbie4y8XmOtZbpIH7Jd6ryPNrTVgt4OuhJE95RYBvvTcqhS_svc-QKK5Wjq3eIyokA_t",
+      "url": "https://play.google.com/store/apps/details?id=ai.photo.generator.editor.fotos.ai.image.app.free",
+      "price": 0,
+      "priceLabel": "免费",
+      "rating": 4.7326818,
       "ratingText": "4.7"
     },
     {
@@ -524,7 +524,7 @@
       "url": "https://play.google.com/store/apps/details?id=org.mozilla.firefox",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.6494107,
+      "rating": 4.6495185,
       "ratingText": "4.6"
     },
     {
@@ -536,7 +536,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.patreon.android",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.7549295,
+      "rating": 4.7549443,
       "ratingText": "4.8"
     },
     {
@@ -548,7 +548,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.snapchat.android",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.23538,
+      "rating": 4.235386,
       "ratingText": "4.2"
     },
     {
@@ -560,7 +560,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.microsoft.office.outlook",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.5690603,
+      "rating": 4.5691314,
       "ratingText": "4.6"
     },
     {
@@ -572,7 +572,7 @@
       "url": "https://play.google.com/store/apps/details?id=hk.alipay.wallet",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 3.7277777,
+      "rating": 3.7274928,
       "ratingText": "3.7"
     },
     {
@@ -584,7 +584,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.tinder",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.5102243,
+      "rating": 4.5103407,
       "ratingText": "4.5"
     },
     {
@@ -596,7 +596,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.google.android.inputmethod.latin",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.4930944,
+      "rating": 4.4930015,
       "ratingText": "4.5"
     },
     {
@@ -608,23 +608,11 @@
       "url": "https://play.google.com/store/apps/details?id=com.apkpure.appp",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.2291665,
+      "rating": 4.2003517,
       "ratingText": "4.2"
     },
     {
       "rank": 51,
-      "id": "co.benx.weverse",
-      "name": "Weverse-和艺人更靠近",
-      "artist": "WEVERSE COMPANY Inc.",
-      "icon": "https://play-lh.googleusercontent.com/1nKJspxAS_Uaop80HDD7TpphZbUdzntjl8x_8meCJ2Z8WRdZGIfpRPfsPLqq4ZQwt6WPeMbCc1Q-jg-_Fr4QYA",
-      "url": "https://play.google.com/store/apps/details?id=co.benx.weverse",
-      "price": 0,
-      "priceLabel": "免费",
-      "rating": 4.6424375,
-      "ratingText": "4.6"
-    },
-    {
-      "rank": 52,
       "id": "com.comwithus.stardom",
       "name": "STARDOM: 让本命成为宇宙巨星",
       "artist": "ComWithUs",
@@ -636,6 +624,18 @@
       "ratingText": "3.5"
     },
     {
+      "rank": 52,
+      "id": "co.benx.weverse",
+      "name": "Weverse-和艺人更靠近",
+      "artist": "WEVERSE COMPANY Inc.",
+      "icon": "https://play-lh.googleusercontent.com/1nKJspxAS_Uaop80HDD7TpphZbUdzntjl8x_8meCJ2Z8WRdZGIfpRPfsPLqq4ZQwt6WPeMbCc1Q-jg-_Fr4QYA",
+      "url": "https://play.google.com/store/apps/details?id=co.benx.weverse",
+      "price": 0,
+      "priceLabel": "免费",
+      "rating": 4.64258,
+      "ratingText": "4.6"
+    },
+    {
       "rank": 53,
       "id": "com.duolingo",
       "name": "多邻国｜高效学外语",
@@ -644,7 +644,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.duolingo",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.74033,
+      "rating": 4.740488,
       "ratingText": "4.7"
     },
     {
@@ -656,7 +656,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.pinterest",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.445243,
+      "rating": 4.445293,
       "ratingText": "4.4"
     },
     {
@@ -668,7 +668,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.supervpn.vpn.free.proxy",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.5036807,
+      "rating": 4.503153,
       "ratingText": "4.5"
     },
     {
@@ -680,11 +680,23 @@
       "url": "https://play.google.com/store/apps/details?id=com.azure.authenticator",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.694013,
+      "rating": 4.693878,
       "ratingText": "4.7"
     },
     {
       "rank": 57,
+      "id": "com.google.android.play.games",
+      "name": "Google Play 游戏",
+      "artist": "Google LLC",
+      "icon": "https://play-lh.googleusercontent.com/3YayGH2tGgjk5NcwpJh0vB16C_bEX9GJ5EmUWI4kuEMd8b3Nh3zAgUtxL7rRHmyeEFSvnd6Af0lCyqICjZah7w",
+      "url": "https://play.google.com/store/apps/details?id=com.google.android.play.games",
+      "price": 0,
+      "priceLabel": "免费",
+      "rating": 4.16396,
+      "ratingText": "4.2"
+    },
+    {
+      "rank": 58,
       "id": "com.moonshot.kimichat",
       "name": "Kimi",
       "artist": "Moonshot AI",
@@ -692,11 +704,11 @@
       "url": "https://play.google.com/store/apps/details?id=com.moonshot.kimichat",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 3.8706546,
+      "rating": 3.8695233,
       "ratingText": "3.9"
     },
     {
-      "rank": 58,
+      "rank": 59,
       "id": "com.talkin.learn",
       "name": "Talkin：交全球好友 & 聊天看世界、语音派对",
       "artist": "Octopus Paradise",
@@ -704,11 +716,11 @@
       "url": "https://play.google.com/store/apps/details?id=com.talkin.learn",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.3275514,
+      "rating": 4.3255553,
       "ratingText": "4.3"
     },
     {
-      "rank": 59,
+      "rank": 60,
       "id": "com.ambrose.overwall",
       "name": "起飞VPN,GoFly VPN、V2ray、木马、sock5",
       "artist": "TracySteven",
@@ -720,7 +732,7 @@
       "ratingText": "4.0"
     },
     {
-      "rank": 60,
+      "rank": 61,
       "id": "com.cheezteam.org",
       "name": "MiuMiu VPN - 高速VPN",
       "artist": "CHEEZ ANDROID SOFTWARE",
@@ -728,11 +740,11 @@
       "url": "https://play.google.com/store/apps/details?id=com.cheezteam.org",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.6525445,
+      "rating": 4.6623764,
       "ratingText": "4.7"
     },
     {
-      "rank": 61,
+      "rank": 62,
       "id": "com.nordvpn.android",
       "name": "NordVPN - 快速安全的VPN",
       "artist": "Nord Security",
@@ -740,20 +752,8 @@
       "url": "https://play.google.com/store/apps/details?id=com.nordvpn.android",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.5464168,
+      "rating": 4.547128,
       "ratingText": "4.5"
-    },
-    {
-      "rank": 62,
-      "id": "com.google.android.play.games",
-      "name": "Google Play 游戏",
-      "artist": "Google LLC",
-      "icon": "https://play-lh.googleusercontent.com/3YayGH2tGgjk5NcwpJh0vB16C_bEX9GJ5EmUWI4kuEMd8b3Nh3zAgUtxL7rRHmyeEFSvnd6Af0lCyqICjZah7w",
-      "url": "https://play.google.com/store/apps/details?id=com.google.android.play.games",
-      "price": 0,
-      "priceLabel": "免费",
-      "rating": 4.1639485,
-      "ratingText": "4.2"
     },
     {
       "rank": 63,
@@ -764,7 +764,7 @@
       "url": "https://play.google.com/store/apps/details?id=octohide.vpn",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.0054135,
+      "rating": 3.9884799,
       "ratingText": "4.0"
     },
     {
@@ -776,8 +776,8 @@
       "url": "https://play.google.com/store/apps/details?id=com.smallkite.android",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.86,
-      "ratingText": "4.9"
+      "rating": 4.8461537,
+      "ratingText": "4.8"
     },
     {
       "rank": 65,
@@ -788,7 +788,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.flclash.app",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.2112675,
+      "rating": 4.2222223,
       "ratingText": "4.2"
     },
     {
@@ -800,107 +800,11 @@
       "url": "https://play.google.com/store/apps/details?id=ai.perplexity.app.android",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.601471,
+      "rating": 4.601388,
       "ratingText": "4.6"
     },
     {
       "rank": 67,
-      "id": "org.getlantern.lantern",
-      "name": "蓝灯 Lantern：翻墙 VPN",
-      "artist": "Brave New Software Project, Inc",
-      "icon": "https://play-lh.googleusercontent.com/eroID4QAZohww8Smr2lLYkriAupevBt4JeJLYLoLX7AcWmvyn9VMmVuwJ2LIkRl3y8XyKmZHxA_ZoPREGkr5",
-      "url": "https://play.google.com/store/apps/details?id=org.getlantern.lantern",
-      "price": 0,
-      "priceLabel": "免费",
-      "rating": 4.1480236,
-      "ratingText": "4.1"
-    },
-    {
-      "rank": 68,
-      "id": "app.nicegram",
-      "name": "Nicegram：Telegram 双开 + AI",
-      "artist": "Appvillis",
-      "icon": "https://play-lh.googleusercontent.com/bfACFXEgleJQlnF_CPix2H20C0DcVgGUMZ-ekkRj1jmtYqEgv_jNf0hCaNZ7OZlvqLuSXbU44CoiArSdAwzD3vk",
-      "url": "https://play.google.com/store/apps/details?id=app.nicegram",
-      "price": 0,
-      "priceLabel": "免费",
-      "rating": 4.4523716,
-      "ratingText": "4.5"
-    },
-    {
-      "rank": 69,
-      "id": "world.letsgo.booster.android.pro",
-      "name": "快连 VPN - 永远都能连上的 VPN",
-      "artist": "LetsGo Network",
-      "icon": "https://play-lh.googleusercontent.com/OYer2i-3F1iVvtsjaFHAtU1YLLkRpjkba9j3ZCbVIcrqQ9A5lDIDdyICCiPO5uumWrljYy38nYwaq-xFcH-cM4w",
-      "url": "https://play.google.com/store/apps/details?id=world.letsgo.booster.android.pro",
-      "price": 0,
-      "priceLabel": "免费",
-      "rating": 3.8658323,
-      "ratingText": "3.9"
-    },
-    {
-      "rank": 70,
-      "id": "org.wikipedia",
-      "name": "Wikipedia",
-      "artist": "Wikimedia Foundation",
-      "icon": "https://play-lh.googleusercontent.com/qurdJcCdD7Z62t_F84epGg4YoKgjVPapiqLNUKI3__O3vvHHF20SRcWkN3OKLZQFF6C_EPxHD7aAj8uHox_JwVo",
-      "url": "https://play.google.com/store/apps/details?id=org.wikipedia",
-      "price": 0,
-      "priceLabel": "免费",
-      "rating": 4.391017,
-      "ratingText": "4.4"
-    },
-    {
-      "rank": 71,
-      "id": "com.windscribe.vpn",
-      "name": "梯子加速器 VPN 代理 - Windscribe",
-      "artist": "Windscribe",
-      "icon": "https://play-lh.googleusercontent.com/Z6ZvnTAv7ujOMuuUmhJcsOwOdnrezJAMmdaSpXO1gvU56ZEZBT0dTiWSpp1DWuuEqshUrcbOhbyCeMuGLrl2pjQ",
-      "url": "https://play.google.com/store/apps/details?id=com.windscribe.vpn",
-      "price": 0,
-      "priceLabel": "免费",
-      "rating": 4.4896283,
-      "ratingText": "4.5"
-    },
-    {
-      "rank": 72,
-      "id": "com.jrzheng.supervpnfree",
-      "name": "SuperVPN - 快速 VPN 代理",
-      "artist": "SuperSoftTech",
-      "icon": "https://play-lh.googleusercontent.com/x4BK1eLbq0ZKTOgmI09Bdds21aegDogtWalMdEQ5AuNy4AsdbyIiS71GfSQ2Pb97Hx-9gMO-X2xPVmA0MeGelQ",
-      "url": "https://play.google.com/store/apps/details?id=com.jrzheng.supervpnfree",
-      "price": 0,
-      "priceLabel": "免费",
-      "rating": 4.741207,
-      "ratingText": "4.7"
-    },
-    {
-      "rank": 73,
-      "id": "com.xingin.xhs",
-      "name": "小红书 — 你的生活兴趣社区",
-      "artist": "行吟信息科技(上海)有限公司",
-      "icon": "https://play-lh.googleusercontent.com/c6Ipks61J7b4qgJMxo965UqsSo0M7ZwTDzQrmLKeBNneCk2gub-RitqSC-fnrmLGXTk3mNEceiBN5N3i26BmYHc",
-      "url": "https://play.google.com/store/apps/details?id=com.xingin.xhs",
-      "price": 0,
-      "priceLabel": "免费",
-      "rating": 4.4172916,
-      "ratingText": "4.4"
-    },
-    {
-      "rank": 74,
-      "id": "com.virtupn.kai",
-      "name": "Kai VPN",
-      "artist": "Zen-one",
-      "icon": "https://play-lh.googleusercontent.com/MayDnc3aKvIpSSaEc-907RyuAfTB47V_Zo1NSRkzlJ-YffpM-6ObuyDnOV9RcSK5Oh5pmSG5sPzEiHyfdFaD",
-      "url": "https://play.google.com/store/apps/details?id=com.virtupn.kai",
-      "price": 0,
-      "priceLabel": "免费",
-      "rating": 4.657778,
-      "ratingText": "4.7"
-    },
-    {
-      "rank": 75,
       "id": "com.google.android.apps.searchlite",
       "name": "Google Go",
       "artist": "Google LLC",
@@ -908,8 +812,104 @@
       "url": "https://play.google.com/store/apps/details?id=com.google.android.apps.searchlite",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.3788586,
+      "rating": 4.3788786,
       "ratingText": "4.4"
+    },
+    {
+      "rank": 68,
+      "id": "org.getlantern.lantern",
+      "name": "蓝灯 Lantern：翻墙 VPN",
+      "artist": "Brave New Software Project, Inc",
+      "icon": "https://play-lh.googleusercontent.com/eroID4QAZohww8Smr2lLYkriAupevBt4JeJLYLoLX7AcWmvyn9VMmVuwJ2LIkRl3y8XyKmZHxA_ZoPREGkr5",
+      "url": "https://play.google.com/store/apps/details?id=org.getlantern.lantern",
+      "price": 0,
+      "priceLabel": "免费",
+      "rating": 4.150822,
+      "ratingText": "4.2"
+    },
+    {
+      "rank": 69,
+      "id": "app.nicegram",
+      "name": "Nicegram：Telegram 双开 + AI",
+      "artist": "Appvillis",
+      "icon": "https://play-lh.googleusercontent.com/bfACFXEgleJQlnF_CPix2H20C0DcVgGUMZ-ekkRj1jmtYqEgv_jNf0hCaNZ7OZlvqLuSXbU44CoiArSdAwzD3vk",
+      "url": "https://play.google.com/store/apps/details?id=app.nicegram",
+      "price": 0,
+      "priceLabel": "免费",
+      "rating": 4.4546056,
+      "ratingText": "4.5"
+    },
+    {
+      "rank": 70,
+      "id": "world.letsgo.booster.android.pro",
+      "name": "快连 VPN - 永远都能连上的 VPN",
+      "artist": "LetsGo Network",
+      "icon": "https://play-lh.googleusercontent.com/OYer2i-3F1iVvtsjaFHAtU1YLLkRpjkba9j3ZCbVIcrqQ9A5lDIDdyICCiPO5uumWrljYy38nYwaq-xFcH-cM4w",
+      "url": "https://play.google.com/store/apps/details?id=world.letsgo.booster.android.pro",
+      "price": 0,
+      "priceLabel": "免费",
+      "rating": 3.8660433,
+      "ratingText": "3.9"
+    },
+    {
+      "rank": 71,
+      "id": "org.wikipedia",
+      "name": "Wikipedia",
+      "artist": "Wikimedia Foundation",
+      "icon": "https://play-lh.googleusercontent.com/qurdJcCdD7Z62t_F84epGg4YoKgjVPapiqLNUKI3__O3vvHHF20SRcWkN3OKLZQFF6C_EPxHD7aAj8uHox_JwVo",
+      "url": "https://play.google.com/store/apps/details?id=org.wikipedia",
+      "price": 0,
+      "priceLabel": "免费",
+      "rating": 4.391037,
+      "ratingText": "4.4"
+    },
+    {
+      "rank": 72,
+      "id": "com.windscribe.vpn",
+      "name": "梯子加速器 VPN 代理 - Windscribe",
+      "artist": "Windscribe",
+      "icon": "https://play-lh.googleusercontent.com/Z6ZvnTAv7ujOMuuUmhJcsOwOdnrezJAMmdaSpXO1gvU56ZEZBT0dTiWSpp1DWuuEqshUrcbOhbyCeMuGLrl2pjQ",
+      "url": "https://play.google.com/store/apps/details?id=com.windscribe.vpn",
+      "price": 0,
+      "priceLabel": "免费",
+      "rating": 4.489776,
+      "ratingText": "4.5"
+    },
+    {
+      "rank": 73,
+      "id": "com.jrzheng.supervpnfree",
+      "name": "SuperVPN - 快速 VPN 代理",
+      "artist": "SuperSoftTech",
+      "icon": "https://play-lh.googleusercontent.com/x4BK1eLbq0ZKTOgmI09Bdds21aegDogtWalMdEQ5AuNy4AsdbyIiS71GfSQ2Pb97Hx-9gMO-X2xPVmA0MeGelQ",
+      "url": "https://play.google.com/store/apps/details?id=com.jrzheng.supervpnfree",
+      "price": 0,
+      "priceLabel": "免费",
+      "rating": 4.7411456,
+      "ratingText": "4.7"
+    },
+    {
+      "rank": 74,
+      "id": "com.xingin.xhs",
+      "name": "小红书 — 你的生活兴趣社区",
+      "artist": "行吟信息科技(上海)有限公司",
+      "icon": "https://play-lh.googleusercontent.com/c6Ipks61J7b4qgJMxo965UqsSo0M7ZwTDzQrmLKeBNneCk2gub-RitqSC-fnrmLGXTk3mNEceiBN5N3i26BmYHc",
+      "url": "https://play.google.com/store/apps/details?id=com.xingin.xhs",
+      "price": 0,
+      "priceLabel": "免费",
+      "rating": 4.4192734,
+      "ratingText": "4.4"
+    },
+    {
+      "rank": 75,
+      "id": "com.virtupn.kai",
+      "name": "Kai VPN",
+      "artist": "Zen-one",
+      "icon": "https://play-lh.googleusercontent.com/MayDnc3aKvIpSSaEc-907RyuAfTB47V_Zo1NSRkzlJ-YffpM-6ObuyDnOV9RcSK5Oh5pmSG5sPzEiHyfdFaD",
+      "url": "https://play.google.com/store/apps/details?id=com.virtupn.kai",
+      "price": 0,
+      "priceLabel": "免费",
+      "rating": 4.67655,
+      "ratingText": "4.7"
     },
     {
       "rank": 76,
@@ -920,7 +920,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.loora.app",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.870906,
+      "rating": 4.8711514,
       "ratingText": "4.9"
     },
     {
@@ -932,7 +932,7 @@
       "url": "https://play.google.com/store/apps/details?id=mega.privacy.android.app",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.5912895,
+      "rating": 4.5913525,
       "ratingText": "4.6"
     },
     {
@@ -944,7 +944,7 @@
       "url": "https://play.google.com/store/apps/details?id=ai.chat.gpt.bot",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.383577,
+      "rating": 4.383707,
       "ratingText": "4.4"
     },
     {
@@ -956,7 +956,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.epicgames.ega",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 3.1707692,
+      "rating": 3.172334,
       "ratingText": "3.2"
     },
     {
@@ -968,7 +968,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.grabtaxi.passenger",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.8191957,
+      "rating": 4.819059,
       "ratingText": "4.8"
     },
     {
@@ -980,7 +980,7 @@
       "url": "https://play.google.com/store/apps/details?id=xyz.blueskyweb.app",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 3.220628,
+      "rating": 3.2207792,
       "ratingText": "3.2"
     },
     {
@@ -992,7 +992,7 @@
       "url": "https://play.google.com/store/apps/details?id=videoplayer.videodownloader.downloader",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.554901,
+      "rating": 4.554775,
       "ratingText": "4.6"
     },
     {
@@ -1004,11 +1004,23 @@
       "url": "https://play.google.com/store/apps/details?id=com.netty.cliff",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.2380953,
+      "rating": 4.159091,
       "ratingText": "4.2"
     },
     {
       "rank": 84,
+      "id": "com.fclash.app",
+      "name": "FlClash",
+      "artist": "SumCheung",
+      "icon": "https://play-lh.googleusercontent.com/_wB_RQtDVYqJFPFfMKtcCJQv5Ce-DtDMljFl3aQ8_RsRJ44uA8ohiQeMNt-YLmKZx5qLjM8p52l9r9hZxB68aA",
+      "url": "https://play.google.com/store/apps/details?id=com.fclash.app",
+      "price": 0,
+      "priceLabel": "免费",
+      "rating": 4.09,
+      "ratingText": "4.1"
+    },
+    {
+      "rank": 85,
       "id": "com.nullvpn.pro",
       "name": "Null VPN",
       "artist": "Bamke Haretuno",
@@ -1016,11 +1028,11 @@
       "url": "https://play.google.com/store/apps/details?id=com.nullvpn.pro",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.452586,
-      "ratingText": "4.5"
+      "rating": 4.4128704,
+      "ratingText": "4.4"
     },
     {
-      "rank": 85,
+      "rank": 86,
       "id": "com.rocbank.trade",
       "name": "融科银行 - 网上银行和投资理财",
       "artist": "Roc Bank",
@@ -1032,7 +1044,7 @@
       "ratingText": "3.4"
     },
     {
-      "rank": 86,
+      "rank": 87,
       "id": "com.google.android.apps.photos",
       "name": "Google 相册",
       "artist": "Google LLC",
@@ -1040,11 +1052,11 @@
       "url": "https://play.google.com/store/apps/details?id=com.google.android.apps.photos",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.4801207,
+      "rating": 4.4801683,
       "ratingText": "4.5"
     },
     {
-      "rank": 87,
+      "rank": 88,
       "id": "com5vnetwork.umi",
       "name": "UmiVPN - 免费 VPN",
       "artist": "VVVVV Net",
@@ -1052,11 +1064,11 @@
       "url": "https://play.google.com/store/apps/details?id=com5vnetwork.umi",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.4174757,
-      "ratingText": "4.4"
+      "rating": 4.54902,
+      "ratingText": "4.5"
     },
     {
-      "rank": 88,
+      "rank": 89,
       "id": "ctrip.english",
       "name": "Trip.com: Book Flights, Hotels",
       "artist": "Trip.com Group",
@@ -1064,35 +1076,11 @@
       "url": "https://play.google.com/store/apps/details?id=ctrip.english",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.75336,
+      "rating": 4.7532687,
       "ratingText": "4.8"
     },
     {
-      "rank": 89,
-      "id": "com.shopee.th",
-      "name": "Shopee 12.12 ลดใหญ่วันเกิด",
-      "artist": "Shopee TH",
-      "icon": "https://play-lh.googleusercontent.com/pcsb/AEecphZ0K4SkJa1yeSgT1AtlFTHZLpNI_1O1omQqFvkaLKbwQIFlediNsuD-E4Asmudg-RUIqhk8jjWtn0hwI4W4ESl6Ko2QUw",
-      "url": "https://play.google.com/store/apps/details?id=com.shopee.th",
-      "price": 0,
-      "priceLabel": "免费",
-      "rating": 4.7030964,
-      "ratingText": "4.7"
-    },
-    {
       "rank": 90,
-      "id": "us.zoom.videomeetings",
-      "name": "Zoom Workplace",
-      "artist": "zoom.com",
-      "icon": "https://play-lh.googleusercontent.com/-Ajlo-aDBHtpCez_yILc8Kepv_kNhbTJPw1WyvXgkh4O-hvUN-YD_v_0FlJmgRbZ2vn1OmZCmCBOY23h4kJYEA",
-      "url": "https://play.google.com/store/apps/details?id=us.zoom.videomeetings",
-      "price": 0,
-      "priceLabel": "免费",
-      "rating": 4.1540775,
-      "ratingText": "4.2"
-    },
-    {
-      "rank": 91,
       "id": "com.ubercab",
       "name": "优步 - 在您的城市随时叫车出行",
       "artist": "Uber Technologies, Inc.",
@@ -1100,20 +1088,32 @@
       "url": "https://play.google.com/store/apps/details?id=com.ubercab",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.7918396,
+      "rating": 4.7918253,
       "ratingText": "4.8"
     },
     {
-      "rank": 92,
-      "id": "com.fclash.app",
-      "name": "FlClash",
-      "artist": "SumCheung",
-      "icon": "https://play-lh.googleusercontent.com/_wB_RQtDVYqJFPFfMKtcCJQv5Ce-DtDMljFl3aQ8_RsRJ44uA8ohiQeMNt-YLmKZx5qLjM8p52l9r9hZxB68aA",
-      "url": "https://play.google.com/store/apps/details?id=com.fclash.app",
+      "rank": 91,
+      "id": "com.shopee.th",
+      "name": "Shopee 12.12 ลดใหญ่วันเกิด",
+      "artist": "Shopee TH",
+      "icon": "https://play-lh.googleusercontent.com/pcsb/AEecphZ0K4SkJa1yeSgT1AtlFTHZLpNI_1O1omQqFvkaLKbwQIFlediNsuD-E4Asmudg-RUIqhk8jjWtn0hwI4W4ESl6Ko2QUw",
+      "url": "https://play.google.com/store/apps/details?id=com.shopee.th",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.089109,
-      "ratingText": "4.1"
+      "rating": 4.7028036,
+      "ratingText": "4.7"
+    },
+    {
+      "rank": 92,
+      "id": "us.zoom.videomeetings",
+      "name": "Zoom Workplace",
+      "artist": "zoom.com",
+      "icon": "https://play-lh.googleusercontent.com/-Ajlo-aDBHtpCez_yILc8Kepv_kNhbTJPw1WyvXgkh4O-hvUN-YD_v_0FlJmgRbZ2vn1OmZCmCBOY23h4kJYEA",
+      "url": "https://play.google.com/store/apps/details?id=us.zoom.videomeetings",
+      "price": 0,
+      "priceLabel": "免费",
+      "rating": 4.1541634,
+      "ratingText": "4.2"
     },
     {
       "rank": 93,
@@ -1124,7 +1124,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.bumble.app",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.179435,
+      "rating": 4.179243,
       "ratingText": "4.2"
     },
     {
@@ -1136,7 +1136,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.booking",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.7807484,
+      "rating": 4.7807355,
       "ratingText": "4.8"
     },
     {
@@ -1148,11 +1148,23 @@
       "url": "https://play.google.com/store/apps/details?id=io.kitenetwork.vip",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.6825395,
-      "ratingText": "4.7"
+      "rating": 4.6141734,
+      "ratingText": "4.6"
     },
     {
       "rank": 96,
+      "id": "xyz.chatboxapp.chatbox",
+      "name": "Chatbox AI",
+      "artist": "Mediocre Company",
+      "icon": "https://play-lh.googleusercontent.com/L1iOTPX8WRnl7d6lwW6Jjew2fNT6Swu3pKNRq9NiOFGnjwvS2zVwK4aL4DfxUlzjNTMxKRdD9BRpWMSwu5kBR6g",
+      "url": "https://play.google.com/store/apps/details?id=xyz.chatboxapp.chatbox",
+      "price": 0,
+      "priceLabel": "免费",
+      "rating": 3.2115386,
+      "ratingText": "3.2"
+    },
+    {
+      "rank": 97,
       "id": "io.github.samolego.canta",
       "name": "Canta Debloater",
       "artist": "samo_lego",
@@ -1160,11 +1172,11 @@
       "url": "https://play.google.com/store/apps/details?id=io.github.samolego.canta",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.5587187,
+      "rating": 4.5591397,
       "ratingText": "4.6"
     },
     {
-      "rank": 97,
+      "rank": 98,
       "id": "com.suno.android",
       "name": "Suno - AI Music & Songs Maker",
       "artist": "Suno, Inc",
@@ -1172,11 +1184,23 @@
       "url": "https://play.google.com/store/apps/details?id=com.suno.android",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.7465677,
+      "rating": 4.746583,
       "ratingText": "4.7"
     },
     {
-      "rank": 98,
+      "rank": 99,
+      "id": "com.hellotalk",
+      "name": "HelloTalk—学外语练口语 英语日语韩语对话语言交换",
+      "artist": "HelloTalk Learn Languages App",
+      "icon": "https://play-lh.googleusercontent.com/KPw3nG_SHdSppACxt4L9n6I5MCeky49okFLOHbzBxEal7Dodpd02qcjOQyNA11KHlmD1fQ6wEfKal7sG2bhIpQ",
+      "url": "https://play.google.com/store/apps/details?id=com.hellotalk",
+      "price": 0,
+      "priceLabel": "免费",
+      "rating": 3.8296318,
+      "ratingText": "3.8"
+    },
+    {
+      "rank": 100,
       "id": "com.newmg.yurao.pro",
       "name": "屏幕翻译",
       "artist": "Battery Stats Saver",
@@ -1184,31 +1208,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.newmg.yurao.pro",
       "price": 0,
       "priceLabel": "免费",
-      "rating": 4.5940676,
-      "ratingText": "4.6"
-    },
-    {
-      "rank": 99,
-      "id": "com.valvesoftware.steamlink",
-      "name": "Steam Link",
-      "artist": "Valve Corporation",
-      "icon": "https://play-lh.googleusercontent.com/6TU14znIBQ6oierlwk8twhgqDLMhA3y-a-daQq8jF5d_OZpk9HpEo9rlMQ_KhxSUQ-mpohuQLVmH-jy6zoVCaTU",
-      "url": "https://play.google.com/store/apps/details?id=com.valvesoftware.steamlink",
-      "price": 0,
-      "priceLabel": "免费",
-      "rating": 3.6288853,
-      "ratingText": "3.6"
-    },
-    {
-      "rank": 100,
-      "id": "com.microsoft.teams",
-      "name": "Microsoft Teams",
-      "artist": "Microsoft Corporation",
-      "icon": "https://play-lh.googleusercontent.com/6Dj5fuRhw6aGAeuwW8tQ0UyJOpv14MKtsM0YDx65WOg_zqhxE65wt9XBw9VOzuIMZ-S1hLI9BnnNbaeRkrEf2A",
-      "url": "https://play.google.com/store/apps/details?id=com.microsoft.teams",
-      "price": 0,
-      "priceLabel": "免费",
-      "rating": 4.641982,
+      "rating": 4.5949917,
       "ratingText": "4.6"
     }
   ]
