@@ -21,8 +21,8 @@
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="zh_CN" />
     <link rel="icon" href="/icon.svg" type="image/svg+xml" />
-    <script src="/theme.js?v=20261128d"></script>
-    <link rel="stylesheet" href="/styles.css?v=20261128d" />
+    <script src="/theme.js?v=20261128e"></script>
+    <link rel="stylesheet" href="/styles.css?v=20261128e" />
   </head>
   <body class="play-page">
     <a class="skip-link" href="#playRankings">跳到榜单</a>
@@ -90,7 +90,7 @@
         </h1>
         <p class="hero-sub">
           <span>应用与游戏的免费、付费和畅销排行，支持美国与中国区。</span>
-          <span>每 6 小时更新一次数据快照，点击卡片前往 Google Play。</span>
+          <span>每小时更新一次数据快照，点击卡片前往 Google Play。</span>
         </p>
         <div class="hero-meta">
           <div class="meta-block">
@@ -144,7 +144,9 @@
           </div>
         </div>
         <p class="play-note">
-          Google Play 没有公开榜单 API；本页展示美国与中国区数据快照，由 GitHub Action 定时更新。中国区没有付费应用，付费榜仅在美国区提供。
+          Google Play 没有公开榜单 API；本页展示美国与中国区数据快照，由 GitHub Action 每小时更新，实时名次请以 Google Play 为准。
+          <a id="playLiveLink" href="https://play.google.com/store/apps?device=phone&amp;gl=us" target="_blank" rel="noopener noreferrer">在 Google Play 查看实时榜</a>。
+          中国区没有付费应用，付费榜仅在美国区提供。
         </p>
       </section>
 
@@ -191,7 +193,7 @@
           <span>MIT License</span>
         </div>
       </div>
-      <div class="wrap footer-note">© 2026 AppPodium · 数据快照每 6 小时更新 · 不收集个人数据</div>
+      <div class="wrap footer-note">© 2026 AppPodium · 数据快照每小时更新 · 不收集个人数据</div>
     </footer>
 
     <div id="playToast" class="toast" role="status" aria-live="polite" aria-atomic="true"></div>
@@ -199,6 +201,6 @@
     <noscript>
       <div class="noscript">这个榜单需要 JavaScript 才能加载。请在浏览器中启用 JavaScript。</div>
     </noscript>
-    <script src="/play.js?v=20261128d" defer></script>
+    <script src="/play.js?v=20261128e" defer></script>
   </body>
 </html>

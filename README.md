@@ -54,7 +54,7 @@ A lightweight, keyless App Store and Google Play charts viewer, built for **Clou
   - 美国：应用 / 游戏 × 免费 / 付费 / 畅销
   - 中国：应用 / 游戏 × 免费 / 畅销（中国区没有付费应用）
 - 生成脚本在返回条数不足 100 时会自动重试最多 3 次，避免连续请求被 Google Play 限流后只拿到 20 条。
-- GitHub Action `.github/workflows/update-play-charts.yml` 每 6 小时更新 `public/data/play-*.json` 并提交，随后 Cloudflare 自动部署。
+- GitHub Action `.github/workflows/update-play-charts.yml` 每小时更新 `public/data/play-*.json` 并提交，随后 Cloudflare 自动部署。
 - 页面运行时只读取自己的静态 JSON，不请求 Google Play，避免线上抓取被限流。
 - 卡片点击直接打开 Google Play；图标来自 `googleusercontent.com`，CSP 已放行该图片域名。
 - 数据快照不是逐秒实时；页面显示实际更新时间。
@@ -149,7 +149,7 @@ git push -u origin main
 ### Google Play 自动更新
 
 - 工作流：`.github/workflows/update-play-charts.yml`。
-- 默认每 6 小时运行一次，也可在 GitHub Actions 页面手动触发。
+- 默认每小时运行一次，也可在 GitHub Actions 页面手动触发。
 - 工作流会生成 6 个 JSON 并自动 commit；Cloudflare Workers Builds 随后自动部署。
 - 仓库需要允许 Actions 写入内容（工作流已声明 `contents: write`）。如果默认分支有保护规则，需要为 GitHub Actions 放行，或改为手动运行 `npm run update:play` 后 push。
 - 如果 Google 对 GitHub 出口也临时限流，工作流会失败，现有快照保持可用。

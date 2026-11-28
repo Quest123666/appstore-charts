@@ -1418,6 +1418,12 @@ p {
   line-height: 1.7;
 }
 
+.play-note a {
+  color: var(--accent-ink);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
 .play-icon-fallback {
   display: grid;
   place-items: center;

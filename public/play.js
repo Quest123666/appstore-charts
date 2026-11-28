@@ -220,6 +220,12 @@
     if (els.statContext) {
       els.statContext.textContent = `Google Play · ${country.label}`;
     }
+    if (els.liveLink) {
+      const store = state.type === "games" ? "games" : "apps";
+      els.liveLink.href =
+        `https://play.google.com/store/${store}` +
+        `?device=phone&gl=${state.country}`;
+    }
   }
 
   function setState(kind, title, message, withRetry) {
@@ -691,6 +697,7 @@
       eyebrow: document.getElementById("playEyebrow"),
       kicker: document.getElementById("playKicker"),
       statContext: document.getElementById("playStatContext"),
+      liveLink: document.getElementById("playLiveLink"),
       searchInput: document.getElementById("playSearchInput"),
       list: document.getElementById("playList"),
       listTitle: document.getElementById("playListTitle"),
