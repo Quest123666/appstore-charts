@@ -551,7 +551,12 @@
   function formatShortDate(value) {
     const date = new Date(value);
     if (Number.isNaN(date.getTime())) return "";
-    return `${date.getMonth() + 1}/${date.getDate()}`;
+    const month = date.getMonth() + 1;
+    const day = date.getDate();
+    if (date.getFullYear() === new Date().getFullYear()) {
+      return `${month}/${day}`;
+    }
+    return `${date.getFullYear()}/${month}/${day}`;
   }
 
   function metricText(app, sort) {
@@ -560,6 +565,7 @@
       return `★ ${Number(app.enrich.rating).toFixed(1)}`;
     }
     if (sort === "updated") {
+      if (!state.enrich) return "获取中…";
       const date =
         app.enrich?.updatedDate ||
         app.enrich?.releaseDate ||

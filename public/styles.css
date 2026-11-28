@@ -795,7 +795,8 @@ p {
   animation: spin 0.8s linear infinite;
 }
 
-.chip.is-unavailable {
+.chip.is-unavailable,
+.segment button.is-unavailable {
   opacity: 0.4;
   cursor: not-allowed;
 }

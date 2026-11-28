@@ -1,6 +1,6 @@
 # AppPodium
 
-一个轻量、好看的 App Store / Google Play 榜单网页：美国 / 中国区 App Store，iPhone / iPad / Mac，免费榜 / 付费榜 / 畅销榜，全部应用分类与游戏子类；另有美国 Google Play 应用 / 游戏榜。
+一个轻量、好看的 App Store / Google Play 榜单网页：美国 / 中国区 App Store，iPhone / iPad / Mac，免费榜 / 付费榜 / 畅销榜，全部应用分类与游戏子类；另有美国 / 中国区 Google Play 应用 / 游戏榜。
 
 A lightweight, keyless App Store and Google Play charts viewer, built for **Cloudflare Workers + Static Assets**.
 
@@ -12,7 +12,7 @@ A lightweight, keyless App Store and Google Play charts viewer, built for **Clou
 - **三种设备**：iPhone、iPad、Mac
 - **三类榜单**：免费榜、付费榜、畅销榜
 - **完整分类**：全部应用分类 + 18 个游戏子类
-- **Google Play 美国榜**：应用 / 游戏 × 免费 / 付费 / 畅销，独立页面 `/play.html`；支持评分 / 价格排序、悬浮刷新与回顶、深浅色
+- **Google Play 美国 / 中国榜**：应用 / 游戏 × 免费 / 付费 / 畅销，独立页面 `/play`；支持地区切换、评分 / 价格排序、悬浮刷新与回顶、深浅色。中国区没有付费应用，付费榜仅在美国区提供。
 - **特色排序**：在当前榜单内按评分、最近更新、价格重新排序，并保留原 Apple 榜名次
 - **快捷操作**：滚动后右下角悬浮“手动刷新 / 一键回顶”；手机端滚动时顶部出现跟随筛选栏
 - **榜单搜索**：在当前榜单中按应用名、开发者、分类即时搜索
@@ -47,11 +47,14 @@ A lightweight, keyless App Store and Google Play charts viewer, built for **Clou
 - 正常请求由浏览器直连 Apple（用户网络）；只有直连失败时才回退到 Worker 代理和缓存。Cloudflare 出口访问 Apple 会返回 403，这是直连优先的原因。
 - 免费榜所有 App 价格相同，因此价格排序只在付费榜/畅销榜可用；点击价格按钮会提示原因。
 
-### Google Play（美国）
+### Google Play（美国 / 中国）
 
 - Google Play 没有像 Apple RSS 那样的官方榜单接口。
-- `scripts/update-play-charts.mjs` 通过 `google-play-scraper` 生成 6 个静态快照：应用 / 游戏 × 免费 / 付费 / 畅销。
-- GitHub Action `.github/workflows/update-play-charts.yml` 每 6 小时更新 `public/data/play-us-*.json` 并提交，随后 Cloudflare 自动部署。
+- `scripts/update-play-charts.mjs` 通过 `google-play-scraper` 生成 10 个静态快照：
+  - 美国：应用 / 游戏 × 免费 / 付费 / 畅销
+  - 中国：应用 / 游戏 × 免费 / 畅销（中国区没有付费应用）
+- 生成脚本在返回条数不足 100 时会自动重试最多 3 次，避免连续请求被 Google Play 限流后只拿到 20 条。
+- GitHub Action `.github/workflows/update-play-charts.yml` 每 6 小时更新 `public/data/play-*.json` 并提交，随后 Cloudflare 自动部署。
 - 页面运行时只读取自己的静态 JSON，不请求 Google Play，避免线上抓取被限流。
 - 卡片点击直接打开 Google Play；图标来自 `googleusercontent.com`，CSP 已放行该图片域名。
 - 数据快照不是逐秒实时；页面显示实际更新时间。
@@ -99,7 +102,7 @@ npm install
 npm run dev
 ```
 
-打开 <http://localhost:8788>（App Store 榜）和 <http://localhost:8788/play.html>（Google Play 美国榜）。
+打开 <http://localhost:8788>（App Store 榜）和 <http://localhost:8788/play>（Google Play 美国 / 中国榜）。
 
 `wrangler dev` 会同时启动 Worker 和 `public/` 静态资源，因此本地即可测试真实的 `/api/charts`、`/api/app`、404 页面和安全响应头。
 
@@ -109,7 +112,7 @@ npm run dev
 npm run update:play
 ```
 
-该脚本会访问 Google Play 并写入 `public/data/play-us-*.json`；页面运行时不需要访问 Google。
+该脚本会访问 Google Play 并写入 `public/data/play-{us,cn}-*.json`；页面运行时不需要访问 Google。
 
 ## 部署到 Cloudflare Workers
 
@@ -261,13 +264,13 @@ Mac 的 `top-paid` / `top-grossing` 会返回 `400 CHART_UNAVAILABLE`。
 .
 ├── public/                  # 静态页面与前端资源
 │   ├── index.html           # App Store 榜
-│   ├── play.html            # Google Play 美国榜
+│   ├── play.html            # Google Play 美国 / 中国榜
 │   ├── play.js              # Google Play 页面渲染
 │   ├── styles.css
 │   ├── apple-direct.js
 │   ├── app.js
 │   ├── theme.js
-│   ├── data/                # Google Play 静态快照（6 个 JSON）
+│   ├── data/                # Google Play 静态快照（美国 6 个 + 中国 4 个 JSON）
 │   ├── icon.svg
 │   ├── robots.txt
 │   └── 404.html

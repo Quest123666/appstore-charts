@@ -10,6 +10,20 @@
     paid: "付费榜",
     grossing: "畅销榜",
   };
+  const COUNTRIES = {
+    us: {
+      label: "美国",
+      kicker: "GOOGLE PLAY · US",
+      eyebrow: "GOOGLE PLAY · UNITED STATES",
+      charts: ["free", "paid", "grossing"],
+    },
+    cn: {
+      label: "中国",
+      kicker: "GOOGLE PLAY · CN",
+      eyebrow: "GOOGLE PLAY · CHINA",
+      charts: ["free", "grossing"],
+    },
+  };
   const SORTS = {
     chart: "榜内顺序",
     rating: "评分排序",
@@ -17,6 +31,7 @@
   };
 
   const state = {
+    country: "us",
     type: "apps",
     chart: "free",
     sort: "chart",
@@ -114,20 +129,31 @@
 
   function readStateFromURL() {
     const params = new URLSearchParams(window.location.search);
+    const country = params.get("country");
     const type = params.get("type");
     const chart = params.get("chart");
     const sort = params.get("sort");
+    const nextCountry = COUNTRIES[country] ? country : "us";
     const nextType = TYPES[type] ? type : "apps";
-    const nextChart = CHARTS[chart] ? chart : "free";
+    let nextChart = CHARTS[chart] ? chart : "free";
+    if (!COUNTRIES[nextCountry].charts.includes(nextChart)) {
+      nextChart = "free";
+    }
     let nextSort = SORTS[sort] ? sort : "chart";
-    if (nextSort === "price" && nextChart === "free") {
+    if (nextSort === "price" && (nextChart === "free" || nextCountry === "cn")) {
       nextSort = "chart";
     }
-    return { type: nextType, chart: nextChart, sort: nextSort };
+    return {
+      country: nextCountry,
+      type: nextType,
+      chart: nextChart,
+      sort: nextSort,
+    };
   }
 
   function updateURL() {
     const params = new URLSearchParams();
+    if (state.country !== "us") params.set("country", state.country);
     params.set("type", state.type);
     params.set("chart", state.chart);
     if (state.sort !== "chart") params.set("sort", state.sort);
@@ -138,6 +164,18 @@
   }
 
   function syncControls() {
+    for (const button of els.countryControl.querySelectorAll("button")) {
+      const active = button.dataset.value === state.country;
+      button.classList.toggle("is-active", active);
+      button.setAttribute("aria-pressed", String(active));
+    }
+    const available = COUNTRIES[state.country].charts;
+    for (const button of els.chartControl.querySelectorAll("button")) {
+      const value = button.dataset.value;
+      const ok = available.includes(value);
+      button.disabled = !ok;
+      button.title = ok ? "" : "中国区 Google Play 没有付费应用";
+    }
     for (const button of els.typeControl.querySelectorAll("button")) {
       const active = button.dataset.value === state.type;
       button.classList.toggle("is-active", active);
@@ -149,17 +187,38 @@
       button.setAttribute("aria-pressed", String(active));
     }
     for (const button of els.sortControl.querySelectorAll("button")) {
-      const active = button.dataset.value === state.sort;
+      const value = button.dataset.value;
+      const active = value === state.sort;
       button.classList.toggle("is-active", active);
       button.setAttribute("aria-pressed", String(active));
+      const priceUnavailable =
+        value === "price" &&
+        (state.chart === "free" || state.country === "cn");
+      button.classList.toggle("is-unavailable", priceUnavailable);
+      button.title = priceUnavailable
+        ? state.country === "cn"
+          ? "中国区应用均为免费"
+          : "免费榜所有 App 价格相同"
+        : value === "price"
+          ? "价格从低到高"
+          : "";
     }
     if (els.followContext) {
       const parts = [
+        COUNTRIES[state.country].label,
         TYPES[state.type].label,
         CHARTS[state.chart],
       ];
       if (state.sort !== "chart") parts.push(SORTS[state.sort]);
       els.followContext.textContent = parts.join(" · ");
+    }
+
+    const country = COUNTRIES[state.country];
+    if (els.heroCountry) els.heroCountry.textContent = country.label;
+    if (els.eyebrow) els.eyebrow.textContent = country.eyebrow;
+    if (els.kicker) els.kicker.textContent = country.kicker;
+    if (els.statContext) {
+      els.statContext.textContent = `Google Play · ${country.label}`;
     }
   }
 
@@ -318,7 +377,7 @@
     els.statCount.textContent = String(state.data.count || 0);
     els.statUpdated.textContent = formatUpdated(state.data.fetchedAt);
     document.title =
-      `${typeLabel}榜 · ${chartLabel} · ${sortLabel} — Google Play 美国 | AppPodium`;
+      `${typeLabel}榜 · ${chartLabel} · ${sortLabel} — Google Play ${COUNTRIES[state.country].label} | AppPodium`;
 
     if (results.length === 0) {
       els.list.replaceChildren();
@@ -383,7 +442,9 @@
     syncControls();
     updateURL();
 
-    const file = `/data/play-us-${TYPES[state.type].file}-${state.chart}.json`;
+    const file =
+      `/data/play-${state.country}-` +
+      `${TYPES[state.type].file}-${state.chart}.json`;
 
     try {
       const response = await fetch(file, { cache: "no-store" });
@@ -439,8 +500,15 @@
 
   function setSort(value) {
     if (!SORTS[value] || value === state.sort) return;
-    if (value === "price" && state.chart === "free") {
-      showToast("免费榜所有 App 价格相同，暂不支持价格排序");
+    if (
+      value === "price" &&
+      (state.chart === "free" || state.country === "cn")
+    ) {
+      showToast(
+        state.country === "cn"
+          ? "中国区应用均为免费，暂不支持价格排序"
+          : "免费榜所有 App 价格相同，暂不支持价格排序",
+      );
       return;
     }
     state.sort = value;
@@ -542,6 +610,33 @@
       load();
     });
 
+    els.countryControl.addEventListener("click", (event) => {
+      const button =
+        event.target instanceof Element
+          ? event.target.closest("button[data-value]")
+          : null;
+      if (!button || button.dataset.value === state.country) return;
+      state.country = button.dataset.value;
+      const isCn = state.country === "cn";
+      let notice = "";
+      if (!COUNTRIES[state.country].charts.includes(state.chart)) {
+        state.chart = "free";
+        notice = "中国区没有付费榜，已切换到免费榜";
+      }
+      if (state.sort === "price" && (state.chart === "free" || isCn)) {
+        state.sort = "chart";
+        if (!notice) {
+          notice = isCn
+            ? "中国区应用均为免费，已取消价格排序"
+            : "免费榜价格相同，已恢复榜单排序";
+        }
+      }
+      if (notice) showToast(notice);
+      state.query = "";
+      els.searchInput.value = "";
+      load();
+    });
+
     els.chartControl.addEventListener("click", (event) => {
       const button =
         event.target instanceof Element
@@ -551,6 +646,7 @@
       state.chart = button.dataset.value;
       if (state.chart === "free" && state.sort === "price") {
         state.sort = "chart";
+        showToast("免费榜价格相同，已恢复榜单排序");
       }
       state.query = "";
       els.searchInput.value = "";
@@ -589,7 +685,12 @@
     els = {
       typeControl: document.getElementById("playTypeControl"),
       chartControl: document.getElementById("playChartControl"),
+      countryControl: document.getElementById("playCountryControl"),
       sortControl: document.getElementById("playSortControl"),
+      heroCountry: document.getElementById("playHeroCountry"),
+      eyebrow: document.getElementById("playEyebrow"),
+      kicker: document.getElementById("playKicker"),
+      statContext: document.getElementById("playStatContext"),
       searchInput: document.getElementById("playSearchInput"),
       list: document.getElementById("playList"),
       listTitle: document.getElementById("playListTitle"),
@@ -610,6 +711,7 @@
     };
 
     const initial = readStateFromURL();
+    state.country = initial.country;
     state.type = initial.type;
     state.chart = initial.chart;
     state.sort = initial.sort;

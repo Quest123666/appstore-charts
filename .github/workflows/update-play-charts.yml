@@ -1,4 +1,4 @@
-name: Update Google Play US charts
+name: Update Google Play charts
 
 on:
   schedule:
@@ -38,6 +38,6 @@ jobs:
           if git diff --cached --quiet; then
             echo "No Google Play chart changes"
           else
-            git commit -m "chore: update Google Play US charts"
+            git commit -m "chore: update Google Play chart snapshots"
             git push
           fi

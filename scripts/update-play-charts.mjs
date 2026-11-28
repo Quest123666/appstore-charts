@@ -33,12 +33,40 @@ const CHARTS = [
   },
 ];
 
+const COUNTRIES = [
+  {
+    id: "us",
+    label: "美国",
+    lang: "en",
+    charts: ["free", "paid", "grossing"],
+  },
+  {
+    id: "cn",
+    label: "中国",
+    lang: "zh",
+    // Google Play 中国区没有付费应用，付费榜为空。
+    charts: ["free", "grossing"],
+  },
+];
+
 const LIMIT = 100;
 const OUT_DIR = path.resolve("public/data");
-const currency = new Intl.NumberFormat("en-US", {
-  style: "currency",
-  currency: "USD",
-});
+
+function formatPrice(price, currencyCode) {
+  const code =
+    typeof currencyCode === "string" &&
+    /^[A-Z]{3}$/.test(currencyCode)
+      ? currencyCode
+      : "USD";
+  try {
+    return new Intl.NumberFormat("en-US", {
+      style: "currency",
+      currency: code,
+    }).format(price);
+  } catch {
+    return String(price);
+  }
+}
 
 function safeIcon(raw) {
   if (typeof raw !== "string") return null;
@@ -82,70 +110,101 @@ function sleep(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
-await fs.mkdir(OUT_DIR, { recursive: true });
-const now = new Date().toISOString();
-let failures = 0;
+// Google Play 在连续请求后会临时少返回条目（常见 20 条），最多重试 3 次取最大结果。
+async function fetchChart(country, type, chart, attempts = 3) {
+  let best = [];
+  let lastError = null;
 
-for (const type of TYPES) {
-  for (const chart of CHARTS) {
+  for (let attempt = 1; attempt <= attempts; attempt += 1) {
     try {
       const apps = await gplay.list({
         category: type.category,
         collection: chart.collection,
-        country: "us",
-        lang: "en",
+        country: country.id,
+        lang: country.lang,
         num: LIMIT,
       });
-
-      const results = apps.map((app, index) => {
-        const price = Number.isFinite(Number(app.price))
-          ? Number(app.price)
-          : 0;
-        const free = Boolean(app.free) || price === 0;
-        return {
-          rank: index + 1,
-          id: String(app.appId || ""),
-          name: String(app.title || ""),
-          artist: String(app.developer || ""),
-          icon: safeIcon(app.icon),
-          url: safePlayUrl(app.url, app.appId),
-          price,
-          priceLabel: free ? "免费" : currency.format(price),
-          rating: Number.isFinite(Number(app.score))
-            ? Number(app.score)
-            : 0,
-          ratingText: String(app.scoreText || ""),
-        };
-      });
-
-      const payload = {
-        ok: true,
-        store: "google-play",
-        country: "us",
-        type: type.id,
-        typeLabel: type.label,
-        chart: chart.id,
-        chartLabel: chart.label,
-        count: results.length,
-        fetchedAt: now,
-        source: "google-play-scraper",
-        results,
-      };
-
-      const file = path.join(
-        OUT_DIR,
-        `play-us-${type.id}-${chart.id}.json`,
-      );
-      await fs.writeFile(file, JSON.stringify(payload, null, 2));
-      console.log(
-        `wrote ${path.relative(process.cwd(), file)} (${results.length})`,
-      );
-      await sleep(250);
+      if (Array.isArray(apps) && apps.length > best.length) {
+        best = apps;
+      }
+      if (best.length >= LIMIT) break;
     } catch (error) {
-      failures += 1;
-      console.error(
-        `failed ${type.id}/${chart.id}: ${error?.message || error}`,
-      );
+      lastError = error;
+    }
+    if (attempt < attempts) await sleep(1500 * attempt);
+  }
+
+  if (best.length > 0) return best;
+  throw lastError || new Error("empty chart response");
+}
+
+await fs.mkdir(OUT_DIR, { recursive: true });
+const now = new Date().toISOString();
+let failures = 0;
+
+for (const country of COUNTRIES) {
+  for (const type of TYPES) {
+    for (const chart of CHARTS) {
+      if (!country.charts.includes(chart.id)) continue;
+      try {
+        const apps = await fetchChart(country, type, chart);
+
+        const results = apps.map((app, index) => {
+          const price = Number.isFinite(Number(app.price))
+            ? Number(app.price)
+            : 0;
+          const free = Boolean(app.free) || price === 0;
+          return {
+            rank: index + 1,
+            id: String(app.appId || ""),
+            name: String(app.title || ""),
+            artist: String(app.developer || ""),
+            icon: safeIcon(app.icon),
+            url: safePlayUrl(app.url, app.appId),
+            price,
+            priceLabel: free
+              ? "免费"
+              : typeof app.priceText === "string" &&
+                  app.priceText.trim()
+                ? app.priceText.trim()
+                : formatPrice(price, app.currency),
+            rating: Number.isFinite(Number(app.score))
+              ? Number(app.score)
+              : 0,
+            ratingText: String(app.scoreText || ""),
+          };
+        });
+
+        const payload = {
+          ok: true,
+          store: "google-play",
+          country: country.id,
+          countryLabel: country.label,
+          type: type.id,
+          typeLabel: type.label,
+          chart: chart.id,
+          chartLabel: chart.label,
+          count: results.length,
+          fetchedAt: now,
+          source: "google-play-scraper",
+          results,
+        };
+
+        const file = path.join(
+          OUT_DIR,
+          `play-${country.id}-${type.id}-${chart.id}.json`,
+        );
+        await fs.writeFile(file, JSON.stringify(payload, null, 2));
+        console.log(
+          `wrote ${path.relative(process.cwd(), file)} (${results.length})`,
+        );
+        await sleep(800);
+      } catch (error) {
+        failures += 1;
+        console.error(
+          `failed ${country.id}/${type.id}/${chart.id}: ${error?.message || error}`,
+        );
+      }
     }
   }
 }

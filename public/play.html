@@ -6,22 +6,23 @@
       name="viewport"
       content="width=device-width, initial-scale=1, viewport-fit=cover"
     />
-    <title>美国 Google Play 榜 — AppPodium</title>
+    <title>Google Play 榜 · 美国 / 中国 — AppPodium</title>
     <meta
       name="description"
-      content="美国 Google Play 应用与游戏排行榜，免费榜、付费榜和畅销榜。"
+      content="美国与中国区 Google Play 应用和游戏排行榜：美国区含免费、付费、畅销榜，中国区提供免费与畅销榜。"
     />
-    <meta name="theme-color" content="#f4f0e7" />
-    <meta property="og:title" content="美国 Google Play 榜 — AppPodium" />
+    <meta name="theme-color" content="#f4f0e7" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0e0e0f" media="(prefers-color-scheme: dark)" />
+    <meta property="og:title" content="Google Play 榜 · 美国 / 中国 — AppPodium" />
     <meta
       property="og:description"
-      content="美国 Google Play 应用与游戏排行榜，免费榜、付费榜和畅销榜。"
+      content="美国与中国区 Google Play 应用和游戏排行榜：美国区含免费、付费、畅销榜，中国区提供免费与畅销榜。"
     />
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="zh_CN" />
     <link rel="icon" href="/icon.svg" type="image/svg+xml" />
-    <script src="/theme.js?v=20261031g"></script>
-    <link rel="stylesheet" href="/styles.css?v=20261031g" />
+    <script src="/theme.js?v=20261128d"></script>
+    <link rel="stylesheet" href="/styles.css?v=20261128d" />
   </head>
   <body class="play-page">
     <a class="skip-link" href="#playRankings">跳到榜单</a>
@@ -81,14 +82,14 @@
       <section class="hero">
         <p class="eyebrow">
           <span class="eyebrow-dot" aria-hidden="true"></span>
-          GOOGLE PLAY · UNITED STATES
+          <span id="playEyebrow">GOOGLE PLAY · UNITED STATES</span>
         </p>
         <h1>
-          <span class="hero-line">美国</span>
+          <span class="hero-line" id="playHeroCountry">美国</span>
           <span class="hero-line hero-accent">Google Play 榜</span>
         </h1>
         <p class="hero-sub">
-          <span>应用与游戏的免费、付费和畅销排行。</span>
+          <span>应用与游戏的免费、付费和畅销排行，支持美国与中国区。</span>
           <span>每 6 小时更新一次数据快照，点击卡片前往 Google Play。</span>
         </p>
         <div class="hero-meta">
@@ -103,7 +104,7 @@
           </div>
           <span class="meta-rule" aria-hidden="true"></span>
           <div class="meta-block">
-            <span class="meta-value meta-value-context">Google Play · 美国</span>
+            <span class="meta-value meta-value-context" id="playStatContext">Google Play · 美国</span>
             <span class="meta-label">当前视图</span>
           </div>
         </div>
@@ -111,6 +112,13 @@
 
       <section class="controls" id="playControls" aria-label="Google Play 榜单筛选">
         <div class="filter-bar">
+          <div class="filter-group">
+            <span class="filter-label">地区</span>
+            <div class="segment" id="playCountryControl" role="group" aria-label="商店地区">
+              <button type="button" data-value="us" class="is-active" aria-pressed="true">美国</button>
+              <button type="button" data-value="cn" aria-pressed="false">中国</button>
+            </div>
+          </div>
           <div class="filter-group">
             <span class="filter-label">类型</span>
             <div class="segment" id="playTypeControl" role="group" aria-label="应用类型">
@@ -136,14 +144,14 @@
           </div>
         </div>
         <p class="play-note">
-          Google Play 没有公开榜单 API；本页展示美国区数据快照，由 GitHub Action 定时更新。
+          Google Play 没有公开榜单 API；本页展示美国与中国区数据快照，由 GitHub Action 定时更新。中国区没有付费应用，付费榜仅在美国区提供。
         </p>
       </section>
 
       <section class="rankings" id="playRankings" aria-busy="true">
         <div class="list-head">
           <div class="list-heading">
-            <p class="section-kicker">GOOGLE PLAY · US</p>
+            <p class="section-kicker" id="playKicker">GOOGLE PLAY · US</p>
             <h2>
               <span id="playListTitle">应用榜</span>
               <span class="list-sub" id="playListSub">免费榜 · TOP 100</span>
@@ -191,6 +199,6 @@
     <noscript>
       <div class="noscript">这个榜单需要 JavaScript 才能加载。请在浏览器中启用 JavaScript。</div>
     </noscript>
-    <script src="/play.js?v=20261031g" defer></script>
+    <script src="/play.js?v=20261128d" defer></script>
   </body>
 </html>
